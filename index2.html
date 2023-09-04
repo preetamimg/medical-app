@@ -230,14 +230,25 @@
           <div class="col-12 enterpin fw-medium pt-2 te">
             Or Enter Pincode
           </div>
-          <div class="col-12 deliveryData fw-medium pt-1 te">
+          <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
             Select Pincode to see product availability
-          </div>
-          <div class="col-12">
-            <div class="d-flex align-items-center">
-              <input type="text" class="form-control">
-              <button></button>
+          </div> -->
+          <div class="col-12 pt-3">
+            <div class="d-flex align-items-center gap-2 ">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="Pincode" class="form-control shadow-none  pincodeInput w-100">
+                <label for="Pincode" class="pincodeLabel">PINCODE</label>
+              </div>
+              <button class="btn applyBtn">Apply</button>
             </div>
+          </div>
+          <div class="col-12 pt-2">
+            <a href="javascript:;" class="detectlocation d-flex align-items-center gap-2 text-decoration-none">
+              <span class="d-flex align-items-center justify-content-center detecticon">
+                <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+              </span>
+              Detect my location
+            </a>
           </div>
         </div>
       </div>

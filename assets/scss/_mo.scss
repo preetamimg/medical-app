@@ -42,5 +42,43 @@
         font-size: 15px;
         color: $black;
     }
+    & .applyBtn {
+        height: 35px;
+        padding: 4px 26px;
+    }
+    & .inputpinmain {
+        & .pincodeInput {
+            font-size: 13px;
+            font-weight: 500;
+            color: $black;
+            border-color: lighten($black, 90);
+            height: 35px;
+        }
+        & .pincodeLabel {
+            font-size: 13px;
+            font-weight: 500;
+            color: $black;
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease-in-out;
+        }
+      
+        input:focus ~ label{
+        top: 0;
+        font-size: 12px;
+        background-color: $white;
+        }
+    }
+    & .detectlocation {
+        font-size: 14px;
+        font-weight: 500;
+        color: $theme1;
+        & .detecticon {
+            height: 14px;
+            width: 14px;
+        }
+    }
 }
 // location modal end 
