@@ -20,6 +20,10 @@
         background-color: $theme1;
         transition: all 0.3s ease-in-out;
         gap: 12px;
+        &:active {
+            background-color: $theme1;
+            border-color: $theme1;
+        }
         & .addressTile {
             font-size: 16px;
             font-weight: 600;
@@ -33,6 +37,10 @@
             box-shadow: 0 0.5em 0.5em -0.4em rgba($theme1, 1);
             transform: translateY(-0.25em);
         }
+    }
+    & .enterpin {
+        font-size: 15px;
+        color: $black;
     }
 }
 // location modal end 
