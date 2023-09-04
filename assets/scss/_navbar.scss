@@ -1,39 +1,68 @@
 .navbar {
     // background-color: $theme1;
+    box-shadow: rgba($black, 0.1) 0px 5px 7px;
+    transition: all 0.3s ease-in-out;
     & .navLogo {
         height: 80px;
     }
     & .headermain {
-        background-color: $theme1;
+        // background-color: $theme1;
+        transition: all 0.3s ease-in-out;
+        z-index: 5;
+        & .pincodeBtn {
+            gap: 5px;
+            & .locationicon {
+                height:17px;
+                width: 14px;
+                & img {
+                    filter: brightness(0);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            & .selectAddress {
+                font-size: 15px;
+                font-weight: 500;
+                color: $black;
+                line-height: normal;
+                transition: all 0.3s ease-in-out;
+            }
+            & .deliveryAdd {
+                font-size: 13px;
+                font-weight: 500;
+                // color: darken($white, 20);
+                color: $black;
+            }
+            & .dropdwonarrow {
+                width: 12px;
+                height: 12px;
+                & img {
+                    filter: brightness(0);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &:hover {
+                & .locationicon {
+                    & img {
+                        filter: none;
+                    }
+                }
+    
+                & .selectAddress {
+                    color: $theme2;
+                }
+                & .deliveryAdd {
+                }
+                & .dropdwonarrow {
+                    & img {
+                        filter: none;
+                    }
+                }
+            }
+        }
         & .searchmain {
             height:40px;
             width: 80%;
-            & .pincodeBtn {
-                gap: 5px;
-                & .locationicon {
-                    height:17px;
-                    width: 14px;
-                    & img {
-                        filter: brightness(00);
-                    }
-                }
-                // & .selectAddress {
-                //     font-size: 15px;
-                //     font-weight: 500;
-                //     color: $white;
-                //     line-height: normal;
-                // }
-                & .deliveryAdd {
-                    font-size: 13px;
-                    font-weight: 500;
-                    // color: darken($white, 20);
-                    color: $black;
-                }
-                & .dropdwonarrow {
-                    width: 12px;
-                    height: 12px;
-                }
-            }
             & .searchData {
                 
                 & .searchInput {
@@ -89,7 +118,7 @@
                 height: 22px;
                 width: 22px;
                 & img {
-                    filter: brightness(10);
+                    filter: brightness(0);
                     transition: all 0.3s ease-in-out;
                 }
                 & .cartitem {
@@ -111,7 +140,7 @@
             & .loginsign {
                 font-size: 14px;
                 font-weight: 600;
-                color: $white;
+                color: $black;
                 transition: all 0.3s ease-in-out;
                 gap:4px;
                 &.login {
@@ -128,10 +157,17 @@
         }
     }
     & .offcanvasNav {
-        background-color: $theme2;
+        // background-color: $theme2;
+        border-top: 1px solid lighten($black, 90);
+        border-bottom: 1px solid lighten($black, 90);
+        padding-top: 10px;
+        padding-bottom: 10px;
         height: 50px;
-        display: none;
+        // display: none;
         transition: all 0.3s ease-in-out;
+        transform: translateY(-100%);
+        position: absolute;
+        z-index: 4;
         & .navbar-nav {
             gap: 30px;
             & .navbarLink {
@@ -162,9 +198,10 @@
         }
     }
     &.fixedNavbar {
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         & .offcanvasNav {
-            display: flex;
-            // transform: scale(1);
+            transform: translateY(0);
+            position:unset ;
         }
     }
 }
