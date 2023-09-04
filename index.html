@@ -8,41 +8,13 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <!-- STYLE -->
   <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
+  
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-        <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-  </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-<!-- hero section swiper  -->
-<script>
-  var swiper = new Swiper(".mySwiper", {});
-</script>
-
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-theme1" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Responsive offcanvas navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
@@ -83,9 +55,165 @@
       </div>
     </div>
   </nav>
+
+  <!-- hero section start  -->
+<div class="container-fluid heroSection">
+  <div class="row">
+      <div class="swiper mySwiper heroSwiper">
+        <div class="swiper-wrapper swiperWrapper">
+          <div class="swiper-slide swiperSlide">
+            <div class="heroImg"><img src="assets/img/index/hero2.webp" alt="heroSection" class="img-fluid w-100 h-100"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="heroImg"><img src="assets/img/index/hero3.webp" alt="heroSection" class="img-fluid w-100 h-100"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="heroImg"><img src="assets/img/index/hero1.webp" alt="heroSection" class="img-fluid w-100 h-100"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="heroImg"><img src="assets/img/index/hero4.webp" alt="heroSection" class="img-fluid w-100 h-100"></div>
+          </div>
+        </div>
+    
+      </div>
+      <div class="whats-float d-flex align-items-center justify-content-between rounded-start-2">
+          <div class="watsIcon"><img src="assets/img/index/whatsapp.svg" alt="watsApp" class="img-fluid w-100 h-100"></div>
+          <div class="whatsContent">
+            <div class="headingWats">ORDER MEDICINES</div>
+            <div class="peraWats">Via Whatsapp</div>
+          </div>
+          <div><a href="javascript:;" class="text-decoration-none d-flex align-items-center  clickHereBtn"> Click Here</a></div>
+       
+      </div>
+      <div class="whats-float whats-float2 d-flex align-items-center justify-content-between rounded-start-2">
+        <div class="watsIcon"><img src="assets/img/index/whatsapp.svg" alt="watsApp" class="img-fluid w-100 h-100"></div>
+        <div class="whatsContent">
+          <div class="headingWats">ORDER MEDICINES</div>
+          <div class="peraWats">Via Whatsapp</div>
+        </div>
+        <div><a href="javascript:;" class="text-decoration-none d-flex align-items-center  clickHereBtn"> Click Here</a></div>
+     
+    </div>
+  </div>
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="row row-cols-4 flex-nowrap overflow-x-auto">
+          <div class="col">
+            <div class="card border-0 shadow-none rounded-3 bg-primary bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/medician1.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Get 15% off on Medicines </div></a>
+                    <div class="cardPera pt-1 fw-semibold">UPLOAD NOW</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-none rounded-3 bg-warning bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent h-100 d-flex align-items-center ">
+                  <div class="cardIocn"><img src="assets/img/index/medicain2.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Hospital Visit</div></a>
+                    <div class="cardPera pt-1 fw-semibold">PRE BOOK</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-none rounded-3 bg-info bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/medician1.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Video Consult </div></a>
+                    <div class="cardPera pt-1 fw-semibold">IN 15 MIN</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-none rounded-3 bg-danger bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/labtest.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Lab Tests </div></a>
+                    <div class="cardPera pt-1 fw-semibold">AT HOME</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-none rounded-3 bg-info bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/medician1.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Video Consult </div></a>
+                    <div class="cardPera pt-1 fw-semibold">IN 15 MIN</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-none rounded-3 bg-danger bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/labtest.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Lab Tests </div></a>
+                    <div class="cardPera pt-1 fw-semibold">AT HOME</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+  
+
   <!-- MAIN JS  -->
   <script src="assets/js/main.min.js"></script>
   <!-- BOOTSTRAP JS  -->
   <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper  -->
+  <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+
+
+<!-- hero section swiper  -->
+<script>
+  var swiper = new Swiper(".mySwiper", {});
+</script>
+
+
+
+
 </body>
 </html>
