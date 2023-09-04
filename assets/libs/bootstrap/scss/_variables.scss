@@ -36,6 +36,10 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
+$theme1:  #03466e !default;
+$theme2:  #fad02c !default;
+$theme3:  #E76363 !default;
+$theme4:  #2CBD96 !default;
 $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -50,6 +54,10 @@ $cyan:    #0dcaf0 !default;
 
 // scss-docs-start colors-map
 $colors: (
+  "theme1":     $theme1,
+  "theme2":     $theme2,
+  "theme3":     $theme3,
+  "theme4": 	  $theme4,
   "blue":       $blue,
   "indigo":     $indigo,
   "purple":     $purple,
