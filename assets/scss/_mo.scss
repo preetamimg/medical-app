@@ -1,0 +1,38 @@
+// location modal start 
+.deliveryaddress {
+    max-width: 350px;
+    & .deliverytilte {
+        font-size: 17px;
+        color: $black;
+    }
+    & .closebtn {
+        height: 13px;
+        width: 13px;
+        background: none;
+    }
+    & .deliveryData {
+        font-size: 14px;
+        color: lighten($black, 40);
+    }
+    & .addaddressbtn {
+        height: 50px;
+        // width: 80px;
+        background-color: $theme1;
+        transition: all 0.3s ease-in-out;
+        gap: 12px;
+        & .addressTile {
+            font-size: 16px;
+            font-weight: 600;
+            color: $theme2;
+        }
+        & .plusicon {
+            height: 14px;
+            width: 14px;
+        }
+        &:hover {
+            box-shadow: 0 0.5em 0.5em -0.4em rgba($theme1, 1);
+            transform: translateY(-0.25em);
+        }
+    }
+}
+// location modal end 
