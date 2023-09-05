@@ -1,6 +1,6 @@
 // Hero Section start
 .heroSection{
-height: calc(100vh - 177px);
+height: calc(100vh - 201px);
     & .mySwiper3{
         height: 100%;
         width: 100%;
@@ -16,7 +16,7 @@ height: calc(100vh - 177px);
             }
         }
         & .swiper-wrapper{
-                height: 430px;
+                // height: 430px;
             & .swiper-slide{
                 background-size: cover;
                 background-position: center;
