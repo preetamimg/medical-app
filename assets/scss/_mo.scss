@@ -288,7 +288,7 @@
 // future brand section start 
 .futerbrand {
     // padding: 45px 16px;
-    padding-top:45px;
+    padding-top:20px;
     padding-bottom: 45px;
 }
 .brandCard {
@@ -392,7 +392,7 @@
 @include media-breakpoint-down(lg) {
     .futerbrand {
         // padding: 45px 16px;
-        padding-top:40px;
+        padding-top:15px;
         padding-bottom: 40px;
     }
     // offer section start 
@@ -429,7 +429,7 @@
 @include media-breakpoint-down(sm) {
     .futerbrand {
         // padding: 35px 12px;
-        padding-top: 35px;
+        padding-top: 10px;
         padding-bottom: 35px;
     }
     .brandCard {
