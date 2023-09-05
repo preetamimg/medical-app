@@ -35,3 +35,62 @@
 
     }
 }
+
+@include media-breakpoint-down(md) {
+    .themeBtn{
+font-size: 14px;
+        &:hover{
+            & .icon{
+              
+            }
+    
+        }
+        & .icon{
+ 
+    
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .themeBtn{
+
+        &:hover{
+            & .icon{
+              
+            }
+    
+        }
+        & .icon{
+ 
+    
+        }
+    }
+}
+
+.addCartBtn{
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8f8f8;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11px;
+    border-radius:0px 5px 5px 0px;
+    display: inline-block;
+    padding: 0 30px;
+    text-decoration: none;
+    vertical-align: top;
+    transform: translateX(-60px);
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    // min-width: 136px;
+    letter-spacing: .06em;
+    z-index: 999;
+    &:hover{
+        background-color: $theme1;
+        color: $white;
+    }
+
+}
