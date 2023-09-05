@@ -979,6 +979,8 @@ height: calc(100vh - 201px);
 }
 
 .productCard{
+    border-radius: 10px;
+
     // border: 1px solid $black;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
@@ -1009,6 +1011,11 @@ height: calc(100vh - 201px);
         }
     }
     & .offerBuddge{
+        border-top-left-radius: 100px !important;
+        border-bottom-left-radius: 100px !important;
+        border-top-right-radius: 100px !important;
+        border-bottom-right-radius: 100px !important;
+
         display: inline-block;
         vertical-align: top;
         color: #2b97a3;
@@ -1069,8 +1076,10 @@ height: calc(100vh - 201px);
         }
     }
     & .addCard{
+        z-index: 100;
         position: absolute;
-        top: 55%;
+        top: 50%;
+        transform: translateY(-50%);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1562,7 +1571,6 @@ height: calc(100vh - 201px);
     }
     
     .productCard{
-
         &:hover{
             & .cardIMg{
             
@@ -1571,7 +1579,7 @@ height: calc(100vh - 201px);
                
             }
             & .addCard{
-                top: 60%;
+                // top: 60%;
                 & .heartImg{
              
                 }
