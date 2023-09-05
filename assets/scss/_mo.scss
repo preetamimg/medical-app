@@ -6,32 +6,36 @@
         color: $black;
     }
     & .closebtn {
-        height: 13px;
-        width: 13px;
+        height: 12px;
+        width: 12px;
         background: none;
     }
     & .deliveryData {
-        font-size: 14px;
+        font-size: 13px;
         color: lighten($black, 40);
     }
     & .addaddressbtn {
-        height: 50px;
+        // height: 50px;
         // width: 80px;
         background-color: $theme1;
         transition: all 0.3s ease-in-out;
-        gap: 12px;
+        gap: 6px;
+        padding: 10px 15px;
         &:active {
             background-color: $theme1;
             border-color: $theme1;
         }
         & .addressTile {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
-            color: $theme2;
+            color: $white;
         }
         & .plusicon {
             height: 14px;
             width: 14px;
+            & img {
+                filter: brightness(10);
+            }
         }
         &:hover {
             box-shadow: 0 0.5em 0.5em -0.4em rgba($theme1, 1);
@@ -39,17 +43,23 @@
         }
     }
     & .enterpin {
-        font-size: 15px;
+        font-size: 14px;
         color: $black;
     }
-    & .applyBtn {
-        height: 35px;
-        padding: 4px 26px;
+    & .applypinBtn {
+        // height: 35px;
+        // padding: 4px 26px;
+        // border-radius: 30px;
+        padding:0 13px 0 0;
+        color: $theme1;
+        font-size: 14px;
+        font-weight: 600;
     }
     & .detectlocation {
         font-size: 14px;
         font-weight: 500;
         color: $theme1;
+        padding: 4px 12px;
         & .detecticon {
             height: 14px;
             width: 14px;
@@ -57,19 +67,33 @@
     }
 }
 .inputpinmain {
+    height: 35px;
+    border-bottom:1px solid  $theme1;
     & .pincodeInput {
         font-size: 13px;
         font-weight: 500;
         color: $black;
         border-color: lighten($black, 90);
         height: 35px;
+        // border-radius: 30px;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid $theme1;
+        /* Change the white to any color */
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover, 
+        &:-webkit-autofill:focus, 
+        &:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 30px $white inset !important;
+        }
     }
     & .pincodeLabel {
         font-size: 13px;
         font-weight: 500;
         color: $black;
         position: absolute;
-        left: 16px;
+        // left: 16px;
+        left: 2px;
         top: 50%;
         transform: translateY(-50%);
         transition: all 0.3s ease-in-out;
@@ -82,6 +106,7 @@
 }
 .locationmodal {
     & .locationdialog {
+        max-width: 350px;
         & .locationHeader {
             & .locationHeading {
                 font-size: 15px;
@@ -103,8 +128,10 @@
                 font-weight: 500;
                 color: $black;
                 border: 1px solid $black;
-                padding: 4px 6px;
+                padding: 4px 10px;
                 transition: all 0.3s ease-in-out;
+                // border-radius: 30px !important;
+                cursor: pointer;
             }
             & .checkbox:checked  ~ .checkLabel {
                 border-color: $theme1;
@@ -115,7 +142,313 @@
         }
         & .applyBtn {
             padding: 8px 28px;
+            &:active {
+                background-color: lighten($theme1, 6);
+                color: $white;
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .deliveryaddress {
+        // max-width: 300px;
+        & .deliverytilte {
+            font-size: 15px;
+        }
+        & .closebtn {
+        }
+        & .deliveryData {
+            font-size: 13px;
+        }
+        & .addaddressbtn {
+            // gap: 4px;
+            // padding: 8px 12px;
+            &:active {
+            }
+            & .addressTile {
+                // font-size: 13px;
+            }
+            & .plusicon {
+                & img {
+                }
+            }
+            &:hover {
+            }
+        }
+        & .enterpin {
+        }
+        & .applypinBtn {
+            font-size: 13px;
+        }
+        & .detectlocation {
+            & .detecticon {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .deliveryaddress {
+        max-width: 300px;
+        & .deliverytilte {
+            font-size: 14px;
+        }
+        & .closebtn {
+        }
+        & .deliveryData {
+            font-size: 12px;
+        }
+        & .addaddressbtn {
+            gap: 2px;
+            padding: 8px 12px;
+            &:active {
+            }
+            & .addressTile {
+                font-size: 13px;
+            }
+            & .plusicon {
+                height: 13px;
+                width: 13px;
+                & img {
+                }
+            }
+            &:hover {
+            }
+        }
+        & .enterpin {
+            font-size: 13px;
+        }
+        & .applypinBtn {
+            // width: 80%;
+            font-size: 12px;
+        }
+        & .detectlocation {
+            font-size: 13px;
+            & .detecticon {
+            }
+        }
+    }
+    .inputpinmain {
+        & .pincodeInput {
+            font-size: 12px;
+        }
+        & .pincodeLabel {
+            font-size: 12px;
+        }
+        input:focus ~ label{
+            font-size: 11px;
+        }
+    }
+    .locationmodal {
+        & .locationdialog {
+            max-width: 300px;
+            & .locationHeader {
+                & .locationHeading {
+                    font-size: 14px;
+                }
+                & .btn-close {
+                }
+            }
+            & .locationcontent {
+                & .checkbox {
+                }
+                & .checkLabel {
+                }
+                & .checkbox:checked  ~ .checkLabel {
+                }
+            }
+            & .applyBtn {
+                font-size: 12px;
+                &:active {
+                }
+            }
         }
     }
 }
 // location modal end 
+
+// future brand section start 
+.futerbrand {
+    // padding: 45px 16px;
+    padding-top:45px;
+    padding-bottom: 45px;
+}
+.brandCard {
+    & .brandimg {
+        // aspect-ratio: 1/1;
+        max-width: 165px;
+        max-height: 165px;
+        & img {
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            & img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    & .brandName {
+        font-size: 14px;
+        font-weight: 700;
+        color: $black;
+        transition: all 0.3s ease-out;
+        padding: 15px 0 10px 0;
+        &:hover {
+            color: $theme1;
+        }
+    }
+    & .brandOffer {
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: $theme1;
+        padding: 4px 10px;
+    }
+}
+.sliderbtn {
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid $theme1;
+    padding: 7px;
+    transition: all 0.3s ease-in-out;
+    & img {
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        background-color: $theme1;
+        & img {
+            filter: brightness(10);
+        }
+    }
+}
+
+// offer section start 
+.offer {
+    padding-bottom: 45px;
+    padding-bottom: 45px;
+    & .offerIcon {
+        aspect-ratio: 6/3;
+        & img {
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            & img {
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
+// offer section end
+
+// health product section start 
+.healthProduct {
+
+}
+// health product section end
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .futerbrand {
+        // padding: 45px 16px;
+        padding-top:40px;
+        padding-bottom: 40px;
+    }
+    // offer section start 
+    .offer {
+        padding-bottom: 40px;
+        padding-bottom: 40px;
+        & .offerIcon {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+    }
+    // offer section end
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(sm) {
+    .futerbrand {
+        // padding: 35px 12px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .brandCard {
+        & .brandimg {
+            // aspect-ratio: 1/1;
+            max-width: 150px;
+            max-height: 150px;
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+        & .brandName {
+            &:hover {
+            }
+        }
+        & .brandOffer {
+        }
+    }
+    .sliderbtn {
+        height: 25px;
+        width: 25px;
+        padding: 5px;
+    }
+     // offer section start 
+    .offer {
+        padding-bottom: 35px;
+        padding-bottom: 35px;
+        & .offerIcon {
+            & img {
+            }
+            &:hover {
+                & img {
+                }
+            }
+        }
+    }
+    // offer section end
+}
+// future brand section end 
+

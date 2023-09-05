@@ -1,0 +1,88 @@
+.heading {
+    font-size: 25px;
+    font-weight: 700;
+    color: $black;
+}
+
+.seeall {
+    color: $theme1;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 30px;
+    transition: all 0.3s ease-in-out;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 1.5px;
+        width: 0;
+        background-color: $theme1;
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .heading {
+        font-size: 24px;
+    }
+    .seeall {
+        &::before {
+        }
+        &:hover {
+            &::before {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heading {
+        font-size: 22px;
+    }
+    .seeall {
+        margin-left: 15px;
+        &::before {
+        }
+        &:hover {
+            &::before {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .heading {
+        font-size: 20px;
+    }
+    .seeall {
+        font-size: 13px;
+        margin-left: 13px;
+        &::before {
+        }
+        &:hover {
+            &::before {
+            }
+        }
+    }
+}
