@@ -367,6 +367,12 @@
 }
 // health product section end
 
+// new arrival section start 
+.newarrival {
+    padding-top: 45px;
+}
+// new arrival section end
+
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}
@@ -409,6 +415,12 @@
         padding-bottom: 40px;
     }
     // health product section end
+
+    // new arrival section start 
+    .newarrival {
+        padding-top: 40px;
+    }
+    // new arrival section end
 }
 
 @include media-breakpoint-down(md) {
@@ -463,6 +475,12 @@
         padding-bottom: 35px;
     }
     // health product section end
+
+    // new arrival section start 
+    .newarrival {
+        padding-top: 35px;
+    }
+    // new arrival section end
 }
 // future brand section end 
 
