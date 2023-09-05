@@ -335,7 +335,7 @@
     &:hover {
         background-color: $theme1;
         & img {
-            filter: brightness(10);
+            filter: brightness(100) contrast(1);
         }
     }
 }
