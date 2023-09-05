@@ -8,4 +8,8 @@
         background-color: lighten($theme1, 6);
         color: $white;
     }
+    &:active {
+        background-color: lighten($theme1, 6) !important;
+        color: $white !important;
+    }
 }

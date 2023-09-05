@@ -1,15 +1,22 @@
 .navbar {
-    // background-color: $theme1;
-    // box-shadow: rgba($black, 0.1) 0px 5px 7px;
     box-shadow: rgba($black, 0.06) 0px 3px 4px, rgba($black, 0.04) 0px 3px 3px, rgba($black, 0.08) 0px 1px;
     transition: all 0.3s ease-in-out;
     & .navLogo {
         height: 80px;
     }
+    & .navbar-toggler {
+        background: none;
+        & .navbar-toggler-icon {
+            height: 20px;
+            width: 20px;
+            background:none;
+        }
+    }
     & .headermain {
         // background-color: $theme1;
         transition: all 0.3s ease-in-out;
         z-index: 5;
+        padding: 0 16px;
         & .pincodeBtn {
             gap: 5px;
             & .locationicon {
@@ -66,6 +73,7 @@
             height:45px;
             width: 80%;
             padding: 4px;
+            transition: all 0.3s ease-in-out;
             & .searchData {
                 & .searchBtn {
                     font-size: 14px;
@@ -91,8 +99,8 @@
                     }
                 }
                 & .searchicon {
-                    height: 20px;
-                    width: 20px;
+                    height: 25px;
+                    width: 25px;
                     // margin: 0 12px;
                     margin-left: 10px;
                 }
@@ -145,6 +153,34 @@
                     font-size: 9px;
                     color: $black;
                     font-weight: 600;
+                    animation: ripple 1s linear infinite;
+                }
+                @keyframes ripple {
+                    0% {
+                        -webkit-box-shadow:
+                            0 0 0 0 rgba($theme1, 0.2),
+                            0 0 0 5px rgba($theme1, 0.2),
+                            0 0 0 20px rgba($theme1, 0.2),
+                            0 0 0 35px rgba($theme1, 0.2);
+                        box-shadow:
+                            0 0 0 0 rgba($theme1, 0.2),
+                            0 0 0 5px rgba($theme1, 0.2),
+                            0 0 0 20px rgba($theme1, 0.2),
+                            0 0 0 35px rgba($theme1, 0.2);
+                    }
+
+                    100% {
+                        -webkit-box-shadow:
+                            0 0 0 5px rgba($theme1, 0.2),
+                            0 0 0 20px rgba($theme1, 0.2),
+                            0 0 0 35px rgba($theme1, 0.2),
+                            0 0 0 45px rgba($theme1, 0);
+                        box-shadow:
+                            0 0 0 5px rgba($theme1, 0.2),
+                            0 0 0 20px rgba($theme1, 0.2),
+                            0 0 0 35px rgba($theme1, 0.2),
+                            0 0 0 45px rgba($theme1, 0);
+                    }
                 }
                 &:hover {
                     & img {
@@ -175,42 +211,14 @@
         // background-color: $theme2;
         border-top: 1px solid lighten($black, 90);
         border-bottom: 1px solid lighten($black, 90);
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 16px;
         height: 50px;
         // display: none;
         transition: all 0.3s ease-in-out;
         transform: translateY(-100%);
         position: absolute;
         z-index: 4;
-        & .navbar-nav {
-            gap: 30px;
-            & .navbarLink {
-                font-size: 14px;
-                color: $black;
-                font-weight: 600;
-                transition: all 0.3s ease-in-out;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 1.5px;
-                    background-color: $theme1;
-                    bottom: -9px;
-                    left: 0;
-                    transform-origin: right;
-                    transform: scaleX(0);
-                    transition: transform .3s ease-in-out;
-                }
-                &:hover {
-                    color: $theme1;
-                    &::before {
-                        transform-origin: left;
-                        transform: scaleX(1);
-                    }
-                }
-            }
-        }
+       
     }
     &.fixedNavbar {
         // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -221,5 +229,363 @@
         }
     }
 }
+.navbar-items {
+    gap: 30px;
+    & .navbarLink {
+        font-size: 14px;
+        color: $black;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            background-color: $theme1;
+            bottom: -9px;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+        &:hover {
+            color: $theme1;
+            &::before {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+.headerOffcanvas {
+    max-width: 320px;
+    & .offcanvasLogo {
+        width: 45px;
+    }
+    & .closebtn {
+        height: 14px;
+        width: 14px;
+        background: none;
+    }
+}
+@include media-breakpoint(basic) {}
 
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+
+}
+@include media-breakpoint-down(lg) {
+    .navbar {
+        & .navLogo {
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+            }
+        }
+        & .headermain {
+            & .pincodeBtn {
+                & .locationicon {
+                    height:12px;
+                    width: 10px;
+                    & img {
+                    }
+                }
+                & .selectAddress {
+                    font-size: 13px;
+                }
+                & .deliveryAdd {
+                    font-size: 12px;
+                }
+                & .dropdwonarrow {
+                    & img {
+                    }
+                }
+            }
+            & .searchmain {
+                width: 100%;
+                & .searchData {
+                    & .searchBtn {
+                        &:hover {
+                        }
+                    }
+                    & .searchInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .searchicon {
+                    }
+                    & .searchInner {
+                        & .searchInnerData {
+                            & .closeBtn {
+                            }
+                            &:hover {
+                                & .closeBtn {
+                                }
+                            }
+                        }
+                    }
+                    & .searchInput:focus ~ .searchInner { display: block !important }
+                }
+    
+            }
+            & .headerIcons {
+                gap: 15px;
+                & .cardBtn {
+                    & img {
+                    }
+                    & .cartitem {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+                & .loginsign {
+                    &.login {
+                        &:hover {
+                        }
+                    }
+                    &.sign {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasNav {
+            display: none;
+        }
+        &.fixedNavbar {
+            & .offcanvasNav {
+
+            }
+        }
+    }
+    .navbar-items {
+        gap: 20px;
+        & .navbarLink {
+            font-size: 13px;
+            &::before {
+                bottom: -4px;
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        & .navLogo {
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+            }
+        }
+        & .headermain {
+            & .pincodeBtn {
+                & .locationicon {
+                    & img {
+                    }
+                }
+                & .selectAddress {
+                }
+                & .deliveryAdd {
+                }
+                & .dropdwonarrow {
+                    & img {
+                    }
+                }
+            }
+            & .searchmain {
+                & .searchData {
+                    & .searchBtn {
+                        &:hover {
+                        }
+                    }
+                    & .searchInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .searchicon {
+                    }
+                    & .searchInner {
+                        & .searchInnerData {
+                            & .closeBtn {
+                            }
+                            &:hover {
+                                & .closeBtn {
+                                }
+                            }
+                        }
+                    }
+                    & .searchInput:focus ~ .searchInner {  }
+                }
+    
+            }
+            & .headerIcons {
+                & .cardBtn {
+                    & img {
+                    }
+                    & .cartitem {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+                & .loginsign {
+                    &.login {
+                        &:hover {
+                        }
+                    }
+                    &.sign {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasNav {
+        }
+        &.fixedNavbar {
+            & .offcanvasNav {
+
+            }
+        }
+    }
+    .navbar-items {
+        & .navbarLink {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar {
+        & .navLogo {
+            height: 60px;
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+            }
+        }
+        & .headermain {
+            & .pincodeBtn {
+                & .locationicon {
+                    & img {
+                    }
+                }
+                & .selectAddress {
+                    font-size: 12px;
+                }
+                & .deliveryAdd {
+                    font-size: 11px;
+                }
+                & .dropdwonarrow {
+                    width: 10px;
+                    height: 10px;
+                    margin-top: 1px;
+                    & img {
+                    }
+                }
+            }
+            & .searchmain {
+                & .searchData {
+                    & .searchBtn {
+                        &:hover {
+                        }
+                    }
+                    & .searchInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .searchicon {
+                    }
+                    & .searchInner {
+                        & .searchInnerData {
+                            & .closeBtn {
+                            }
+                            &:hover {
+                                & .closeBtn {
+                                }
+                            }
+                        }
+                    }
+                    & .searchInput:focus ~ .searchInner {  }
+                }
+    
+            }
+            & .headerIcons {
+                & .cardBtn {
+                    height: 19px;
+                    width: 19px;
+                    & img {
+                    }
+                    & .cartitem {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+                & .loginsign {
+                    &.login {
+                        &:hover {
+                        }
+                    }
+                    &.sign {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasNav {
+        }
+        &.fixedNavbar {
+            & .offcanvasNav {
+
+            }
+        }
+    }
+    .navbar-items {
+        gap: 13px;
+        & .navbarLink {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+    }
+    .headerOffcanvas {
+        max-width: 300px;
+        & .offcanvasLogo {
+        }
+        & .closebtn {
+            height: 12px;
+            width: 12px;
+        }
+    }
+}
 
