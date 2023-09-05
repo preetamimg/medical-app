@@ -1,0 +1,694 @@
+// Hero Section start
+.heroSection{
+padding-top: 100px;
+    & .mySwiper3{
+        height: 100%;
+        width: 100%;
+        z-index: 8;
+        border-radius: 10px !important;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            & .swiper-button-prev{
+                opacity:1;
+            }
+            & .swiper-button-next{
+                opacity:1;
+            }
+        }
+        & .swiper-wrapper{
+            & .swiper-slide{
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                border-radius: 10px !important;
+                &::before{
+                    background-color: transparent;
+                    background-image: linear-gradient(180deg,#FFFFFF00 0%,#1F2400 100%);
+                    mix-blend-mode: hard-light;
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+                & .img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    position: relative;
+                    &::before{
+                        background-color: transparent;
+                        background-image: linear-gradient(180deg,#FFFFFF00 0%,#1F2400 100%);
+                        mix-blend-mode: multiply;
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                    }
+                }
+                .heroContent{
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    left: 116px;
+                    transform: translateY(-50%);
+                    height: 100%;
+                    width: 100%;
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    overflow: hidden;
+                    & .heroTitle{
+                        font-size: 51px;
+                        line-height: 57px;
+                        color: $white;
+                        
+                    }
+                    & .pera-text{
+                        font-size: 12px;
+                        color: $white;
+                        
+                    }
+                    & .heroPera{
+                        font-size: 16px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        & .swiper-button-next{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.1);
+            padding: 18px;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            & img{
+                filter: invert(1);
+            }
+            &::after{
+                display: none;
+            }
+        }
+        & .swiper-button-prev{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.1);
+            padding: 18px;
+            opacity: 0;
+            transition:all 0.3s ease-in-out;
+            & img{
+                filter: invert(1);
+            }
+            &::after{
+                display: none;
+            }
+        }
+    }
+    & .swiper-slide {
+
+        & .pera-text ,& .heroTitle {
+            animation-name: fade-in;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+        & .heroPera {
+            animation-name: fade-in;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        }
+
+      .themeBtn{
+            animation-name: fade-in;
+            animation-duration: 2.5s;
+            animation-delay: 2.5s;
+            animation-fill-mode: both;
+        }
+        &.swiper-slide-active {
+            @keyframes fade-in {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+            
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    & .heroCard{
+   border-bottom: 3px solid rgb(167, 197, 243) !important;
+   &.heroCard2{
+   border-bottom: 3px solid rgb(252, 234, 181) !important;
+   }
+   &.heroCard3{
+    border-bottom: 3px solid rgb(255, 198, 204) !important;
+    }
+        & .cardContent{
+            & .cardIocn{
+                width: 45px;
+                height: 37px;
+            }
+            & .cardHeading{
+                font-size: 16px;
+                line-height: 19px;
+                color: $theme1;
+                transition: all 0.3s ease-in-out;
+            }
+            & .cardPera{
+                font-size: 10px;
+                letter-spacing: 1px;
+                color: $theme1;
+                opacity: 0.8;
+            }
+            & .iconarrow{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    
+}
+
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+    .heroSection{
+            & .mySwiper3{
+                &:hover{
+                    & .swiper-button-prev{
+                
+                    }
+                    & .swiper-button-next{
+          
+                    }
+                }
+                & .swiper-wrapper{
+                    & .swiper-slide{
+           
+                        &::before{
+            
+                            
+                        }
+                        & .img{
+   
+                            &::before{
+              
+                            }
+                        }
+                        .heroContent{
+                
+                            & .heroTitle{
+
+                                
+                            }
+                            & .pera-text{
+                   
+                                
+                            }
+                            & .heroPera{
+                           
+                            }
+                        }
+                    }
+                }
+                & .swiper-button-next{
+       
+                    & img{
+                        filter: invert(1);
+                    }
+                    &::after{
+                     
+                    }
+                }
+                & .swiper-button-prev{
+       
+                    & img{
+          
+                    }
+                    &::after{
+      
+                    }
+                }
+            }
+            & .swiper-slide {
+        
+                & .pera-text ,& .heroTitle {
+        
+                }
+                & .heroPera {
+     
+                }
+        
+              .themeBtn{
+     
+                }
+            }
+        
+            & .heroCard{
+      
+           &.heroCard2{
+    
+           }
+           &.heroCard3{
+        
+            }
+                & .cardContent{
+                    & .cardIocn{
+    
+                    }
+                    & .cardHeading{
+
+                    }
+                    & .cardPera{
+     
+                    }
+                    & .iconarrow{
+          
+                    }
+                }
+            }
+            
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .heroSection{
+        & .mySwiper3{
+            &:hover{
+                & .swiper-button-prev{
+            
+                }
+                & .swiper-button-next{
+      
+                }
+            }
+            & .swiper-wrapper{
+                & .swiper-slide{
+       
+                    &::before{
+        
+                        
+                    }
+                    & .img{
+
+                        &::before{
+          
+                        }
+                    }
+                    .heroContent{
+            
+                        & .heroTitle{
+
+                            
+                        }
+                        & .pera-text{
+               
+                            
+                        }
+                        & .heroPera{
+                       
+                        }
+                    }
+                }
+            }
+            & .swiper-button-next{
+   
+                & img{
+                    filter: invert(1);
+                }
+                &::after{
+                 
+                }
+            }
+            & .swiper-button-prev{
+   
+                & img{
+      
+                }
+                &::after{
+  
+                }
+            }
+        }
+        & .swiper-slide {
+    
+            & .pera-text ,& .heroTitle {
+    
+            }
+            & .heroPera {
+ 
+            }
+    
+          .themeBtn{
+ 
+            }
+        }
+    
+        & .heroCard{
+  
+       &.heroCard2{
+
+       }
+       &.heroCard3{
+    
+        }
+            & .cardContent{
+                & .cardIocn{
+
+                }
+                & .cardHeading{
+
+                }
+                & .cardPera{
+ 
+                }
+                & .iconarrow{
+      
+                }
+            }
+        }
+        
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .heroSection{
+        & .mySwiper3{
+            &:hover{
+                & .swiper-button-prev{
+            
+                }
+                & .swiper-button-next{
+      
+                }
+            }
+            & .swiper-wrapper{
+                & .swiper-slide{
+       
+                    &::before{
+        
+                        
+                    }
+                    & .img{
+
+                        &::before{
+          
+                        }
+                    }
+                    .heroContent{
+            
+                        & .heroTitle{
+
+                            
+                        }
+                        & .pera-text{
+               
+                            
+                        }
+                        & .heroPera{
+                       
+                        }
+                    }
+                }
+            }
+            & .swiper-button-next{
+   
+                & img{
+                    filter: invert(1);
+                }
+                &::after{
+                 
+                }
+            }
+            & .swiper-button-prev{
+   
+                & img{
+      
+                }
+                &::after{
+  
+                }
+            }
+        }
+        & .swiper-slide {
+    
+            & .pera-text ,& .heroTitle {
+    
+            }
+            & .heroPera {
+ 
+            }
+    
+          .themeBtn{
+ 
+            }
+        }
+    
+        & .heroCard{
+  
+       &.heroCard2{
+
+       }
+       &.heroCard3{
+    
+        }
+            & .cardContent{
+                & .cardIocn{
+
+                }
+                & .cardHeading{
+
+                }
+                & .cardPera{
+ 
+                }
+                & .iconarrow{
+      
+                }
+            }
+        }
+        
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heroSection{
+        & .mySwiper3{
+            &:hover{
+                & .swiper-button-prev{
+            
+                }
+                & .swiper-button-next{
+      
+                }
+            }
+            & .swiper-wrapper{
+                & .swiper-slide{
+       
+                    &::before{
+        
+                        
+                    }
+                    & .img{
+
+                        &::before{
+          
+                        }
+                    }
+                    .heroContent{
+            
+                        & .heroTitle{
+
+                            
+                        }
+                        & .pera-text{
+               
+                            
+                        }
+                        & .heroPera{
+                       
+                        }
+                    }
+                }
+            }
+            & .swiper-button-next{
+   
+                & img{
+                    filter: invert(1);
+                }
+                &::after{
+                 
+                }
+            }
+            & .swiper-button-prev{
+   
+                & img{
+      
+                }
+                &::after{
+  
+                }
+            }
+        }
+        & .swiper-slide {
+    
+            & .pera-text ,& .heroTitle {
+    
+            }
+            & .heroPera {
+ 
+            }
+    
+          .themeBtn{
+ 
+            }
+        }
+    
+        & .heroCard{
+  
+       &.heroCard2{
+
+       }
+       &.heroCard3{
+    
+        }
+            & .cardContent{
+                & .cardIocn{
+
+                }
+                & .cardHeading{
+
+                }
+                & .cardPera{
+ 
+                }
+                & .iconarrow{
+      
+                }
+            }
+        }
+        
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .heroSection{
+        & .mySwiper3{
+            &:hover{
+                & .swiper-button-prev{
+            
+                }
+                & .swiper-button-next{
+      
+                }
+            }
+            & .swiper-wrapper{
+                & .swiper-slide{
+       
+                    &::before{
+        
+                        
+                    }
+                    & .img{
+
+                        &::before{
+          
+                        }
+                    }
+                    .heroContent{
+            
+                        & .heroTitle{
+
+                            
+                        }
+                        & .pera-text{
+               
+                            
+                        }
+                        & .heroPera{
+                       
+                        }
+                    }
+                }
+            }
+            & .swiper-button-next{
+   
+                & img{
+                    filter: invert(1);
+                }
+                &::after{
+                 
+                }
+            }
+            & .swiper-button-prev{
+   
+                & img{
+      
+                }
+                &::after{
+  
+                }
+            }
+        }
+        & .swiper-slide {
+    
+            & .pera-text ,& .heroTitle {
+    
+            }
+            & .heroPera {
+ 
+            }
+    
+          .themeBtn{
+ 
+            }
+        }
+    
+        & .heroCard{
+  
+       &.heroCard2{
+
+       }
+       &.heroCard3{
+    
+        }
+            & .cardContent{
+                & .cardIocn{
+
+                }
+                & .cardHeading{
+
+                }
+                & .cardPera{
+ 
+                }
+                & .iconarrow{
+      
+                }
+            }
+        }
+        
+    }
+}
+

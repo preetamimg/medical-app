@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical App</title>
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
+  
+</head>
+<body>
+  <!-- navbar section start  -->
+  <nav class="navbar bg-white fixed-top py-0 flex-column navbar-expand-lg container-fluid" aria-label="Offcanvas navbar large" id="navbar">
+    <div class="headermain w-100 position-relative bg-white">
+      <div class="container align-items-start">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <div class="d-flex align-items-center gap-3">
+              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand navLogo m-0" href="index.html">
+                <img src="assets/img/mainlogo.png" alt="logo" class="h-100">
+              </a>
+              <button class="btn pincodeBtn d-flex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                  <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div>
+                  <!-- <div class="deliveryAdd text-start">Delivery Address</div> -->
+                  <div class="selectAddress text-start">Select Adderss</div>
+                </div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                  <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-center border border-1 mx-auto searchmain bg-white shadow-sm rounded-2">
+              <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                  <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                  <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+              </button> -->
+              <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                  <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                  <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+              </button> -->
+              <div class="d-flex w-100 position-relative align-items-center searchData">
+                <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                <button class="btn searchBtn d-flex align-items-center justify-content-center border-0 p-0">
+                  <img src="assets/img/search.svg" alt="search" class="h-100 w-100 img-fluid">
+                </button>
+                <div class="searchInner z-2 d-none overflow-y-auto shadow-sm position-absolute start-0 bg-white py-2 rounded-2 w-100">
+                  <ul class="list-unstyled">
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center headerIcons">
+              <a href="javascript:;" class="cardBtn d-flex align-items-center justify-content-center position-relative">
+                <img src="assets/img/cart.svg" alt="cart" class="h-100 w-100 img-fluid">
+                <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadow-sm rounded-circle">12</span>
+              </a>
+              <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center position-relative">
+                <img src="assets/img/offer.svg" alt="offer" class="h-100 w-100 img-fluid">
+              </a>
+              <div class="loginsign d-flex align-items-center justify-content-center position-relative">
+                <span class="cardBtn me-1 d-flex align-items-center justify-content-center"> 
+                  <img src="assets/img/login.svg" alt="cart" class="h-100 w-100 img-fluid">
+                </span>
+                <a href="javascript:;" class="login loginsign text-decoration-none">Login</a> 
+                <span> /</span>
+                <a href="javascript:;" class="sign loginsign text-decoration-none">Sign Up</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvasNav h-100 align-items-center w-100">
+      <div class="container">
+        <div class="">
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</div>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe3">
+                <li class="nav-item">
+                  <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medicine</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Lab Test</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medical Devices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Baby Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Beauty Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Supplementary Product</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- navbar section end  -->
+  <!-- hero section start  -->
+<div class="container-fluid heroSection overflow-hidden  rounded-2">
+  <div class="row mx-0 rounded-2">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="overflow-hidden swiper mySwiper3">
+      <div class="swiper-wrapper rounded-2 ">
+        <div class="swiper-slide animeslide-slide rounded-2 overflow-hidden">
+            <img src="assets/img/index/slider-21.jpg" alt="heroSection" class="img-fluid w-100 h-100 rounded-2 overflow-hidden">
+            <div class="heroContent w-50 ">
+              <div class="fw-normal mb-1 pera-text animeslide-heading">The Season The Greeating</div>
+              <div class="heroTitle fw-semibold">Save 25% OFF <br> This Weeknd</div> 
+              <div class="heroPera mt-2">Pure & Nature Eucalyptus Essential Oil </div>
+              <div class="col-auto d-inline-flex mt-4">
+                  <a href="javascript:;" class="themeBtn"> Shop Now <span class="icon ms-3 d-inline-flex"><img src="assets/img/index/arrowright.svg" alt="arrow" class="img-fluid w-100 h-100"></span></a>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide animeslide-slide rounded-2 overflow-hidden">
+          <img src="assets/img/index/slider-22.jpg" alt="heroSection" class="img-fluid w-100 h-100 rounded-2 overflow-hidden">
+          <div class="heroContent w-50 ">
+            <div class="fw-normal mb-1 pera-text">The Season The Greeating</div>
+            <div class="heroTitle fw-semibold">Save 25% OFF <br> This Weeknd</div> 
+            <div class="heroPera mt-2">Pure & Nature Eucalyptus Essential Oil </div>
+            <div class="col-auto d-inline-flex mt-4">
+                <a href="javascript:;" class="themeBtn"> Shop Now <span class="icon ms-3 d-inline-flex"><img src="assets/img/index/arrowright.svg" alt="arrow" class="img-fluid w-100 h-100"></span></a>
+            </div>
+        </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"><img src="assets/img/index/navarrow.svg" alt="nav" class="img-fluid w-100 h-100"></div>
+      <div class="swiper-button-prev"> <img src="assets/img/index/navarrow2.svg" alt="nav" class="img-fluid w-100 h-100"></div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <!-- <div class="heroMenu">
+      <ul class="list-unstyled d-flex flex-column align-items-center mb-0 gap-3 py-3">
+        <li><a href="javascript::" class="text-decoration-none d-flex align-items-center heroMenuIcon"><span>Categories</span> <img src="assets/img/cart.svg" alt="cart" class="img-fluid w-100 h-100"></a></li>
+        <li><a href="javascript::" class="text-decoration-none d-flex align-items-center heroMenuIcon"><img src="assets/img/cart.svg" alt="cart" class="img-fluid w-100 h-100"></a></li>
+        <li><a href="javascript::" class="text-decoration-none d-flex align-items-center heroMenuIcon"><img src="assets/img/cart.svg" alt="cart" class="img-fluid w-100 h-100"></a></li>
+      </ul>
+    </div> -->
+  </div>
+    <div class="row pt-3">
+      <div class="col-12">
+        <div class="row row-cols-4 flex-nowrap overflow-x-auto">
+          <div class="col">
+            <div class="card border-0  shadow-none rounded-3 bg-primary bg-opacity-10 heroCard h-100 position-relative" >
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/medician1.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Get 15% off on Medicines </div></a>
+                    <div class="cardPera pt-1 fw-semibold">UPLOAD NOW</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card heroCard2 border-0 shadow-none rounded-3 bg-warning bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent h-100 d-flex align-items-center ">
+                  <div class="cardIocn"><img src="assets/img/index/medicain2.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Hospital Visit</div></a>
+                    <div class="cardPera pt-1 fw-semibold">PRE BOOK</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-none rounded-3 bg-info bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/medician1.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Video Consult </div></a>
+                    <div class="cardPera pt-1 fw-semibold">IN 15 MIN</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card heroCard3 border-0 shadow-none rounded-3 bg-danger bg-opacity-10 heroCard h-100 position-relative">
+              <div class="card-body">
+                <div class="cardContent d-flex align-items-center h-100">
+                  <div class="cardIocn"><img src="assets/img/index/labtest.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                  <div class="ms-3">
+                    <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Lab Tests </div></a>
+                    <div class="cardPera pt-1 fw-semibold">AT HOME</div>
+                  </div>
+                  <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+
+
+
+
+
+
+
+  
+
+  <!-- MAIN JS  -->
+  <script src="assets/js/main.min.js"></script>
+  <!-- BOOTSTRAP JS  -->
+  <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper  -->
+  <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+
+
+<!-- hero section swiper  -->
+
+
+<script>
+  var swiper = new Swiper(".mySwiper3", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 1,
+    freeMode: true,
+    watchSlidesProgress: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+  
+</script>
+
+
+
+</body>
+</html>
