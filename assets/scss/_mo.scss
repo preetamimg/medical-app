@@ -46,31 +46,6 @@
         height: 35px;
         padding: 4px 26px;
     }
-    & .inputpinmain {
-        & .pincodeInput {
-            font-size: 13px;
-            font-weight: 500;
-            color: $black;
-            border-color: lighten($black, 90);
-            height: 35px;
-        }
-        & .pincodeLabel {
-            font-size: 13px;
-            font-weight: 500;
-            color: $black;
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: all 0.3s ease-in-out;
-        }
-      
-        input:focus ~ label{
-        top: 0;
-        font-size: 12px;
-        background-color: $white;
-        }
-    }
     & .detectlocation {
         font-size: 14px;
         font-weight: 500;
@@ -78,6 +53,68 @@
         & .detecticon {
             height: 14px;
             width: 14px;
+        }
+    }
+}
+.inputpinmain {
+    & .pincodeInput {
+        font-size: 13px;
+        font-weight: 500;
+        color: $black;
+        border-color: lighten($black, 90);
+        height: 35px;
+    }
+    & .pincodeLabel {
+        font-size: 13px;
+        font-weight: 500;
+        color: $black;
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in-out;
+    }
+    input:focus ~ label{
+    top: 0;
+    font-size: 12px;
+    background-color: $white;
+    }
+}
+.locationmodal {
+    & .locationdialog {
+        & .locationHeader {
+            & .locationHeading {
+                font-size: 15px;
+                font-weight: 500;
+                color: $black;
+            }
+            & .btn-close {
+                background: none;
+                height: 12px;
+                width: 12px;
+            }
+        }
+        & .locationcontent {
+            gap: 16px;
+            & .checkbox {
+            }
+            & .checkLabel {
+                font-size: 12px;
+                font-weight: 500;
+                color: $black;
+                border: 1px solid $black;
+                padding: 4px 6px;
+                transition: all 0.3s ease-in-out;
+            }
+            & .checkbox:checked  ~ .checkLabel {
+                border-color: $theme1;
+                color: $theme1;
+                box-shadow: 0 0.5em 0.5em -0.6em $theme1;
+                transform: translateY(-0.25em);
+            }
+        }
+        & .applyBtn {
+            padding: 8px 28px;
         }
     }
 }
