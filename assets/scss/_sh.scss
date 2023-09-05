@@ -775,12 +775,15 @@ height: calc(100vh - 201px);
         border-radius: 10px;
         padding: 30px;
         position: relative;
-        margin-left: 20px;
+        // margin-left: 20px;
         transition: all 0.3s ease-in-out;
         &:hover{
             & .navBtn2{
-                opacity: 1;
-                visibility: visible;
+                & .navBtn{
+                    opacity: 1;
+                    visibility: visible;
+
+                }
             }
         }
         & .counterImg{
@@ -795,7 +798,7 @@ height: calc(100vh - 201px);
         }
         & .counterWatch{
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 600 !important;
             color: $theme1;
             position: relative;
             &::before{
@@ -805,7 +808,7 @@ height: calc(100vh - 201px);
                 background-color: $theme1;
                 position: absolute;
                 top: 0px;
-                left: -20px;
+                left: -13px;
             }
             & .smallheading{
                 font-size: 14px;
@@ -815,18 +818,26 @@ height: calc(100vh - 201px);
         & .seeAllBtn{
             font-size: 16px;
             color: $theme1;
-            font-weight: 500;
+            font-weight: 300;
         }
         & .navBtn2{
-            opacity: 0;
-            visibility: hidden;
-            position: absolute;
-            top:50%;
-            transform: translateY(-50%);
-            z-index: 11;
-            width: 100%;
-            transition: all 0.3s ease-in-out;
+            // opacity: 0;
+            // visibility: hidden;
+            // position: absolute;
+            // top:50%;
+            // transform: translateY(-50%);
+            // z-index: 11;
+            // width: 100%;
+            // transition: all 0.3s ease-in-out;
             & .navBtn{
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                z-index: 11;
+                width: 100%;
+                transition: all 0.3s ease-in-out;
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
@@ -851,6 +862,22 @@ height: calc(100vh - 201px);
                     }
                 }
                 &.navPrev{
+                    // opacity: 0;
+                    // visibility: hidden;
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    z-index: 11;
+                    width: 100%;
+                    transition: all 0.3s ease-in-out;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    // background-color: $white;
+                    padding: 10px;
+                    background: #f6f8f9;
+                    box-shadow: 0px 2.18667px 9.29333px rgba(0,0,0,.13);
+                    transition: all 0.3s ease-in-out;
                     display: flex !important;
                     margin-left: -53px;
                     transition: all 0.3s ease-in-out;
@@ -860,7 +887,24 @@ height: calc(100vh - 201px);
                 }
                 &.navNext{
                     display: flex !important;
-
+                    right: -30px;
+                    transition: all 0.3s ease-in-out;
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    z-index: 11;
+                    width: 100%;
+                    transition: all 0.3s ease-in-out;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    // background-color: $white;
+                    padding: 10px;
+                    background: #f6f8f9;
+                    box-shadow: 0px 2.18667px 9.29333px rgba(0,0,0,.13);
+                    transition: all 0.3s ease-in-out;
+                    display: flex !important;
+                    margin-left: -53px;
                     transition: all 0.3s ease-in-out;
                     & img{
                         transition: all 0.3s ease-in-out;
@@ -927,14 +971,12 @@ height: calc(100vh - 201px);
         }
         & .pera{
             color: #959fae;
+            font-size: 14px;
             line-height: 22px;
             margin-bottom: 0;
         }
     }
 }
-
-// dealSection end 
-
 
 .productCard{
     // border: 1px solid $black;
@@ -944,6 +986,7 @@ height: calc(100vh - 201px);
     &:hover{
         & .cardIMg{
             transform: scale(1.1);
+            
         }
         & .addCartBtn{
             transform: translate(0);
@@ -960,6 +1003,7 @@ height: calc(100vh - 201px);
         & .cardContent{
             & .cardheading{
                 color: $theme1;
+        
             }
 
         }
@@ -995,6 +1039,11 @@ height: calc(100vh - 201px);
             font-size: 12px;
             color: #959fae;
             transition: all 0.3 ease-in-out ;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
             &:hover{
                 color: $theme1;
             }
@@ -1048,6 +1097,882 @@ height: calc(100vh - 201px);
                 & img{
 
                     filter: invert(1);
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {
+    .dealSection{
+        & .mainCard{
+   
+            &:hover{
+                & .navBtn2{
+                    & .navBtn{
+                    }
+                }
+            }
+            & .counterImg{
+            
+            }
+            & .counterHeading{
+                font-size: 22px;
+                line-height: 28px;
+            }
+            & .counterWatch{
+
+                &::before{
+
+                }
+                & .smallheading{
+        
+                }
+            }
+            & .seeAllBtn{
+
+            }
+            & .navBtn2{
+
+                & .navBtn{
+      
+                    &:hover{
+    
+                        &.navPrev{
+                          
+                            & img{
+                          
+                            }
+                        }
+                        &.navNext{
+                         
+                            & img{
+                          
+                            }
+                        }
+                    }
+                    &.navPrev{
+                 
+                        & img{
+                   
+                        }
+                    }
+                    &.navNext{
+
+                        & img{
+                           
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+        & .sideNav{
+
+            & .sideNavheading{
+                font-size: 21px;
+                line-height: 29px;
+            }
+            & .orderProcess{
+              
+                & .number{
+                    height: 40px;
+                    width: 40px;
+                    &.borderDoted{
+                        &::after{
+                        }
+    
+                    }
+                  
+                }
+                & .orderHeading{
+      
+                }
+                & .orderPera{
+              
+                }
+            }
+            & .innerHeading{
+    
+            }
+            & .pera{
+ 
+            }
+        }
+    }
+    
+    .productCard{
+
+        &:hover{
+            & .cardIMg{
+            
+            }
+            & .addCartBtn{
+               
+            }
+            & .addCard{
+                top: 50%;
+                & .heartImg{
+             
+                }
+            }
+            & .cardContent{
+                & .cardheading{
+             
+                }
+    
+            }
+        }
+        & .offerBuddge{
+
+        }
+        & .cardIMg{
+          & img{
+    
+          }
+       
+        }
+        & .cardContent{
+       
+    
+            & .cardSubheading{
+      
+                &:hover{
+             
+                }
+            }
+            & .cardheading{
+                font-size: 14px;
+                &:hover{
+                    
+                }
+            }
+            & .priceSection{
+
+                & .oldprice{
+        
+                }
+            }
+        }
+        & .addCard{
+
+            & .heartImg{
+    
+    
+                & img{
+              
+    
+                }
+                &:hover{
+           
+                    & img{
+
+                 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .dealSection{
+        & .mainCard{
+            padding: 19px;
+            &:hover{
+                & .navBtn2{
+                    & .navBtn{
+                    }
+                }
+            }
+            & .counterImg{
+            
+            }
+            & .counterHeading{
+                font-size: 17px;
+                line-height: 24px;
+            }
+            & .counterWatch{
+                font-size: 17px;
+                &::before{
+                    top: -4px;
+                }
+                & .smallheading{
+        
+                }
+            }
+            & .seeAllBtn{
+
+            }
+            & .navBtn2{
+
+                & .navBtn{
+      
+                    &:hover{
+    
+                        &.navPrev{
+                          
+                            & img{
+                          
+                            }
+                        }
+                        &.navNext{
+                         
+                            & img{
+                          
+                            }
+                        }
+                    }
+                    &.navPrev{
+                 
+                        & img{
+                   
+                        }
+                    }
+                    &.navNext{
+
+                        & img{
+                           
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+        & .sideNav{
+            padding: 22px;
+            & .sideNavheading{
+                font-size: 17px;
+                line-height: 23px;
+            
+            }
+            & .orderProcess{
+              
+                & .number{
+       
+                    &.borderDoted{
+                        &::after{
+                        }
+    
+                    }
+                  
+                }
+                & .orderHeading{
+            font-size: 13px;
+
+                }
+                & .orderPera{
+              
+                }
+            }
+            & .innerHeading{
+                font-size: 15px;
+            }
+            & .pera{
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .productCard{
+
+        &:hover{
+            & .cardIMg{
+            
+            }
+            & .addCartBtn{
+               
+            }
+            & .addCard{
+      
+                & .heartImg{
+             
+                }
+            }
+            & .cardContent{
+                & .cardheading{
+                 
+                }
+    
+            }
+        }
+        & .offerBuddge{
+
+        }
+        & .cardIMg{
+          & img{
+    
+          }
+       
+        }
+        & .cardContent{
+       
+    
+            & .cardSubheading{
+      
+                &:hover{
+             
+                }
+            }
+            & .cardheading{
+                font-size: 14px;
+                &:hover{
+                    
+                }
+            }
+            & .priceSection{
+
+                & .oldprice{
+        
+                }
+            }
+        }
+        & .addCard{
+
+            & .heartImg{
+    
+    
+                & img{
+              
+    
+                }
+                &:hover{
+           
+                    & img{
+
+                 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .dealSection{
+        & .mainCard{
+   
+            &:hover{
+                & .navBtn2{
+                    & .navBtn{
+                    }
+                }
+            }
+            & .counterImg{
+                height: 44px;
+            }
+            & .counterHeading{
+
+            }
+            & .counterWatch{
+
+                &::before{
+
+                }
+                & .smallheading{
+        
+                }
+            }
+            & .seeAllBtn{
+
+            }
+            & .navBtn2{
+
+                & .navBtn{
+                    &:hover{
+    
+                        &.navPrev{
+                         
+                            & img{
+                          
+                            }
+                        }
+                        &.navNext{
+                            
+                            & img{
+                          
+                            }
+                        }
+                    }
+                    &.navPrev{
+                        width: 40px;
+                        height: 40px;
+                        left:31px;
+                        & img{
+                   
+                        }
+                    }
+                    &.navNext{
+                        width: 40px;
+                        height: 40px;
+                        right: -23px;
+                        & img{
+                           
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+        & .sideNav{
+
+            & .sideNavheading{
+
+            }
+            & .orderProcess{
+              
+                & .number{
+       
+                    &.borderDoted{
+                        &::after{
+                        }
+    
+                    }
+                  
+                }
+                & .orderHeading{
+      
+                }
+                & .orderPera{
+              
+                }
+            }
+            & .innerHeading{
+    
+            }
+            & .pera{
+ 
+            }
+        }
+    }
+    
+    .productCard{
+
+        &:hover{
+            & .cardIMg{
+            
+            }
+            & .addCartBtn{
+               
+            }
+            & .addCard{
+                top: 60%;
+                & .heartImg{
+             
+                }
+            }
+            & .cardContent{
+                & .cardheading{
+             
+                }
+    
+            }
+        }
+        & .offerBuddge{
+
+        }
+        & .cardIMg{
+          & img{
+    
+          }
+       
+        }
+        & .cardContent{
+       
+    
+            & .cardSubheading{
+      
+                &:hover{
+             
+                }
+            }
+            & .cardheading{
+     
+                &:hover{
+                    
+                }
+            }
+            & .priceSection{
+
+                & .oldprice{
+        
+                }
+            }
+        }
+        & .addCard{
+
+            & .heartImg{
+    
+    
+                & img{
+              
+    
+                }
+                &:hover{
+           
+                    & img{
+
+                 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .dealSection{
+        & .mainCard{
+   
+            &:hover{
+                & .navBtn2{
+                    & .navBtn{
+                    }
+                }
+            }
+            & .counterImg{
+            
+            }
+            & .counterHeading{
+                font-size: 18px;
+                line-height: 29px;
+            }
+            & .counterWatch{
+                font-size: 14px;
+                line-height: 19px;
+                &::before{
+
+                }
+                & .smallheading{
+        
+                }
+            }
+            & .seeAllBtn{
+                font-size: 12px;
+            }
+            & .navBtn2{
+
+                & .navBtn{
+      
+                    &:hover{
+    
+                        &.navPrev{
+                          
+                            & img{
+                          
+                            }
+                        }
+                        &.navNext{
+                         
+                            & img{
+                          
+                            }
+                        }
+                    }
+                    &.navPrev{
+                 
+                        & img{
+                   
+                        }
+                    }
+                    &.navNext{
+
+                        & img{
+                           
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+        & .sideNav{
+
+            & .sideNavheading{
+
+            }
+            & .orderProcess{
+              
+                & .number{
+       
+                    &.borderDoted{
+                        &::after{
+                        }
+    
+                    }
+                  
+                }
+                & .orderHeading{
+      
+                }
+                & .orderPera{
+              
+                }
+            }
+            & .innerHeading{
+    
+            }
+            & .pera{
+ 
+            }
+        }
+    }
+    
+    .productCard{
+
+        &:hover{
+            & .cardIMg{
+            
+            }
+            & .addCartBtn{
+               
+            }
+            & .addCard{
+      
+                & .heartImg{
+             
+                }
+            }
+            & .cardContent{
+                & .cardheading{
+             
+                }
+    
+            }
+        }
+        & .offerBuddge{
+
+        }
+        & .cardIMg{
+          & img{
+    
+          }
+       
+        }
+        & .cardContent{
+       
+    
+            & .cardSubheading{
+      
+                &:hover{
+             
+                }
+            }
+            & .cardheading{
+     
+                &:hover{
+                    
+                }
+            }
+            & .priceSection{
+
+                & .oldprice{
+        
+                }
+            }
+        }
+        & .addCard{
+
+            & .heartImg{
+    
+    
+                & img{
+              
+    
+                }
+                &:hover{
+           
+                    & img{
+
+                 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .dealSection{
+        & .mainCard{
+   
+            &:hover{
+                & .navBtn2{
+                    & .navBtn{
+                    }
+                }
+            }
+            & .counterImg{
+            
+            }
+            & .counterHeading{
+
+            }
+            & .counterWatch{
+
+                &::before{
+                display: none;
+                }
+                & .smallheading{
+        
+                }
+            }
+            & .seeAllBtn{
+
+            }
+            & .navBtn2{
+                display: none !important;
+                & .navBtn{
+      
+                    &:hover{
+    
+                        &.navPrev{
+                          
+                            & img{
+                          
+                            }
+                        }
+                        &.navNext{
+                         
+                            & img{
+                          
+                            }
+                        }
+                    }
+                    &.navPrev{
+                 
+                        & img{
+                   
+                        }
+                    }
+                    &.navNext{
+
+                        & img{
+                           
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+        & .sideNav{
+
+            & .sideNavheading{
+
+            }
+            & .orderProcess{
+              
+                & .number{
+       
+                    &.borderDoted{
+                        &::after{
+                        }
+    
+                    }
+                  
+                }
+                & .orderHeading{
+      
+                }
+                & .orderPera{
+              
+                }
+            }
+            & .innerHeading{
+    
+            }
+            & .pera{
+ 
+            }
+        }
+    }
+    
+    .productCard{
+
+        &:hover{
+            & .cardIMg{
+            
+            }
+            & .addCartBtn{
+               
+            }
+            & .addCard{
+      
+                & .heartImg{
+             
+                }
+            }
+            & .cardContent{
+                & .cardheading{
+             
+                }
+    
+            }
+        }
+        & .offerBuddge{
+
+        }
+        & .cardIMg{
+          & img{
+    
+          }
+       
+        }
+        & .cardContent{
+       
+    
+            & .cardSubheading{
+      
+                &:hover{
+             
+                }
+            }
+            & .cardheading{
+     
+                &:hover{
+                    
+                }
+            }
+            & .priceSection{
+
+                & .oldprice{
+        
+                }
+            }
+        }
+        & .addCard{
+            top: 66% !important;
+        
+
+            & .heartImg{
+    
+    
+                & img{
+              
+    
+                }
+                &:hover{
+           
+                    & img{
+
+                 
+                    }
                 }
             }
         }
