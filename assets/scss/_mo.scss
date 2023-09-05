@@ -360,9 +360,10 @@
 
 // health product section start 
 .healthProduct {
-    & .healthofferImg {
-        aspect-ratio: 5/4;
-    }
+    padding-bottom: 45px;
+    // & .healthofferImg {
+    //     aspect-ratio: 5/4;
+    // }
 }
 // health product section end
 
@@ -402,6 +403,12 @@
         }
     }
     // offer section end
+
+    // health product section start 
+    .healthProduct {
+        padding-bottom: 40px;
+    }
+    // health product section end
 }
 
 @include media-breakpoint-down(md) {
@@ -451,6 +458,11 @@
         }
     }
     // offer section end
+    // health product section start 
+    .healthProduct {
+        padding-bottom: 35px;
+    }
+    // health product section end
 }
 // future brand section end 
 
