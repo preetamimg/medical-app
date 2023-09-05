@@ -360,7 +360,9 @@
 
 // health product section start 
 .healthProduct {
-
+    & .healthofferImg {
+        aspect-ratio: 5/4;
+    }
 }
 // health product section end
 
