@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
 </head>
 <body>
-
-  <nav class="navbar bg-white container-fluid fixed-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
+  <!-- navbar start  -->
+  <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
     <div class="headermain w-100 position-relative bg-white">
       <div class="row m0 align-items-center justify-content-between">
         <div class="col-auto">
@@ -24,7 +24,7 @@
             <a class="navbar-brand navLogo m-0" href="index.html">
               <img src="assets/img/mainlogo.png" alt="logo" class="h-100">
             </a>
-            <button class="btn pincodeBtn dflex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+            <button class="btn pincodeBtn pe-0 dflex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
               <div class="d-flex align-items-center gap-1">
                 <div class="d-flex align-items-center justify-content-center locationicon">
                   <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
@@ -153,14 +153,14 @@
               <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
               <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadow-sm rounded-circle">12</span>
             </a>
-            <!-- <a href="javascript:;" class="cardBtn d-flex align-items-center justify-content-center position-relative">
+            <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative">
               <img src="assets/img/search2.svg" alt="cart" class="h-100 w-100 img-fluid">
-            </a> -->
+            </a>
             <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
               <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
             </a>
             <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
-              <span class="cardBtn me-1 d-flex align-items-center justify-content-center"> 
+              <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
                 <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
               </span>
               <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
@@ -195,6 +195,419 @@
 
     </div>
   </nav>
+  <!-- navbar start  -->
+  <main class="main">
+    <!-- future brand section start  -->
+    <div class="container-fluid futerbrand">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="heading">Featured Brands</div>
+              <a href="javascript:;" class="seeall text-decoration-none position-relative">See all</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div class="prevBtn sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/prev.svg" alt="next" class="h-100 w-100 img-fluid ">
+              </div>
+              <div class="nextBtn sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/next.svg" alt="prev" class="h-100 w-100 img-fluid ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 pt-sm-4 pt-3">
+          <div class="swiper futurebrand ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand1.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Medical</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand2.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Phara</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 15% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand3.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Insule</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 23% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand4.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Zetice</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 3% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand5.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Metice</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 34% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand6.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Painix</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand1.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Medical</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand2.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Phara</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 15% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand3.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Insule</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 23% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand4.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Zetice</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 3% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand5.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Metice</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 34% off</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brandCard text-center">
+                  <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                    <img src="assets/img/futerebrand/brand6.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <a href="javascript:;" class="brandName text-decoration-none">Painix</a>
+                  </div>
+                  <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- future brand section end -->
+  
+    <!-- offer section start  -->
+    <div class="container-fluid offer">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="heading">Offer</div>
+              <a href="javascript:;" class="seeall text-decoration-none position-relative">See all</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div class="prevBtnoffer sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/prev.svg" alt="next" class="h-100 w-100 img-fluid">
+              </div>
+              <div class="nextBtnoffer sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/next.svg" alt="prev" class="h-100 w-100 img-fluid ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="swiper offerslider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="offerIcon overflow-hidden rounded-2">
+                  <img src="assets/img/futerebrand/offer1.png" alt="offer" class="h-100 w-100 img-fluid object-fit-contain">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offerIcon overflow-hidden rounded-2">
+                  <img src="assets/img/futerebrand/offer2.png" alt="offer" class="h-100 w-100 img-fluid object-fit-contain">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offerIcon overflow-hidden rounded-2">
+                  <img src="assets/img/futerebrand/offer3.png" alt="offer" class="h-100 w-100 img-fluid object-fit-contain">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offerIcon overflow-hidden rounded-2">
+                  <img src="assets/img/futerebrand/offer1.png" alt="offer" class="h-100 w-100 img-fluid object-fit-contain">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offerIcon overflow-hidden rounded-2">
+                  <img src="assets/img/futerebrand/offer2.png" alt="offer" class="h-100 w-100 img-fluid object-fit-contain">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offerIcon overflow-hidden rounded-2">
+                  <img src="assets/img/futerebrand/offer3.png" alt="offer" class="h-100 w-100 img-fluid object-fit-contain">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offer section end -->
+  
+    <!-- health product start  -->
+    <div class="container-fluid healthProduct">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="heading">Healthcate Products</div>
+              <a href="javascript:;" class="seeall text-decoration-none position-relative">See all</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div class="prevBtn sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/prev.svg" alt="next" class="h-100 w-100 img-fluid ">
+              </div>
+              <div class="nextBtn sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/next.svg" alt="prev" class="h-100 w-100 img-fluid ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <divf class="healthproduct">
+
+            </divf>
+          </div>
+          <div class="col-7 pt-4">
+            <div class="swiper futurebrand ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand1.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Medical</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand2.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Phara</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 15% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand3.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Insule</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 23% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand4.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Zetice</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 3% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand5.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Metice</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 34% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand6.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Painix</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand1.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Medical</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand2.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Phara</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 15% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand3.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Insule</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 23% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand4.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Zetice</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 3% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand5.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Metice</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 34% off</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brandCard text-center">
+                    <div class="brandimg h-100 w-100 mx-auto overflow-hidden rounded-circle">
+                      <img src="assets/img/futerebrand/brand6.png" alt="brand" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <a href="javascript:;" class="brandName text-decoration-none">Painix</a>
+                    </div>
+                    <div class="brandOffer rounded-1 d-inline-flex mx-auto">Up to 10% off</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- health product  section end -->
+  
+  
+  </main>
+  <!-- footer start  -->
+  <div class="container-fluid footer ">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="footerHeading">COMPANY</div>
+        <ul class="list-unstyled footermenu d-flex flex-column">
+          <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Costumer Speak</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink"></a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- footer end  -->
+
   <!-- MAIN JS  -->
   <script src="assets/js/main.min.js"></script>
   <!-- BOOTSTRAP JS  -->
@@ -204,7 +617,7 @@
 
   <!-- location offcanvas  -->
   <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header border-bottom">
+    <div class="offcanvas-header bg-light border-bottom">
       <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
       <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
         <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
@@ -327,7 +740,7 @@
 
   <!-- navbar offcanvas  -->
   <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header border-bottom align-items-start">
+    <div class="offcanvas-header bg-light border-bottom align-items-start">
       <div class="offcanvas-title offcanvasLogo d-flex align-items-center justify-content-center" id="offcanvasExampleLabel">
         <img src="assets/img/mainlogo.png" alt="logo" class="h-100 w-100 img-fluid">
       </div>
@@ -358,5 +771,77 @@
       </ul>
     </div>
   </div>
+
+  <!-- future brand slider  -->
+  <script>
+    var swiper = new Swiper(".futurebrand", {
+      // slidesPerView: 1,
+      // spaceBetween: 10,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        500: {
+          slidesPerView: 3,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          // spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 5,
+          // spaceBetween: 20,
+        },
+        1100: {
+          slidesPerView: 6,
+          // spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: ".nextBtn",
+        prevEl: ".prevBtn",
+      },
+    });
+  </script>
+  <!-- future brand slider  -->
+
+  <!-- offer slider  -->
+  <script>
+    var swiper = new Swiper(".offerslider", {
+      // slidesPerView: 1,
+      // spaceBetween: 10,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        500: {
+          slidesPerView: 1,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1100: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: ".nextBtnoffer",
+        prevEl: ".prevBtnoffer",
+      },
+    });
+  </script>
+  <!-- offer slider  -->
+
+
 </body>
 </html>

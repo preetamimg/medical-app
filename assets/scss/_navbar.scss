@@ -16,7 +16,7 @@
         // background-color: $theme1;
         transition: all 0.3s ease-in-out;
         z-index: 5;
-        padding: 0 16px;
+        padding: 0 35px;
         & .pincodeBtn {
             gap: 5px;
             & .locationicon {
@@ -396,6 +396,7 @@
             }
         }
         & .headermain {
+            padding: 0 22px;
             & .pincodeBtn {
                 & .locationicon {
                     & img {
@@ -489,6 +490,7 @@
             }
         }
         & .headermain {
+            padding: 0 12px;
             & .pincodeBtn {
                 & .locationicon {
                     & img {
@@ -535,6 +537,7 @@
     
             }
             & .headerIcons {
+                gap: 12px;
                 & .cardBtn {
                     height: 19px;
                     width: 19px;
