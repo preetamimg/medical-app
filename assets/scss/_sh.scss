@@ -186,11 +186,22 @@
                  }
              }
         }
-
- 
-    
 }
-
+//  price section 
+.priceSection{
+    font-size: 18px;
+    font-weight: 500;
+    color: $black;
+    & .oldprice{
+        font-size: 13px;
+        color: $red;
+    }
+    & .textheading{
+        font-size: 13px;
+        color: lighten($black ,40);
+        font-weight: 400;
+    }
+}
 
 
 @include media-breakpoint(basic) {}
@@ -2165,4 +2176,245 @@
             }
         }
     }
+}
+
+// productDetailsPage section start 
+
+.productDetailsPage{
+    // height: calc(100vh - 100px);
+
+    & .productSwiper{
+        width: 100%;
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.3s ease-in-out;
+        & .swiperSlider{
+            background-size: cover;
+            background-position: center;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                & .productImg{
+                    transform: scale(1.1);
+                }
+            }
+            & .productImg{
+                max-height: 250px;
+                height: 100%;
+                transition: all 0.3s ease-in-out;
+
+                & img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .sale-off{
+                position: absolute;
+                z-index: 1;
+                top: 10px;
+                right: 10px;
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                display: inline-block;
+                padding: 1px 12px;
+                line-height: 20px;
+                background-color: $theme1;
+            }
+        }
+    }
+    & .secondSwiperproduct{
+        height: 130px;
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+  
+        & .swiperSlider2{
+            width: 25%;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            &:hover{
+                border: 1px solid $black;
+
+            }
+            
+        }
+        & .productCardImg2{
+            padding: 5px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+    & .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+        border: 1px solid $theme1;
+    }
+    & .swiperNext{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 50%;
+        background: $white;
+        box-shadow: 0px 2.18667px 9.29333px rgba(0,0,0,.13);
+        top: 70px;
+        right: -15px;
+ 
+        &::after{
+            display: none;
+        }
+        transition: all 0.3s ease-in-out;
+        & img{
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover{
+            background-color: $theme1;
+            & img{
+                filter: invert(1);
+            }
+        }
+
+    }
+    & .swiperPrev{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 50%;
+        background: $white;
+        box-shadow: 0px 2.18667px 9.29333px rgba(0,0,0,.13);
+        left: -15px;
+        opacity: 1 !important;
+        top: 70px;
+        transition: all 0.3s ease-in-out;
+        & img{
+            transition: all 0.3s ease-in-out;
+        }
+        &::after{
+            display: none;
+        }
+        &:hover{
+            background-color: $theme1;
+            & img{
+                filter: invert(1);
+            }
+        }
+
+    }
+
+    & .productHeading{
+        font-size: 30px;
+        line-height: 40px;
+        color: $black;
+    }
+    & .peraProduct{
+        font-size: 14px;
+        color: lighten($black, 70);
+    }
+    & .rating{
+        & .staricon{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    & .review{
+        font-size: 14px;
+        color: $black;
+    }
+    & .quantity{
+        & .quantityHeading{
+            font-size: 12px;
+            color: lighten($black, 70);
+        }
+        & .number{
+            height:38px;
+            & .minus{
+                cursor: pointer;
+                width:40px;
+                height:100%;
+                background:$theme1;
+                // padding:6px 1px 6px 1px;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+                color: $white;
+                font-size: 12px;
+                
+            }
+            & .numberInput{
+                width:100px;
+                height:100%;
+                font-size: 12px;
+            // border: 1px solid ;
+              background-color: lighten($black,90);
+            }
+        }
+    }   
+    & .iconWish{
+        width: 13px;
+        height: 13px;
+    }
+    & .wishheading{
+        font-size: 12px;
+        line-height: 13px;
+        color: $black;
+        font-weight: 400;
+    }
+    & .bestPrice{
+        background-color: lighten($danger, 55) !important;
+        padding: 15px;
+        & .newpriceHeading{
+            font-size: 13px;
+            color: $black;
+            font-weight: 400;
+            & .barBestPrice{
+                font-size: 14px;
+                color:#dd4679;
+                font-weight: 600;
+            }
+        }
+        & .cartCard{
+            // width: 80px;
+            padding: 8px;
+            & .iconCart{
+                width: 23px;
+                height: 23px;
+            }
+            & .smallheadingcart{
+                font-size: 7px;
+                color: $black;
+            }
+            & .smallheading2{
+                font-size: 12px;
+                color: $black;
+            }
+        }
+        & .peracart{
+            font-size: 12px;
+            color: $black;
+            font-weight: 200;
+        }
+    }
+    & .returnPera{
+        font-size: 11px;
+        color: lighten($black, 40);
+        font-weight: 400;
+    }
+    & .flavourHeading{
+        font-size: 13px;
+        font-weight: 600;
+        color: $black;
+        & .subheadingFlavour{
+            font-size: 12px;
+            color: lighten($black, 40);
+            font-weight: 400;
+        }
+    }
+
 }

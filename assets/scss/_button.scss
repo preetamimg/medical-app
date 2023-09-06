@@ -120,7 +120,6 @@ font-size: 14px;
     }
 }
 
-
  .hearticon{
     position: absolute;
     right: 1px;
@@ -140,4 +139,37 @@ font-size: 14px;
 
     }
 
+}
+
+.addBtnCard{
+    
+    height: 40px;
+    line-height: 40px;
+    // background-color: #f8f8f8;
+    background-color:$black;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    border-radius:0px 5px 5px 0px;
+    display: inline-block;
+    padding: 0 30px;
+    text-decoration: none;
+    vertical-align: top;
+    transition: all .4s ease-in-out;
+    // width: 100%;
+    letter-spacing: .06em;
+    z-index: 999;
+    &:hover{
+     background-color:lighten($theme1, 5);
+    }
+    &.addBtnCard2{
+        background-color: lighten($black, 90);
+        transition: all 0.3s ease-in-out;
+        color: $black;
+        &:hover{
+            background-color:lighten($theme1, 5);
+            color: $white;
+        }
+    }
 }
