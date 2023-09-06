@@ -1,6 +1,7 @@
 // Hero Section start
 .heroSection{
-height: calc(100vh - 201px);
+    transform: translate(0,0);
+    height: calc(100vh - 201px);
     & .mySwiper3{
         height: 100%;
         width: 100%;
@@ -979,7 +980,7 @@ height: calc(100vh - 201px);
 }
 
 .productCard{
-    border-radius: 10px;
+    // border-radius: 10px;
 
     // border: 1px solid $black;
     transition: all 0.3s ease-in-out;
@@ -1011,10 +1012,7 @@ height: calc(100vh - 201px);
         }
     }
     & .offerBuddge{
-        border-top-left-radius: 100px !important;
-        border-bottom-left-radius: 100px !important;
-        border-top-right-radius: 100px !important;
-        border-bottom-right-radius: 100px !important;
+    
 
         display: inline-block;
         vertical-align: top;
@@ -1034,7 +1032,7 @@ height: calc(100vh - 201px);
     }
     & .cardIMg{
       & img{
-        aspect-ratio: 1/1;
+        aspect-ratio: 4/3;
         object-fit: contain;
       }
         transition: all 0.5s ease-in-out;
@@ -1744,16 +1742,19 @@ height: calc(100vh - 201px);
     .productCard{
 
         &:hover{
+         
             & .cardIMg{
             
             }
             & .addCartBtn{
-               
+          
             }
             & .addCard{
-      
+                display: none;
+            
                 & .heartImg{
-             
+               display: none;
+                
                 }
             }
             & .cardContent{
@@ -1778,12 +1779,12 @@ height: calc(100vh - 201px);
             & .cardSubheading{
       
                 &:hover{
-             
                 }
             }
             & .cardheading{
      
                 &:hover{
+                display: none;
                     
                 }
             }
@@ -1795,9 +1796,12 @@ height: calc(100vh - 201px);
             }
         }
         & .addCard{
-
+            top: 100% !important;
+            opacity: 1;
+            visibility: visible;
             & .heartImg{
-    
+                opacity: 1;
+                visibility: visible;
     
                 & img{
               
