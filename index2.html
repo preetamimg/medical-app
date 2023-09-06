@@ -60,88 +60,100 @@
                 <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
               </span>
             </button> -->
-            <div class="d-flex w-100 h-100 position-relative px2 align-items-center searchData">
-              <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
+            <div class="d-flex w-100 h-100 px2 align-items-center searchData">
+              <!-- <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
                 <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
-              </span>
-              <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
-              <button class="btn searchBtn rounded-5 h-100">Search</button>
-              <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
-                <div class=" h-100 overflow-y-auto ">
-                  <ul class="list-unstyled h-100">
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                        Medical
-                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
-                      </a>
-                    </li>
-                  </ul>
+              </span> -->
+              <div class="dropdown searchdrop position-relative border-end">
+                <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Medicine
+                </button>
+                <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center position-relative w-100 h-100">
+                <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                <button class="btn searchBtn rounded-5 h-100">Search</button>
+                <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                  <div class=" h-100 overflow-y-auto ">
+                    <ul class="list-unstyled h-100">
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -149,12 +161,12 @@
         </div>
         <div class="col-auto">
           <div class="d-flex align-items-center headerIcons">
+            <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
+              <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+            </a>
             <a href="javascript:;" class="cardBtn d-flex align-items-center justify-content-center position-relative">
               <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
               <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadow-sm rounded-circle">12</span>
-            </a>
-            <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative">
-              <img src="assets/img/search2.svg" alt="cart" class="h-100 w-100 img-fluid">
             </a>
             <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
               <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
@@ -196,6 +208,7 @@
     </div>
   </nav>
   <!-- navbar start  -->
+
   <main class="main">
     <div class="container-fluid pt-4 heroSection overflow-hidden  rounded-2">
       <div class="row mx-0 rounded-2 h-100">
@@ -237,7 +250,111 @@
           </ul>
         </div> -->
       </div>
-     
+      <div class="offcanvas searchOffcanvas offcanvas-top" tabindex="-1" id="searchoffcanvas" aria-labelledby="offcanvasTopLabel">
+        <!-- <div class="offcanvas-header justify-content-end pb-0">
+          <button type="button" class="btn-close p-0 mt-sm-1 closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+          </button>
+        </div> -->
+        <div class="offcanvas-body d-flex align-items-center overflow-visible px-sm-3 px-2">
+          <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
+            <div class="d-flex w-100 h-100 px2 align-items-center searchData">
+              <div class="dropdown searchdrop position-relative border-end">
+                <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Medicine
+                </button>
+                <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center position-relative w-100 h-100">
+                <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                <button class="btn searchBtn rounded-5 h-100">Search</button>
+                <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                  <div class=" h-100 overflow-y-auto ">
+                    <ul class="list-unstyled h-100">
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
     <!-- hero section end  -->
@@ -1273,7 +1390,7 @@
         </ul>
       </div>
       <div class="col-lg-3 col-md-5">
-        <div class="footerHeading">SUBSCRIBE TO OUR NEWSLETT</div>
+        <div class="footerHeading">SUBSCRIBE TO OUR NEWSLETTER</div>
         <div class="footerdata pb-2">
           Get a free subscription to our health and fitness tip and stay tuned to our latest offers
         </div>
@@ -1348,21 +1465,21 @@
         <div class="col-12 deliveryData fw-medium">
           Get access to your Address, Order, and Wishlist
         </div>
-        <div class="col-12 py-3 border-bottom border-1">
-          <button type="button" class="btn mxuto addaddressbtn rounded-1 d-flex flex-column align-items-center " data-bs-toggle="modal" data-bs-target="#locationmodal">
+        <div class="col-7 mx-auto py-3">
+          <button type="button" class="btn mxuto w-100 addaddressbtn rounded-1 d-flex flex-column align-items-center " data-bs-toggle="modal" data-bs-target="#locationmodal">
             <span class="d-flex align-items-center justify-content-center plusicon">
               <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
             </span>
             <span class="addressTile">Add Address</span>
           </button>
           </div>
-          <div class="col-12 enterpin fw-semibold pt-2 text-center">
+          <!-- <div class="col-12 enterpin fw-semibold pt-2 text-center">
             Enter Pincode
-          </div>
+          </div> -->
           <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
             Select Pincode to see product availability
           </div> -->
-          <div class="col-12 pt-3">
+          <div class="col-12 pt-3  border-top border-1">
             <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
               <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
                 <input type="text" id="Pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
@@ -1381,7 +1498,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 
   <!-- location modal  -->

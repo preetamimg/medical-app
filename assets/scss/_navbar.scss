@@ -69,72 +69,7 @@
             //     }
             // }
         }
-        & .searchmain {
-            height:45px;
-            width: 80%;
-            padding: 4px;
-            transition: all 0.3s ease-in-out;
-            & .searchData {
-                & .searchBtn {
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: $white;
-                    background-color: $theme1;
-                    padding: 0px 18px;
-                    &:hover {
-                        background-color: lighten($theme1, 6);
-                        color: $white;
-                    }
-                }
-                & .searchInput {
-                    font-size: 14px;
-                    font-weight: 500;
-                    // color: darken($white, 20);
-                    color: $black;
-                    &::placeholder {
-                        font-size: 14px;
-                        font-weight: 500;
-                        // color: darken($white, 20);
-                        color: $black;
-                    }
-                }
-                & .searchicon {
-                    height: 25px;
-                    width: 25px;
-                    // margin: 0 12px;
-                    margin-left: 10px;
-                }
-                & .searchInner {
-                    top: 100%;
-                    transform: translate(0, 7px);
-                    max-height: 50vh;
-                    height: 50vh;
-                    & .searchInnerData {
-                        padding: 7px 12px ;
-                        color: $black;
-                        font-size: 14px;
-                        font-weight: 500;
-                        transition: all 0.3s ease-in-out;
-                        & .closeBtn {
-                            height: 10px;
-                            width: 10px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transition: all 0.3s ease-in-out;
-                        }
-                        &:hover {
-                            background-color: lighten($black, 95);
-                            & .closeBtn {
-                                opacity: 1;
-                                visibility: visible;
-                            }
-                        }
-                    }
-                }
-                & .searchInput:focus ~ .searchInner { display: block !important }
-            }
-
-        }
+     
         & .headerIcons {
             gap: 25px;
             & .cardBtn {
@@ -155,11 +90,11 @@
                     font-weight: 600;
                     animation: ripple 1s linear infinite;
                 }
-                &:hover {
-                    & img {
-                        filter: none;
-                    }
-                }
+                // &:hover {
+                //     & img {
+                //         filter: none;
+                //     }
+                // }
             }
             & .loginsign {
                 font-size: 14px;
@@ -191,7 +126,6 @@
         transform: translateY(-100%);
         position: absolute;
         z-index: 4;
-       
     }
     &.fixedNavbar {
         // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -199,6 +133,83 @@
         & .offcanvasNav {
             transform: translateY(0);
             position:unset ;
+        }
+    }
+}
+.searchmain {
+    height:45px;
+    width: 80%;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+    & .searchData {
+        & .searchBtn {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            background-color: $theme1;
+            padding: 0px 18px;
+            &:hover {
+                background-color: lighten($theme1, 6);
+                color: $white;
+            }
+        }
+        & .searchInput {
+            font-size: 14px;
+            font-weight: 500;
+            // color: darken($white, 20);
+            color: $black;
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 500;
+                // color: darken($white, 20);
+                color: $black;
+            }
+        }
+        & .searchicon {
+            height: 25px;
+            width: 25px;
+            // margin: 0 12px;
+            margin-left: 10px;
+        }
+        & .searchInner {
+            top: 100%;
+            transform: translate(0, 7px);
+            max-height: 50vh;
+            height: 50vh;
+        }
+        & .searchInnerData {
+            padding: 7px 12px ;
+            color: $black;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            & .closeBtn {
+                height: 10px;
+                width: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                background-color: lighten($black, 95);
+                & .closeBtn {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        & .searchInput:focus ~ .searchInner { display: block !important }
+        & .searchdrop {
+            & .dropdownBtn {
+                font-size: 14px;
+                font-weight: 500;
+                color: $black;
+            }
+            & .searchMenu {
+                transform: translateY(7px);
+                max-height: 50vh;
+                min-width: auto;
+            }
         }
     }
 }
@@ -241,6 +252,17 @@
         background: none;
     }
 }
+.searchOffcanvas {
+    height: auto;
+    max-height: 115px !important;
+    & .closebtn {
+        height: 13px;
+        width: 13px;
+    }
+    & .offcanvas-body{
+        
+    }
+}
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}
@@ -256,7 +278,6 @@
 @include media-breakpoint-down(xxl) {}
 
 @include media-breakpoint-down(xl) {
-
 }
 @include media-breakpoint-down(lg) {
     .navbar {
@@ -285,33 +306,7 @@
                     }
                 }
             }
-            & .searchmain {
-                width: 100%;
-                & .searchData {
-                    & .searchBtn {
-                        &:hover {
-                        }
-                    }
-                    & .searchInput {
-                        &::placeholder {
-                        }
-                    }
-                    & .searchicon {
-                    }
-                    & .searchInner {
-                        & .searchInnerData {
-                            & .closeBtn {
-                            }
-                            &:hover {
-                                & .closeBtn {
-                                }
-                            }
-                        }
-                    }
-                    & .searchInput:focus ~ .searchInner { display: block !important }
-                }
-    
-            }
+            
             & .headerIcons {
                 gap: 15px;
                 & .cardBtn {
@@ -344,6 +339,33 @@
 
             }
         }
+    }
+    .searchmain {
+        width: 100%;
+        & .searchData {
+            & .searchBtn {
+                &:hover {
+                }
+            }
+            & .searchInput {
+                &::placeholder {
+                }
+            }
+            & .searchicon {
+            }
+            & .searchInner {
+            }
+            & .searchInnerData {
+                & .closeBtn {
+                }
+                &:hover {
+                    & .closeBtn {
+                    }
+                }
+            }
+            & .searchInput:focus ~ .searchInner { display: block !important }
+        }
+
     }
     .navbar-items {
         gap: 20px;
@@ -384,32 +406,7 @@
                     }
                 }
             }
-            & .searchmain {
-                & .searchData {
-                    & .searchBtn {
-                        &:hover {
-                        }
-                    }
-                    & .searchInput {
-                        &::placeholder {
-                        }
-                    }
-                    & .searchicon {
-                    }
-                    & .searchInner {
-                        & .searchInnerData {
-                            & .closeBtn {
-                            }
-                            &:hover {
-                                & .closeBtn {
-                                }
-                            }
-                        }
-                    }
-                    & .searchInput:focus ~ .searchInner {  }
-                }
-    
-            }
+            
             & .headerIcons {
                 & .cardBtn {
                     & img {
@@ -440,6 +437,38 @@
 
             }
         }
+    }
+    .searchmain {
+        & .searchData {
+            & .searchBtn {
+                &:hover {
+                }
+            }
+            & .searchInput {
+                &::placeholder {
+                }
+            }
+            & .searchicon {
+            }
+            & .searchInner {
+            }
+            & .searchInnerData {
+                & .closeBtn {
+                }
+                &:hover {
+                    & .closeBtn {
+                    }
+                }
+            }
+            & .searchdrop {
+                & .dropdownBtn {
+                }
+                & .searchMenu {
+                }
+            }
+            & .searchInput:focus ~ .searchInner {  }
+        }
+
     }
     .navbar-items {
         & .navbarLink {
@@ -483,32 +512,6 @@
                     }
                 }
             }
-            & .searchmain {
-                & .searchData {
-                    & .searchBtn {
-                        &:hover {
-                        }
-                    }
-                    & .searchInput {
-                        &::placeholder {
-                        }
-                    }
-                    & .searchicon {
-                    }
-                    & .searchInner {
-                        & .searchInnerData {
-                            & .closeBtn {
-                            }
-                            &:hover {
-                                & .closeBtn {
-                                }
-                            }
-                        }
-                    }
-                    & .searchInput:focus ~ .searchInner {  }
-                }
-    
-            }
             & .headerIcons {
                 gap: 12px;
                 & .cardBtn {
@@ -543,6 +546,45 @@
             }
         }
     }
+    .searchmain {
+        & .searchData {
+            & .searchBtn {
+                font-size: 13px;
+                padding: 0 14px;
+                &:hover {
+                }
+            }
+            & .searchInput {
+                font-size: 13px;
+                &::placeholder {
+                }
+            }
+            & .searchicon {
+            }
+            & .searchInner {
+            }
+            & .searchInnerData {
+                font-size: 13px;
+                & .closeBtn {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &:hover {
+                    & .closeBtn {
+                    }
+                }
+            }
+            & .searchdrop {
+                & .dropdownBtn {
+                    font-size: 13px;
+                }
+                & .searchMenu {
+                }
+            }
+            & .searchInput:focus ~ .searchInner {  }
+        }
+
+    }
     .navbar-items {
         gap: 13px;
         & .navbarLink {
@@ -561,6 +603,14 @@
         & .closebtn {
             height: 12px;
             width: 12px;
+        }
+    }
+    .searchOffcanvas {
+        max-height: 90px !important;
+        & .closebtn {
+        }
+        & .offcanvas-body{
+            
         }
     }
 }
