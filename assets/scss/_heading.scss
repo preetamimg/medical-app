@@ -28,6 +28,13 @@
         }
     }
 }
+
+.pageHeading {
+    font-size: 35px;
+    font-weight:700;
+    color: $black;
+    line-height: normal;
+}
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}

@@ -155,13 +155,24 @@
         margin-top: 40px;
         padding:0 30px ;
         & .footerinner {
-            padding-top:40px;
+            padding-bottom:40px;
         }
         // & .paymentMain {
         //     padding-bottom: 40px;
         //     padding-top: 25px;
         // }
         & .footerHeading {
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+        & .footerheadingtwo {
+            &::before {
+                bottom: -5px;
+                
+            }
+        }
+        & .subscribesection {
+            margin-top: 30px;
         }
         & .footermenu {
         }
@@ -183,20 +194,13 @@
         }
     }
     .copyrightmain {
-        background: #202020;
         padding: 25px 30px;
         & .copyrightTitle {
-            color:#9f9f9f;
-            font-size: 13px;
         }
         & .privacymenu {
             gap: 20px;
             & .privacyLink {
-                font-size: 13px;
-                color:#9f9f9f;
-                transition: all 0.3s ease-in-out;
                 &:hover {
-                    color: $theme2;
                 }
             }
         }
@@ -205,12 +209,50 @@
 
 @include media-breakpoint-down(md) {
     .footer {
-        padding: 40px 20px 0;
+        padding:0 25px ;
+        & .shopinsection {
+            margin-top: 30px;
+        }
+        & .footerlogo {
+            margin-bottom: 10px;
+        }
+        & .footericons {
+            gap: 15px;
+            & .socialIcon {
+                height: 35px;
+                width: 35px;
+                padding: 10px;
+                &:hover {
+                }
+                &.twitter {
+                    &:hover {
+                    }
+                }
+                &.googlePlus {
+                    &:hover {
+                    }
+                }
+            }
+        }
         & .footerinner {
+        }
+        & .input-group {
+            height: 45px;
+            & input {
+                &::placeholder {
+                }
+            }
+            & .rightarrow {
+                width: 45px;
+                padding: 12px;
+                & img {
+                }
+            }
         }
         & .paymentMain {
         }
         & .footerHeading {
+            font-size: 16px;
         }
         & .footermenu {
         }
@@ -229,39 +271,87 @@
         }
         & .paymentImg {
         }
-        & .copyrightmain {
-            & .copyrightTitle {
-            }
+    }
+    .copyrightmain {
+        & .copyrightTitle {
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
-
     .footer {
-        padding: 35px 14px 0;
+        padding: 0 16px ;
         & .footerinner {
-            padding-top:35px;
-        }
-        & .paymentMain {
             padding-bottom:35px;
-            padding-top:25px;
+        }
+        // & .paymentMain {
+        //     padding-bottom:35px;
+        //     padding-top:25px;
+        // }
+        & .input-group {
+            height: 40px;
+            margin-top: 14px;
+            & input {
+                font-size: 12px;
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            & .rightarrow {
+                width: 40px;
+                padding: 11px;
+                & img {
+                }
+            }
+        }
+        & .footericons {
+            gap: 12px;
+            & .socialIcon {
+                height: 30px;
+                width: 30px;
+                padding: 7px;
+                &:hover {
+                    background-color: #3b5998;
+                }
+                &.twitter {
+                    &:hover {
+                        background-color: #00acee;
+                    }
+                }
+                &.googlePlus {
+                    
+                    &:hover {
+                        background-color: #db4a39;
+                    }
+                }
+            }
         }
         & .footerHeading {
-            font-size: 13px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        & .companysection {
+            margin-top: 20px;
+        }
+        & .shopinsection {
+            margin-top: 20px;
+        }
+        & .subscribesection {
+            margin-top: 20px;
         }
         & .footermenu {
             gap: 5px;
         }
         & .footerLink {
-            font-size: 13px;
+            font-size: 12px;
             &:hover{
                 transform: translateX(0);
-                color: $black;
+                color:#9f9f9f;
             }
         }
         & .footerdata {
             font-size: 12px;
+            line-height: 21px;
         }
         & .rightarrow {
         }
@@ -274,10 +364,19 @@
         & .paymentImg {
             height: 20px;
         }
-        & .copyrightmain {
-            & .copyrightTitle {
+    }
+    .copyrightmain {
+        padding: 20px 16px;
+        & .copyrightTitle {
+            font-size: 12px;
+        }
+        & .privacymenu {
+            gap:0 10px;
+            & .privacyLink {
                 font-size: 12px;
-                text-align: center;
+                &:hover {
+                    color:#9f9f9f;
+                }
             }
         }
     }

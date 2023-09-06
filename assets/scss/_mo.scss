@@ -549,7 +549,27 @@
     // secure delivery section end
 }
 
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(lg) {
+    // find us section start 
+    .findusSection {
+        padding-bottom: 40px;
+        & .cityName {
+        }
+        & .findcard {
+        }
+        & .findicon {
+        }
+        & .cityDetail {
+        }
+        & .ContactNumber {
+        }
+        & .onMap {
+            &:hover {
+            }
+        }
+    }
+    // find us section end
+}
 
 @include media-breakpoint-down(md) {
     // secure delivery section start 
@@ -566,13 +586,36 @@
         }
     }
     // secure delivery section end
+    // find us section start 
+    .findusSection {
+        & .cityName {
+            font-size: 16px;
+        }
+        & .findicon {
+            height: 20px;
+        }
+        & .cityDetail {
+        }
+        & .ContactNumber {
+        
+        }
+        & .onMap {
+            &:hover {
+            }
+        }
+    }
+    // find us section end
 }
 
 @include media-breakpoint-down(sm) {
     // find us section start 
     .findusSection {
+        padding-bottom: 35px;
         & .cityName {
             font-size: 16px;
+        }
+        & .findicon {
+            height: 20px;
         }
         & .cityDetail {
             font-size: 12px;
@@ -604,3 +647,50 @@
     }
     // secure delivery section end
 }
+
+
+// cart page start 
+.cartsection {
+    padding-top: 60px;
+    & .cardtable {
+        & .tablemain {
+            border-collapse: separate;
+            border-spacing: 0 6px;
+            & .tableHead {
+                & th {
+                    font-size: 12px;
+                    color: #222222;
+                    font-weight: 700;
+                    padding: 14px 18px;
+                    background: #f2f2f2;
+                }
+            }
+            & .tablebody {
+                & .tabledata {
+                    background: #f2f2f2;
+                    padding: 14px 18px;
+                }
+                & .productImg {
+                    height: 50px;
+                    width: 50px;
+                }
+                & .productName {
+                    font-size: 13px;
+                    color: $black;
+                    font-weight: 500;
+                }
+                & .price {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $black;
+                }
+                & .totalprice {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+// cart page end
