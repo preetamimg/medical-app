@@ -69,6 +69,15 @@
 .inputpinmain {
     height: 35px;
     border-bottom:1px solid  $theme1;
+    &.footerInput {
+        border-color:  #9f9f9f;
+        & .pincodeInput {
+            color:#9f9f9f;
+        }
+        & .pincodeLabel {
+            color:#9f9f9f;
+        }
+    }
     & .pincodeInput {
         font-size: 13px;
         font-weight: 500;
@@ -123,23 +132,6 @@
             gap: 16px;
             & .checkbox {
             }
-            & .checkLabel {
-                font-size: 12px;
-                font-weight: 500;
-                color: $black;
-                border: 1px solid $black;
-                padding: 4px 10px;
-                transition: all 0.3s ease-in-out;
-                // border-radius: 30px !important;
-                cursor: pointer;
-            }
-            & .checkbox:checked  ~ .checkLabel {
-                border-color: $theme1;
-                color: $white;
-                background-color: $theme1;
-                box-shadow: 0 0.5em 0.5em -0.6em $theme1;
-                transform: translateY(-0.25em);
-            }
         }
         & .applyBtn {
             padding: 8px 28px;
@@ -149,6 +141,23 @@
             }
         }
     }
+}
+.checkLabel {
+    font-size: 12px;
+    font-weight: 500;
+    color: $black;
+    border: 1px solid $black;
+    padding: 4px 10px;
+    transition: all 0.3s ease-in-out;
+    // border-radius: 30px !important;
+    cursor: pointer;
+}
+.checkbox:checked  ~ .checkLabel {
+    border-color: $theme1;
+    color: $white;
+    background-color: $theme1;
+    box-shadow: 0 0.5em 0.5em -0.6em $theme1;
+    // transform: translateY(-0.25em);
 }
 @include media-breakpoint(basic) {}
 
@@ -451,16 +460,26 @@
 
 // find us section start 
 .findusSection {
+    padding-bottom: 45px;
     & .cityName {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
-        color: $black;
+        color: $white;
+        line-height: normal;
+    }
+    & .findcard {
+        gap: 13px;
+    }
+    & .findicon {
+        height: 25px;
+        // width: 25px;
     }
     & .cityDetail {
-        font-size: 13px;
+        font-size: 14px;
         color: lighten($black, 60);
         font-weight: 400;
-        padding: 6px 0;
+        padding-top:7px;
+        line-height: normal;
     }
     & .ContactNumber {
         font-size: 13px;
