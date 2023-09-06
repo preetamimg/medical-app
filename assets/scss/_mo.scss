@@ -17,24 +17,24 @@
     & .addaddressbtn {
         // height: 50px;
         // width: 80px;
-        background-color: $theme1;
+        background-color: lighten($black, 90);
         transition: all 0.3s ease-in-out;
         gap: 6px;
-        padding: 10px 15px;
+        padding: 14px 15px;
         &:active {
             background-color: $theme1;
             border-color: $theme1;
         }
         & .addressTile {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
-            color: $white;
+            color: $black;
         }
         & .plusicon {
             height: 14px;
             width: 14px;
             & img {
-                filter: brightness(10);
+                filter: brightness(0);
             }
         }
         &:hover {
@@ -135,7 +135,8 @@
             }
             & .checkbox:checked  ~ .checkLabel {
                 border-color: $theme1;
-                color: $theme1;
+                color: $white;
+                background-color: $theme1;
                 box-shadow: 0 0.5em 0.5em -0.6em $theme1;
                 transform: translateY(-0.25em);
             }

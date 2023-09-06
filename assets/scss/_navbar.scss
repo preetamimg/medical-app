@@ -109,31 +109,42 @@
                     transform: translate(0, 7px);
                     max-height: 50vh;
                     height: 50vh;
-                    & .searchInnerData {
-                        padding: 7px 12px ;
-                        color: $black;
-                        font-size: 14px;
-                        font-weight: 500;
+                }
+                & .searchInnerData {
+                    padding: 7px 12px ;
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                    & .closeBtn {
+                        height: 10px;
+                        width: 10px;
+                        opacity: 0;
+                        visibility: hidden;
                         transition: all 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        background-color: lighten($black, 95);
                         & .closeBtn {
-                            height: 10px;
-                            width: 10px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transition: all 0.3s ease-in-out;
-                        }
-                        &:hover {
-                            background-color: lighten($black, 95);
-                            & .closeBtn {
-                                opacity: 1;
-                                visibility: visible;
-                            }
+                            opacity: 1;
+                            visibility: visible;
                         }
                     }
                 }
                 & .searchInput:focus ~ .searchInner { display: block !important }
+                & .searchdrop {
+                    & .dropdownBtn {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $black;
+                    }
+                    & .searchMenu {
+                        transform: translateY(7px);
+                        max-height: 50vh;
+                        min-width: auto;
+                    }
+                }
             }
-
         }
         & .headerIcons {
             gap: 25px;
@@ -155,11 +166,11 @@
                     font-weight: 600;
                     animation: ripple 1s linear infinite;
                 }
-                &:hover {
-                    & img {
-                        filter: none;
-                    }
-                }
+                // &:hover {
+                //     & img {
+                //         filter: none;
+                //     }
+                // }
             }
             & .loginsign {
                 font-size: 14px;
@@ -191,7 +202,6 @@
         transform: translateY(-100%);
         position: absolute;
         z-index: 4;
-       
     }
     &.fixedNavbar {
         // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -299,12 +309,12 @@
                     & .searchicon {
                     }
                     & .searchInner {
-                        & .searchInnerData {
+                    }
+                    & .searchInnerData {
+                        & .closeBtn {
+                        }
+                        &:hover {
                             & .closeBtn {
-                            }
-                            &:hover {
-                                & .closeBtn {
-                                }
                             }
                         }
                     }
@@ -397,13 +407,19 @@
                     & .searchicon {
                     }
                     & .searchInner {
-                        & .searchInnerData {
+                    }
+                    & .searchInnerData {
+                        & .closeBtn {
+                        }
+                        &:hover {
                             & .closeBtn {
                             }
-                            &:hover {
-                                & .closeBtn {
-                                }
-                            }
+                        }
+                    }
+                    & .searchdrop {
+                        & .dropdownBtn {
+                        }
+                        & .searchMenu {
                         }
                     }
                     & .searchInput:focus ~ .searchInner {  }
@@ -496,13 +512,19 @@
                     & .searchicon {
                     }
                     & .searchInner {
-                        & .searchInnerData {
+                    }
+                    & .searchInnerData {
+                        & .closeBtn {
+                        }
+                        &:hover {
                             & .closeBtn {
                             }
-                            &:hover {
-                                & .closeBtn {
-                                }
-                            }
+                        }
+                    }
+                    & .searchdrop {
+                        & .dropdownBtn {
+                        }
+                        & .searchMenu {
                         }
                     }
                     & .searchInput:focus ~ .searchInner {  }
