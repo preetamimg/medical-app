@@ -69,6 +69,7 @@ font-size: 14px;
 }
 
 .addCartBtn{
+
     height: 40px;
     line-height: 40px;
     background-color: #f8f8f8;
@@ -99,7 +100,9 @@ font-size: 14px;
     .addCartBtn{
         opacity: 1;
         transform: translate(0);
-        z-index: 1111;
+        z-index: 999999;
+        color: $white;
+        background-color: $theme1;
         &:hover{
            
         }
@@ -115,4 +118,26 @@ font-size: 14px;
         }
     
     }
+}
+
+
+ .hearticon{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    transition: all .5s ease-in;
+    background-color: $theme1;
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 555;
+
+    & img{
+    transition: all .5s ease-in-out;
+    filter: invert(1);
+
+    }
+
 }
