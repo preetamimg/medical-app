@@ -22,8 +22,8 @@
         gap: 6px;
         padding: 14px 15px;
         &:active {
-            background-color: $theme1;
-            border-color: $theme1;
+            background-color: lighten($black, 90);
+            border-color: lighten($black, 90);
         }
         & .addressTile {
             font-size: 14px;
@@ -220,6 +220,8 @@
         & .addaddressbtn {
             gap: 2px;
             padding: 8px 12px;
+            box-shadow:none !important;
+            transform: translateY(0) !important;
             &:active {
             }
             & .addressTile {
@@ -285,6 +287,8 @@
     }
 }
 // location modal end 
+
+
 
 // future brand section start 
 .futerbrand {
