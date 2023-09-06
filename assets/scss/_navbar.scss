@@ -1,15 +1,22 @@
 .navbar {
-    // background-color: $theme1;
-    // box-shadow: rgba($black, 0.1) 0px 5px 7px;
-    // box-shadow: rgba($black, 0.06) 0px 3px 4px, rgba($black, 0.04) 0px 3px 3px, rgba($black, 0.08) 0px 1px;
+    box-shadow: rgba($black, 0.06) 0px 3px 4px, rgba($black, 0.04) 0px 3px 3px, rgba($black, 0.08) 0px 1px;
     transition: all 0.3s ease-in-out;
     & .navLogo {
         height: 80px;
+    }
+    & .navbar-toggler {
+        background: none;
+        & .navbar-toggler-icon {
+            height: 20px;
+            width: 20px;
+            background:none;
+        }
     }
     & .headermain {
         // background-color: $theme1;
         transition: all 0.3s ease-in-out;
         z-index: 5;
+        padding: 0 35px;
         & .pincodeBtn {
             gap: 5px;
             & .locationicon {
@@ -62,71 +69,7 @@
             //     }
             // }
         }
-        & .searchmain {
-            height:45px;
-            width: 80%;
-            padding: 4px;
-            & .searchData {
-                & .searchBtn {
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: $white;
-                    background-color: $theme1;
-                    padding: 0px 18px;
-                    &:hover {
-                        background-color: lighten($theme1, 6);
-                        color: $white;
-                    }
-                }
-                & .searchInput {
-                    font-size: 14px;
-                    font-weight: 500;
-                    // color: darken($white, 20);
-                    color: $black;
-                    &::placeholder {
-                        font-size: 14px;
-                        font-weight: 500;
-                        // color: darken($white, 20);
-                        color: $black;
-                    }
-                }
-                & .searchicon {
-                    height: 20px;
-                    width: 20px;
-                    // margin: 0 12px;
-                    margin-left: 10px;
-                }
-                & .searchInner {
-                    top: 100%;
-                    transform: translate(0, 7px);
-                    max-height: 50vh;
-                    height: 50vh;
-                    & .searchInnerData {
-                        padding: 7px 12px ;
-                        color: $black;
-                        font-size: 14px;
-                        font-weight: 500;
-                        transition: all 0.3s ease-in-out;
-                        & .closeBtn {
-                            height: 10px;
-                            width: 10px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transition: all 0.3s ease-in-out;
-                        }
-                        &:hover {
-                            background-color: lighten($black, 95);
-                            & .closeBtn {
-                                opacity: 1;
-                                visibility: visible;
-                            }
-                        }
-                    }
-                }
-                & .searchInput:focus ~ .searchInner { display: block !important }
-            }
-
-        }
+     
         & .headerIcons {
             gap: 25px;
             & .cardBtn {
@@ -145,12 +88,13 @@
                     font-size: 9px;
                     color: $black;
                     font-weight: 600;
+                    animation: ripple 1s linear infinite;
                 }
-                &:hover {
-                    & img {
-                        filter: none;
-                    }
-                }
+                // &:hover {
+                //     & img {
+                //         filter: none;
+                //     }
+                // }
             }
             & .loginsign {
                 font-size: 14px;
@@ -175,42 +119,13 @@
         // background-color: $theme2;
         border-top: 1px solid lighten($black, 90);
         border-bottom: 1px solid lighten($black, 90);
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 16px;
         height: 50px;
         // display: none;
         transition: all 0.3s ease-in-out;
         transform: translateY(-100%);
         position: absolute;
         z-index: 4;
-        & .navbar-nav {
-            gap: 30px;
-            & .navbarLink {
-                font-size: 14px;
-                color: $black;
-                font-weight: 600;
-                transition: all 0.3s ease-in-out;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 1.5px;
-                    background-color: $theme1;
-                    bottom: -9px;
-                    left: 0;
-                    transform-origin: right;
-                    transform: scaleX(0);
-                    transition: transform .3s ease-in-out;
-                }
-                &:hover {
-                    color: $theme1;
-                    &::before {
-                        transform-origin: left;
-                        transform: scaleX(1);
-                    }
-                }
-            }
-        }
     }
     &.fixedNavbar {
         // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -221,5 +136,482 @@
         }
     }
 }
+.searchmain {
+    height:45px;
+    width: 80%;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+    & .searchData {
+        & .searchBtn {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            background-color: $theme1;
+            padding: 0px 18px;
+            &:hover {
+                background-color: lighten($theme1, 6);
+                color: $white;
+            }
+        }
+        & .searchInput {
+            font-size: 14px;
+            font-weight: 500;
+            // color: darken($white, 20);
+            color: $black;
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 500;
+                // color: darken($white, 20);
+                color: $black;
+            }
+        }
+        & .searchicon {
+            height: 25px;
+            width: 25px;
+            // margin: 0 12px;
+            margin-left: 10px;
+        }
+        & .searchInner {
+            top: 100%;
+            transform: translate(0, 7px);
+            max-height: 50vh;
+            height: 50vh;
+        }
+        & .searchInnerData {
+            padding: 7px 12px ;
+            color: $black;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            & .closeBtn {
+                height: 10px;
+                width: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                background-color: lighten($black, 95);
+                & .closeBtn {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        & .searchInput:focus ~ .searchInner { display: block !important }
+        & .searchdrop {
+            & .dropdownBtn {
+                font-size: 14px;
+                font-weight: 500;
+                color: $black;
+            }
+            & .searchMenu {
+                transform: translateY(7px);
+                max-height: 50vh;
+                min-width: auto;
+            }
+        }
+    }
+}
+.navbar-items {
+    gap: 30px;
+    & .navbarLink {
+        font-size: 14px;
+        color: $black;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            background-color: $theme1;
+            bottom: -9px;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+        &:hover {
+            color: $theme1;
+            &::before {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+.headerOffcanvas {
+    max-width: 320px;
+    & .offcanvasLogo {
+        width: 45px;
+    }
+    & .closebtn {
+        height: 14px;
+        width: 14px;
+        background: none;
+    }
+}
+.searchOffcanvas {
+    height: auto;
+    max-height: 115px !important;
+    & .closebtn {
+        height: 13px;
+        width: 13px;
+    }
+    & .offcanvas-body{
+        
+    }
+}
+@include media-breakpoint(basic) {}
 
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+}
+@include media-breakpoint-down(lg) {
+    .navbar {
+        & .navLogo {
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+            }
+        }
+        & .headermain {
+            & .pincodeBtn {
+                & .locationicon {
+                    height:12px;
+                    width: 10px;
+                    & img {
+                    }
+                }
+                & .selectAddress {
+                    font-size: 13px;
+                }
+                & .deliveryAdd {
+                    font-size: 12px;
+                }
+                & .dropdwonarrow {
+                    & img {
+                    }
+                }
+            }
+            
+            & .headerIcons {
+                gap: 15px;
+                & .cardBtn {
+                    & img {
+                    }
+                    & .cartitem {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+                & .loginsign {
+                    &.login {
+                        &:hover {
+                        }
+                    }
+                    &.sign {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasNav {
+            display: none;
+        }
+        &.fixedNavbar {
+            & .offcanvasNav {
+
+            }
+        }
+    }
+    .searchmain {
+        width: 100%;
+        & .searchData {
+            & .searchBtn {
+                &:hover {
+                }
+            }
+            & .searchInput {
+                &::placeholder {
+                }
+            }
+            & .searchicon {
+            }
+            & .searchInner {
+            }
+            & .searchInnerData {
+                & .closeBtn {
+                }
+                &:hover {
+                    & .closeBtn {
+                    }
+                }
+            }
+            & .searchInput:focus ~ .searchInner { display: block !important }
+        }
+
+    }
+    .navbar-items {
+        gap: 20px;
+        & .navbarLink {
+            font-size: 13px;
+            &::before {
+                bottom: -4px;
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        & .navLogo {
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+            }
+        }
+        & .headermain {
+            padding: 0 22px;
+            & .pincodeBtn {
+                & .locationicon {
+                    & img {
+                    }
+                }
+                & .selectAddress {
+                }
+                & .deliveryAdd {
+                }
+                & .dropdwonarrow {
+                    & img {
+                    }
+                }
+            }
+            
+            & .headerIcons {
+                & .cardBtn {
+                    & img {
+                    }
+                    & .cartitem {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+                & .loginsign {
+                    &.login {
+                        &:hover {
+                        }
+                    }
+                    &.sign {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasNav {
+        }
+        &.fixedNavbar {
+            & .offcanvasNav {
+
+            }
+        }
+    }
+    .searchmain {
+        & .searchData {
+            & .searchBtn {
+                &:hover {
+                }
+            }
+            & .searchInput {
+                &::placeholder {
+                }
+            }
+            & .searchicon {
+            }
+            & .searchInner {
+            }
+            & .searchInnerData {
+                & .closeBtn {
+                }
+                &:hover {
+                    & .closeBtn {
+                    }
+                }
+            }
+            & .searchdrop {
+                & .dropdownBtn {
+                }
+                & .searchMenu {
+                }
+            }
+            & .searchInput:focus ~ .searchInner {  }
+        }
+
+    }
+    .navbar-items {
+        & .navbarLink {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar {
+        & .navLogo {
+            height: 60px;
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+            }
+        }
+        & .headermain {
+            padding: 0 12px;
+            & .pincodeBtn {
+                & .locationicon {
+                    & img {
+                    }
+                }
+                & .selectAddress {
+                    font-size: 12px;
+                }
+                & .deliveryAdd {
+                    font-size: 11px;
+                }
+                & .dropdwonarrow {
+                    width: 10px;
+                    height: 10px;
+                    margin-top: 1px;
+                    & img {
+                    }
+                }
+            }
+            & .headerIcons {
+                gap: 12px;
+                & .cardBtn {
+                    height: 19px;
+                    width: 19px;
+                    & img {
+                    }
+                    & .cartitem {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+                & .loginsign {
+                    &.login {
+                        &:hover {
+                        }
+                    }
+                    &.sign {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasNav {
+        }
+        &.fixedNavbar {
+            & .offcanvasNav {
+
+            }
+        }
+    }
+    .searchmain {
+        & .searchData {
+            & .searchBtn {
+                font-size: 13px;
+                padding: 0 14px;
+                &:hover {
+                }
+            }
+            & .searchInput {
+                font-size: 13px;
+                &::placeholder {
+                }
+            }
+            & .searchicon {
+            }
+            & .searchInner {
+            }
+            & .searchInnerData {
+                font-size: 13px;
+                & .closeBtn {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &:hover {
+                    & .closeBtn {
+                    }
+                }
+            }
+            & .searchdrop {
+                & .dropdownBtn {
+                    font-size: 13px;
+                }
+                & .searchMenu {
+                }
+            }
+            & .searchInput:focus ~ .searchInner {  }
+        }
+
+    }
+    .navbar-items {
+        gap: 13px;
+        & .navbarLink {
+            &::before {
+            }
+            &:hover {
+                &::before {
+                }
+            }
+        }
+    }
+    .headerOffcanvas {
+        max-width: 300px;
+        & .offcanvasLogo {
+        }
+        & .closebtn {
+            height: 12px;
+            width: 12px;
+        }
+    }
+    .searchOffcanvas {
+        max-height: 90px !important;
+        & .closebtn {
+        }
+        & .offcanvas-body{
+            
+        }
+    }
+}
 

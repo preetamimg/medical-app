@@ -17,24 +17,24 @@
     & .addaddressbtn {
         // height: 50px;
         // width: 80px;
-        background-color: $theme1;
+        background-color: lighten($black, 90);
         transition: all 0.3s ease-in-out;
         gap: 6px;
-        padding: 10px 15px;
+        padding: 14px 15px;
         &:active {
-            background-color: $theme1;
-            border-color: $theme1;
+            background-color: lighten($black, 90);
+            border-color: lighten($black, 90);
         }
         & .addressTile {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
-            color: $white;
+            color: $black;
         }
         & .plusicon {
             height: 14px;
             width: 14px;
             & img {
-                filter: brightness(10);
+                filter: brightness(0);
             }
         }
         &:hover {
@@ -135,7 +135,8 @@
             }
             & .checkbox:checked  ~ .checkLabel {
                 border-color: $theme1;
-                color: $theme1;
+                color: $white;
+                background-color: $theme1;
                 box-shadow: 0 0.5em 0.5em -0.6em $theme1;
                 transform: translateY(-0.25em);
             }
@@ -219,6 +220,8 @@
         & .addaddressbtn {
             gap: 2px;
             padding: 8px 12px;
+            box-shadow:none !important;
+            transform: translateY(0) !important;
             &:active {
             }
             & .addressTile {
@@ -285,10 +288,12 @@
 }
 // location modal end 
 
+
+
 // future brand section start 
 .futerbrand {
     // padding: 45px 16px;
-    padding-top:45px;
+    padding-top:20px;
     padding-bottom: 45px;
 }
 .brandCard {
@@ -335,7 +340,7 @@
     &:hover {
         background-color: $theme1;
         & img {
-            filter: brightness(10);
+            filter: brightness(100) contrast(1);
         }
     }
 }
@@ -360,9 +365,18 @@
 
 // health product section start 
 .healthProduct {
-
+    padding-bottom: 45px;
+    // & .healthofferImg {
+    //     aspect-ratio: 5/4;
+    // }
 }
 // health product section end
+
+// new arrival section start 
+.newarrival {
+    padding-top: 45px;
+}
+// new arrival section end
 
 @include media-breakpoint(basic) {}
 
@@ -383,7 +397,7 @@
 @include media-breakpoint-down(lg) {
     .futerbrand {
         // padding: 45px 16px;
-        padding-top:40px;
+        padding-top:15px;
         padding-bottom: 40px;
     }
     // offer section start 
@@ -400,6 +414,18 @@
         }
     }
     // offer section end
+
+    // health product section start 
+    .healthProduct {
+        padding-bottom: 40px;
+    }
+    // health product section end
+
+    // new arrival section start 
+    .newarrival {
+        padding-top: 40px;
+    }
+    // new arrival section end
 }
 
 @include media-breakpoint-down(md) {
@@ -408,7 +434,7 @@
 @include media-breakpoint-down(sm) {
     .futerbrand {
         // padding: 35px 12px;
-        padding-top: 35px;
+        padding-top: 10px;
         padding-bottom: 35px;
     }
     .brandCard {
@@ -449,6 +475,17 @@
         }
     }
     // offer section end
+    // health product section start 
+    .healthProduct {
+        padding-bottom: 35px;
+    }
+    // health product section end
+
+    // new arrival section start 
+    .newarrival {
+        padding-top: 35px;
+    }
+    // new arrival section end
 }
 // future brand section end 
 
