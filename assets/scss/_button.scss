@@ -112,7 +112,8 @@ font-size: 14px;
 
 @include media-breakpoint-down(sm) {
     .addCartBtn{
-   
+        height: 31px;
+        line-height: 31px;
         &:hover{
            
         }
@@ -139,6 +140,20 @@ font-size: 14px;
 
     }
 
+}
+
+@include media-breakpoint-down(sm) {
+    .hearticon{
+        height: 30px;
+        width: 31px;
+        padding: 8px;
+    
+        & img{
+        
+    
+        }
+    
+    }
 }
 
 .addBtnCard{
