@@ -1,0 +1,231 @@
+.categoryFluid{
+    & .breadCrumbWrapper{
+        & .breadCrumbItems{
+            color: $theme1;
+            font-size: 14px;
+            & .breadCrumbItemsAnchor{
+                color: $theme1;
+                text-decoration: none;
+            }
+            & .active{
+    
+            }
+        }
+    }
+    & .sideBar{
+        width: 280px;
+        & .cardWrapper{
+            background-color: $gray-100;
+            padding: 15px;
+            // height: 350px;
+            overflow: hidden;
+            overflow-y: auto;
+            & .heading{
+                font-size: 18px;
+                color: $black;
+                font-weight: 500;
+            }
+            & .accordionWrapper{
+                background-color: transparent;
+                & .accordionItem{
+                    border: 0;
+                    background-color: transparent;
+                    // border-bottom: 1px solid $theme1;
+                    margin-bottom: 10px;
+                    & .accordionHeader{
+                        & .accordionButton{           
+                            background-color: transparent;
+                            // background-color: $gray-100;
+                            padding: 10px 8px;
+                            font-size: 14px;
+                            color: $theme1;
+                            &::after{
+                                content: '';
+                                background-size: 15px;
+                                background-position: center;
+                            }
+                            &:focus{
+                                border: unset !important;
+                                box-shadow: unset !important;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                    & .accordionCollapse{
+                        background-color: transparent !important; 
+                        & .accordionBody{
+                            height: 170px;
+                            overflow: hidden;
+                            overflow-y: auto;
+                            & .categoryUl{
+                                padding-left: 0px;
+                                margin-bottom: 0;
+                                & .categoryLi{
+                                    margin-bottom: 8px;
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                    & .formCheckWrapper{
+                                        & .formCheckInp{
+                                                // background-color: $theme1;
+                                            cursor: pointer;
+                                            &:focus{
+                                                box-shadow: unset;
+                                            }
+                                            &:checked{
+                                                background-color: $theme1;
+                                            }
+                                        }
+                                        & .formCheckLbl{
+                                            font-size: 13px;
+                                            color: $theme1;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .range-slide {
+                position: relative;
+                // margin: 40px;
+                height: 4px;
+                // width: 240px;
+            }
+            .slide {
+                position: absolute;
+                top: 0;
+                height: 4px;
+                background: #ccc;
+                left: 9px;
+                right: 9px;
+            }
+            .line {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                height: 4px;
+                background-color: #95a7b2;
+            }
+            .thumb {
+                position: absolute;
+                z-index: 2;
+                text-align: left;
+                border: 1px solid #95a7b2;
+                background-color: $theme1;
+                border-radius: 50%;
+                outline: none;
+                top: -7px;
+                height: 18px;
+                width: 18px;
+                margin-left: -9px;
+            }
+            input {
+                -webkit-appearance: none;
+                appearance: none;
+                position: absolute;
+                pointer-events: none;
+                z-index: 3;
+                height: 3px;
+                top: 0;
+                width: 100%;
+                opacity: 0;
+                margin: 0;
+            }
+            input::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                pointer-events: all;
+                border-radius: 50%;
+                cursor: pointer;
+                width: 18px;
+                height: 18px;
+            }
+            .display {
+                // margin: 40px;
+                margin-top: 15px;
+                // width: 240px;
+                font-size: 14px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    & .mainContent{
+        width: calc(100% - 280px);
+        & .mainHeader{
+            & .leftTxt{
+                font-size: 14px;
+                font-weight: 400;
+                & span{
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            & .rytTxt{
+                font-size: 14px;
+                font-weight: 400;
+            }
+            & .drop{
+                & .dropBtn{
+                    // background-color: $theme1;
+                    border-color: $gray-400;
+                    color: $theme1;
+                    font-size: 14px;
+                    // border-radius: 2rem;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    position: relative;
+                    padding: 6px 25px 6px 10px;
+                    &::after{
+                        content: '';
+                        border: 0 !important;
+                        background-image: url(./../img/index/rightarrow.svg);
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        background-size: contain;
+                        background-position: center;
+                        top: 50%;
+                        width: 10px;
+                        height: 10px;
+                        transform: translateY(-50%) rotate(90deg);
+                        right: 5px;
+                    }
+                }
+                & .dropItems{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
