@@ -69,6 +69,15 @@
 .inputpinmain {
     height: 35px;
     border-bottom:1px solid  $theme1;
+    &.footerInput {
+        border-color:  #9f9f9f;
+        & .pincodeInput {
+            color:#9f9f9f;
+        }
+        & .pincodeLabel {
+            color:#9f9f9f;
+        }
+    }
     & .pincodeInput {
         font-size: 13px;
         font-weight: 500;
@@ -123,23 +132,6 @@
             gap: 16px;
             & .checkbox {
             }
-            & .checkLabel {
-                font-size: 12px;
-                font-weight: 500;
-                color: $black;
-                border: 1px solid $black;
-                padding: 4px 10px;
-                transition: all 0.3s ease-in-out;
-                // border-radius: 30px !important;
-                cursor: pointer;
-            }
-            & .checkbox:checked  ~ .checkLabel {
-                border-color: $theme1;
-                color: $white;
-                background-color: $theme1;
-                box-shadow: 0 0.5em 0.5em -0.6em $theme1;
-                transform: translateY(-0.25em);
-            }
         }
         & .applyBtn {
             padding: 8px 28px;
@@ -149,6 +141,23 @@
             }
         }
     }
+}
+.checkLabel {
+    font-size: 12px;
+    font-weight: 500;
+    color: $black;
+    border: 1px solid $black;
+    padding: 4px 10px;
+    transition: all 0.3s ease-in-out;
+    // border-radius: 30px !important;
+    cursor: pointer;
+}
+.checkbox:checked  ~ .checkLabel {
+    border-color: $theme1;
+    color: $white;
+    background-color: $theme1;
+    box-shadow: 0 0.5em 0.5em -0.6em $theme1;
+    // transform: translateY(-0.25em);
 }
 @include media-breakpoint(basic) {}
 
@@ -291,10 +300,8 @@
 
 
 // future brand section start 
-.futerbrand {
-    // padding: 45px 16px;
-    padding-top:20px;
-    padding-bottom: 45px;
+.commonSection {
+    padding-top: 45px;
 }
 .brandCard {
     & .brandimg {
@@ -347,10 +354,8 @@
 
 // offer section start 
 .offer {
-    padding-bottom: 45px;
-    padding-bottom: 45px;
     & .offerIcon {
-        aspect-ratio: 6/3;
+        aspect-ratio: 5/3;
         & img {
             transition: all 0.3s ease-in-out;
         }
@@ -363,20 +368,13 @@
 }
 // offer section end
 
-// health product section start 
-.healthProduct {
-    padding-bottom: 45px;
-    // & .healthofferImg {
-    //     aspect-ratio: 5/4;
-    // }
+// deal of the day section start 
+.dealSection {
+    // padding-bottom: 45px;
+    padding-top: 25px;
 }
-// health product section end
+// deal of the day section end 
 
-// new arrival section start 
-.newarrival {
-    padding-top: 45px;
-}
-// new arrival section end
 
 @include media-breakpoint(basic) {}
 
@@ -395,15 +393,11 @@
 @include media-breakpoint-down(xl) {}
 
 @include media-breakpoint-down(lg) {
-    .futerbrand {
-        // padding: 45px 16px;
-        padding-top:15px;
-        padding-bottom: 40px;
+    .commonSection {
+        padding-top: 40px;
     }
     // offer section start 
     .offer {
-        padding-bottom: 40px;
-        padding-bottom: 40px;
         & .offerIcon {
             & img {
             }
@@ -414,28 +408,14 @@
         }
     }
     // offer section end
-
-    // health product section start 
-    .healthProduct {
-        padding-bottom: 40px;
-    }
-    // health product section end
-
-    // new arrival section start 
-    .newarrival {
-        padding-top: 40px;
-    }
-    // new arrival section end
 }
 
 @include media-breakpoint-down(md) {
 }
 
 @include media-breakpoint-down(sm) {
-    .futerbrand {
-        // padding: 35px 12px;
-        padding-top: 10px;
-        padding-bottom: 35px;
+    .commonSection {
+        padding-top: 35px;
     }
     .brandCard {
         & .brandimg {
@@ -463,8 +443,6 @@
     }
      // offer section start 
     .offer {
-        padding-bottom: 35px;
-        padding-bottom: 35px;
         & .offerIcon {
             & img {
             }
@@ -475,17 +453,154 @@
         }
     }
     // offer section end
-    // health product section start 
-    .healthProduct {
-        padding-bottom: 35px;
-    }
-    // health product section end
 
-    // new arrival section start 
-    .newarrival {
-        padding-top: 35px;
-    }
-    // new arrival section end
 }
 // future brand section end 
 
+
+// find us section start 
+.findusSection {
+    padding-bottom: 45px;
+    & .cityName {
+        font-size: 20px;
+        font-weight: 600;
+        color: $white;
+        line-height: normal;
+    }
+    & .findcard {
+        gap: 13px;
+    }
+    & .findicon {
+        height: 25px;
+        // width: 25px;
+    }
+    & .cityDetail {
+        font-size: 14px;
+        color: lighten($black, 60);
+        font-weight: 400;
+        padding-top:7px;
+        line-height: normal;
+    }
+    & .ContactNumber {
+        font-size: 13px;
+        color: lighten($black, 60);
+        font-weight: 400;
+        padding-bottom: 12px;
+    }
+    & .onMap {
+        font-size: 12px;
+        font-weight: 600;
+        color: $black;
+        padding-bottom: 4px;
+        border-bottom: 1.5px solid $black;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: $theme1;
+            border-color: $theme1;
+        }
+    }
+}
+// find us section end
+
+// secure delivery section start 
+.securitySection {
+    background-color: rgba($theme1, 0.3);
+    padding: 20px 10px;
+    & .securityicon {
+        height: 25px;
+        width: 25px;
+    }
+    & .securityTitle {
+        font-size: 28px;
+        font-weight: 500;
+        color: $theme1;
+    }
+    & .deliveryboyImg {
+        aspect-ratio: 5/2;
+    }
+}
+// secure delivery section end
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    // secure delivery section start 
+    .securitySection {
+        & .securityicon {
+        }
+        & .securityTitle {
+            font-size: 22px;
+        }
+        & .deliveryboyImg {
+        }
+    }
+    // secure delivery section end
+}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    // secure delivery section start 
+    .securitySection {
+        // & .securityicon {
+        //     height: 25px;
+        //     width: 25px;
+        // }
+        & .securityTitle {
+            font-size: 22px;
+        }
+        & .deliveryboyImg {
+            aspect-ratio: 4/1;
+        }
+    }
+    // secure delivery section end
+}
+
+@include media-breakpoint-down(sm) {
+    // find us section start 
+    .findusSection {
+        & .cityName {
+            font-size: 16px;
+        }
+        & .cityDetail {
+            font-size: 12px;
+        }
+        & .ContactNumber {
+            font-size: 12px;
+            padding-bottom: 5px;
+        }
+        & .onMap {
+            font-size: 11px;
+            &:hover {
+            }
+        }
+    }
+    // find us section end
+
+    // secure delivery section start 
+    .securitySection {
+        // & .securityicon {
+        //     height: 25px;
+        //     width: 25px;
+        // }
+        & .securityTitle {
+            font-size: 18px;
+        }
+        & .deliveryboyImg {
+            // aspect-ratio: 4/1;
+        }
+    }
+    // secure delivery section end
+}
