@@ -199,9 +199,9 @@
   </nav>
   <!-- navbar start  -->
   <main class="main">
-    <div class="container-fluid pt-4 categoryFluid overflow-hidden">
+    <div class="container-fluid pt-4 categoryFluid filterWrapper overflow-hidden px-0">
         <div class="row">
-          <div class="col-12 mb-3">
+          <div class="col-12 d-md-block d-none mb-3 ps-4">
             <nav class="breadCrumbWrapper" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item breadCrumbItems"><a class="breadCrumbItemsAnchor" href="#">Home</a></li>
@@ -210,13 +210,14 @@
               </ol>
             </nav>
           </div>
-          <div class="col-auto sideBar">
+          <div class="col-lg-auto col-12 sideBar">
               <div class="row">
                 <div class="col-12">
                   <div class="cardWrapper">
                     <div class="row">
-                      <div class="col-12 border-bottom pb-3">
-                        <div class="heading">Filters</div>
+                      <div class="col-12 d-flex justify-content-between pb-3">
+                        <div class="heading col">Filters</div>
+                        <div class="col-auto"><div class="close filterCloseBtn d-lg-none d-block"><img src="assets/img/index/close.png" alt=""></div></div>
                       </div>
                       <div class="col-12 pt-3">
                         <div class="accordion accordionWrapper" id="accordionExample">
@@ -434,13 +435,14 @@
                 </div>
               </div>
           </div>
-          <div class="col mainContent">
-            <div class="row">
+          <div class="col-lg col-12 mainContent">
+            <div class="row mx-0">
               <div class="col-12">
                 <div class="mainHeader">
                   <div class="row justify-content-between align-items-center">
-                    <div class="col-auto"><div class="leftTxt">showing <span>2</span>of <span>2</span>items</div></div>
-                    <div class="col-auto d-flex align-items-center">
+                    <div class="col-sm-auto col-12 mb-2 mb-sm-0"><div class="leftTxt">showing <span>2</span>of <span>2</span>items</div></div>
+                    <div class="col-sm-auto col-12 d-flex align-items-center">
+                      <div class="filterBtn d-lg-none d-block child"><img src="assets/img/index/filter.svg" alt=""></div>
                       <div class="rytTxt pe-3">Sort by:</div>
                       <div class="drop">
                         <div class="dropdown">
@@ -453,6 +455,194 @@
                             <li><a class="dropdown-item dropItems" href="#">Something else here</a></li>
                           </ul>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 py-4">
+                <div class="row gy-4">
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/disposable-Face-Masks2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/honeytulsi2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/non-contact-infraredthermometer2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
                       </div>
                     </div>
                   </div>
@@ -893,6 +1083,21 @@
     });
   });
 
+</script>
+
+<script>
+  let filterWrapper = document.querySelector('.filterWrapper')
+  let filterBtn = document.querySelector('.filterBtn')
+  let filterCloseBtn = document.querySelector('.filterCloseBtn')
+
+  filterBtn.addEventListener('click', ()=>{
+    filterWrapper.classList.add('show')
+    document.body.style.overflow = 'hidden'
+  })
+  filterCloseBtn.addEventListener('click', ()=>{
+    filterWrapper.classList.remove('show')
+    document.body.style.overflow = 'visible'
+  })
 </script>
 </body>
 </html>

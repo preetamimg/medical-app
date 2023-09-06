@@ -25,6 +25,14 @@
                 color: $black;
                 font-weight: 500;
             }
+            & .close{
+                width: 15px;
+                height: 15px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             & .accordionWrapper{
                 background-color: transparent;
                 & .accordionItem{
@@ -165,6 +173,15 @@
                     font-weight: 700;
                 }
             }
+            & .filter{
+                width: 25px;
+                height: 25px;
+                margin-right: 5px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             & .rytTxt{
                 font-size: 14px;
                 font-weight: 400;
@@ -208,7 +225,89 @@
 
 
 
-@include media-breakpoint(basic) {}
+@include media-breakpoint(basic) {
+    .categoryFluid{
+        & .breadCrumbWrapper{
+            & .breadCrumbItems{
+                & .breadCrumbItemsAnchor{
+                }
+                & .active{
+        
+                }
+            }
+        }
+        & .sideBar{
+            & .cardWrapper{
+                & .heading{
+                }
+                & .accordionWrapper{
+                    & .accordionItem{
+                        & .accordionHeader{
+                            & .accordionButton{   
+                                &::after{
+                                }
+                                &:focus{
+                                }
+                            }
+                        }
+                        & .accordionCollapse{
+                            & .accordionBody{
+                                & .categoryUl{
+                                    & .categoryLi{
+                                        &:last-child{
+                                        }
+                                        & .formCheckWrapper{
+                                            & .formCheckInp{
+                                                &:focus{
+                                                }
+                                                &:checked{
+                                                }
+                                            }
+                                            & .formCheckLbl{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .range-slide {
+                }
+                .slide {
+                }
+                .line {
+                }
+                .thumb {
+                }
+                input {
+                }
+                input::-webkit-slider-thumb {
+                }
+                .display {
+                }
+            }
+        }
+        & .mainContent{
+            & .mainHeader{
+                & .leftTxt{
+                    & span{
+                    }
+                }
+                & .rytTxt{
+                }
+                & .drop{
+                    & .dropBtn{
+                        &::after{
+                        }
+                    }
+                    & .dropItems{
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-up(sm) {}
 
@@ -220,12 +319,452 @@
 
 @include media-breakpoint-up(xxl) {}
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+    .categoryFluid{
+        & .breadCrumbWrapper{
+            & .breadCrumbItems{
+                & .breadCrumbItemsAnchor{
+                }
+                & .active{
+        
+                }
+            }
+        }
+        & .sideBar{
+            & .cardWrapper{
+                & .heading{
+                }
+                & .accordionWrapper{
+                    & .accordionItem{
+                        & .accordionHeader{
+                            & .accordionButton{   
+                                &::after{
+                                }
+                                &:focus{
+                                }
+                            }
+                        }
+                        & .accordionCollapse{
+                            & .accordionBody{
+                                & .categoryUl{
+                                    & .categoryLi{
+                                        &:last-child{
+                                        }
+                                        & .formCheckWrapper{
+                                            & .formCheckInp{
+                                                &:focus{
+                                                }
+                                                &:checked{
+                                                }
+                                            }
+                                            & .formCheckLbl{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .range-slide {
+                }
+                .slide {
+                }
+                .line {
+                }
+                .thumb {
+                }
+                input {
+                }
+                input::-webkit-slider-thumb {
+                }
+                .display {
+                }
+            }
+        }
+        & .mainContent{
+            & .mainHeader{
+                & .leftTxt{
+                    & span{
+                    }
+                }
+                & .rytTxt{
+                }
+                & .drop{
+                    & .dropBtn{
+                        &::after{
+                        }
+                    }
+                    & .dropItems{
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .categoryFluid{
+        & .breadCrumbWrapper{
+            & .breadCrumbItems{
+                & .breadCrumbItemsAnchor{
+                }
+                & .active{
+        
+                }
+            }
+        }
+        & .sideBar{
+            & .cardWrapper{
+                & .heading{
+                }
+                & .accordionWrapper{
+                    & .accordionItem{
+                        & .accordionHeader{
+                            & .accordionButton{   
+                                &::after{
+                                }
+                                &:focus{
+                                }
+                            }
+                        }
+                        & .accordionCollapse{
+                            & .accordionBody{
+                                & .categoryUl{
+                                    & .categoryLi{
+                                        &:last-child{
+                                        }
+                                        & .formCheckWrapper{
+                                            & .formCheckInp{
+                                                &:focus{
+                                                }
+                                                &:checked{
+                                                }
+                                            }
+                                            & .formCheckLbl{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .range-slide {
+                }
+                .slide {
+                }
+                .line {
+                }
+                .thumb {
+                }
+                input {
+                }
+                input::-webkit-slider-thumb {
+                }
+                .display {
+                }
+            }
+        }
+        & .mainContent{
+            & .mainHeader{
+                & .leftTxt{
+                    & span{
+                    }
+                }
+                & .rytTxt{
+                }
+                & .drop{
+                    & .dropBtn{
+                        &::after{
+                        }
+                    }
+                    & .dropItems{
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(lg) {
+    .main{
+        position: relative;
+        // padding-left: 0;
+        & .categoryFluid{
+            &.filterWrapper{
+                &.show{
+                    &::before {
+                        content: '';
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        position: absolute;
+                        z-index: 99;
+                        background-color: rgba(0,0,0,0.5);
+                    }
+                    & .sideBar{
+                        transform: translateX(0);
+                    }
+                }
+            }
+            & .breadCrumbWrapper{
+                & .breadCrumbItems{
+                    & .breadCrumbItemsAnchor{
+                    }
+                    & .active{
+            
+                    }
+                }
+            }
+            & .sideBar{
+                height: 100vh;
+                position: absolute;
+                transform: translateX(-150%);
+                transition: 0.3s linear;
+                z-index: 9999;
+                padding: 0;
+                top: 0px;
+                left: 0px;
+                & .cardWrapper{
+                    & .heading{
+                    }
+                    & .accordionWrapper{
+                        & .accordionItem{
+                            & .accordionHeader{
+                                & .accordionButton{   
+                                    &::after{
+                                    }
+                                    &:focus{
+                                    }
+                                }
+                            }
+                            & .accordionCollapse{
+                                & .accordionBody{
+                                    & .categoryUl{
+                                        & .categoryLi{
+                                            &:last-child{
+                                            }
+                                            & .formCheckWrapper{
+                                                & .formCheckInp{
+                                                    &:focus{
+                                                    }
+                                                    &:checked{
+                                                    }
+                                                }
+                                                & .formCheckLbl{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .range-slide {
+                    }
+                    .slide {
+                    }
+                    .line {
+                    }
+                    .thumb {
+                    }
+                    input {
+                    }
+                    input::-webkit-slider-thumb {
+                    }
+                    .display {
+                    }
+                }
+            }
+            & .mainContent{
+                width: 100%;
+                & .mainHeader{
+                    & .leftTxt{
+                        & span{
+                        }
+                    }
+                    & .rytTxt{
+                    }
+                    & .drop{
+                        & .dropBtn{
+                            &::after{
+                            }
+                        }
+                        & .dropItems{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .categoryFluid{
+        & .breadCrumbWrapper{
+            & .breadCrumbItems{
+                & .breadCrumbItemsAnchor{
+                }
+                & .active{
+        
+                }
+            }
+        }
+        & .sideBar{
+            & .cardWrapper{
+                & .heading{
+                }
+                & .accordionWrapper{
+                    & .accordionItem{
+                        & .accordionHeader{
+                            & .accordionButton{   
+                                &::after{
+                                }
+                                &:focus{
+                                }
+                            }
+                        }
+                        & .accordionCollapse{
+                            & .accordionBody{
+                                & .categoryUl{
+                                    & .categoryLi{
+                                        &:last-child{
+                                        }
+                                        & .formCheckWrapper{
+                                            & .formCheckInp{
+                                                &:focus{
+                                                }
+                                                &:checked{
+                                                }
+                                            }
+                                            & .formCheckLbl{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .range-slide {
+                }
+                .slide {
+                }
+                .line {
+                }
+                .thumb {
+                }
+                input {
+                }
+                input::-webkit-slider-thumb {
+                }
+                .display {
+                }
+            }
+        }
+        & .mainContent{
+            & .mainHeader{
+                & .leftTxt{
+                    & span{
+                    }
+                }
+                & .rytTxt{
+                }
+                & .drop{
+                    & .dropBtn{
+                        &::after{
+                        }
+                    }
+                    & .dropItems{
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+    .categoryFluid{
+        & .breadCrumbWrapper{
+            & .breadCrumbItems{
+                & .breadCrumbItemsAnchor{
+                }
+                & .active{
+        
+                }
+            }
+        }
+        & .sideBar{
+            & .cardWrapper{
+                & .heading{
+                }
+                & .accordionWrapper{
+                    & .accordionItem{
+                        & .accordionHeader{
+                            & .accordionButton{   
+                                &::after{
+                                }
+                                &:focus{
+                                }
+                            }
+                        }
+                        & .accordionCollapse{
+                            & .accordionBody{
+                                & .categoryUl{
+                                    & .categoryLi{
+                                        &:last-child{
+                                        }
+                                        & .formCheckWrapper{
+                                            & .formCheckInp{
+                                                &:focus{
+                                                }
+                                                &:checked{
+                                                }
+                                            }
+                                            & .formCheckLbl{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .range-slide {
+                }
+                .slide {
+                }
+                .line {
+                }
+                .thumb {
+                }
+                input {
+                }
+                input::-webkit-slider-thumb {
+                }
+                .display {
+                }
+            }
+        }
+        & .mainContent{
+            & .mainHeader{
+                & .leftTxt{
+                    & span{
+                    }
+                }
+                & .rytTxt{
+                }
+                & .drop{
+                    & .dropBtn{
+                        &::after{
+                        }
+                    }
+                    & .dropItems{
+                    }
+                }
+            }
+        }
+    }
+}
