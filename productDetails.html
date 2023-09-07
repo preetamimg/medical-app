@@ -388,7 +388,7 @@
 <!-- product details section start  -->
 
   </main>
-<!-- descrepation Section  start  -->
+  <!-- descrepation Section  start  -->
 
   <div class="container-fluid descrepationSection bg-light my-lg-5 my-md-4 my-1 py-lg-5 py-4">
     <div class="container">
@@ -518,9 +518,9 @@
     </div>
   </div>
 
-<!-- descrepation Section  start  -->
+  <!-- descrepation Section  start  -->
 
-<!-- related section start  -->
+  <!-- related section start  -->
   <div class="main ">
     <!-- related section start -->
     <div class="container-fluid newarrival commonSection mb-lg-5 mb-md-4 mb-3">
@@ -1070,7 +1070,7 @@
             </div>
           </div>
           <div class="col-12 pt-3 text-center">
-            <a href="javascript:;" class="detectlocation bg-secondary bg-opacity-25 d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
+            <a href="javascript:;" class="detectlocation bg-light d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
               <span class="d-flex align-items-center justify-content-center detecticon">
                 <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
               </span>
@@ -1292,7 +1292,7 @@
   </script>
 
   <script>
-  var swiper = new Swiper(".equipmentslider", {
+    var swiper = new Swiper(".equipmentslider", {
     // slidesPerView: 1,
     // spaceBetween: 10,
     breakpoints: {
@@ -1325,7 +1325,7 @@
   </script>
 
   <script>
-  var swiper = new Swiper(".newarrivalslider", {
+    var swiper = new Swiper(".newarrivalslider", {
     // slidesPerView: 1,
     // spaceBetween: 10,
     breakpoints: {
@@ -1391,91 +1391,90 @@
   });
   </script>
 
-<!-- membership swiper  -->
-<script>
-  var swiper = new Swiper(".membershipswiper", {
-    slidesPerView: 3,
-    spaceBetween: 15,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        // spaceBetween: 20,
+  <!-- membership swiper  -->
+  <script>
+    var swiper = new Swiper(".membershipswiper", {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
       },
-      400: {
-        slidesPerView: 1,
-        // spaceBetween: 20,
-      },
-    
-      600: {
-        slidesPerView: 2,
-        // spaceBetween: 40,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          // spaceBetween: 20,
+        },
+        400: {
+          slidesPerView: 1,
+          // spaceBetween: 20,
+        },
+      
+        600: {
+          slidesPerView: 2,
+          // spaceBetween: 40,
+        },
+
+        991: {
+          slidesPerView: 3,
+          // spaceBetween: 50,
+        },
+        1321: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
       },
 
-      991: {
-        slidesPerView: 3,
-        // spaceBetween: 50,
-      },
-      1321: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-    },
-
-});
-</script>
-<!-- product details section  -->
-
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 10,
-    slidesPerView: 5,
-    freeMode: true,
-    watchSlidesProgress: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-      0: {
-        slidesPerView: 3,
-        // spaceBetween: 20,
-      },
-      400: {
-        slidesPerView: 4,
-        // spaceBetween: 20,
-      },
-      540: {
-        slidesPerView: 4,
-        // spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 5,
-        // spaceBetween: 40,
-      },
-
-      991: {
-        slidesPerView: 4,
-        // spaceBetween: 50,
-      },
-      1321: {
-        slidesPerView: 5,
-        spaceBetween: 10,
-      },
-    },
   });
-  var swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 10,
-    thumbs: {
-      swiper: swiper,
-    },
-  });
-</script>
+  </script>
+  <!-- product details section  -->
 
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 3,
+          // spaceBetween: 20,
+        },
+        400: {
+          slidesPerView: 4,
+          // spaceBetween: 20,
+        },
+        540: {
+          slidesPerView: 4,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 5,
+          // spaceBetween: 40,
+        },
+
+        991: {
+          slidesPerView: 4,
+          // spaceBetween: 50,
+        },
+        1321: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
 
 </body>
 </html>
