@@ -225,91 +225,65 @@
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col-lg-8">
+            <div class="col-md-8">
                 <div class="cardtable">
-                    <div class="table-responsive">
-                        <table class="table tablemain">
-                            <thead class="tableHead bg-light align-middle">
-                                <tr class="align-middle">
-                                    <th scope="col" class=" border-0 rounded-start-2">PRODUCT</th>
-                                    <th scope="col" class=" border-0">PRICE</th>
-                                    <th scope="col" class=" border-0">QTY</th>
-                                    <th scope="col" class=" border-0">TOTAL</th>
-                                    <th scope="col" class=" border-0 rounded-end-2"></th>
-                                </tr>
-                            </thead>
-                            <tbody class="tablebody">
-                                <tr class="align-middle">
-                                    <th class="tabledata border-0 rounded-start-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                                <div class="productImg">
-                                                    <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="productName">Upakarma Ayurveda Shilajit Veg Capsules 90's</div>
-                                                <div class="deliverytilte pt-2">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
-                                            </div>
-                                        </div>
-                                    </th>
-                                    <td class="tabledata border-0  price">Rs.450</td>
-                                    <td class="tabledata border-0">
-                                        <!-- <input type="number" class="rounded-1 shadow-none bg-transparent qualityinput"> -->
+                    <div class="tableHead rounded-2 d-sm-block d-none ">
+                        <div class="row mx0 align-items-center">
+                            <div class="tableTityle col-lg-7 col-6 pe-lg-0">PRODUCT</div>
+                            <div class="tableTityle col-2 px-lg-0 px-4">PRICE</div>
+                            <div class="tableTityle col-2 ps-lg-0">QTY</div>
+                            <div class="tableTityle col-1"></div>
+                        </div>
+                    </div>
+                    <div class="tablebody rounded-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
+                                    <div class="productImg">
+                                        <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row align-items-center">
+                                    <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
+                                        <div class="productName">Upakarma Ayurveda Shilajit Veg Capsules 90's</div>
+                                        <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
+                                    </div>
+                                    <div class="col-sm-2 col-4">
+                                        <div class="price">Rs.450</div>
+                                        <!-- <div class="d-sm-none d-inline-flex align-items-center qualiltymain border border-1">
+                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                            <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                        </div> -->
+                                    </div>
+                                        
+                                    <div class="col-sm-3 col-4 ps-sm-3 ps-0">
                                         <div class="d-inline-flex align-items-center qualiltymain border border-1">
                                             <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
                                             <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
                                             <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
                                         </div>
-                                    </td>
-                                    <td class="tabledata border-0 totalprice">Rs.900</td>
-                                    <td class="tabledata border-0 rounded-end-2 ">
-                                        <button class="d-flex align-items-center border-0 p-0 justify-content-center deleteIcon">
+                                    </div>
+                                    <div class="col-lg-1 col-sm-2 col-4">
+                                        <button class="d-flex align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
                                             <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
                                         </button>
-                                    </td>
-                                </tr>
-                                <tr class="align-middle">
-                                    <th class="tabledata border-0 rounded-start-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                                <div class="productImg">
-                                                    <img src="assets/img/cart/cart2.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="productName">Hamdard Sualin for Cough</div>
-                                                <div class="deliverytilte pt-2">Delivery by <span class="text-dark fw-medium">Today, before 03:00 Am</span></div>
-                                            </div>
-                                        </div>
-                                    </th>
-                                    <td class="tabledata border-0  price">Rs.340</td>
-                                    <td class="tabledata border-0">
-                                        <div class="d-inline-flex align-items-center qualiltymain border border-1">
-                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
-                                            <div class="quantityinput d-flex align-items-center justify-content-center">4</div>
-                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
-                                        </div>
-                                    </td>
-                                    <td class="tabledata border-0 totalprice">Rs.2300</td>
-                                    <td class="tabledata border-0 rounded-end-2 ">
-                                        <button class="d-flex align-items-center border-0 p-0 justify-content-center deleteIcon">
-                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="summaryCard rounded-2 bight">
                     <div class="row">
                         <div class="cartHeading col-12 ">
                             Order Summary
                         </div>
-                        <div class="col-12 pb-4">
+                        <div class="col-12 pb-sm-4 pb-3">
                             <div class="inputpinmain coupanCode rounded5 d-flex align-items-center position-relative w-100">
                                 <input type="text" id="Pincode" class="form-control  ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
                                 <label for="Pincode" class="pincodeLabel">Apply coupon</label>
@@ -350,15 +324,15 @@
                 </div>
             </div>
         </div>
-        <div class="emptyCart">
+        <!-- <div class="emptyCart">
             <div class="emptyImg">
                 <img src="assets/img/futerebrand/empty-cart.svg" alt="empty" class="h-100 w-100 img-fluid object-fit-contain">
             </div>
             <div class="emptyTitle text-center">Your cart is empty</div>
-            <div class="emptybtnmain text-center">
+            <div class="emptybtnmain text-center d-flex align-items-center justify-content-center">
                 <a href="javascript:;" class="applyBtn emptyBtn rounded-1 text-decoration-none">Continue Shopping</a>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- cart section end  -->
 
