@@ -17,13 +17,13 @@
     & .addaddressbtn {
         // height: 50px;
         // width: 80px;
-        background-color: lighten($black, 90);
+        background-color:#f8f9fa;
         transition: all 0.3s ease-in-out;
         gap: 6px;
         padding: 14px 15px;
         &:active {
-            background-color: lighten($black, 90);
-            border-color: lighten($black, 90);
+            background-color: #f8f9fa;
+            border-color: #f8f9fa;
         }
         & .addressTile {
             font-size: 14px;
@@ -730,6 +730,7 @@
                 & .productImg {
                     height: 60px;
                     width: 60px;
+                    transition: all 0.3s ease-in-out;
                 }
             }
             & .productName {
@@ -760,11 +761,19 @@
                 font-weight: 600;
                 color: $black;
             }
+            &:hover {
+                & .productImgMain {
+                    & .productImg {
+                        transform: scale(0.9);
+                    }
+                }
+            }
         }
     }
     & .summaryCard {
         padding: 14px;
         background: #f2f2f2;
+        top: 140px;
         & .cartHeading {
             font-size: 16px;
             font-weight: 600;
@@ -1022,6 +1031,13 @@
                     font-size: 12px;
                     font-weight: 600;
                     color: $black;
+                }
+                &:hover {
+                    & .productImgMain {
+                        & .productImg {
+                            transform: scale(1);
+                        }
+                    }
                 }
             }
         }

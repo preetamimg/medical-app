@@ -827,7 +827,18 @@
                      height: 15px;
                  }
              }
-         }
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 2px;
+        background-color: rgba($black, 0);
+        display: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color:rgba($black, 0);
+        display: none;
+    }
 }
 
 @include media-breakpoint(basic) {}
@@ -2449,9 +2460,9 @@
         font-size: 12px;
         font-weight: 500;
         color: $black;
-        border: 1px solid  lighten($black,90);
+        border: 1px solid #f8f9fa;
         padding: 7px 15px;
-        background: lighten($black,90);
+        background: #f8f9fa;
         transition: all 0.3s ease-in-out;
         // border-radius: 30px !important;
         cursor: pointer;
