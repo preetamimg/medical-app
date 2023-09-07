@@ -169,7 +169,7 @@ font-size: 14px;
     text-decoration: none;
     vertical-align: top;
     transition: all .4s ease-in-out;
- 
+    white-space: nowrap;
     &:hover{
      background-color:lighten($theme1, 5);
     }
@@ -182,4 +182,53 @@ font-size: 14px;
             color: $white;
         }
     }
+}
+
+@include media-breakpoint-down(lg) {
+    .addBtnCard{
+      font-size: 16px;
+     
+        &:hover{
+        
+        }
+        &.addBtnCard2{
+           
+            &:hover{
+               
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .addBtnCard{
+        font-size: 14px;
+        height: 44px;
+          &:hover{
+          
+          }
+          &.addBtnCard2{
+             
+              &:hover{
+                 
+              }
+          }
+      }
+}
+
+@include media-breakpoint-down(sm) {
+    .addBtnCard{
+        font-size: 12px;
+        height: 38px;
+       
+          &:hover{
+          
+          }
+          &.addBtnCard2{
+             
+              &:hover{
+                 
+              }
+          }
+      }
 }
