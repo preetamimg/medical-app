@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical App</title>
+  <!-- jquery -->
+  <script src="assets/libs/jquery/jquery.js"></script>
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <!-- SWIPER CSS-->
+  <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
+</head>
+<body>
+  <!-- navbar start  -->
+  <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
+    <div class="headermain w-100 position-relative bg-white">
+      <div class="row m0 align-items-center justify-content-between">
+        <div class="col-auto">
+          <div class="d-flex align-items-center gap-md-3 gap-2">
+            <button class="navbar-toggler p-0 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navoffcanvas" aria-controls="navoffcanvas" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><img src="assets/img/menu.svg" alt="menu" class="h-100 w-100 img-fluid"></span>
+            </button>
+            <a class="navbar-brand navLogo m-0" href="index.html">
+              <img src="assets/img/mainlogo.png" alt="logo" class="h-100">
+            </a>
+            <button class="btn pincodeBtn pe-0 dflex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+              <div class="d-flex align-items-center gap-1">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                  <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <div class="selectAddress text-start">Select Adderss</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                  <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col d-md-block d-none ">
+          <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
+            <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+              <div class="d-flex align-items-center justify-content-center locationicon">
+                <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+              </div>
+              <div class="deliveryAdd text-start">Delivery Address</div>
+              <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+              </span>
+            </button> -->
+            <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
+              <div class="d-flex align-items-center justify-content-center locationicon">
+                <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+              </div>
+              <div class="deliveryAdd text-start">Delivery Address</div>
+              <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+              </span>
+            </button> -->
+            <div class="d-flex w-100 h-100 position-relative px2 align-items-center searchData">
+              <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
+                <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+              </span>
+              <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+              <button class="btn searchBtn rounded-5 h-100">Search</button>
+              <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                <div class=" h-100 overflow-y-auto ">
+                  <ul class="list-unstyled h-100">
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                        Medical
+                        <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                          <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center headerIcons">
+            <a href="javascript:;" class="cardBtn d-flex align-items-center justify-content-center position-relative">
+              <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
+              <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadow-sm rounded-circle">12</span>
+            </a>
+            <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative">
+              <img src="assets/img/search2.svg" alt="cart" class="h-100 w-100 img-fluid">
+            </a>
+            <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
+              <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
+            </a>
+            <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
+              <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+              </span>
+              <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
+              <span class="d-lg-inline-flex d-none"> /</span>
+              <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvasNav  bg-light h-100 align-items-center w-100">
+      <ul class="navbar-items d-flex list-unstyled m-0 justify-content-center flex-grow-1 pe3">
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medicine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Lab Test</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medical Devices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Baby Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Beauty Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Supplementary Product</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- navbar start  -->
+  <main class="main">
+    <div class="container-fluid pt-4 categoryFluid filterWrapper overflow-hidden px-0 position-relative">
+        <div class="row">
+          <div class="col-12 d-lg-block d-none mb-3 ps-4">
+            <nav class="breadCrumbWrapper" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item breadCrumbItems"><a class="breadCrumbItemsAnchor" href="#">Home</a></li>
+                <li class="breadcrumb-item breadCrumbItems active" aria-current="page">Non-Prescription</li>
+                <li class="breadcrumb-item breadCrumbItems active" aria-current="page">Veterinary</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-auto col-12 sideBar">
+              <div class="row h-100">
+                <div class="col-12 h-100">
+                  <div class="cardWrapper">
+                    <div class="row flex-column flex-nowrap overflow-hidden h-100">
+                      <div class="col-12 d-flex justify-content-between pb-3 header">
+                        <div class="heading col">Filters</div>
+                        <div class="col-auto"><div class="close filterCloseBtn d-lg-none d-block"><img src="assets/img/index/close.png" alt=""></div></div>
+                      </div>
+                      <div class="col-12 sideBarbody flex-fill h-100">
+                        <div class="row">
+                          <div class="col-12 pt-3">
+                            <div class="accordion accordionWrapper" id="accordionExample">
+                              <div class="accordion-item accordionItem">
+                                <h2 class="accordion-header accordionHeader">
+                                  <button class="accordion-button accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Brands
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse accordionCollapse collapse show" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body accordionBody">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <ul class="categoryUl">
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked0">
+                                                B Positive(1)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked1">
+                                                Bionote(36)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked2">
+                                                Canine(9)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3qq" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3qq">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item accordionItem">
+                                <h2 class="accordion-header accordionHeader">
+                                  <button class="accordion-button accordionButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Manufacturers
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body accordionBody">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <ul class="categoryUl">
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked0a">
+                                                B Positive(1)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked1a">
+                                                Bionote(36)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked2a">
+                                                Canine(9)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3a">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3aq" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3aq">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item accordionItem">
+                                <h2 class="accordion-header accordionHeader">
+                                  <button class="accordion-button accordionButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Categories
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body accordionBody">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <ul class="categoryUl">
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked0s">
+                                                B Positive(1)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked1s">
+                                                Bionote(36)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked2s">
+                                                Canine(9)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3s">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3ss" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3ss">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 pt-3 pb-3  border-bottom">
+                            <div class="heading1">Price</div>
+                          </div>
+                          <div class="col-12">
+                              <div class="range-slide">
+                                <div class="slide">
+                                  <div class="line" id="line" style="left: 0%; right: 0%;"></div>
+                                  <span class="thumb" id="thumbMin" style="left: 0%;"></span>
+                                  <span class="thumb" id="thumbMax" style="left: 100%;"></span>
+                                </div>
+                                <input id="rangeMin" type="range" max="100" min="10" step="5" value="0">
+                                <input id="rangeMax" type="range" max="100" min="10" step="5" value="100">
+                              </div>
+                              <div class="display">
+                                <span id="min">10</span>
+                                <span id="max">100</span>
+                              </div>
+                          </div>
+                          <div class="col-12 pt-3 pb-3  border-bottom">
+                            <div class="heading1">Discount</div>
+                          </div>
+                          <div class="col-12">
+                            <div class="range-slide">
+                              <div class="slide">
+                                <div class="line" id="line1" style="left: 0%; right: 0%;"></div>
+                                <span class="thumb" id="thumbMin1" style="left: 0%;"></span>
+                                <span class="thumb" id="thumbMax1" style="left: 100%;"></span>
+                              </div>
+                              <input id="rangeMin1" type="range" max="100" min="10" step="5" value="0">
+                              <input id="rangeMax1" type="range" max="100" min="10" step="5" value="100">
+                            </div>
+                            <div class="display">
+                              <span id="min1">10</span>
+                              <span id="max1">100</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg col-12 mainContent">
+            <div class="row mx-0">
+              <div class="col-12">
+                <div class="mainHeader">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-auto col-12 mb-2 mb-sm-0"><div class="leftTxt"> <span>Baby Products</span> <span></span></div></div>
+                    <div class="col-sm-auto col-12 d-flex align-items-center">
+                      <!-- <div class="filterBtn d-lg-none d-block child"><img src="assets/img/index/filter.svg" alt=""></div> -->
+                      <div class="rytTxt pe-3">Sort by:</div>
+                      <div class="drop">
+                        <div class="dropdown">
+                          <button class="btn dropBtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Popularity
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropItems" href="#">Popularity</a></li>
+                            <li><a class="dropdown-item dropItems" href="#">High To Low</a></li>
+                            <li><a class="dropdown-item dropItems" href="#">Low To High</a></li>
+                            <li><a class="dropdown-item dropItems" href="#">Discount</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 py-4">
+                <div class="row gy-4">
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/disposable-Face-Masks2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/honeytulsi2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/non-contact-infraredthermometer2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-6">
+                    <div class=" productCard h-100 rounded-3 overflow-hidden position-relative">
+                      <div class="offerBuddge rounded-3 z-1"> -22% </div>
+                        <button href="javascript:;" class="text-decoration-none d-md-none d-block border-0 shadow-none z-5 d-flex align-items-center rounded-3  hearticon"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                      <div class="cardIMg mx-auto overflow-hidden mt-2"><img src="assets/img/index/productCard2.jpg" alt="productCard" class="img-fluid w-100 h-100 overflow-hidden"></div>
+                      <div class="addCard mb-1 w-100 d-md-block d-none">
+                        <div class="row mx-0 w-100 ">
+                          <div class="col px-0">
+                            <button href="javascript:;" class="addCartBtn border-0 shadow-none z-5">Add To Cart</button>
+                          </div>
+                          <div class="col-auto pe-0">
+                            <button href="javascript:;" class="text-decoration-none border-0 shadow-none z-5 d-flex align-items-center  heartImg"><img src="assets/img/index/heart.svg" alt="heartImg" class="img-fluid w-100 h-100"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cardContent">
+                        <div class="cardSubheading"><a href="javascript:;" class="text-decoration-none stretched-link d-inline-block align-items-center cardSubheading">Depression,</a>  <a href="javascrit:;" class="text-decoration-none d-inline-block align-items-center cardSubheading"> Personal Care</a> </div>
+                        <div class="cardheading mt-md-2"><a href="javascript:;" class="text-decoration-none d-flex align-content-center cardheading"> Pack of 50 Disposable Face Masks</a></div>
+                        <div class="priceSection mt-2"> $250,00  <span class="oldprice ms-3 text-decoration-line-through"> $320,00</span></div>
+                        <div class="d-md-none d-block"> <button href="javascript:;" class="position-relative rounded-2 addCartBtn border-0 shadow-none z-5 opacity-1 mt-2">Add To Cart</button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0">
+              <div class="col-12 d-flex justify-content-sm-end justify-content-center">
+                <div class="pagination gap-2">
+                  <button class="paginationBtn"><img src="assets/img/index/navarrow2.svg" alt=""></button>
+                  <span class="">1</span>
+                  <span class="">2</span>
+                  <span class="">...</span>
+                  <span class="">12</span>
+                  <span class="">13</span>
+                  <button class="paginationBtn" disabled><img src="assets/img/index/navarrow.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0 mt-3 d-lg-none d-flex border-bottom border-top fixed-bottom footerBar">
+              <div class="col-6 border-end py-2">
+                <a href="#offcanvasBottom" class="sortingBtn d-flex justify-content-center text-decoration-none" data-bs-toggle="offcanvas" aria-controls="offcanvasBottom">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-auto pe-0"><div class="sort"><img src="assets/img/sort.svg" alt="" srcset=""></div></div>
+                    <div class="col"><div class="txt">Sort by</div><div class="txt1">Applying Sorting</div></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 py-2">
+                <div class="sortingBtn d-flex justify-content-center">
+                  <div class="row align-items-center justify-content-center filterBtn  child">
+                    <div class="col-auto pe-0"><div class="sort"><img src="assets/img/index/filter.svg" alt="" srcset=""></div></div>
+                    <div class="col"><div class="txt">Filter by</div><div class="txt1">Applying Filters</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- hero section end  -->
+    <!-- <div class="heroseCtionCard container-fluid py-4">
+      <div class="row ">
+        <div class="col-12">
+          <div class="row flex-nowrap overflow-x-auto">
+            <div class="col">
+              <div class="card border-0  shadow-none rounded-3 bg-primary bg-opacity-10 heroCard h-100 position-relative" >
+                <div class="card-body">
+                  <div class="cardContent d-flex align-items-center h-100">
+                    <div class="cardIocn"><img src="assets/img/index/medician1.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                    <div class="ms-3">
+                      <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Get 15% off on Medicines </div></a>
+                      <div class="cardPera pt-1 fw-semibold">UPLOAD NOW</div>
+                    </div>
+                    <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card heroCard2 border-0 shadow-none rounded-3 bg-warning bg-opacity-10 heroCard h-100 position-relative">
+                <div class="card-body">
+                  <div class="cardContent h-100 d-flex align-items-center ">
+                    <div class="cardIocn"><img src="assets/img/index/medicain2.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                    <div class="ms-3">
+                      <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Hospital Visit</div></a>
+                      <div class="cardPera pt-1 fw-semibold">PRE BOOK</div>
+                    </div>
+                    <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow-none rounded-3 bg-info bg-opacity-10 heroCard h-100 position-relative">
+                <div class="card-body">
+                  <div class="cardContent d-flex align-items-center h-100">
+                    <div class="cardIocn"><img src="assets/img/index/medician1.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                    <div class="ms-3">
+                      <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Video Consult </div></a>
+                      <div class="cardPera pt-1 fw-semibold">IN 15 MIN</div>
+                    </div>
+                    <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card heroCard3 border-0 shadow-none rounded-3 bg-danger bg-opacity-10 heroCard h-100 position-relative">
+                <div class="card-body">
+                  <div class="cardContent d-flex align-items-center h-100">
+                    <div class="cardIocn"><img src="assets/img/index/labtest.svg" alt="medician1" class="img-fluid w-100 h-100"></div>
+                    <div class="ms-3">
+                      <a href="javascript:;" class="cardHeading fw-semibold text-decoration-none stretched-link"> <div class="cardHeading">Lab Tests </div></a>
+                      <div class="cardPera pt-1 fw-semibold">AT HOME</div>
+                    </div>
+                    <div class="iconarrow d-inline-flex ms-auto"><img src="assets/img/index/rightarrow.svg" alt="rightarrow" class="img-fluid w-100 h-100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  
+  </main>
+
+  <!-- footer start  -->
+  <div class="container-fluid footer ">
+    <div class="row border-top  footerinner">
+      <div class="col-md-2">
+        <div class="footerHeading">COMPANY</div>
+        <ul class="list-unstyled footermenu d-flex flex-column">
+          <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Costumer Speak</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">In the News</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Career</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="footerHeading">OUR POLICIES</div>
+        <ul class="list-unstyled footermenu d-flex flex-column">
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Terms and Conditions</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Privacy Policy</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Fees and Payments Policy</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Shipping and Delivery Policy</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Return, Refund and Cancellation Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3">
+        <div class="footerHeading">SHOPPING</div>
+        <ul class="list-unstyled footermenu d-flex flex-column">
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by A-Z</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by Manufacturers</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Health Article</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Offers / Coupons</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3">
+        <div class="footerHeading">SOCIAL</div>
+        <ul class="list-unstyled footermenu d-flex flex-column">
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Patients Alike</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Facebook</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Twitter</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">LinkedIn</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Youtube</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Instagrams</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-5">
+        <div class="footerHeading">SUBSCRIBE TO OUR NEWSLETT</div>
+        <div class="footerdata pb-2">
+          Get a free subscription to our health and fitness tip and stay tuned to our latest offers
+        </div>
+        <div class="inputpinmain p4 rounded5 d-flex align-items-center position-relative w-100">
+          <input type="text" id="Pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+          <label for="Pincode" class="pincodeLabel bg-transparent">Enter e-mail</label>
+          <button class="btn rightarrow p-0 border-0">
+            <img src="assets/img/futerebrand/rightarrow.svg" alt="right" class="h00 w-100 img-fluid">
+          </button>
+        </div>
+        <div class="d-flex align-items-center gap-2 pt-3">
+          <a href="javascript:;" class="d-flex align-items-center justify-content-center download">
+            <img src="assets/img/futerebrand/downloadicon.png" alt="android" class="h-100 w-100 img-fluid">
+          </a>
+          <a href="javascript:;" class="d-flex align-items-center justify-content-center download">
+            <img src="assets/img/futerebrand/download2.png" alt="android" class="h-100 w-100 img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row paymentMain pt-4 border-bottom border-secondary border-opacity-25">
+      <div class="col-12 partnerHeading">OUR PAYMENT PARTNERS</div>
+      <div class="col-12 pt-3">
+        <div class="d-flex flex-wrap align-items-center gap-4">
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/phonepay.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/rupay.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row copyrightmain">
+      <div class="copyrightTitle">Copyright© 2023. All Rights Reserved.</div>
+    </div>
+  </div>
+  <!-- footer end  -->
+
+  <!-- MAIN JS  -->
+  <script src="assets/js/main.min.js"></script>
+  <!-- BOOTSTRAP JS  -->
+  <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- SWIPER JS  -->
+  <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+
+  <!-- sorting offcanvas -->
+
+  <div class="offcanvas offcanvasBottom offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header offcanvasBottomHeader">
+      <div class="offcanvas-title offcanvasBottomTitle" id="offcanvasBottomLabel">Sort By</div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body offcanvasBottomBody small">
+      <div class="row">
+        
+        <div class="col-12">
+          <ul class="categoryUl ps-0">
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked00" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked00">
+                  B Positive(1)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked11" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked11">
+                  Bionote(36)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked22" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked22">
+                  Canine(9)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked33" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked33">
+                  Capt.Zack(15)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked44" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked44">
+                  Capt.Zack(15)
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- location offcanvas  -->
+  <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-light border-bottom">
+      <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+      <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col-12 deliveryData fw-medium">
+          Get access to your Address, Order, and Wishlist
+        </div>
+        <div class="col-12 py-3 border-bottom border-1">
+          <button type="button" class="btn mxuto addaddressbtn rounded-1 d-flex flex-column align-items-center " data-bs-toggle="modal" data-bs-target="#locationmodal">
+            <span class="d-flex align-items-center justify-content-center plusicon">
+              <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
+            </span>
+            <span class="addressTile">Add Address</span>
+          </button>
+          </div>
+          <div class="col-12 enterpin fw-semibold pt-2 text-center">
+            Enter Pincode
+          </div>
+          <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
+            Select Pincode to see product availability
+          </div> -->
+          <div class="col-12 pt-3">
+            <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
+              <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
+                <input type="text" id="Pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                <label for="Pincode" class="pincodeLabel">PINCODE</label>
+                <button class="btn applypinBtn bg-transparent border-0">Apply</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-3 text-center">
+            <a href="javascript:;" class="detectlocation bg-secondary bg-opacity-25 d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
+              <span class="d-flex align-items-center justify-content-center detecticon">
+                <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
+              </span>
+              Detect my location
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- location modal  -->
+  <div class="modal fade locationmodal" id="locationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog mx-auto locationdialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content ">
+        <div class="modal-header locationHeader">
+          <div class="modal-title locationHeading" id="exampleModalLabel">Add Address</div>
+          <button type="button" class="btn-close d-flex align-items-center justify-content-center shadow-none" data-bs-dismiss="modal" aria-label="Close">
+            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row locationcontent">
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
+                <label for="House" class="pincodeLabel">House No.</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
+                <label for="streetno1" class="pincodeLabel">Street No.1</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="streetno2" class="pincodeLabel">Street No.2</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="city" class="pincodeLabel">City</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="state" class="pincodeLabel">State</label>
+              </div>
+            </div>
+            <div class="col-12 pt-2">
+              <div class="d-flex align-items-center justify-conten">
+                <div class="form-check ps-0">
+                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Home">
+                    <label class="form-check-label checkLabel rounded-1" for="Home">
+                      Home
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
+                  <label class="form-check-label checkLabel rounded-1" for="Work">
+                    Work
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
+                  <label class="form-check-label checkLabel rounded-1" for="Other">
+                    Other
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn applyBtn">Save and Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar offcanvas  -->
+  <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-light border-bottom align-items-start">
+      <div class="offcanvas-title offcanvasLogo d-flex align-items-center justify-content-center" id="offcanvasExampleLabel">
+        <img src="assets/img/mainlogo.png" alt="logo" class="h-100 w-100 img-fluid">
+      </div>
+      <button type="button" class="btn-close closebtn mt-1 shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-items d-flex list-unstyled flex-column m-0 justify-content-center flex-grow-1 pe3">
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Medicine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Lab Test</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Medical Devices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Baby Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Beauty Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Supplementary Product</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- future brand slider  -->
+  <script>
+    var swiper = new Swiper(".futurebrand", {
+      // slidesPerView: 1,
+      // spaceBetween: 10,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        500: {
+          slidesPerView: 3,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          // spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 5,
+          // spaceBetween: 20,
+        },
+        1100: {
+          slidesPerView: 6,
+          // spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: ".nextBtn",
+        prevEl: ".prevBtn",
+      },
+    });
+  </script>
+  <!-- future brand slider  -->
+
+  <script>
+    let min = 10;
+    let max = 100;
+
+    const calcLeftPosition = value => 100 / (100 - 10) *  (value - 10);
+
+    $('#rangeMin').on('input', function(e) {
+      const newValue = parseInt(e.target.value);
+      if (newValue > max) return;
+      min = newValue;
+      $('#thumbMin').css('left', calcLeftPosition(newValue) + '%');
+      $('#min').html(newValue);
+      $('#line').css({
+        'left': calcLeftPosition(newValue) + '%',
+        'right': (100 - calcLeftPosition(max)) + '%'
+      });
+    });
+
+    $('#rangeMax').on('input', function(e) {
+      const newValue = parseInt(e.target.value);
+      if (newValue < min) return;
+      max = newValue;
+      $('#thumbMax').css('left', calcLeftPosition(newValue) + '%');
+      $('#max').html(newValue);
+      $('#line').css({
+        'left': calcLeftPosition(min) + '%',
+        'right': (100 - calcLeftPosition(newValue)) + '%'
+      });
+    });
+
+  </script>
+
+<script>
+  let min1 = 10;
+  let max1 = 100;
+
+  const calcLeftPosition1 = value => 100 / (100 - 10) *  (value - 10);
+
+  $('#rangeMin1').on('input', function(e) {
+    const newValue = parseInt(e.target.value);
+    if (newValue > max) return;
+    min = newValue;
+    $('#thumbMin1').css('left', calcLeftPosition1(newValue) + '%');
+    $('#min1').html(newValue);
+    $('#line1').css({
+      'left': calcLeftPosition1(newValue) + '%',
+      'right': (100 - calcLeftPosition1(max)) + '%'
+    });
+  });
+
+  $('#rangeMax1').on('input', function(e) {
+    const newValue = parseInt(e.target.value);
+    if (newValue < min) return;
+    max = newValue;
+    $('#thumbMax1').css('left', calcLeftPosition1(newValue) + '%');
+    $('#max1').html(newValue);
+    $('#line1').css({
+      'left': calcLeftPosition1(min) + '%',
+      'right': (100 - calcLeftPosition1(newValue)) + '%'
+    });
+  });
+
+</script>
+
+<script>
+  let filterWrapper = document.querySelector('.filterWrapper')
+  let filterBtn = document.querySelector('.filterBtn')
+  let filterCloseBtn = document.querySelector('.filterCloseBtn')
+
+  filterBtn.addEventListener('click', ()=>{
+    filterWrapper.classList.add('show')
+    document.body.style.overflow = 'hidden'
+  })
+  filterCloseBtn.addEventListener('click', ()=>{
+    filterWrapper.classList.remove('show')
+    document.body.style.overflow = 'visible'
+  })
+</script>
+</body>
+</html>
