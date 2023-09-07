@@ -199,9 +199,9 @@
   </nav>
   <!-- navbar start  -->
   <main class="main">
-    <div class="container-fluid pt-4 categoryFluid filterWrapper overflow-hidden px-0">
+    <div class="container-fluid pt-4 categoryFluid filterWrapper overflow-hidden px-0 position-relative">
         <div class="row">
-          <div class="col-12 d-md-block d-none mb-3 ps-4">
+          <div class="col-12 d-lg-block d-none mb-3 ps-4">
             <nav class="breadCrumbWrapper" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item breadCrumbItems"><a class="breadCrumbItemsAnchor" href="#">Home</a></li>
@@ -211,225 +211,229 @@
             </nav>
           </div>
           <div class="col-lg-auto col-12 sideBar">
-              <div class="row">
-                <div class="col-12">
+              <div class="row h-100">
+                <div class="col-12 h-100">
                   <div class="cardWrapper">
-                    <div class="row">
-                      <div class="col-12 d-flex justify-content-between pb-3">
+                    <div class="row flex-column flex-nowrap overflow-hidden h-100">
+                      <div class="col-12 d-flex justify-content-between pb-3 header">
                         <div class="heading col">Filters</div>
                         <div class="col-auto"><div class="close filterCloseBtn d-lg-none d-block"><img src="assets/img/index/close.png" alt=""></div></div>
                       </div>
-                      <div class="col-12 pt-3">
-                        <div class="accordion accordionWrapper" id="accordionExample">
-                          <div class="accordion-item accordionItem">
-                            <h2 class="accordion-header accordionHeader">
-                              <button class="accordion-button accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Brands
-                              </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse accordionCollapse collapse show" data-bs-parent="#accordionExample">
-                              <div class="accordion-body accordionBody">
-                                <div class="row">
-                                  <div class="col-12">
-                                    <ul class="categoryUl">
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked0">
-                                            B Positive(1)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked1">
-                                            Bionote(36)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked2">
-                                            Canine(9)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
-                                            Capt.Zack(15)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
-                                            Capt.Zack(15)
-                                          </label>
-                                        </div>
-                                      </li>
-                                    </ul>
+                      <div class="col-12 sideBarbody flex-fill h-100">
+                        <div class="row">
+                          <div class="col-12 pt-3">
+                            <div class="accordion accordionWrapper" id="accordionExample">
+                              <div class="accordion-item accordionItem">
+                                <h2 class="accordion-header accordionHeader">
+                                  <button class="accordion-button accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Brands
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse accordionCollapse collapse show" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body accordionBody">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <ul class="categoryUl">
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked0">
+                                                B Positive(1)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked1">
+                                                Bionote(36)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked2">
+                                                Canine(9)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3qq" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3qq">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item accordionItem">
+                                <h2 class="accordion-header accordionHeader">
+                                  <button class="accordion-button accordionButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Manufacturers
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body accordionBody">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <ul class="categoryUl">
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked0a">
+                                                B Positive(1)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked1a">
+                                                Bionote(36)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked2a">
+                                                Canine(9)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3a" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3a">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3aq" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3aq">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item accordionItem">
+                                <h2 class="accordion-header accordionHeader">
+                                  <button class="accordion-button accordionButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Categories
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body accordionBody">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <ul class="categoryUl">
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked0s">
+                                                B Positive(1)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked1s">
+                                                Bionote(36)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked2s">
+                                                Canine(9)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3s" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3s">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="categoryLi list-unstyled">
+                                            <div class="form-check formCheckWrapper">
+                                              <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3ss" >
+                                              <label class="form-check-label formCheckLbl" for="flexCheckChecked3ss">
+                                                Capt.Zack(15)
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="accordion-item accordionItem">
-                            <h2 class="accordion-header accordionHeader">
-                              <button class="accordion-button accordionButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Manufacturers
-                              </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body accordionBody">
-                                <div class="row">
-                                  <div class="col-12">
-                                    <ul class="categoryUl">
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked0">
-                                            B Positive(1)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked1">
-                                            Bionote(36)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked2">
-                                            Canine(9)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
-                                            Capt.Zack(15)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
-                                            Capt.Zack(15)
-                                          </label>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
+                          <div class="col-12 pt-3 pb-3  border-bottom">
+                            <div class="heading1">Price</div>
+                          </div>
+                          <div class="col-12">
+                              <div class="range-slide">
+                                <div class="slide">
+                                  <div class="line" id="line" style="left: 0%; right: 0%;"></div>
+                                  <span class="thumb" id="thumbMin" style="left: 0%;"></span>
+                                  <span class="thumb" id="thumbMax" style="left: 100%;"></span>
                                 </div>
+                                <input id="rangeMin" type="range" max="100" min="10" step="5" value="0">
+                                <input id="rangeMax" type="range" max="100" min="10" step="5" value="100">
                               </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item accordionItem">
-                            <h2 class="accordion-header accordionHeader">
-                              <button class="accordion-button accordionButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Categories
-                              </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body accordionBody">
-                                <div class="row">
-                                  <div class="col-12">
-                                    <ul class="categoryUl">
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked0" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked0">
-                                            B Positive(1)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked1" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked1">
-                                            Bionote(36)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked2" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked2">
-                                            Canine(9)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
-                                            Capt.Zack(15)
-                                          </label>
-                                        </div>
-                                      </li>
-                                      <li class="categoryLi list-unstyled">
-                                        <div class="form-check formCheckWrapper">
-                                          <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3" >
-                                          <label class="form-check-label formCheckLbl" for="flexCheckChecked3">
-                                            Capt.Zack(15)
-                                          </label>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
+                              <div class="display">
+                                <span id="min">10</span>
+                                <span id="max">100</span>
                               </div>
+                          </div>
+                          <div class="col-12 pt-3 pb-3  border-bottom">
+                            <div class="heading1">Discount</div>
+                          </div>
+                          <div class="col-12">
+                            <div class="range-slide">
+                              <div class="slide">
+                                <div class="line" id="line1" style="left: 0%; right: 0%;"></div>
+                                <span class="thumb" id="thumbMin1" style="left: 0%;"></span>
+                                <span class="thumb" id="thumbMax1" style="left: 100%;"></span>
+                              </div>
+                              <input id="rangeMin1" type="range" max="100" min="10" step="5" value="0">
+                              <input id="rangeMax1" type="range" max="100" min="10" step="5" value="100">
+                            </div>
+                            <div class="display">
+                              <span id="min1">10</span>
+                              <span id="max1">100</span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 pt-3 pb-3  border-bottom">
-                        <div class="heading">Price</div>
-                      </div>
-                      <div class="col-12">
-                          <div class="range-slide">
-                            <div class="slide">
-                              <div class="line" id="line" style="left: 0%; right: 0%;"></div>
-                              <span class="thumb" id="thumbMin" style="left: 0%;"></span>
-                              <span class="thumb" id="thumbMax" style="left: 100%;"></span>
-                            </div>
-                            <input id="rangeMin" type="range" max="100" min="10" step="5" value="0">
-                            <input id="rangeMax" type="range" max="100" min="10" step="5" value="100">
-                          </div>
-                          <div class="display">
-                            <span id="min">10</span>
-                            <span id="max">100</span>
-                          </div>
-                      </div>
-                      <div class="col-12 pt-3 pb-3  border-bottom">
-                        <div class="heading">Discount</div>
-                      </div>
-                      <div class="col-12">
-                        <div class="range-slide">
-                          <div class="slide">
-                            <div class="line" id="line1" style="left: 0%; right: 0%;"></div>
-                            <span class="thumb" id="thumbMin1" style="left: 0%;"></span>
-                            <span class="thumb" id="thumbMax1" style="left: 100%;"></span>
-                          </div>
-                          <input id="rangeMin1" type="range" max="100" min="10" step="5" value="0">
-                          <input id="rangeMax1" type="range" max="100" min="10" step="5" value="100">
-                        </div>
-                        <div class="display">
-                          <span id="min1">10</span>
-                          <span id="max1">100</span>
-                        </div>
-                    </div>
                     </div>
                   </div>
                 </div>
@@ -440,9 +444,9 @@
               <div class="col-12">
                 <div class="mainHeader">
                   <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-auto col-12 mb-2 mb-sm-0"><div class="leftTxt">showing <span>2</span>of <span>2</span>items</div></div>
+                    <div class="col-sm-auto col-12 mb-2 mb-sm-0"><div class="leftTxt"> <span>Baby Products</span> <span></span></div></div>
                     <div class="col-sm-auto col-12 d-flex align-items-center">
-                      <div class="filterBtn d-lg-none d-block child"><img src="assets/img/index/filter.svg" alt=""></div>
+                      <!-- <div class="filterBtn d-lg-none d-block child"><img src="assets/img/index/filter.svg" alt=""></div> -->
                       <div class="rytTxt pe-3">Sort by:</div>
                       <div class="drop">
                         <div class="dropdown">
@@ -450,9 +454,10 @@
                             Popularity
                           </button>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item dropItems" href="#">Action</a></li>
-                            <li><a class="dropdown-item dropItems" href="#">Another action</a></li>
-                            <li><a class="dropdown-item dropItems" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item dropItems" href="#">Popularity</a></li>
+                            <li><a class="dropdown-item dropItems" href="#">High To Low</a></li>
+                            <li><a class="dropdown-item dropItems" href="#">Low To High</a></li>
+                            <li><a class="dropdown-item dropItems" href="#">Discount</a></li>
                           </ul>
                         </div>
                       </div>
@@ -649,6 +654,37 @@
                 </div>
               </div>
             </div>
+            <div class="row mx-0">
+              <div class="col-12 d-flex justify-content-sm-end justify-content-center">
+                <div class="pagination gap-2">
+                  <button class="paginationBtn"><img src="assets/img/index/navarrow2.svg" alt=""></button>
+                  <span class="">1</span>
+                  <span class="">2</span>
+                  <span class="">...</span>
+                  <span class="">12</span>
+                  <span class="">13</span>
+                  <button class="paginationBtn" disabled><img src="assets/img/index/navarrow.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0 mt-3 d-lg-none d-flex border-bottom border-top fixed-bottom footerBar">
+              <div class="col-6 border-end py-2">
+                <a href="#offcanvasBottom" class="sortingBtn d-flex justify-content-center text-decoration-none" data-bs-toggle="offcanvas" aria-controls="offcanvasBottom">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-auto pe-0"><div class="sort"><img src="assets/img/sort.svg" alt="" srcset=""></div></div>
+                    <div class="col"><div class="txt">Sort by</div><div class="txt1">Applying Sorting</div></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 py-2">
+                <div class="sortingBtn d-flex justify-content-center">
+                  <div class="row align-items-center justify-content-center filterBtn  child">
+                    <div class="col-auto pe-0"><div class="sort"><img src="assets/img/index/filter.svg" alt="" srcset=""></div></div>
+                    <div class="col"><div class="txt">Filter by</div><div class="txt1">Applying Filters</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
@@ -828,6 +864,66 @@
   <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- SWIPER JS  -->
   <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+
+  <!-- sorting offcanvas -->
+
+  <div class="offcanvas offcanvasBottom offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header offcanvasBottomHeader">
+      <div class="offcanvas-title offcanvasBottomTitle" id="offcanvasBottomLabel">Sort By</div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body offcanvasBottomBody small">
+      <div class="row">
+        
+        <div class="col-12">
+          <ul class="categoryUl ps-0">
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked00" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked00">
+                  B Positive(1)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked11" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked11">
+                  Bionote(36)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked22" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked22">
+                  Canine(9)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked33" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked33">
+                  Capt.Zack(15)
+                </label>
+              </div>
+            </li>
+            <li class="categoryLi list-unstyled">
+              <div class="form-check formCheckWrapper">
+                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked44" >
+                <label class="form-check-label formCheckLbl" for="flexCheckChecked44">
+                  Capt.Zack(15)
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <!-- location offcanvas  -->
   <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
