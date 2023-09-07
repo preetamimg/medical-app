@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical App</title>
-  <!-- BOOTSTRAP CSS -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <!-- STYLE -->
-  <link rel="stylesheet" href="./assets/css/style.min.css">
-  <!-- SWIPER CSS-->
-  <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical App</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- SWIPER CSS-->
+    <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
 </head>
 <body>
     <!-- navbar start  -->
@@ -166,7 +166,7 @@
                     </a>
                     <a href="javascript:;" class="cardBtn d-flex align-items-center justify-content-center position-relative">
                     <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
-                    <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadow-sm rounded-circle">12</span>
+                    <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
                     </a>
                     <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
                     <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
@@ -214,7 +214,7 @@
     <!-- cart section start  -->
     <div class="container-fluid cartsection">
         <div class="row">
-            <div class="pageHeading col-12">Order summary</div>
+            <div class="pageHeading col-12">Shopping Cart</div>
             <div class="col-12 pt-3">
                 <nav aria-label="breadcrumb" class="pagedetail">
                     <ol class="breadcrumb align-items-center">
@@ -224,7 +224,7 @@
                 </nav>
             </div>
         </div>
-        <div class="row pt-5">
+        <div class="row pt-4">
             <div class="col-lg-8">
                 <div class="cardtable">
                     <div class="table-responsive">
@@ -241,25 +241,62 @@
                             <tbody class="tablebody">
                                 <tr class="align-middle">
                                     <th class="tabledata border-0 rounded-start-2">
-                                        <div class="d-flex align-items-center">
-                                            <div class="productImg">
-                                                <img src="assets/img/index/honeytulsi2.jpg" alt="product" class="h-100 w-100 img-fluid">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
+                                                <div class="productImg">
+                                                    <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                                                </div>
                                             </div>
                                             <div>
                                                 <div class="productName">Upakarma Ayurveda Shilajit Veg Capsules 90's</div>
+                                                <div class="deliverytilte pt-2">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
                                             </div>
                                         </div>
                                     </th>
                                     <td class="tabledata border-0  price">Rs.450</td>
                                     <td class="tabledata border-0">
-                                        <div class="quantity">
-                                            <div class="quantityadd"></div>
-                                            <div></div>
-                                            <div></div>
+                                        <!-- <input type="number" class="rounded-1 shadow-none bg-transparent qualityinput"> -->
+                                        <div class="d-inline-flex align-items-center qualiltymain border border-1">
+                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                            <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
                                         </div>
                                     </td>
                                     <td class="tabledata border-0 totalprice">Rs.900</td>
-                                    <td class="tabledata border-0 rounded-end-2 "></td>
+                                    <td class="tabledata border-0 rounded-end-2 ">
+                                        <button class="d-flex align-items-center border-0 p-0 justify-content-center deleteIcon">
+                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <th class="tabledata border-0 rounded-start-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
+                                                <div class="productImg">
+                                                    <img src="assets/img/cart/cart2.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="productName">Hamdard Sualin for Cough</div>
+                                                <div class="deliverytilte pt-2">Delivery by <span class="text-dark fw-medium">Today, before 03:00 Am</span></div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="tabledata border-0  price">Rs.340</td>
+                                    <td class="tabledata border-0">
+                                        <div class="d-inline-flex align-items-center qualiltymain border border-1">
+                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                            <div class="quantityinput d-flex align-items-center justify-content-center">4</div>
+                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                        </div>
+                                    </td>
+                                    <td class="tabledata border-0 totalprice">Rs.2300</td>
+                                    <td class="tabledata border-0 rounded-end-2 ">
+                                        <button class="d-flex align-items-center border-0 p-0 justify-content-center deleteIcon">
+                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                        </button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -267,7 +304,59 @@
                 </div>
             </div>
             <div class="col-lg-4">
-
+                <div class="summaryCard rounded-2 bight">
+                    <div class="row">
+                        <div class="cartHeading col-12 ">
+                            Order Summary
+                        </div>
+                        <div class="col-12 pb-4">
+                            <div class="inputpinmain coupanCode rounded5 d-flex align-items-center position-relative w-100">
+                                <input type="text" id="Pincode" class="form-control  ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                                <label for="Pincode" class="pincodeLabel">Apply coupon</label>
+                                <button class="btn ps-1 applypinBtn bg-transparent border-0">Apply</button>
+                            </div>
+                        </div>
+                        <div class="col-12 cartSubheading border-top">Bill Summary</div>
+                        <div class="col-12 cartdata  ">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Cart Total</div>
+                                <div class="cardTitle text-dark fw-medium">Rs.1797</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartdata">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Total discount</div>
+                                <div class="cardTitle text-dark fw-medium">Rs.24</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartdata deliverycharge">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Delivery Charge</div>
+                                <div class="cardTitle text-dark fw-medium">Rs.197</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartSubheading totalpayment border-top">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>Total</div>
+                                <div class="totalpay">Rs.2534</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartdata border-top text-center ">
+                            <div class="d-flex align-items-center justify-content-center py-2">
+                                <a href="javascript:;" class="continueBtn rounded-2 applyBtn text-decoration-none">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="emptyCart">
+            <div class="emptyImg">
+                <img src="assets/img/futerebrand/empty-cart.svg" alt="empty" class="h-100 w-100 img-fluid object-fit-contain">
+            </div>
+            <div class="emptyTitle text-center">Your cart is empty</div>
+            <div class="emptybtnmain text-center">
+                <a href="javascript:;" class="applyBtn emptyBtn rounded-1 text-decoration-none">Continue Shopping</a>
             </div>
         </div>
     </div>

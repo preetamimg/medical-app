@@ -38,7 +38,7 @@
     }
     & .paymentMain {
         padding-bottom: 45px;
-        padding-top: 30px;
+        // padding-top: 30px;
     }
     & .footerHeading {
         font-size: 18px;
@@ -125,7 +125,8 @@
         gap: 20px;
         & .privacyLink {
             font-size: 13px;
-            color:#9f9f9f;
+            color:#d3d3d3;
+            // color: $theme1;
             transition: all 0.3s ease-in-out;
             &:hover {
                 color: $theme2;
@@ -157,10 +158,10 @@
         & .footerinner {
             padding-bottom:40px;
         }
-        // & .paymentMain {
-        //     padding-bottom: 40px;
-        //     padding-top: 25px;
-        // }
+        & .paymentMain {
+            padding-bottom: 40px;
+            // padding-top: 25px;
+        }
         & .footerHeading {
             margin-bottom: 20px;
             font-size: 17px;
@@ -284,10 +285,10 @@
         & .footerinner {
             padding-bottom:35px;
         }
-        // & .paymentMain {
-        //     padding-bottom:35px;
-        //     padding-top:25px;
-        // }
+        & .paymentMain {
+            padding-bottom:35px;
+            // padding-top:25px;
+        }
         & .input-group {
             height: 40px;
             margin-top: 14px;

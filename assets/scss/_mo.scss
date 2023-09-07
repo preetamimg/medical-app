@@ -96,6 +96,30 @@
             -webkit-box-shadow: 0 0 0 30px $white inset !important;
         }
     }
+    &.coupanCode {
+        height: 30px;
+        & input {
+            font-size: 13px;
+            padding-bottom: 3px;
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover, 
+            &:-webkit-autofill:focus, 
+            &:-webkit-autofill:active{
+                -webkit-box-shadow: 0 0 0 30px #f2f2f2 inset !important;
+            }
+        }
+        & label {
+            font-size: 13px;
+        }
+        input:focus ~ label{
+            background-color: transparent;
+        }
+        & .applypinBtn {
+            font-size: 14px;
+            font-weight: 500;
+            color: $theme1;
+        }
+    }
     & .pincodeLabel {
         font-size: 13px;
         font-weight: 500;
@@ -411,6 +435,11 @@
 }
 
 @include media-breakpoint-down(md) {
+    .sliderbtn {
+        height: 25px;
+        width: 25px;
+        padding: 4px;
+    }
 }
 
 @include media-breakpoint-down(sm) {
@@ -437,9 +466,9 @@
         }
     }
     .sliderbtn {
-        height: 25px;
-        width: 25px;
-        padding: 5px;
+        height: 20px;
+        width: 20px;
+        padding: 3px;
     }
      // offer section start 
     .offer {
@@ -466,6 +495,7 @@
         font-weight: 600;
         color: $white;
         line-height: normal;
+        width: 100%;
     }
     & .findcard {
         gap: 13px;
@@ -478,7 +508,7 @@
         font-size: 14px;
         color: lighten($black, 60);
         font-weight: 400;
-        padding-top:7px;
+        // padding-top:7px;
         line-height: normal;
     }
     & .ContactNumber {
@@ -521,6 +551,15 @@
     }
 }
 // secure delivery section end
+
+// hero section start 
+.heroSection {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+// hero section start 
+
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}
@@ -613,9 +652,10 @@
         padding-bottom: 35px;
         & .cityName {
             font-size: 16px;
+            width: auto;
         }
         & .findicon {
-            height: 20px;
+            height: 15px;
         }
         & .cityDetail {
             font-size: 12px;
@@ -649,6 +689,7 @@
 }
 
 
+
 // cart page start 
 .cartsection {
     padding-top: 60px;
@@ -661,23 +702,47 @@
                     font-size: 12px;
                     color: #222222;
                     font-weight: 700;
-                    padding: 14px 18px;
+                    padding: 14px 16px;
                     background: #f2f2f2;
                 }
             }
             & .tablebody {
                 & .tabledata {
                     background: #f2f2f2;
-                    padding: 14px 18px;
+                    padding: 14px 16px;
                 }
-                & .productImg {
-                    height: 50px;
-                    width: 50px;
+                & .productImgMain {
+                    height: 80px;
+                    min-width: 80px;
+                    max-width: 80px;
+                    background-color: $white;
+                    & .productImg {
+                        height: 60px;
+                        width: 60px;
+                    }
                 }
                 & .productName {
-                    font-size: 13px;
+                    font-size: 12px;
                     color: $black;
-                    font-weight: 500;
+                    font-weight: 600;
+                    display: inline;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                }
+                & .deliverytilte {
+                    font-size: 11px;
+                    font-weight: 400;
+                    color: lighten($black, 50);
+                }
+                & .deleteIcon {
+                    height: 22px;
+                    width: 18px;
+                    & img {
+                        filter: brightness(0);
+                    }
                 }
                 & .price {
                     font-size: 14px;
@@ -689,8 +754,104 @@
                     font-weight: 600;
                     color: $black;
                 }
+                & .qualityinput {
+                    height: 45px;
+                    width: 45px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: $black;
+                    border: 1px solid lighten($black, 80);
+                    outline: none;
+                }
+                & .qualiltymain {
+                    height: 35px;
+                    & .qualityicon {
+                        width: 35px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $black;
+                        cursor: pointer;
+                    }
+                    & .quantityinput {
+                        width: 40px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $black;
+                    }
+                }
             }
         }
+    }
+    & .summaryCard {
+        padding: 14px;
+        margin-top: 4px;
+        background: #f2f2f2;
+        & .cartHeading {
+            font-size: 16px;
+            font-weight: 600;
+            color: $black;
+            padding-bottom: 14px;
+        }
+        & .cartSubheading {
+            font-size: 15px;
+            font-weight: 600;
+            color: $black;
+            padding-top: 14px;
+        }
+        & .cartdata {
+            padding-top: 14px;
+            & .cardTitle {
+                font-size: 13px;
+                font-weight: 500;
+                color: lighten($black, 40);
+            }
+            &.deliverycharge {
+                padding-bottom: 14px;
+            }
+        }
+        & .totalpayment {
+            padding-bottom: 14px;
+        }
+        & .totalpay {
+            font-size: 14px;
+            font-weight: 600;
+            color: $black;
+        }
+        & .continueBtn {
+            padding: 8px 26px;
+        }
+        
+    }
+    & .emptyCart {
+        & .emptyImg {
+            aspect-ratio: 4/1;
+        }
+        & .emptyTitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: $black;
+            padding-bottom: 12px;
+        }
+        & .emptyBtn {
+            padding: 7px 22px;
+        }
+    }
+}
+
+.qualiltymain {
+    height: 35px;
+    & .qualityicon {
+        width: 35px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $black;
+        cursor: pointer;
+    }
+    & .quantityinput {
+        width: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $black;
     }
 }
 // cart page end
