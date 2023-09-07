@@ -190,10 +190,10 @@
 //  price section 
 .priceSection{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     color: $black;
     & .oldprice{
-        font-size: 13px;
+        font-size: 18px;
         color: $red;
     }
     & .textheading{
@@ -2192,6 +2192,17 @@
 .productDetailsPage{
     // height: calc(100vh - 100px);
 
+    & .navSmall{
+        & .navproductItem{
+                font-size: 18px;
+                font-weight: 600;
+                color: $theme1;
+                &.active{
+                    color: lighten($theme1, 10);
+                }
+        }
+    }
+
     & .productSwiper{
         width: 100%;
         width: 100%;
@@ -2319,112 +2330,82 @@
     }
 
     & .productHeading{
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 35px;
+        line-height: 45px;
         color: $black;
     }
     & .peraProduct{
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 500;
         color: lighten($black, 70);
     }
     & .rating{
         & .staricon{
-            width: 15px;
-            height: 15px;
+            width: 18px;
+            height: 18px;
         }
     }
-    & .review{
-        font-size: 14px;
-        color: $black;
+
+    & .brandHeading{
+        font-size: 18px;
+        font-weight: 700;
     }
-    & .quantity{
-        & .quantityHeading{
-            font-size: 12px;
-            color: lighten($black, 70);
-        }
-        & .number{
-            height:38px;
-            & .minus{
-                cursor: pointer;
-                width:40px;
-                height:100%;
-                background:$theme1;
-                // padding:6px 1px 6px 1px;
-                text-align: center;
-                transition: all 0.3s ease-in-out;
-                color: $white;
-                font-size: 12px;
-                
-            }
-            & .numberInput{
-                width:100px;
-                height:100%;
-                font-size: 12px;
-            // border: 1px solid ;
-              background-color: lighten($black,90);
-            }
-        }
-    }   
-    & .iconWish{
-        width: 13px;
-        height: 13px;
-    }
-    & .wishheading{
-        font-size: 12px;
-        line-height: 13px;
-        color: $black;
+
+    & .itemHeading{
         font-weight: 400;
+        color:$theme1;
+        letter-spacing: 1px;
+        & .imgicon{
+            width: 18px;
+            height: 18px;
+        }
     }
-    & .bestPrice{
-        background-color: lighten($danger, 55) !important;
-        padding: 15px;
-        & .newpriceHeading{
-            font-size: 13px;
-            color: $black;
+    & .flavourHeading{
+        font-size: 18px !important;
+        font-weight: 600;
+        color: $black;
+        & .subheadingFlavour{
+            font-size: 16px !important;
+            color: lighten($black, 40);
             font-weight: 400;
-            & .barBestPrice{
-                font-size: 14px;
-                color:#dd4679;
-                font-weight: 600;
-            }
-        }
-        & .cartCard{
-            // width: 80px;
-            padding: 8px;
-            & .iconCart{
-                width: 23px;
-                height: 23px;
-            }
-            & .smallheadingcart{
-                font-size: 7px;
-                color: $black;
-            }
-            & .smallheading2{
-                font-size: 12px;
-                color: $black;
-            }
-        }
-        & .peracart{
-            font-size: 12px;
-            color: $black;
-            font-weight: 200;
         }
     }
+
+   & .qualiltymain2 {
+        height: 50px;
+        border-radius: 10px;
+        & .qualityicon {
+            width: 35px;
+            font-size: 18px;
+            font-weight: 600;
+            color: $black;
+            cursor: pointer;
+        }
+        & .quantityinput {
+            width: 150px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $black;
+        }
+    }
+
+  
+
+
+
+
+
+
+
+
+   
+ 
     & .returnPera{
         font-size: 11px;
         color: lighten($black, 40);
         font-weight: 400;
     }
-    & .flavourHeading{
-        font-size: 13px;
-        font-weight: 600;
-        color: $black;
-        & .subheadingFlavour{
-            font-size: 12px;
-            color: lighten($black, 40);
-            font-weight: 400;
-        }
-    }
+
     & .form-check2 {
         padding-left: 10px;
     }
@@ -2470,6 +2451,42 @@
             height: 38px;
             color: white;
         }
+    }
+
+}
+
+// descrepationSection 
+.descrepationSection{
+    & .descriptionCard{
+        padding: 30px 15px;
+        & .descriptionHeading{
+            font-size: 20px;
+            color: $black;
+            margin-bottom: 25px;
+        }
+        & .descriptionHeading2{
+            font-size:18px;
+            color: $black;
+        }
+        & .detailsPera{
+            font-size: 16px;
+            font-weight: 400;
+            color: lighten($black, 40);
+        }
+        & .brandHeading{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+    & .itemHeading{
+        font-weight: 400;
+        color:$theme1;
+        letter-spacing: 1px;
+        & .imgicon{
+            width: 18px;
+            height: 18px;
+        }
+    }
     }
 
 }
