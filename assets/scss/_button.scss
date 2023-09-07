@@ -157,34 +157,78 @@ font-size: 14px;
 }
 
 .addBtnCard{
-    
-    height: 40px;
-    line-height: 40px;
-    // background-color: #f8f8f8;
-    background-color:$black;
+    height: 50px;
+    padding: 10px 30px;
+    background-color:$theme1;
     color: $white;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 13px;
-    border-radius:0px 5px 5px 0px;
+    font-size: 18px;
+    border-radius:10px;
     display: inline-block;
-    padding: 0 30px;
     text-decoration: none;
     vertical-align: top;
     transition: all .4s ease-in-out;
-    // width: 100%;
-    letter-spacing: .06em;
-    z-index: 999;
+    white-space: nowrap;
     &:hover{
      background-color:lighten($theme1, 5);
     }
     &.addBtnCard2{
-        background-color: lighten($black, 90);
+        background-color:rgba($black, 0.80);
         transition: all 0.3s ease-in-out;
-        color: $black;
+        color: $white;
         &:hover{
-            background-color:lighten($theme1, 5);
+            background-color:$theme1;
             color: $white;
         }
     }
+}
+
+@include media-breakpoint-down(lg) {
+    .addBtnCard{
+      font-size: 16px;
+     
+        &:hover{
+        
+        }
+        &.addBtnCard2{
+           
+            &:hover{
+               
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .addBtnCard{
+        font-size: 14px;
+        height: 44px;
+          &:hover{
+          
+          }
+          &.addBtnCard2{
+             
+              &:hover{
+                 
+              }
+          }
+      }
+}
+
+@include media-breakpoint-down(sm) {
+    .addBtnCard{
+        font-size: 12px;
+        height: 38px;
+       
+          &:hover{
+          
+          }
+          &.addBtnCard2{
+             
+              &:hover{
+                 
+              }
+          }
+      }
 }
