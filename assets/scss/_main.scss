@@ -26,23 +26,28 @@ body {
     // color: $theme1;
     & a {
       color: $theme1;
+      padding-right: 20px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-38%);
+        height: 11px;
+        width: 8px;
+        border-radius: 50%;
+        right:6px;
+        background: url(../img/right.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
     &.activepage {
       color: lighten($black, 60);
       // padding-left: 20px;
-      // &::before {
-      //   content: '';
-      //   position: absolute;
-      //   top: 50%;
-      //   transform: translateY(-50%);
-      //   height: 4px;
-      //   width: 4px;
-      //   border-radius: 50%;
-      //   left: 8px;
-      //   float: unset;
-      //   padding: 0;
-      //   background-color: $theme1;
-      // }
+      line-height: normal;
+      &::before {
+        display: none;
+      }
     }
   }
 }
@@ -79,5 +84,30 @@ body {
 @include media-breakpoint-down(sm) {
   .main {
     padding: 0px;
+  }
+  .pagedetail {
+    & .pagename {
+      font-size: 13px;
+      & a {
+        padding-right: 20px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 11px;
+          width: 7px;
+          border-radius: 50%;
+          right:6px;
+          background: url(../img/right.svg) no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      &.activepage {
+        &::before {
+        }
+      }
+    }
   }
 }

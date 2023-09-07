@@ -113,6 +113,30 @@
     & .paymentImg {
         height:25px;
     }
+    & .android_btn {
+        height: 46px;
+        border-radius:5px;
+        background-color:$white;
+        padding: 4px 7px;
+        transition: all 0.3s ease-in-out;
+        & .icon {
+            height: 28px;
+            width: 28px;
+        }
+        & .downloadTitle {
+            font-size: 10px;
+            line-height: normal;
+            color: $black;
+        }
+        & .downloadapp {
+            font-size: 15px;
+            line-height: normal;
+            color: $black;
+        }
+        &:hover {
+            background-color: darken($white, 10);
+        }
+    }
 }
 .copyrightmain {
     background: #202020;

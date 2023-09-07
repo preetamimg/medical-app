@@ -63,6 +63,9 @@
             }
         }
     }
+    .pageHeading {
+        font-size: 30px;
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -77,6 +80,9 @@
             &::before {
             }
         }
+    }
+    .pageHeading {
+        font-size: 28px;
     }
 }
 
@@ -93,5 +99,8 @@
             &::before {
             }
         }
+    }
+    .pageHeading {
+        font-size: 24px;
     }
 }
