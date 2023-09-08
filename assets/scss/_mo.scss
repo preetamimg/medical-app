@@ -66,6 +66,8 @@
         }
     }
 }
+
+// input start 
 .inputpinmain {
     height: 35px;
     border-bottom:1px solid  $theme1;
@@ -88,6 +90,7 @@
         border-radius: 0;
         border: none;
         border-bottom: 1px solid $theme1;
+        padding-bottom: 0px;
         /* Change the white to any color */
         &:-webkit-autofill,
         &:-webkit-autofill:hover, 
@@ -132,11 +135,25 @@
         transition: all 0.3s ease-in-out;
     }
     input:focus ~ label{
-    top: 0;
-    font-size: 12px;
-    background-color: $white;
+        top: 2px;
+        font-size: 12px;
+        background-color: transparent;
     }
 }
+// input end
+
+// select box start 
+.selectbox {
+    font-size: 13px;
+    font-weight: 500;
+    color: $black;
+    & .selectInner {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+// select box end 
+
 .locationmodal {
     & .locationdialog {
         max-width: 350px;
@@ -331,6 +348,15 @@
             }
         }
     }
+    // select box start 
+    .selectbox {
+        font-size: 12px;
+        & .selectInner {
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    // select box end 
 }
 // location modal end 
 
@@ -1103,3 +1129,490 @@
     }
 }
 // cart page end
+
+
+// lab test page start 
+
+// lab test section start 
+.labtestherosection {
+    padding-top: 45px;
+    & .labads {
+        & .labtestbanner {
+            aspect-ratio:7/3;
+            & img {
+                object-fit: contain;
+            }
+        }
+    }
+    & .formCard {
+        padding: 15px;
+        & .pathologybtn {
+            padding:6px 20px;
+            border-radius: 5px;
+            gap: 6px;
+            & .rightarrow {
+                height: 10px;
+                width: 15px;
+                margin-top: 1px;
+            }
+        }
+        & .labform {
+            gap: 14px;
+        }
+        & .formtitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: $black;
+        }
+        & .bookBtn {
+            padding: 6px 18px;
+        }
+    }
+}
+// lab test section end 
+
+// all page title start 
+.sectionTitle {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 4px;
+    color: lighten($black, 30);
+}
+// all page title end 
+
+// popular test Section start 
+.populartestSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    & .cardMain {
+        & >* {
+            flex: 1 1 20%;
+            width: 20%;
+        }
+    }
+    & .testCard {
+        min-height: 80px;
+        padding: 4px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            height:65px;
+            width:65px;
+            background-color: $theme1;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+            z-index: 0;
+        }
+        & .testImg {
+            height: 40px;
+            width: 40px;
+            & img {
+                filter: invert(1);
+            }
+        }
+        & .testTitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: $black;
+            padding:4px 6px 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                height: 100%;
+                width: 100%;
+                top: 0;
+                right: 0;
+                border-radius: 0;
+            }
+            & .testTitle {
+                color: $white;
+            }
+        }
+    }
+}
+// popular test Section end
+
+// top selling packages section start 
+.sellingPackages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    & .packagesCard {
+        background-color: rgba(255, 0, 0, 0.05);
+        // padding: 15px;
+        padding: 13px;
+        & .carrdData {
+            padding-top: 13px;
+        }
+        & .cardimg {
+            height: 150px;
+            // max-width: 100px;
+            // min-width: 100px;
+            & img {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .cardHeading {
+            font-size: 16px;
+            font-weight: 600;
+            color: $black;
+        }
+        & .carddetail {
+            font-size: 12px;
+            font-weight: 500;
+            color: lighten($black, 20);
+            line-height: 19px;
+            padding-top: 5px;
+            display: inline;
+            -webkit-line-clamp: 5;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;/* Important for long words! */
+        }
+        & .cardContent {
+            padding-top: 17px;
+        }
+        & .cardprice {
+            font-size: 15px;
+            font-weight: 600;
+            color: $black;
+            & del {
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        &:hover {
+            & .cardimg {
+                img {
+                    filter: brightness(0.8);
+                }
+            }
+        }
+        
+    }
+}
+// top selling packages section end
+
+// our highlight section start 
+.ourHighlights {
+    padding-top: 30px;
+    & .highlightsCard {
+        padding: 12px;
+        gap: 8px;
+        & .highlightimg {
+            height: 60px;
+            width: 60px;
+            padding: 12px;
+        }
+        & .highlightTitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: $theme1;
+        }
+    }
+}
+// our highlight section end
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    // lab test section start 
+    .labtestherosection {
+        & .labads {
+            & .labtestbanner {
+                & img {
+                }
+            }
+        }
+        & .formCard {
+            padding: 12px;
+            & .pathologybtn {
+                padding:6px 13px;
+                gap: 4px;
+                & .rightarrow {
+                    height: 9px;
+                    width: 13px;
+                }
+            }
+            & .labform {
+            }
+            & .formtitle {
+                font-size: 13px;
+            }
+        }
+    }
+    // lab test section end 
+
+}
+
+@include media-breakpoint-down(lg) {
+    // lab test section start 
+    .labtestherosection {
+        padding-top: 35px;
+        & .labads {
+            & .labtestbanner {
+                & img {
+                }
+            }
+        }
+        & .formCard {
+            padding:24px 18px;
+            & .pathologybtn {
+                padding:6px 18px;
+                gap: 6px;
+                & .rightarrow {
+                }
+            }
+            & .labform {
+                gap: 25px 0;
+                padding-top: 16px;
+            }
+            & .formtitle {
+                font-size: 14px;
+            }
+        }
+    }
+    // lab test section end 
+
+    // popular test Section start 
+    .populartestSection {
+
+        & .cardMain {
+            & >* {
+                flex: 1 1 25%;
+                width: 25%;
+            }
+        }
+        & .testCard {
+            &::before {
+            }
+            & .testImg {
+                & img {
+                }
+            }
+            & .testTitle {
+            }
+            &:hover {
+                &::before {
+                }
+                & .testTitle {
+                }
+            }
+        }
+    }
+    // popular test Section end 
+
+}
+
+@include media-breakpoint-down(md) {
+    // lab test section start 
+    .labtestherosection {
+        & .labads {
+            & .labtestbanner {
+                & img {
+                }
+            }
+        }
+        & .formCard {
+            & .pathologybtn {
+                & .rightarrow {
+                }
+            }
+            & .labform {
+            }
+            & .formtitle {
+            }
+        }
+    }
+    // lab test section end 
+
+    // popular test Section start 
+    .populartestSection {
+        & .cardMain {
+            & >* {
+                flex: 1 1 33.33%;
+                width: 33.33%;
+            }
+        }
+        & .testCard {
+            &::before {
+            }
+            & .testImg {
+                & img {
+                }
+            }
+            & .testTitle {
+            }
+            &:hover {
+                &::before {
+                }
+                & .testTitle {
+                }
+            }
+        }
+    }
+    // popular test Section end 
+
+        // top selling packages section start 
+        .sellingPackages {
+            padding-top: 30px;
+            & .packagesCard {
+                & .carrdData {
+                }
+                & .cardimg {
+                    & img {
+                    }
+                }
+                & .cardHeading {
+                }
+                & .carddetail {
+                }
+                & .cardContent {
+                }
+                & .cardprice {
+                    & del {
+                    }
+                }
+                &:hover {
+                    & .cardimg {
+                        img {
+                        }
+                    }
+                }
+                
+            }
+        }
+        // top selling packages section end
+}
+
+@include media-breakpoint-down(sm) {
+    // popular test Section start 
+    .labtestherosection {
+        padding-top: 16px;
+        & .labads {
+            & .labtestbanner {
+                & img {
+                }
+            }
+        }
+        & .formCard {
+            padding:14px;
+            & .pathologybtn {
+                & .rightarrow {
+                }
+            }
+            & .labform {
+                gap:14px 0;
+                padding-top: 7px;
+            }
+            & .formtitle {
+                font-size: 13px;
+            }
+        }
+    }
+    // popular test Section end 
+
+    // all page title start 
+    .sectionTitle {
+        font-size: 13px;
+        padding-top: 2px;
+    }
+    // all page title end
+
+    // popular test Section start 
+    .populartestSection {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        & .sectionTitle {
+            font-size: 13px;
+            padding-top: 2px;
+        }
+        & .cardMain {
+            & >* {
+                flex: 1 1 50%;
+                width: 50%;
+            }
+        }
+        & .testCard {
+            padding: 8px;
+            &::before {
+                height: 100%;
+                right: 0;
+                width: 100%;
+                top: 0;
+                border-radius: 0;
+            }
+            & .testImg {
+                height: 35px;
+                width: 35px;
+                & img {
+                }
+            }
+            & .testTitle {
+                font-size: 12px;
+                padding: 0;
+                color: $white;
+            }
+            &:hover {
+                &::before {
+                }
+                & .testTitle {
+                }
+            }
+        }
+    }
+    // popular test Section end
+
+    // top selling packages section start 
+    .sellingPackages {
+        padding-top: 25px;
+        & .packagesCard {
+            & .carrdData {
+            }
+            & .cardimg {
+                & img {
+                }
+            }
+            & .cardHeading {
+                font-size: 15px;
+            }
+            & .carddetail {
+            }
+            & .cardContent {
+                padding-top: 15px;
+            }
+            & .cardprice {
+                font-size: 14px;
+                & del {
+                    font-size: 11px;
+                }
+            }
+            &:hover {
+                & .cardimg {
+                    img {
+                        filter: brightness(1);
+                    }
+                }
+            }
+            
+        }
+    }
+    // top selling packages section end
+}
+// lab test page end 
