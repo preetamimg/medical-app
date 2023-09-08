@@ -27,7 +27,7 @@
             }
             & .heading1{
                 font-size: 14px;
-                color: #03466e;
+                color: $dark;
             }
             & .close{
                 width: 15px;
@@ -50,7 +50,7 @@
                             // background-color: $gray-100;
                             padding: 10px 8px;
                             font-size: 14px;
-                            color: $theme1;
+                            color: $dark;
                             &::after{
                                 content: '';
                                 background-size: 15px;
@@ -81,21 +81,19 @@
                                         & .formCheckInp{
                                             width: 20px;
                                             height: 20px;
-                                            border: 1px solid;
-                                            background-color: red;
-                                            appearance: checkbox !important;
-                                                // background-color: $theme1;
+                                            border: 1px solid $dark !important;
                                             cursor: pointer;
                                             &:focus{
                                                 box-shadow: unset;
                                             }
                                             &:checked{
                                                 background-color: $theme1;
+                                                border-color: $theme1 !important;
                                             }
                                         }
                                         & .formCheckLbl{
                                             font-size: 13px;
-                                            color: $theme1;
+                                            color: $dark;
                                             cursor: pointer;
                                         }
                                     }
