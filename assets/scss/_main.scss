@@ -31,7 +31,7 @@ body {
         content: '';
         position: absolute;
         top: 50%;
-        transform: translateY(-38%);
+        transform: translateY(-50%);
         height: 11px;
         width: 8px;
         border-radius: 50%;
@@ -50,6 +50,15 @@ body {
       }
     }
   }
+}
+
+// whatsapp button 
+.whatsappbutton {
+  height: 45px;
+  width: 45px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
 }
 @include media-breakpoint(basic) {}
 

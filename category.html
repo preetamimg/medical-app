@@ -214,18 +214,24 @@
     <div class="container-fluid pt-4 categoryFluid filterWrapper overflow-hidden px-0 position-relative">
         <div class="row">
           <div class="col-12 d-lg-block d-none mb-3 ps-4">
-            <nav class="breadCrumbWrapper" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <!-- <nav class="breadCrumbWrapper" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item breadCrumbItems"><a class="breadCrumbItemsAnchor" href="#">Home</a></li>
                 <li class="breadcrumb-item breadCrumbItems active" aria-current="page">Non-Prescription</li>
                 <li class="breadcrumb-item breadCrumbItems active" aria-current="page">Veterinary</li>
               </ol>
-            </nav>
+            </nav> -->
+            <nav aria-label="breadcrumb" class="pagedetail">
+              <ol class="breadcrumb m-0 align-items-center">
+                  <li class="breadcrumb-item pagename homepage"><a href="index2.html" class="position-relative text-decoration-none">Home</a></li>
+                  <li class="breadcrumb-item pagename activepage p-0 active" aria-current="page">Categories</li>
+              </ol>
+          </nav>
           </div>
           <div class="col-lg-auto col-12 sideBar">
               <div class="row h-100">
                 <div class="col-12 h-100">
-                  <div class="cardWrapper">
+                  <div class="cardWrapper bg-light">
                     <div class="row flex-column flex-nowrap overflow-hidden h-100">
                       <div class="col-12 d-flex justify-content-between pb-3 header">
                         <div class="heading col">Filters</div>
@@ -772,10 +778,61 @@
 
   <!-- footer start  -->
   <div class="container-fluid footer ">
-    <div class="row border-top  footerinner">
-      <div class="col-md-2">
-        <div class="footerHeading">COMPANY</div>
-        <ul class="list-unstyled footermenu d-flex flex-column">
+    <div class="row align-items-lg-center gap-sm-0 gap-3 findusSection commonSection">
+      <div class="col-sm-4 ">
+        <div class="d-flex align-items-center findcard">
+          <div class="findicon d-flex align-items-center justify-content-center">
+            <img src="assets/img/location.svg" alt="location" class="h-100 w100 img-fluid">
+          </div>
+          <div class="d-flex align-items-center flex-sm-column gap-2">
+            <div class="cityName">Find Us:-</div>
+            <div class="cityDetail">Vaishali nagar, jaipur</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 ">
+        <div class="d-flex align-items-center findcard">
+          <div class="findicon d-flex align-items-center justify-content-center">
+            <img src="assets/img/call.svg" alt="location" class="h-100 w100 img-fluid">
+          </div>
+          <div class="d-flex align-items-center flex-sm-column gap-2">
+            <div class="cityName">Call us:-</div>
+            <div class="cityDetail">9876543210 0</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="d-flex align-items-center findcard">
+          <div class="findicon d-flex align-items-center justify-content-center">
+            <img src="assets/img/mail.svg" alt="location" class="h-100 w100 img-fluid">
+          </div>
+          <div class="d-flex align-items-center flex-sm-column gap-2">
+            <div class="cityName">Mail us:-</div>
+            <div class="cityDetail">mail@info.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footerinner commonSection">
+      <div class="col-lg-4 col-md-6 col-sm-8">
+        <a href="index2.html" class="footerlogo d-flex align-items-center justify-content-center"><img src="assets/img/mainlogo.png" alt="logo" class="w-100"></a>
+        <div class="footerdata pb-1">The concept of medicine home delivery has been taken to a new level by the Medhunt online medicine delivery app.</div>
+        <div class="footerHeading pt-2 mb-lg-4 mb-3" >Follow us</div>
+        <div class="d-flex align-items-center footericons">
+          <a href="javascript:;" class="socialIcon rounded-circle d-flex align-items-center justify-content-center">
+            <img src="assets/img/facebook.svg" alt="Facebook" class="h-100 w-100 img-fluid">
+          </a>
+          <a href="javascript:;" class="socialIcon twitter rounded-circle d-flex align-items-center justify-content-center">
+            <img src="assets/img/twiiter.svg" alt="twitter" class="h-100 w-100 img-fluid">
+          </a>
+          <a href="javascript:;" class="socialIcon googlePlus rounded-circle d-flex align-items-center justify-content-center">
+            <img src="assets/img/googleplus.svg" alt="google plus" class="h-100 w-100 img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 companysection">
+        <div class="footerHeading footerheadingtwo position-relative d-inline-block">COMPANY</div>
+        <ul class="list-unstyled m-0 footermenu d-flex flex-column">
           <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
           <li><a href="javascript:;" class="text-decoration-none footerLink">Costumer Speak</a></li>
           <li><a href="javascript:;" class="text-decoration-none footerLink">In the News</a></li>
@@ -783,19 +840,9 @@
           <li><a href="javascript:;" class="text-decoration-none footerLink">Contact</a></li>
         </ul>
       </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="footerHeading">OUR POLICIES</div>
-        <ul class="list-unstyled footermenu d-flex flex-column">
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Terms and Conditions</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Privacy Policy</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Fees and Payments Policy</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Shipping and Delivery Policy</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Return, Refund and Cancellation Policy</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-2 col-md-3">
-        <div class="footerHeading">SHOPPING</div>
-        <ul class="list-unstyled footermenu d-flex flex-column">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 shopinsection">
+        <div class="footerHeading footerheadingtwo position-relative d-inline-block">SHOPPING</div>
+        <ul class="list-unstyled m-0 footermenu d-flex flex-column">
           <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by A-Z</a></li>
           <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by Manufacturers</a></li>
           <li><a href="javascript:;" class="text-decoration-none footerLink">Health Article</a></li>
@@ -803,43 +850,43 @@
           <li><a href="javascript:;" class="text-decoration-none footerLink">FAQs</a></li>
         </ul>
       </div>
-      <div class="col-lg-2 col-md-3">
-        <div class="footerHeading">SOCIAL</div>
-        <ul class="list-unstyled footermenu d-flex flex-column">
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Patients Alike</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Facebook</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Twitter</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">LinkedIn</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Youtube</a></li>
-          <li><a href="javascript:;" class="text-decoration-none footerLink">Instagrams</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-5">
-        <div class="footerHeading">SUBSCRIBE TO OUR NEWSLETT</div>
-        <div class="footerdata pb-2">
+      <div class="col-lg-4 col-md-6 col-sm-8 subscribesection">
+        <div class="footerHeading footerheadingtwo position-relative d-inline-block">SUBSCRIBE</div>
+        <div class="footerdata ">
           Get a free subscription to our health and fitness tip and stay tuned to our latest offers
         </div>
-        <div class="inputpinmain p4 rounded5 d-flex align-items-center position-relative w-100">
-          <input type="text" id="Pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
-          <label for="Pincode" class="pincodeLabel bg-transparent">Enter e-mail</label>
-          <button class="btn rightarrow p-0 border-0">
-            <img src="assets/img/futerebrand/rightarrow.svg" alt="right" class="h00 w-100 img-fluid">
+        <div class="input-group">
+          <input type="text" class="form-control rounded-0 shadow-none bg-transparent border-0" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <button class="btn h-100 d-flex align-items-center justify-content-center rightarrow rounded-0 p0 border-0">
+            <img src="assets/img/newssellter.svg" alt="email" class="h00 w-100 img-fluid">
           </button>
         </div>
-        <div class="d-flex align-items-center gap-2 pt-3">
-          <a href="javascript:;" class="d-flex align-items-center justify-content-center download">
-            <img src="assets/img/futerebrand/downloadicon.png" alt="android" class="h-100 w-100 img-fluid">
-          </a>
-          <a href="javascript:;" class="d-flex align-items-center justify-content-center download">
-            <img src="assets/img/futerebrand/download2.png" alt="android" class="h-100 w-100 img-fluid">
-          </a>
+        <div class="d-flex align-items-center gap-2 downloadbuttonmain">
+          <a href="javascript:;" class="android_btn text-decoration-none textblack shadow-none d-flex align-items-center -content-center">
+            <div class="icon me-1">
+              <img src="assets/img/futerebrand/downloadandroid.svg" class="h-100 w-100" alt="download">
+            </div>
+              <div class="text-start">
+                <div class="downloadTitle">Download</div>
+                <div class="fw-bold downloadapp">Android App</div>
+              </div>
+            </a>
+            <a href="javascript:;" class="android_btn text-decoration-none textblack shadow-none d-flex align-items-center -content-center">
+            <div class="icon me-1">
+              <img src="assets/img/ios.svg" class="h-100 w-100" alt="download">
+            </div>
+              <div class="text-start">
+                <div class="downloadTitle">Download</div>
+                <div class="fw-bold downloadapp">Ios App</div>
+              </div>
+            </a>
         </div>
       </div>
     </div>
-    <div class="row paymentMain pt-4 border-bottom border-secondary border-opacity-25">
-      <div class="col-12 partnerHeading">OUR PAYMENT PARTNERS</div>
-      <div class="col-12 pt-3">
-        <div class="d-flex flex-wrap align-items-center gap-4">
+    <div class="row paymentMain pt4 border-bottom border-secondary border-opacity-25">
+      <div class="col-12 footerHeading mb-0 text-sm-start text-center">OUR PAYMENT PARTNERS</div>
+      <div class="col-12 pt-sm-3 pt-2">
+        <div class="d-flex flex-wrap align-items-center gap-md-4 gap-2 justify-content-sm-start justify-content-center">
           <div class="paymentImg">
             <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
           </div>
@@ -852,20 +899,29 @@
           <div class="paymentImg">
             <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
           </div>
-          <div class="paymentImg">
+          <!-- <div class="paymentImg">
             <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
-          </div>
+          </div> -->
           <div class="paymentImg">
             <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
           </div>
-          <div class="paymentImg">
+          <!-- <div class="paymentImg">
             <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-    <div class="row copyrightmain">
-      <div class="copyrightTitle">Copyright© 2023. All Rights Reserved.</div>
+  </div>
+  <div class="container-fluid copyrightmain categorycopyright">
+    <div class="row align-items-center gap-md-0 gap-2">
+      <div class="copyrightTitle col-md text-md-start text-center">Copyright© 2023. All Rights Reserved.</div>
+      <div class="col-md-auto">
+        <ul class="list-unstyled privacymenu d-flex justify-content-md-start flex-wrap justify-content-center m-0">
+          <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Terms and Conditions</a></li>
+          <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Privacy Policy</a></li>
+          <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Shipping and Delivery Policy</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- footer end  -->
@@ -974,7 +1030,7 @@
             </div>
           </div>
           <div class="col-12 pt-3 text-center">
-            <a href="javascript:;" class="detectlocation bg-secondary bg-opacity-25 d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
+            <a href="javascript:;" class="detectlocation bg-light d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
               <span class="d-flex align-items-center justify-content-center detecticon">
                 <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
               </span>
@@ -983,7 +1039,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 
   <!-- location modal  -->
@@ -1032,19 +1087,19 @@
               <div class="d-flex align-items-center justify-conten">
                 <div class="form-check ps-0">
                     <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Home">
-                    <label class="form-check-label checkLabel rounded-1" for="Home">
+                    <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Home">
                       Home
                     </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
-                  <label class="form-check-label checkLabel rounded-1" for="Work">
+                  <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Work">
                     Work
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
-                  <label class="form-check-label checkLabel rounded-1" for="Other">
+                  <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Other">
                     Other
                   </label>
                 </div>

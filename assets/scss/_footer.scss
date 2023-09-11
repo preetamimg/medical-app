@@ -113,28 +113,32 @@
     & .paymentImg {
         height:25px;
     }
-    & .android_btn {
-        height: 46px;
-        border-radius:5px;
-        background-color:$white;
-        padding: 4px 7px;
-        transition: all 0.3s ease-in-out;
-        & .icon {
-            height: 28px;
-            width: 28px;
-        }
-        & .downloadTitle {
-            font-size: 10px;
-            line-height: normal;
-            color: $black;
-        }
-        & .downloadapp {
-            font-size: 15px;
-            line-height: normal;
-            color: $black;
-        }
-        &:hover {
-            background-color: darken($white, 10);
+    & .downloadbuttonmain {
+        padding-top: 20px;
+        & .android_btn {
+            height: 46px;
+            border-radius:5px;
+            background-color:$white;
+            padding: 4px 7px;
+            transition: all 0.3s ease-in-out;
+            width: 140px;
+            & .icon {
+                height: 28px;
+                width: 28px;
+            }
+            & .downloadTitle {
+                font-size: 10px;
+                line-height: normal;
+                color: $black;
+            }
+            & .downloadapp {
+                font-size: 15px;
+                line-height: normal;
+                color: $black;
+            }
+            &:hover {
+                background-color: darken($white, 10);
+            }
         }
     }
 }
@@ -213,13 +217,25 @@
         }
         & .paymentImg {
         }
-        & .copyrightmain {
-            & .copyrightTitle {
+        & .downloadbuttonmain {
+            padding-top: 40px;
+            & .android_btn {
+                & .icon {
+                }
+                & .downloadTitle {
+                }
+                & .downloadapp {
+                }
+                &:hover {
+                }
             }
         }
     }
     .copyrightmain {
         padding: 25px 30px;
+        &.categorycopyright {
+            margin-bottom: 55px;
+        }
         & .copyrightTitle {
         }
         & .privacymenu {
@@ -296,6 +312,20 @@
         }
         & .paymentImg {
         }
+        & .downloadbuttonmain {
+            padding-top: 20px;
+            & .android_btn {
+                & .icon {
+                }
+                & .downloadTitle {
+                }
+                & .downloadapp {
+                    font-size: 14px;
+                }
+                &:hover {
+                }
+            }
+        }
     }
     .copyrightmain {
         & .copyrightTitle {
@@ -307,7 +337,7 @@
     .footer {
         padding: 0 16px ;
         & .footerinner {
-            padding-bottom:35px;
+            padding-bottom:30px;
         }
         & .paymentMain {
             padding-bottom:35px;
@@ -389,6 +419,25 @@
         & .paymentImg {
             height: 20px;
         }
+        & .downloadbuttonmain {
+            padding-top: 30px;
+            justify-content: center;
+            & .android_btn {
+                height: 42px;
+                width: 137px;
+                & .icon {
+                    height: 25px;
+                    width: 25px;
+                }
+                & .downloadTitle {
+                }
+                & .downloadapp {
+                    font-size: 13px;
+                }
+                &:hover {
+                }
+            }
+        }
     }
     .copyrightmain {
         padding: 20px 16px;
@@ -400,7 +449,7 @@
             & .privacyLink {
                 font-size: 12px;
                 &:hover {
-                    color:#9f9f9f;
+                    color:#d3d3d3;
                 }
             }
         }
