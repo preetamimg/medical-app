@@ -232,3 +232,22 @@ font-size: 14px;
           }
       }
 }
+
+ .editProfile{
+    font-size: 14px;
+    color: $white;
+    color: $white;
+    font-weight: 500;
+    background-color: $theme1;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+    & .editIcon{
+        width: 14px;
+        height: 14px;
+    }
+    &:hover{
+        background-color:lighten($theme1,10);
+        color: $white;
+    }
+ 
+}

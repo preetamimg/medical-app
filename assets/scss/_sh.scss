@@ -4319,8 +4319,8 @@
                     background-position: center;
                     top: 50%;
                     transform: translateY(-50%);
-                    width: 10px;
-                    height: 10px;
+                    width: 7px;
+                    height: 13px;
                     right: 0;
                     opacity: 0.7;
                 }
@@ -4350,12 +4350,13 @@
             }
         }
     }
+    // information 
+    & .headinginformation{
+        font-size: 12px;
+        color:$theme1;
+        font-weight: 600;
+    }
     & .userInformation{
-        & .headinginformation{
-            font-size: 12px;
-            color:$theme1;
-            font-weight: 600;
-        }
         & .formSection{
             & .labelUserin{
                 font-size: 11px;
@@ -4384,6 +4385,107 @@
                     color: $white;
                 }
              
+            }
+        }
+    }
+    // wallet Section 
+
+    & .walletSection{
+        & .rsHeading{
+            font-size: 20px;
+            color: $black;
+            font-weight: 600;
+        }
+        & .WalletCard{
+            & .walletImg{
+                & img{
+                    aspect-ratio: 6/2;
+                    object-fit: contain;
+                }
+            }
+            & .walletHeading{
+                font-size: 35px;
+                font-weight: 700;
+                color: $theme1;
+            }
+            & .subheading{
+                font-size: 13px;
+                color: $black;
+                font-weight: 400;
+            }
+        }
+    }
+
+}
+// edite profile offcanvas 
+.editeProfileOffcanvas{
+    & .offcanvasHeader{
+        background-color: $theme1;
+        & .offcanvasTitle{
+            font-size: 20px;
+            color: $white;
+            font-weight: 500;
+            & .rightIcon{
+                width: 16px;
+                height: 16px;
+                filter: invert(1);
+            }
+        }
+    }
+    & .offcanvasBody{
+        & .formSection{
+            & .labelUserin{
+                font-size: 11px;
+                font-weight: 600;
+                color: $theme1;
+            }
+            // & .formInput{
+            //     font-size: 14px;
+            //     color: $theme1;
+            //     font-weight: 400;
+            //     height: 43px;
+            //     background-color: #f2f2f2;
+            // }
+            & .formInputinformation{
+                font-size: 14px;
+                color: #000;
+                font-weight: 400;
+
+            }
+            & .editProfile{
+                font-size: 14px;
+                color: $white;
+                color: $white;
+                font-weight: 500;
+                background-color: $theme1;
+                padding: 10px 30px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color:lighten($theme1,10);
+                    color: $white;
+                }
+             
+            }
+        }
+    }
+}
+
+// contentModal section 
+.contentModal{
+    & .modalDialog{
+        & .contentSection{
+            & .useTitle{
+                font-size: 18px;
+                font-weight: 500;
+                color: $theme1;
+            }
+            & .modal-body{
+
+                & .usePera{
+                    font-size: 13px;
+                    color: $black;
+                    font-weight: 400;
+                }
             }
         }
     }

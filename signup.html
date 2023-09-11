@@ -303,7 +303,40 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="walletSection">
+              <div class="row gap-3">
+                <div class="col-12">
+                  <div class="headinginformation">LOGIN INFORMATION</div>
+                  <div class="rsHeading">Rs. 0.00</div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6">
+                      <div  class="card WalletCard rounded-3">
+                          <div class="card-body">
+                              <div class="walletImg mx-auto "><img src="assets/img/signup/wallet.avif" alt="wallet" class="img-fluid w-100 h-100"></div>
+                              <div class="walletHeading text-center">Rs 0.00</div>
+                              <div class="subheading text-center">NMS Cash</div>
+                              <button class="border-0 mt-3 shadow-none d-flex align-items-center justify-content-center rounded-3 mx-auto editProfile" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">How to Use</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div  class="card WalletCard rounded-3">
+                          <div class="card-body">
+                              <div class="walletImg mx-auto "><img src="assets/img/signup/wallet.avif" alt="wallet" class="img-fluid w-100 h-100"></div>
+                              <div class="walletHeading text-center">Rs 0.00</div>
+                              <div class="subheading text-center">NMS Cash</div>
+                              <button class="border-0 mt-3 shadow-none d-flex align-items-center justify-content-center rounded-3 mx-auto editProfile" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">How to Use</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
         </div>
@@ -474,33 +507,94 @@
 
 
   <!-- edite profile offcanvas  -->
-
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExampleedit" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div class="offcanvas offcanvas-end editeProfileOffcanvas " tabindex="-1" id="offcanvasExampleedit" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header offcanvasHeader">
+      <div class="offcanvas-title offcanvasTitle d-flex align-items-center" id="offcanvasExampleLabel"> Edit Profile</div>
+      <button type="button " class="offcanvasTitle border-0 shadow-none bg-transparent d-flex align-items-center" data-bs-dismiss="offcanvas" aria-label="Close"> <span class="d-inline-flex rightIcon"><img src="assets/img/signup/Close.svg" alt="close" class="img-fluid w-100 h-100"></span></button>
     </div>
-    <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-      </div>
-      <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+    <div class="offcanvas-body offcanvasBody border-top ">
+      <div class="row">
+        <div class="col-12 ">
+          <form class="formSection">
+            <div class="mb-3">
+              <label for="firstName" class="labelUserin">First Name</label>
+              <!-- <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number"> -->
+              <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="Medh" id="firstName">
+            </div>
+            <div class="mb-3">
+              <label for="LastName" class="labelUserin">Last Name</label>
+              <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="unt" id="LastName">
+            </div>
+            <div class="mb-3">
+              <label for="GENDER" class="labelUserin">GENDER</label>
+              <select class="form-select border-0 shadow-none formInputinformation ps-0 border border-bottom rounded-0 pt-0" aria-label="Default select example">
+                <option selected="">No-data</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mobileNumber" class="labelUserin">Age</label>
+              <div class="input-group ">
+                <!-- <span class=" border-bottom border-end rounded-0 shadow-none formInputinformation border-end"> +91</span> -->
+                <input type="date" class="form-control border-bottom ps-0 border-0 rounded-0  pt-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mobileNumber" class="labelUserin">Email</label>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 ps-0 shadow-none formInputinformation" value="img.@gmail.com" id="mobileNumber">
+                <button class="btn border-0 shadow-none border-bottom rounded-0 formInputinformation text-danger" type="button" id="button-addon2">Verify</button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mobileNumber" class="labelUserin">MOBILE NUMBER</label>
+              <div class="input-group ">
+                <span class=" border-bottom rounded-0 shadow-none formInputinformations"> +91</span>
+                <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 pb-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+              </div>
+            </div>
+            <div class="mt-4">
+              <button class="text-decoration-none border-0 w-100 d-flex align-items-center justify-content-center shadow-none rounded-3 editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleedit" type="button" aria-controls="offcanvasExample">Save Change</button>
+              
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+  <!-- edite profile offcanvas  end -->
 
-
-
-
-
+   <!-- how to use modal  -->
+   <div class="modal fade contentModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalDialog modal-dialog-centered">
+      <div class="modal-content contentSection">
+        <div class="modal-header">
+          <div class="modal-title useTitle fs-5" id="exampleModalLabel">HOW TO USE NMS CASH?</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <ul class="d-flex flex-column gap-2">
+                <li class="usePera">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                <li class="usePera">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, eveniet.</li>
+                <li class="usePera">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maiores maxime amet!  </li>
+                <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit qui unde eligendi, veniam laudantium dolorum.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- how to use modal end   -->
 
 
 
@@ -532,18 +626,20 @@
                     <div class="text-center signpera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto rerum earum soluta repellendus iure.</div>
                   </div>
                   <div class="col-12 mt-4">
-                    <div class="row gap-3">
-                      <div class="col-12 mx-auto">
-                        <nav>
-                          <div class="nav nav-tabs signupTabs border-0 shadow-none rounded-3 d-flex align-items-center" id="nav-tab" role="tablist">
-                            <button class="nav-link w-50 active navLink border-0 shadow-none rounded-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Log in</button>
-                            <button class="nav-link w-50 navLink border-0 shadow-none rounded-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sign up</button>
-                          </div>
-                        </nav>
+                    <div class="row gap-3"> 
+                      <div class="col-12">
+                        <ul class="nav nav-tabs signupTabs border-0 shadow-none rounded-3 d-flex align-items-center" id="myTab" role="tablist">
+                          <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link active navLink border-0 shadow-none rounded-3  w-100" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Sign In</button>
+                          </li>
+                          <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link navLink border-0 shadow-none rounded-3 w-100" id="sign-tab" data-bs-toggle="tab" data-bs-target="#sign-tab-pane" type="button" role="tab" aria-controls="sign-tab-pane" aria-selected="false">Sign Up</button>
+                          </li>
+                        </ul>
                       </div>
                       <div class="col-12">
-                        <div class="tab-content" id="nav-tabContent">
-                          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
                             <form class="signUpForm">
                               <div class="row">
                                 <div class="mb-sm-3 mb-2 col-12">
@@ -588,16 +684,16 @@
                               
                             </form>
                           </div>
-                          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                          <div class="tab-pane fade" id="sign-tab-pane" role="tabpanel" aria-labelledby="sign-tab" tabindex="0">
                             <form class="signUpForm">
                               <div class="row">
                                 <div class="mb-sm-3 mb-2 col-12">
                                   <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
                                   <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
                                 </div>
-                                <div class="mb-sm-3 mb-2 col-12">
+                                <d iv class="mb-sm-3 mb-2 col-12">
                                   <a href="javascript:;" class="text-decoration-none text-end d-flex align-items-center justify-content-end  rounded-3 forgetBtn"> Forgot Password</a>
-                                </div>
+                                </d>
                                 <div class="col-12 mb-sm-3 mb-2">
                                   <label for="exampleFormControlInput1" class="form-label labelYour">Verification code</label>
                                   <div class="otp-input-fields">
@@ -632,9 +728,11 @@
                               </div>
                               
                             </form>
+
+
                           </div>
                         </div>
-                      </div> 
+                      </div>
                     </div>
                   </div>
                 </div> 
