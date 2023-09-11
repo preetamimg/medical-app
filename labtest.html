@@ -321,6 +321,12 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center formtitle gap-1">
+                                        <input type="checkbox" id="agree">
+                                        <label for="agree">  I agree to Medhunt <a href="javascript:;" class="formtitle"> Terms and Conditions.</a></label>
+                                    </div>
+                                </div>
                                 <div class="col-12 border-top">
                                     <div class="d-flex pt-lg-3 pt-sm-4 pt-3 align-items-center justify-content-center">
                                         <button class="btn applyBtn bookBtn">Book Now</button>
@@ -445,139 +451,141 @@
         <!-- popular lab test section end -->
 
         <!-- top selling package section start  -->
-        <div class="container-fluid sellingPackages bg-light rounded-2">
-            <div class="heading">Top Selling Packages</div>
-            <div class="sectionTitle">Choose from the list of top-selling packages tailored for you. We care for your health!</div>
-            <div class="row pt-4 g-3">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 overflow-hidden">
-                        <div>
+        <div class="container-fluid">
+            <div class="sellingPackages bg-light rounded-2 px-2">
+                <div class="heading">Top Selling Packages</div>
+                <div class="sectionTitle">Choose from the list of top-selling packages tailored for you. We care for your health!</div>
+                <div class="row pt-4 g-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/labtest/packages1.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="cardHeading">Swasthya</div>
+                                    <div class="carddetail">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
+                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-opacity-10 bg-info overflow-hidden">
+                            <div>
+                                <div class="cardimg rounded-2 overflow-hidden">
+                                    <img src="assets/img/labtest/packages2.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="d-flex align-itemscenter flex-column  carrdData">
+                                    <div class="cardHeading">Shield Pack</div>
+                                    <div class="carddetail">Shield Pack helps to protect against a particular danger or risk. It screens the most common diseases like CBC, Urine Routine, Creatinine, Uric Acid, FBS, HbA1c, Lipid profile, Total Bilirubin, SGPT, TSH and Calcium.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
+                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg rounded-2 overflow-hidden">
+                                    <img src="assets/img/labtest/packages3.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="d-flex align-itemscenter flex-column  carrdData">
+                                    <div class="cardHeading">Health Pack</div>
+                                    <div class="carddetail">Health check-ups are very useful in the early detection of all types of illnesses and risk factors. Simple to understand and less time consuming, our Health Pack comprises 35 parameters of regular blood tests that have been specially designed keeping your health in mind.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
+                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/labtest/packages4.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="d-flex align-itemscenter flex-column  carrdData">
+                                    <div class="cardHeading">Diabetic Checkup</div>
+                                    <div class="carddetail">Meant for people who want to get regular reports to prevent/check their diabetes levels. It includes 49 tests.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
+                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg rounded-2 overflow-hidden">
+                                    <img src="assets/img/labtest/packages5.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="cardHeading">Aarogyam B</div>
+                                    <div class="carddetail">Preventive Basic Health Check-up Package Aarogyam B Consists of 67 blood tests for screening of the health status.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                <div class="cardprice">Rs.542  <del class="text-danger">Rs.634</del></div>
+                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
                             <div class="cardimg overflow-hidden rounded-2">
-                                <img src="assets/img/labtest/packages1.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                <img src="assets/img/labtest/packages6.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
                             </div>
-                            <div class="carrdData">
-                                <div class="cardHeading">Swasthya</div>
-                                <div class="carddetail">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                            <div class="d-flex align-itemscenter flex-column h100 justify-content-between carrdData">
+                                    <div class="h-100">
+                                        <div class="cardHeading">Healthy</div>
+                                        <div class="carddetail">This package is specially designed for an elderly male and includes major blood tests which are required for diagnosis, evaluation and monitoring of common chronic illnesses and also includes one of the important tumour markers which is responsible for a cancerous growth common in elderly male age group.</div>
+                                    </div>
+                                    <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                        <div class="cardprice">Rs.234  <del class="text-danger">Rs.324</del></div>
+                                        <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                                    </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-itemscenter justify-content-between cardContent">
-                            <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                            <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-opacity-10 bg-info overflow-hidden">
-                        <div>
-                            <div class="cardimg rounded-2 overflow-hidden">
-                                <img src="assets/img/labtest/packages2.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                            </div>
-                            <div class="d-flex align-itemscenter flex-column  carrdData">
-                                <div class="cardHeading">Shield Pack</div>
-                                <div class="carddetail">Shield Pack helps to protect against a particular danger or risk. It screens the most common diseases like CBC, Urine Routine, Creatinine, Uric Acid, FBS, HbA1c, Lipid profile, Total Bilirubin, SGPT, TSH and Calcium.</div>
-                            </div>
-                        </div>
-                        <div class="d-flex align-itemscenter justify-content-between cardContent">
-                            <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                            <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
-                        <div>
-                            <div class="cardimg rounded-2 overflow-hidden">
-                                <img src="assets/img/labtest/packages3.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                            </div>
-                            <div class="d-flex align-itemscenter flex-column  carrdData">
-                                <div class="cardHeading">Health Pack</div>
-                                <div class="carddetail">Health check-ups are very useful in the early detection of all types of illnesses and risk factors. Simple to understand and less time consuming, our Health Pack comprises 35 parameters of regular blood tests that have been specially designed keeping your health in mind.</div>
-                            </div>
-                        </div>
-                        <div class="d-flex align-itemscenter justify-content-between cardContent">
-                            <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                            <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                        <div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard h-100 bg-success bg-opacity-10 rounded-2 overflow-hidden">
                             <div class="cardimg overflow-hidden rounded-2">
-                                <img src="assets/img/labtest/packages4.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                <img src="assets/img/labtest/packages7.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
                             </div>
                             <div class="d-flex align-itemscenter flex-column  carrdData">
-                                <div class="cardHeading">Diabetic Checkup</div>
-                                <div class="carddetail">Meant for people who want to get regular reports to prevent/check their diabetes levels. It includes 49 tests.</div>
+                                    <div class="cardHeading">Pre-Screening</div>
+                                    <div class="carddetail">Pre-Screening helps to evaluate against common illness /infection of blood / urine / stool and also determines blood group of a person which is an important parameter required in cases of anaemia (due to chronic blood loss) and for identity.</div>
+                                    <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                        <div class="cardprice">Rs.342  <del class="text-danger">Rs.452</del></div>
+                                        <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                                    </div>
                             </div>
                         </div>
-                        <div class="d-flex align-itemscenter justify-content-between cardContent">
-                            <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                            <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
-                        <div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="packagesCard h-100 h-100 rounded-2 overflow-hidden">
                             <div class="cardimg rounded-2 overflow-hidden">
-                                <img src="assets/img/labtest/packages5.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                <img src="assets/img/labtest/packages8.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
                             </div>
-                            <div class="carrdData">
-                                <div class="cardHeading">Aarogyam B</div>
-                                <div class="carddetail">Preventive Basic Health Check-up Package Aarogyam B Consists of 67 blood tests for screening of the health status.</div>
+                            <div class="d-flex align-itemscenter flex-column  carrdData">
+                                    <div class="cardHeading">Immunity Care</div>
+                                    <div class="carddetail">Health test to test for issues related to hormones, fertility and pregnancy along with tests for diabetes, cardiovascular illnesses etc. This health includes seven major parameters.</div>
+                                    <div class="d-flex align-itemscenter justify-content-between cardContent">
+                                        <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
+                                        <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                                    </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-itemscenter justify-content-between cardContent">
-                            <div class="cardprice">Rs.542  <del class="text-danger">Rs.634</del></div>
-                            <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                        <div class="cardimg overflow-hidden rounded-2">
-                            <img src="assets/img/labtest/packages6.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                        </div>
-                        <div class="d-flex align-itemscenter flex-column h100 justify-content-between carrdData">
-                                <div class="h-100">
-                                    <div class="cardHeading">Healthy</div>
-                                    <div class="carddetail">This package is specially designed for an elderly male and includes major blood tests which are required for diagnosis, evaluation and monitoring of common chronic illnesses and also includes one of the important tumour markers which is responsible for a cancerous growth common in elderly male age group.</div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                    <div class="cardprice">Rs.234  <del class="text-danger">Rs.324</del></div>
-                                    <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard h-100 bg-success bg-opacity-10 rounded-2 overflow-hidden">
-                        <div class="cardimg overflow-hidden rounded-2">
-                            <img src="assets/img/labtest/packages7.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                        </div>
-                        <div class="d-flex align-itemscenter flex-column  carrdData">
-                                <div class="cardHeading">Pre-Screening</div>
-                                <div class="carddetail">Pre-Screening helps to evaluate against common illness /infection of blood / urine / stool and also determines blood group of a person which is an important parameter required in cases of anaemia (due to chronic blood loss) and for identity.</div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                    <div class="cardprice">Rs.342  <del class="text-danger">Rs.452</del></div>
-                                    <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="packagesCard h-100 h-100 rounded-2 overflow-hidden">
-                        <div class="cardimg rounded-2 overflow-hidden">
-                            <img src="assets/img/labtest/packages8.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                        </div>
-                        <div class="d-flex align-itemscenter flex-column  carrdData">
-                                <div class="cardHeading">Immunity Care</div>
-                                <div class="carddetail">Health test to test for issues related to hormones, fertility and pregnancy along with tests for diabetes, cardiovascular illnesses etc. This health includes seven major parameters.</div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                    <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                                    <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                                </div>
                         </div>
                     </div>
                 </div>
@@ -585,24 +593,359 @@
         </div>
         <!-- top selling package section end -->
 
-        <!-- Our Highlights start  -->
+        <!-- Our Highlights section start  -->
         <div class="container-fluid ourHighlights">
             <div class="heading col-12">Our Highlights</div>
             <div class="sectionTitle col-12">Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our service.</div>
-            <div class="row pt-4">
-                <div class="col-md-3">
-                    <div class="highlightsCard shadowsm border rounded-2 d-flex align-items-center">
+            <div class="row pt-sm-4 pt-3 g-sm-3 g-2">
+                <div class="col-md-3 col-6">
+                    <div class="highlightsCard h-100 shadowsm position-relative rounded-2 d-flex align-items-center">
                         <div class="highlightimg rounded-2 bg-light">
                             <img src="assets/img/labtest/home.svg" alt="home" class="h-100 w-100 img-fluid">
                         </div>
-                        <div class="highlightTitle">Home Sample Collection</div>
+                        <div class="highlightTitle text-center">Home Sample Collection</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="highlightsCard h-100 shadowsm position-relative rounded-2 d-flex align-items-center">
+                        <div class="highlightimg rounded-2 bg-light">
+                            <img src="assets/img/index/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                        </div>
+                        <div class="highlightTitle text-center">2000+ Location Served</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="highlightsCard h-100 shadowsm position-relative rounded-2 d-flex align-items-center">
+                        <div class="highlightimg rounded-2 bg-light">
+                            <img src="assets/img/labtest/certicate.svg" alt="certicate" class="h-100 w-100 img-fluid">
+                        </div>
+                        <div class="highlightTitle text-center">NABL, CAP ISO Certified</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="highlightsCard h-100 shadowsm position-relative rounded-2 d-flex align-items-center">
+                        <div class="highlightimg rounded-2 bg-light">
+                            <img src="assets/img/labtest/Offer.svg" alt="offer" class="h-100 w-100 img-fluid">
+                        </div>
+                        <div class="highlightTitle text-center">Upto 50% Discount</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Our Highlights section end  -->
+
+        <!-- lab partner section start  -->
+        <div class="container-fluid labpartner ">
+            <div class="heading col-12">Lab Partner</div>
+            <div class="sectionTitle col-12">We provide lab tests and health packages from well-reputed, certified diagnostic labs across the country.</div>
+            <div class="row pt-sm-4 pt-3 g-sm-3 g-2"> 
+                <div class="swiper mySwiper partnerSlider py-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner1.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner2.png" alt="partner" class="w-100 object-fit-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner3.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner4.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner5.png" alt="partner" class="w-100 object-fit-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner6.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner1.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner2.png" alt="partner" class="w-100 object-fit-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner3.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner4.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner5.png" alt="partner" class="w-100 object-fit-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="parntercard bg-light rounded-2 d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="partnerImg d-flex">
+                                    <img src="assets/img/labtest/partner6.png" alt="partner" class="w-100">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Our Highlights end  -->
+        <!-- lab partner section end  -->
 
+        <!-- testimonal section start  -->
+        <div class="container-fluid testimonal ">
+            <div class="heading col-12">Testimonal</div>
+            <div class="sectionTitle col-12">Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our service.</div>
+            <div class="row pt-sm-3 pt-2 pb-4 position-relative">
+                <!-- <div class="col-md-4">
+                    <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                        <div class="userimg rounded-circle overflow-hidden">
+                            <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                        </div>
+                        <div>
+                            <div class="userreview">
+                                This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                            </div>
+                            <div class="userName d-flex align-items-center gap-1">
+                                Rajiv Singh 
+                                <div class="userlocation fw-medium"> - Mumbai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-12">
+                    <div class="swiper mySwiper py-2 testimonalslider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
+                                    <div class="userimg rounded-circle overflow-hidden">
+                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="userreview">
+                                            This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!
+                                        </div>
+                                        <div class="userName d-flex align-items-center gap-1">
+                                            Rajiv Singh 
+                                            <div class="userlocation fw-medium"> - Mumbai</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- testimonal section end -->
+
+        <!-- book appointment cta section start  -->
+        <div class="container-fluid ctaSection">
+            <div class="bookappoitment rounded-3 bg-opacity-10">
+                <div class="row">
+                    <div class="col-12 ctaheading text-center">Book Appointment</div>
+                    <div class="col-12 number text-center">+91-1234567899</div>
+                    <div class="col-12 pt-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="javascript:;" class="whatsappbtn d-flex text-decoration-none align-items-center justify-content-center rounded-2">
+                                <span class="whatsappicon d-flex align-items-center justify-content-center"><img src="assets/img/labtest/whatspp.png" alt="whatspp" class="h-100 w-100 img-fluid"></span>
+                                Book On whatspp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- book appointment cta section end  -->
     </main>
+
+    <!-- faq section start  -->
+    <div class="container-fluid faqSection bg-light">
+        <div class="row">
+            <div class="col-12 heading">
+                Lab Test
+            </div>
+            <div class="col-12 faqheading">
+                Full body health check-up
+            </div>
+            <div class="col-12 faqdata">
+                A basic full body check-up typically includes a physical exam to check blood pressure, heart rate, weight, and height, along with blood tests to check complete blood count, cholesterol, blood sugar, and kidney function. It may also include a urinalysis and screening for certain cancers, such as breast or prostate. The whole process usually takes a few hours and is recommended for adults every 1-2 years.
+            </div>
+            <div class="col-12 faqheading">Types of tests included in full body check-up package</div>
+            <div class="col-12 faqdata">
+                A health test package includes a range of medical tests and screenings to assess an individual's overall health. Some of the common tests included in a full body check-up may include:
+            </div>
+            <div class="col-12 pb-2">
+                <ul>
+                    <li class="faqdata"><strong class="text-dark">Blood tests:</strong> To check for conditions like diabetes, high cholesterol, and liver or kidney problems.</li>
+                    <li class="faqdata pt-1"><strong class="text-dark">Imaging tests:</strong> Such as X-rays, CT scans, or MRI scans to detect any abnormalities in organs or tissues.</li>
+                    <li class="faqdata pt-1"><strong class="text-dark">ECG:</strong>To check the heart's health and detect any issues like arrhythmia.</li>
+                    <li class="faqdata pt-1"><strong class="text-dark">Pulmonary function tests:</strong>To evaluate lung function.</li>
+                    <li class="faqdata pt-1"><strong class="text-dark">Physical examination:</strong>To check for any physical abnormalities or symptoms.</li>
+                    <li class="faqdata pt-1"><strong class="text-dark">Cancer screenings: </strong>Such as mammography or colonoscopy, to detect any signs of cancer.</li>
+                </ul>
+            </div>
+            <div class="col-12 heading faqheadingtwo border-top">Faq</div>
+            <div class="col-12 faqheading">Q: What are the benefits of a full body health check-up?</div>
+            <div class="col-12 faqdata"><strong class="text-dark">A:</strong> A full body health check-up can provide numerous benefits, including early detection and prevention of potential health problems. It can identify risk factors for chronic diseases and provide insights into an individual's overall physical and mental health. With this information, individuals can make more informed decisions about their lifestyle, including diet and lifestyle choices, and receive guidance on managing any identified health risks.</div>
+            <div class="col-12 faqheading">Q: Is a complete health check-up necessary?</div>
+            <div class="col-12 faqdata"><strong class="text-dark">A:</strong> A full body check-up may not be necessary for everyone, but it can be beneficial for detecting potential health issues at an early stage.</div>
+        </div>
+    </div>
+    <!-- faq section end  -->
 
     <!-- footer start  -->
     <div class="container-fluid footer ">
@@ -1126,6 +1469,7 @@
     });
     </script>
 
+    <!-- hero slider start  -->
     <script>
         var swiper = new Swiper(".heroslider", {
         loop: true,
@@ -1146,6 +1490,7 @@
 
         
     </script>
+    <!-- hero slider end -->
 
     <!-- lab test banner slider start  -->
     <script>
@@ -1186,6 +1531,66 @@
     </script>
     <!-- lab test banner slider end  -->
 
+    <!-- partner slider start -->
+    <script>
+        var swiper = new Swiper(".partnerSlider", {
+            spaceBetween: 20,
+            // centeredSlides: true,
+            loop: true,
+            speed:2000,
+            autoplay: {
+                delay:0,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                slidesPerView: 2.5,
+                spaceBetween: 15,
+                },
+                640: {
+                slidesPerView: 4,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                },
+                1024: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- partner slider  end-->
 
+    <!-- testimonal slider  start -->
+    <script>
+        var swiper = new Swiper(".testimonalslider", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                991: {
+                slidesPerView:3,
+                spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- testimonal slider  end -->
 </body>
 </html>
