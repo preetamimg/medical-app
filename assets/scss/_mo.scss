@@ -1478,13 +1478,17 @@
 
 // cta section start 
 .ctaSection {
+    padding-bottom:50px;
     & .bookappoitment {
-        background: rgba($theme1, 1);
+        background: rgba($theme1, 0.3);
         padding: 22px 6px;
         & .ctaheading {
             font-size: 28px;
             font-weight: 600;
-            color: $theme2;
+            color: $black;
+            & span {
+                color: $white;
+            }
         }
         & .number {
             font-size: 18px;
@@ -1494,8 +1498,7 @@
         }
         & .whatsappbtn {
             font-size: 18px;
-            // background-color: $white;
-            border: 2px solid $white;
+            background-color: $theme1;
             padding: 10px 22px;
             font-weight: 500;
             gap: 8px;
@@ -1508,6 +1511,50 @@
     }
 }
 // cta section end 
+
+// pathology page start 
+.pathologysection {
+    padding: 16px;
+    & .pathologyheading {
+        font-size: 22px;
+        font-weight: 600;
+        color: $black;
+        & span {
+            color: $theme1;
+            font-size: 38px;
+        }
+    }
+    & .pathologycardmain {
+        & .offercard {
+            padding: 8px;
+            & .cardicon {
+                height: 40px;
+                max-width: 40px;
+                min-width: 40px;
+                background-color: $theme1;
+                padding: 8px;
+            }
+            & .cardheading {
+                font-size: 14px;
+                font-weight: 500;
+                color: $theme1;
+                line-height: 16px;
+                
+            }
+            & .starting {
+                font-size: 13px;
+                font-weight: 500;
+                color: $black;
+            }
+            & .price {
+                font-size: 13px;
+                font-weight: 500;
+                color: red;
+            }
+        }
+    }
+}
+// pathology page end
 
 
 @include media-breakpoint(basic) {}
@@ -1645,6 +1692,30 @@
         }
     }
     // faq section end
+
+     // cta section start 
+    .ctaSection {
+        & .bookappoitment {
+            padding: 22px 6px;
+            & .ctaheading {
+                font-size: 26px;
+                & span {
+                }
+            }
+            & .number {
+                font-size: 17px;
+                padding-top: 6px;
+            }
+            & .whatsappbtn {
+                font-size: 17px;
+                & .whatsappicon {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+    // cta section end 
 
 }
 
@@ -1787,6 +1858,31 @@
         }
     }
     // faq section end
+
+    // cta section start 
+    .ctaSection {
+        & .bookappoitment {
+            padding: 18px 6px;
+            & .ctaheading {
+                font-size: 22px;
+                & span {
+                }
+            }
+            & .number {
+                font-size: 16px;
+                padding-top: 6px;
+            }
+            & .whatsappbtn {
+                font-size: 15px;
+                padding: 10px 18px;
+                & .whatsappicon {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+        }
+    }
+    // cta section end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -2013,6 +2109,32 @@
         }
     }
     // testimonal section end 
+
+    // cta section start 
+    .ctaSection {
+        padding-bottom: 45px;
+        & .bookappoitment {
+            padding: 16px 6px;
+            & .ctaheading {
+                font-size: 18px;
+                & span {
+                }
+            }
+            & .number {
+                font-size: 14px;
+                padding-top: 6px;
+            }
+            & .whatsappbtn {
+                font-size: 14px;
+                padding: 7px 18px;
+                & .whatsappicon {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+    // cta section end 
 
 }
 // lab test page end 
