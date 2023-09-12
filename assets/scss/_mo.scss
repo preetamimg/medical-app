@@ -2510,5 +2510,23 @@
 // offer page start 
 .offersection {
     padding-top: 45px;
+    & .categorycard {
+        padding: 15px;
+        top: 130px;
+        & .formCheckWrapper {
+            // gap: 5px;
+            & .formCheckLbl {
+                margin-left: 2px;
+            }
+        }
+        & .categoryfilter {
+            gap: 10px;
+        }
+        & .filterheading {
+            font-size: 18px;
+            font-weight: 700;
+            color: $black;
+        }
+    }
 }
 // offer page end
