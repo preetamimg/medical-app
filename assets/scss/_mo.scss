@@ -784,22 +784,7 @@
         }
         
     }
-    & .emptyCart {
-        padding-top: 30px;
-        & .emptyImg {
-            aspect-ratio: 5/1;
-        }
-        & .emptyTitle {
-            font-size: 16px;
-            font-weight: 600;
-            color: rgba($black , .4);
-            padding-top: 14px;
-            padding-bottom: 14px;
-        }
-        & .emptyBtn {
-            padding: 7px 22px;
-        }
-    }
+    
 }
 .tablebody {
     background: #f2f2f2;
@@ -854,7 +839,22 @@
         }
     }
 }
-
+.emptyCart {
+    padding-top: 30px;
+    & .emptyImg {
+        aspect-ratio: 5/1;
+    }
+    & .emptyTitle {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba($black , .4);
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    & .emptyBtn {
+        padding: 7px 22px;
+    }
+}
 .qualiltymain {
     height: 35px;
     & .qualityicon {
@@ -918,14 +918,7 @@
             }
             
         }
-        & .emptyCart {
-            & .emptyImg {
-            }
-            & .emptyTitle {
-            }
-            & .emptyBtn {
-            }
-        }
+       
     }
     .tablebody {
         padding: 10px;
@@ -950,6 +943,14 @@
             }
         }
         & .price {
+        }
+    }
+    .emptyCart {
+        & .emptyImg {
+        }
+        & .emptyTitle {
+        }
+        & .emptyBtn {
         }
     }
     .qualiltymain {
@@ -1061,22 +1062,7 @@
             }
             
         }
-        & .emptyCart {
-            padding-top: 30px;
-            & .emptyImg {
-                aspect-ratio: 3/1;
-            }
-            & .emptyTitle {
-                font-size: 15px;
-                font-weight: 600;
-                color: rgba($black , .4);
-                padding-top: 14px;
-                padding-bottom: 14px;
-            }
-            & .emptyBtn {
-                padding: 7px 22px;
-            }
-        }
+        
     }
     .tablebody {
         padding: 10px;
@@ -1114,6 +1100,22 @@
                     transform: scale(1);
                 }
             }
+        }
+    }
+    .emptyCart {
+        padding-top: 30px;
+        & .emptyImg {
+            aspect-ratio: 3/1;
+        }
+        & .emptyTitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba($black , .4);
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+        & .emptyBtn {
+            padding: 7px 22px;
         }
     }
     .qualiltymain {
@@ -2503,3 +2505,10 @@
 
 }
 // lab test page end 
+
+
+// offer page start 
+.offersection {
+    padding-top: 45px;
+}
+// offer page end
