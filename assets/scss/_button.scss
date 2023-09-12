@@ -241,6 +241,8 @@ font-size: 14px;
     background-color: $theme1;
     padding: 10px 30px;
     transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 5;
     & .editIcon{
         width: 14px;
         height: 14px;
