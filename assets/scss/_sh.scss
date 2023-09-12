@@ -3526,7 +3526,7 @@
 
 // membership Section 
 .membershipCardSection{
-    border: 1px solid lighten($danger,50) !important;
+    border: 1px solid lighten($danger,50);
     border-radius: 10px;
     & .membershipCard{
         & .imgCard{
@@ -4569,6 +4569,71 @@
         }
     }
 
+    // SubscriptionsCard section 
+    & .SubscriptionsCard{
+        & .addCardIcon{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        & .uptoHeading{
+            font-size: 14px;
+            color: $black;
+        }
+
+        & .value {
+            text-align: center;
+            font-weight: bold;
+            font-size: 35px;
+            line-height: 35px;
+            padding: 20px 0px;
+            color: $black;
+            letter-spacing: -.07em;
+            text-shadow: white 2px 2px 2px;
+            & .valueRs{
+                font-size: 35px;
+                color: $black;
+            }
+          }
+           & .inputRange[type="range"] {
+            display: block;
+            -webkit-appearance:none;
+            background-color: #bdc3c7 !important;
+            width: 72%;
+            height: 7px;
+            border-radius: 5px;
+            margin: 0 auto;
+            outline: 0;
+          }
+          & .inputRange[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color:$theme1;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            // border: 2px solid white;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+          }​
+            & .inputRange[type="range"]::-webkit-slider-thumb:hover {
+              background-color: white;
+              border: 2px solid #e74c3c;
+            }
+            & .inputRange[type="range"]::-webkit-slider-thumb:active {
+              transform: scale(1.1);
+            }
+            & .stap{
+                font-size: 18px;
+                color: $black;
+                font-weight: 500;
+            }
+            & .stapHeading{
+                font-size: 14px;
+                font-weight: 400;
+                color: $black;
+            }
+    }
+
 }
 
 
@@ -4714,13 +4779,654 @@
     }
 }
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .accountPage{
+        & .sideNavBaraccount{
+            & .userImg{
+               
+            }
+            & .userName{
+             
+            }
+            & .gmailId{
+          
+            }
+    
+            & .accountTabs{
+                & .navLinkSide{
+            
+                    &::before{
+                   
+                    }
+                    &::after{
+           
+                    }
+                    & .tabsIcon{
+              
+                        & img{
+                         
+                        }
+                   
+                    }
+                    &.active{
+                   
+                        & .tabsIcon{
+                            & img{
+                              
+                            }
+        
+                        }
+                    }
+        
+                }
+            }
+        }
+        // information 
+        & .headinginformation{
+           
+        }
+        & .userInformation{
+            & .formSection{
+                & .labelUserin{
+              
+                }
+                & .formInputinformation{
+          
+                }
+                & .editProfile{
+                 
+                    & .editIcon{
+                    
+                    }
+                    &:hover{
+                   
+                    }
+                 
+                }
+            }
+        }
+        // wallet Section 
+    
+        & .walletSection{
+            & .rsHeading{
+          
+            }
+            & .WalletCard{
+                & .walletImg{
+                    & img{
+                       
+                    }
+                }
+                & .walletHeading{
+              
+                }
+                & .subheading{
+                 
+                }
+            }
+        }
+        & .emptyCart {
+        
+            & .emptyImg {
+            
+            }
+            & .emptyTitle {
+        
+            }
+            & .emptyPera{
+               
+            }
+            & .emptyBtn {
+                 
+            }
+        }
+        // offer section 
+    
+        & .offerCard{
+            & .applyBtn{
+             
+            }
+            & .offerHeading{
+                & .offerCode{
+     
+                }
+                & .couponCode{
+                 
+                }
+    
+            }
+            & .offerValid{
+            
+            }
+            & .viewDetails{
+        
+                &:hover{
+                    
+                }
+            }
+        }
+    
+    }
+}
 
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(lg) {
+    .accountPage{
+        & .sideNavBaraccount{
+            & .userImg{
+               
+            }
+            & .userName{
+             
+            }
+            & .gmailId{
+          
+            }
+    
+            & .accountTabs{
+                & .navLinkSide{
+            
+                    &::before{
+                   
+                    }
+                    &::after{
+           
+                    }
+                    & .tabsIcon{
+              
+                        & img{
+                         
+                        }
+                   
+                    }
+                    &.active{
+                   
+                        & .tabsIcon{
+                            & img{
+                              
+                            }
+        
+                        }
+                    }
+        
+                }
+            }
+        }
+        // information 
+        & .headinginformation{
+           
+        }
+        & .userInformation{
+            & .formSection{
+                & .labelUserin{
+              
+                }
+                & .formInputinformation{
+          
+                }
+                & .editProfile{
+                 
+                    & .editIcon{
+                    
+                    }
+                    &:hover{
+                   
+                    }
+                 
+                }
+            }
+        }
+        // wallet Section 
+    
+        & .walletSection{
+            & .rsHeading{
+          
+            }
+            & .WalletCard{
+                & .walletImg{
+                    & img{
+                       
+                    }
+                }
+                & .walletHeading{
+                    font-size: 27px;
+                }
+                & .subheading{
+                 
+                }
+            }
+        }
+        & .emptyCart {
+        
+            & .emptyImg {
+            
+            }
+            & .emptyTitle {
+        
+            }
+            & .emptyPera{
+               
+            }
+            & .emptyBtn {
+                 
+            }
+        }
+        // offer section 
+    
+        & .offerCard{
+            & .applyBtn{
+             
+            }
+            & .offerHeading{
+                & .offerCode{
+     
+                }
+                & .couponCode{
+                 
+                }
+    
+            }
+            & .offerValid{
+            
+            }
+            & .viewDetails{
+        
+                &:hover{
+                    
+                }
+            }
+        }
+    
+    }
+}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .accountPage{
+        & .sideNavBaraccount{
+            & .userImg{
+               
+            }
+            & .userName{
+             
+            }
+            & .gmailId{
+          
+            }
+    
+            & .accountTabs{
+                & .navLinkSide{
+            
+                    &::before{
+                   
+                    }
+                    &::after{
+           
+                    }
+                    & .tabsIcon{
+              
+                        & img{
+                         
+                        }
+                   
+                    }
+                    &.active{
+                   
+                        & .tabsIcon{
+                            & img{
+                              
+                            }
+        
+                        }
+                    }
+        
+                }
+            }
+        }
+        // information 
+        & .headinginformation{
+           
+        }
+        & .userInformation{
+            & .formSection{
+                & .labelUserin{
+              
+                }
+                & .formInputinformation{
+          
+                }
+                & .editProfile{
+                 
+                    & .editIcon{
+                    
+                    }
+                    &:hover{
+                   
+                    }
+                 
+                }
+            }
+        }
+        // wallet Section 
+    
+        & .walletSection{
+            & .rsHeading{
+          
+            }
+            & .WalletCard{
+                & .walletImg{
+                    & img{
+                       
+                    }
+                }
+                & .walletHeading{
+              
+                }
+                & .subheading{
+                 
+                }
+            }
+        }
+        & .emptyCart {
+        
+            & .emptyImg {
+            
+            }
+            & .emptyTitle {
+        
+            }
+            & .emptyPera{
+               
+            }
+            & .emptyBtn {
+                 
+            }
+        }
+        // offer section 
+    
+        & .offerCard{
+            & .applyBtn{
+             
+            }
+            & .offerHeading{
+                & .offerCode{
+     
+                }
+                & .couponCode{
+                 
+                }
+    
+            }
+            & .offerValid{
+            
+            }
+            & .viewDetails{
+        
+                &:hover{
+                    
+                }
+            }
+        }
 
-@include media-breakpoint-down(sm) {}
+         // pricesCard section 
+
+    & .pricesCard{
+        & .rsHeading{
+          
+        }
+        & .pricesCardInner{
+            & .memerberShipHeading{
+                font-size: 16px;
+            }
+            & .priceHeading{
+                font-size: 22px;
+                & .monthHeaing{
+                    font-size: 13px;
+                }
+            }
+            & .ConsultationsHeading{
+         
+            }
+            & .iconPrice{
+          
+            }
+            & .pricesLiHeading{
+        
+            }
+            & .pricesPera{
+         
+            }
+
+            &.active{
+                
+                & .memerberShipHeading{
+                  
+                }
+                & .priceHeading{
+                
+                }
+                & .pricesLiHeading{
+                  
+                }
+                & .pricesPera{
+                    
+                }
+                & .editProfile{
+                 
+                    &:hover{
+                     
+                    }
+                }
+                & .ConsultationsHeading{
+                   
+                }
+                & .iconPrice{
+                  
+                }
+            }
+        }
+    }
+    
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .accountPage{
+        & .sideNavBaraccount{
+            & .userImg{
+               width: 50px;
+               height: 50px;
+            }
+            & .userName{
+             font-size: 16px;
+            }
+            & .gmailId{
+          
+            }
+    
+            & .accountTabs{
+                & .navLinkSide{
+                    font-size: 12px;
+                    &::before{
+                   
+                    }
+                    &::after{
+           
+                    }
+                    & .tabsIcon{
+              
+                        & img{
+                         
+                        }
+                   
+                    }
+                    &.active{
+                   
+                        & .tabsIcon{
+                            & img{
+                              
+                            }
+        
+                        }
+                    }
+        
+                }
+            }
+        }
+        // information 
+        & .headinginformation{
+           
+        }
+        & .userInformation{
+            & .formSection{
+                & .labelUserin{
+              
+                }
+                & .formInputinformation{
+          
+                }
+                & .editProfile{
+                 
+                    & .editIcon{
+                    
+                    }
+                    &:hover{
+                   
+                    }
+                 
+                }
+            }
+        }
+        & .wislistCard{
+            & .productImgMain{
+                min-width: 65px;
+                height: 65px;
+                max-width: 65px;
+                max-height: 65px;
+                & .productImg{
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+        }
+        // wallet Section 
+    
+        & .walletSection{
+            & .rsHeading{
+          
+            }
+            & .WalletCard{
+                & .walletImg{
+                    & img{
+                       
+                    }
+                }
+                & .walletHeading{
+                    font-size: 22px;
+                }
+                & .subheading{
+                 
+                }
+            }
+        }
+        & .emptyCart {
+        
+            & .emptyImg {
+            
+            }
+            & .emptyTitle {
+        
+            }
+            & .emptyPera{
+               
+            }
+            & .emptyBtn {
+                 
+            }
+        }
+        // offer section 
+    
+        & .offerCard{
+            & .applyBtn{
+             
+            }
+            & .offerHeading{
+                & .offerCode{
+     
+                }
+                & .couponCode{
+                 
+                }
+    
+            }
+            & .offerValid{
+            
+            }
+            & .viewDetails{
+        
+                &:hover{
+                    
+                }
+            }
+        }
+        // prices section card 
+        & .pricesCard{
+            & .rsHeading{
+              
+            }
+            & .pricesCardInner{
+                & .memerberShipHeading{
+                 
+                }
+                & .priceHeading{
+               
+                    & .monthHeaing{
+                     
+                    }
+                }
+                & .ConsultationsHeading{
+             
+                }
+                & .iconPrice{
+              
+                }
+                & .pricesLiHeading{
+            
+                }
+                & .pricesPera{
+             
+                }
+    
+                &.active{
+                    
+                    & .memerberShipHeading{
+                      
+                    }
+                    & .priceHeading{
+                    
+                    }
+                    & .pricesLiHeading{
+                      
+                    }
+                    & .pricesPera{
+                        
+                    }
+                    & .editProfile{
+                     
+                        &:hover{
+                         
+                        }
+                    }
+                    & .ConsultationsHeading{
+                       
+                    }
+                    & .iconPrice{
+                      
+                    }
+                }
+            }
+        }
+    
+    }
+}
 // edite profile offcanvas 
 .editeProfileOffcanvas{
     & .offcanvasHeader{

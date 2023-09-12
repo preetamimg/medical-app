@@ -243,6 +243,8 @@ font-size: 14px;
     transition: all 0.3s ease-in-out;
     position: relative;
     z-index: 5;
+    white-space: nowrap;
+    border: none;
     & .editIcon{
         width: 14px;
         height: 14px;
@@ -252,4 +254,46 @@ font-size: 14px;
         color: $white;
     }
  
+}
+
+@include media-breakpoint-down(lg) {
+    .editProfile{
+        font-size: 13px;
+        padding: 8px 17px;
+        & .editIcon{
+         
+        }
+        &:hover{
+        
+        }
+     
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .editProfile{
+        font-size: 10px;
+        padding: 7px 10px;
+        & .editIcon{
+         
+        }
+        &:hover{
+        
+        }
+     
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .editProfile{
+        font-size: 8px;
+        padding: 7px 8px;
+        & .editIcon{
+         
+        }
+        &:hover{
+        
+        }
+     
+    }
 }
