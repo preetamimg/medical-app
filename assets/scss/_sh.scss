@@ -2247,7 +2247,7 @@
 
 .productDetailsPage{
     // height: calc(100vh - 100px);
-
+    transform: translate(0, 0);
     & .navSmall{
         & .navproductItem{
                 font-size: 18px;
