@@ -347,7 +347,141 @@
     }
 }
 
+.prescriptionCard{
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    & .subHeading{
+        font-size: 16px;
+        color: $gray-600;
+        font-weight: 600;
+    }
+    & .des{
+        color: $gray-600;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    & .priscribeImg{
+        width: 100%;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    & .presUl{
+        margin-top: 10px;
+        & .presLi{
+            color: $gray-600;
+            font-size: 14px;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    & .uploadSection{
+        & .uploadLbl{
+            width: 100%;
+            background-color: $white;
+            border: 1px dashed $theme1;
+            font-size: 14px;
+            font-weight: 600;
+            color: $gray-600;
+            border-radius: 10px;
+            padding: 15px 0;
+            & img{
+                width: 35px;
+                height: 35px;
+                margin-right: 5px;
+            }
+        }
+    }
+    & .uploadImg{
+        width: 300px;
+        // width: 100%;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 10px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & .formCheckWrapper{
+        padding-left: 0;
+        & .fromCheckInp{
+            margin-top: 17px;
+            margin-right: 8px;
+            &:checked ~ .fromCheckLbl{
+                border: 1px solid $theme1;
+                border-radius: 10px;
+                // padding: 10px 5px;
+                background-color:lighten($color: $theme1, $amount: 0);
+                & .medicalBox{
+                    background-color: $white;
+                    & img{
+                        width: 20px;
+                        height: 20px;
+                        filter: invert(3);
+                    }
+                }
+                & .medicalTxt{
+                    color: $white;
+                }
+                & .txt2{
+                    color: $white;
+                }
+            }
+        }
+        & .fromCheckLbl{
+            padding: 15px;
+            width: 100%;
+            cursor: pointer;
+            & .medicalBox{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $gray-400;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img{
+                    width: 25px;
+                    height:20px;
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+            }
+            & .medicalTxt{
+                font-size: 16px;
+                color: $gray-600;
+            }
+            & .txt2{
+                color: $gray-600;
+                font-size: 13px;
+            }
+        }
 
+    }
+    & .btnn{
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 10px;
+        width: 100%;
+        padding: 15px 0;
+        margin-top: 25px;
+        border: 1px solid $theme1;
+        color: $theme1;
+        transition: 0.3s linear;
+        &:hover{
+            background-color: $theme1;
+            color: $white;
+        }
+    }
+}
 
 @include media-breakpoint(basic) {
     .categoryFluid{
