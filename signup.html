@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical App</title>
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <!-- SWIPER CSS-->
+  <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
+</head>
+<body>
+  <!-- navbar start  -->
+  <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
+    <div class="headermain w-100 position-relative bg-white">
+      <div class="row m0 align-items-center justify-content-between">
+        <div class="col-auto">
+          <div class="d-flex align-items-center gap-md-3 gap-2">
+            <button class="navbar-toggler p-0 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navoffcanvas" aria-controls="navoffcanvas" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><img src="assets/img/menu.svg" alt="menu" class="h-100 w-100 img-fluid"></span>
+            </button>
+            <a class="navbar-brand navLogo m-0" href="index.html">
+              <img src="assets/img/mainlogo.png" alt="logo" class="h-100">
+            </a>
+            <button class="btn pincodeBtn pe-0 dflex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+              <div class="d-flex align-items-center gap-1">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                  <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <div class="selectAddress text-start">Select Adderss</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                  <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col d-md-block d-none ">
+          <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
+            <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+              <div class="d-flex align-items-center justify-content-center locationicon">
+                <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+              </div>
+              <div class="deliveryAdd text-start">Delivery Address</div>
+              <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+              </span>
+            </button> -->
+            <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
+              <div class="d-flex align-items-center justify-content-center locationicon">
+                <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+              </div>
+              <div class="deliveryAdd text-start">Delivery Address</div>
+              <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+              </span>
+            </button> -->
+            <div class="d-flex w-100 h-100 px2 align-items-center searchData">
+              <!-- <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
+                <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+              </span> -->
+              <div class="dropdown searchdrop position-relative border-end">
+                <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Medicine
+                </button>
+                <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                  <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center position-relative w-100 h-100">
+                <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                <button class="btn searchBtn rounded-5 h-100">Search</button>
+                <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                  <div class=" h-100 overflow-y-auto ">
+                    <ul class="list-unstyled h-100">
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                          Medical
+                          <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                          </button>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center headerIcons">
+            <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
+              <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+            </a>
+            <a href="javascript:;" class="cardBtn d-flex align-items-center justify-content-center position-relative">
+              <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
+              <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadow-sm rounded-circle">12</span>
+            </a>
+            <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
+              <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
+            </a>
+            <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+              </span>
+              <span class="login loginsign d-lg-inline-flex d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</span> 
+              <span class="d-lg-inline-flex d-none"> /</span>
+              <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvasNav bg-light h100 align-items-center w-100">
+      <ul class="navbar-items d-flex list-unstyled m-0 justify-content-center flex-grow-1 pe3">
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medicine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Lab Test</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medical Devices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Baby Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Beauty Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Supplementary Product</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  
+<!-- Account section start  -->
+
+<div class="container-fluid accountPage py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+          <div class="sideNavBaraccount bg-white rounded-3 p-4">
+            <div class="row gap-4">
+              <div class="col-12 ">
+                  <div class="userImg rounded-circle mx-auto"><img src="assets/img/profile/profileImg.jpg" alt="profile" class="img-fluid w-100 h-100 rounded-circle"></div>
+                  <div class="mt-1 userName fw-medium text-center">Medhunt</div>
+                  <div class=""><a href="javascript:;" class="text-decoration-none d-flex align-items-center gmailId fw-normal text-center justify-content-center">img.@gmail.com</a></div>
+                  <div class="gmailId text-center fw-normal">+91 9116875275</div>
+              </div>
+              <div class="col-12 pt-4 border-top">
+                <nav>
+                  <div class="nav nav-tabs d-flex flex-column gap-2 border-0 accountTabs" id="nav-tab" role="tablist">
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-center active" id="nav-account-tab" data-bs-toggle="tab" data-bs-target="#nav-account" type="button" role="tab" aria-controls="nav-account" aria-selected="true"> <span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/user.svg" alt="user" class="img-fluid w-100 h-100"></span> Account Information </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-wallet-tab" data-bs-toggle="tab" data-bs-target="#nav-wallet" type="button" role="tab" aria-controls="nav-wallet" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/Wallet.svg" alt="wallet" class="img-fluid w-100 h-100"></span> My Wallet </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-wishList-tab" data-bs-toggle="tab" data-bs-target="#nav-wishList" type="button" role="tab" aria-controls="nav-wishList" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/mdi_heart.png" alt="user" class="img-fluid w-100 h-100"></span> My WishList </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-Offers-tab" data-bs-toggle="tab" data-bs-target="#nav-Offers" type="button" role="tab" aria-controls="nav-Offers" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/bxs_offer.svg" alt="user" class="img-fluid w-100 h-100"></span> Offers  </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-Netmeds-tab" data-bs-toggle="tab" data-bs-target="#nav-Netmeds" type="button" role="tab" aria-controls="nav-Netmeds" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/netmeds.svg" alt="user" class="img-fluid w-100 h-100"></span> Netmeds First  </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-Delivery-tab" data-bs-toggle="tab" data-bs-target="#nav-Delivery" type="button" role="tab" aria-controls="nav-Delivery" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/fa6-solid_car.svg" alt="user" class="img-fluid w-100 h-100"></span> Delivery Addresses  </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-Prescription-tab" data-bs-toggle="tab" data-bs-target="#nav-Prescription" type="button" role="tab" aria-controls="nav-Prescription" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/healthicons_rx.svg" alt="user" class="img-fluid w-100 h-100"></span> My Prescription </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-Subscriptions-tab" data-bs-toggle="tab" data-bs-target="#nav-Subscriptions" type="button" role="tab" aria-controls="nav-Subscriptions" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/bx_file.svg" alt="user" class="img-fluid w-100 h-100"></span> My Subscriptions </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/Wallet.svg" alt="user" class="img-fluid w-100 h-100"></span> Payment Methods</button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/bx_file.svg" alt="user" class="img-fluid w-100 h-100"></span> Medicine Orders </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/user.svg" alt="user" class="img-fluid w-100 h-100"></span> My Rewards  </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/gg_phone.svg" alt="user" class="img-fluid w-100 h-100"></span>Contact us  </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/bx_file.svg" alt="user" class="img-fluid w-100 h-100"></span>Rate Us   </button>
+                    <button class="nav-link navLinkSide border-0 rounded-3 shadow-none d-flex align-items-cente" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled><span class="d-inline-flex tabsIcon me-3"><img src="assets/img/profile/logout.svg" alt="user" class="img-fluid w-100 h-100"></span> Log Out</button>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-account" role="tabpanel" aria-labelledby="nav-account-tab" tabindex="0">
+            <div class="userInformation p-4 bg-white rounded-3">
+              <div class="row">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="headinginformation">LOGIN INFORMATION</div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <form class="formSection">
+                        <div class="mb-3">
+                          <label for="emailUser" class="labelUserin">Email</label>
+                          <input type="email" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="img.@gmail.com" id="emailUser"/>
+                        </div>
+                        <div class="mb-3">
+                          <label for="mobileNumber" class="labelUserin">MOBILE NUMBER</label>
+                          <div class="input-group ">
+                            <span class="border-0 rounded-0 border-bottom shadow-none formInputinformation"> +91</span>
+                            <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber"/>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                 
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="headinginformation">PERSONAL INFORMATION</div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <form class="formSection">
+                        <div class="mb-3">
+                          <label for="namelUser" class="labelUserin">FULL NAME</label>
+                          <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="Medhunt" id="namelUser"/>
+                        </div>
+                        <div class="mb-3">
+                          <label for="GENDER" class="labelUserin">GENDER</label>
+                          <select class="form-select border-0 shadow-none formInputinformation ps-0 border border-bottom rounded-0 pt-0" aria-label="Default select example">
+                            <option selected>No-data</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Other</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <button class="text-decoration-none border-0 d-flex align-items-center justify-content-center shadow-none rounded-3 editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleedit"  type="button" aria-controls="offcanvasExample"><span class="d-inline-flex align-items-center me-2 editIcon"><img src="assets/img/profile/edit.svg" alt="edit" class="img-fluid w-100 h-100"></span>Edit profile</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-wallet" role="tabpanel" aria-labelledby="nav-wallet-tab" tabindex="0">
+            <div class="walletSection">
+              <div class="row gap-3">
+                <div class="col-12">
+                  <div class="headinginformation">LOGIN INFORMATION</div>
+                  <div class="rsHeading">Rs. 0.00</div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6">
+                      <div  class="card WalletCard rounded-3">
+                          <div class="card-body">
+                              <div class="walletImg mx-auto "><img src="assets/img/signup/wallet.avif" alt="wallet" class="img-fluid w-100 h-100"></div>
+                              <div class="walletHeading text-center">Rs 0.00</div>
+                              <div class="subheading text-center">NMS Cash</div>
+                              <button class="border-0 mt-3 shadow-none d-flex align-items-center justify-content-center rounded-3 mx-auto editProfile" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">How to Use</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div  class="card WalletCard rounded-3">
+                          <div class="card-body">
+                              <div class="walletImg mx-auto "><img src="assets/img/signup/wallet.avif" alt="wallet" class="img-fluid w-100 h-100"></div>
+                              <div class="walletHeading text-center">Rs 0.00</div>
+                              <div class="subheading text-center">NMS Cash</div>
+                              <button class="border-0 mt-3 shadow-none d-flex align-items-center justify-content-center rounded-3 mx-auto editProfile" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">How to Use</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-wishList" role="tabpanel" aria-labelledby="nav-wishList-tab" tabindex="0">
+            <div class="wislistCard rounded-3 bg-white p-3">
+              <div class="row">
+                <div class="col-12">
+                  <div class="tablebody rounded-2 bg-light position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
+                                <div class="productImg">
+                                    <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
+                                    <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                    <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
+                                </div>
+                                <div class="col-sm-2 col-4">
+                                    <div class="price">Rs.450</div>
+                                </div>
+                                    
+                                <div class="col-sm-3 col-4 ps-sm-3 ps-0">
+                                  <button class="text-decoration-none d-flex align-items-center border-0 shadow-none editProfile rounded-3 ">Add To Cart</button>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-4">
+                                    <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                        <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                  <div class="tablebody rounded-2 bg-light position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
+                                <div class="productImg">
+                                    <img src="assets/img/cart/cart2.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
+                                    <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                    <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
+                                </div>
+                                <div class="col-sm-2 col-4">
+                                    <div class="price">Rs.450</div>
+                                </div>
+                                    
+                                <div class="col-sm-3 col-4 ps-sm-3 ps-0">
+                                  <button class="text-decoration-none d-flex align-items-center border-0 shadow-none editProfile rounded-3 ">Add To Cart</button>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-4">
+                                    <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                        <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                  <div class="tablebody rounded-2 bg-light position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
+                                <div class="productImg">
+                                    <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
+                                    <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                    <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
+                                </div>
+                                <div class="col-sm-2 col-4">
+                                    <div class="price">Rs.450</div>
+                                </div>
+                                    
+                                <div class="col-sm-3 col-4 ps-sm-3 ps-0">
+                                  <button class="text-decoration-none d-flex align-items-center border-0 shadow-none editProfile rounded-3 ">Add To Cart</button>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-4">
+                                    <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                        <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 d-none">
+                  <div class="emptyCart">
+                    <div class="emptyImg">
+                        <img src="assets/img/futerebrand/empty-cart.svg" alt="empty" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="emptyTitle text-center">Wishlist is empty!</div>
+                    <div class="text-center emptyPera">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Earum, ratione.</div>
+                   <div class="mx-auto w-100 text-center mt-3">
+                    <a class="rounded-3 mx-auto text-decoration-none d-inline-block align-items-center justify-content-center border-0 shadow-none editProfile"> ADD TO WISHLIST</a>
+                   </div>
+                   
+                    <!-- <div class="emptybtnmain text-center d-flex align-items-center justify-content-center">
+                        <a href="javascript:;" class="applyBtn emptyBtn rounded-1 text-decoration-none">Continue Shopping</a>
+                    </div> -->
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-Offers" role="tabpanel" aria-labelledby="nav-Offers-tab" tabindex="0">
+            <div class="offerCard bg-white rounded-3 p-3">
+              <div class="row">
+                <div class="col-12 sellingPackages offerCard py-0">
+                  <div class="row pt4 g-2">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/labtest/packages1.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                      <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                      </div>
+                                      <div>
+                                      <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                      </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-opacity-10 bg-info overflow-hidden">
+                          <div>
+                            <div class="cardimg overflow-hidden rounded-2">
+                                <img src="assets/img/labtest/packages2.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                            </div>
+
+                            <div class="carrdData">
+                                <div class="offerSection mb-2 d-flex justify-content-between">
+                                  <div class="offerHeading">
+                                    <div class="offerCode">NMSNEW</div>
+                                    <div class="couponCode">Coupon Code</div>
+                                  </div>
+                                  <div>
+                                  <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                  </div>
+                                </div>
+                                <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                            <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                            <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
+                          <div>
+                            <div class="cardimg overflow-hidden rounded-2">
+                                <img src="assets/img/labtest/packages3.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                            </div>
+
+                            <div class="carrdData">
+                                <div class="offerSection mb-2 d-flex justify-content-between">
+                                  <div class="offerHeading">
+                                    <div class="offerCode">NMSNEW</div>
+                                    <div class="couponCode">Coupon Code</div>
+                                  </div>
+                                  <div>
+                                  <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                  </div>
+                                </div>
+                                <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                            <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                            <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
+                          <div>
+                            <div class="cardimg overflow-hidden rounded-2">
+                                <img src="assets/img/labtest/packages4.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                            </div>
+
+                            <div class="carrdData">
+                                <div class="offerSection mb-2 d-flex justify-content-between">
+                                  <div class="offerHeading">
+                                    <div class="offerCode">NMSNEW</div>
+                                    <div class="couponCode">Coupon Code</div>
+                                  </div>
+                                  <div>
+                                  <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                  </div>
+                                </div>
+                                <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                            <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                            <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
+                          <div>
+                            <div class="cardimg overflow-hidden rounded-2">
+                                <img src="assets/img/labtest/packages5.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                            </div>
+
+                            <div class="carrdData">
+                                <div class="offerSection mb-2 d-flex justify-content-between">
+                                  <div class="offerHeading">
+                                    <div class="offerCode">NMSNEW</div>
+                                    <div class="couponCode">Coupon Code</div>
+                                  </div>
+                                  <div>
+                                  <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                  </div>
+                                </div>
+                                <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                            <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                            <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
+                          <div>
+                            <div class="cardimg overflow-hidden rounded-2">
+                                <img src="assets/img/labtest/packages6.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                            </div>
+                            <div class="carrdData">
+                                <div class="offerSection mb-2 d-flex justify-content-between">
+                                  <div class="offerHeading">
+                                    <div class="offerCode">NMSNEW</div>
+                                    <div class="couponCode">Coupon Code</div>
+                                  </div>
+                                  <div>
+                                  <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                  </div>
+                                </div>
+                                <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                            <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                            <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-Netmeds" role="tabpanel" aria-labelledby="nav-Netmeds-tab" tabindex="0">
+            <div class="pricesCard p-4 bg-white rounded-3">
+              <div class="row gap-5">
+                <div class="col-12">
+                  <div class="rsHeading">Netmeds First Membership</div>
+                  <div class="headinginformation">Save more with exclusive membership</div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card rounded-3 bg-transparent pricesCardInner">
+                        <div class="card-body">
+                          <div class="memerberShipHeading text-center fw-semibold">BASIC</div>
+                          <div class="priceHeading mt-2 text-center fw-semibold">$149/ <span class="monthHeaing">3 Months</span></div>
+                          <div>
+                            <ul class="list-unstyled mt-4 d-flex flex-column gap-3">
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/check.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Additional 2% NMS cash</div>
+                                    <div class="pricesPera ">Max ₹100 on prepaid medicine</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/check.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Additional 10% off on Lab tests</div>
+                                    <div class="pricesPera ">Existing offer + max ₹100 on lab tests</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/Closered.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading ">Unlimited Free Delivery</div>
+                                    <div class="pricesPera ">Free delivery on orders above ₹99</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="ConsultationsHeading">1</div>
+                                    <!-- <div class="iconPrice"><img src="assets/img/signup/onsult.png" alt="save" class="img-fluid w-100 h-100"></div> -->
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Free Consultations</div>
+                                    <div class="pricesPera ">Talk to any specialist doctor for free</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/Closered.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Superfast Delivery</div>
+                                    <div class="pricesPera ">High priority delivery for all orders</div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none rounded-3 editProfile">ADD TO CART</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card rounded-3 bg-transparent pricesCardInner active">
+                        <div class="card-body">
+                          <div class="memerberShipHeading text-center fw-semibold">LITE</div>
+                          <div class="priceHeading mt-2 text-center fw-semibold">$249/ <span class="monthHeaing">3 Months</span></div>
+                          <div>
+                            <ul class="list-unstyled mt-4 d-flex flex-column gap-3">
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/check.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Additional 2% NMS cash</div>
+                                    <div class="pricesPera ">Max ₹100 on prepaid medicine</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/check.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Additional 10% off on Lab tests</div>
+                                    <div class="pricesPera ">Existing offer + max ₹100 on lab tests</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/Closered.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading ">Unlimited Free Delivery</div>
+                                    <div class="pricesPera ">Free delivery on orders above ₹99</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="ConsultationsHeading">1</div>
+                                    <!-- <div class="iconPrice"><img src="assets/img/signup/onsult.png" alt="save" class="img-fluid w-100 h-100"></div> -->
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Free Consultations</div>
+                                    <div class="pricesPera ">Talk to any specialist doctor for free</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/Closered.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Superfast Delivery</div>
+                                    <div class="pricesPera ">High priority delivery for all orders</div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none rounded-3 editProfile">ADD TO CART</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card rounded-3 bg-transparent pricesCardInner">
+                        <div class="card-body">
+                          <div class="memerberShipHeading text-center fw-semibold">PREMMIUM</div>
+                          <div class="priceHeading mt-2 text-center fw-semibold">$649/ <span class="monthHeaing">3 Months</span></div>
+                          <div>
+                            <ul class="list-unstyled mt-4 d-flex flex-column gap-3">
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/check.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Additional 2% NMS cash</div>
+                                    <div class="pricesPera ">Max ₹100 on prepaid medicine</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/check.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Additional 10% off on Lab tests</div>
+                                    <div class="pricesPera ">Existing offer + max ₹100 on lab tests</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/Closered.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading ">Unlimited Free Delivery</div>
+                                    <div class="pricesPera ">Free delivery on orders above ₹99</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="ConsultationsHeading">1</div>
+                                    <!-- <div class="iconPrice"><img src="assets/img/signup/onsult.png" alt="save" class="img-fluid w-100 h-100"></div> -->
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Free Consultations</div>
+                                    <div class="pricesPera ">Talk to any specialist doctor for free</div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="priceLi">
+                                <div class="row">
+                                  <div class="col-auto">
+                                    <div class="iconPrice"><img src="assets/img/signup/Closered.svg" alt="save" class="img-fluid w-100 h-100"></div>
+                                  </div>
+                                  <div class="col ps-0">
+                                    <div class="pricesLiHeading p">Superfast Delivery</div>
+                                    <div class="pricesPera ">High priority delivery for all orders</div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none rounded-3 editProfile">ADD TO CART</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="rsHeading mb-3">Faq</div>
+
+                  <div class="accordion medicalAccordion overflow-hidden" id="accordionExample">
+                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                      <div class="accordion-header">
+                        <button class="accordion-button accordionButton shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          1. How long is my Medhunt First Membership valid for?
+                        </button>
+                      </div>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="accordionPera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quis, itaque nisi aliquam, molestias, officiis ullam dolores nobis odit maxime repellat ipsam! Consectetur, dicta doloribus!</div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                      <div class="accordion-header">
+                        <button class="accordion-button accordionButton collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          2. Do I get NMS Cash when I make purchases using my Medhunt First membership?
+                        </button>
+                      </div>
+                      <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="accordionPera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quis, itaque nisi aliquam, molestias, officiis ullam dolores nobis odit maxime repellat ipsam! Consectetur, dicta doloribus!</div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                      <div class="accordion-header">
+                        <button class="accordion-button accordionButton collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                         3. Is the free delivery applicable to all types of orders? Is there a minimum order?
+                        </button>
+                      </div>
+                      <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="accordionPera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quis, itaque nisi aliquam, molestias, officiis ullam dolores nobis odit maxime repellat ipsam! Consectetur, dicta doloribus!</div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                      <div class="accordion-header">
+                        <button class="accordion-button accordionButton collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          4. Can I get a discount on lab tests/packages at any lab?
+                        </button>
+                      </div>
+                      <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="accordionPera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quis, itaque nisi aliquam, molestias, officiis ullam dolores nobis odit maxime repellat ipsam! Consectetur, dicta doloribus!</div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                      <div class="accordion-header">
+                        <button class="accordion-button accordionButton collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                          5. Is there a cap on Diagnostics discount?
+                        </button>
+                      </div>
+                      <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="accordionPera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quis, itaque nisi aliquam, molestias, officiis ullam dolores nobis odit maxime repellat ipsam! Consectetur, dicta doloribus!</div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                      <div class="accordion-header">
+                        <button class="accordion-button accordionButton collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                          6. How many free doctor consultations can I get per month?
+                        </button>
+                      </div>
+                      <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="accordionPera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quis, itaque nisi aliquam, molestias, officiis ullam dolores nobis odit maxime repellat ipsam! Consectetur, dicta doloribus!</div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                      <div class="accordion-header">
+                        <button class="accordion-button accordionButton collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeveen" aria-expanded="true" aria-controls="collapseSeveen">
+                          7. Can I cancel my membership after buying it?
+                        </button>
+                      </div>
+                      <div id="collapseSeveen" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="accordionPera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quis, itaque nisi aliquam, molestias, officiis ullam dolores nobis odit maxime repellat ipsam! Consectetur, dicta doloribus!</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-Delivery" role="tabpanel" aria-labelledby="nav-Delivery-tab" tabindex="0">
+            <div class="addressCard bg-white rounded-3 p-4">
+              <div class="row gap-4">
+                <div class="col-12">
+                  <div class="headinginformation">DELIVERY ADDRESS</div>
+                </div>
+                <div class="col-auto">
+                  <button class="text-decoration-none d-flex align-items-center rounded3 editProfile rounded-3 addresBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location"> <span class="d-inline-flex align-items-center editIcon iconPlus me-3"><img src="assets/img/signup/plus.svg" alt="plus" class="img-fluid w-100 h-100"></span> ADD TO ADDRESS</button>
+                </div>
+                <div class="col-12 d-none">
+                  <div class="row gap-3">
+                    <div class="col-12">
+                      <div class="rsHeading">Select Address</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row gy-4">
+                        <div class="col-6">
+                          <div>
+                            <input type="radio" name="selectAddress" checked class=" selectAddressInput" hidden id="selectAddress1" >
+                            <label for="selectAddress1" class="addressLabel w-100">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <div class="namePerson">Rakesh Sharma</div>
+                                </div>
+                                <div class="col-auto">
+                                  <span class="checkBox d-flex align-items-center">
+                                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                                  </span>
+                                  
+                                </div>
+                                <div class="col-12">
+                                  <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div>
+                            <input type="radio" name="selectAddress" class=" selectAddressInput" hidden id="selectAddress2" >
+                            <label for="selectAddress2" class="addressLabel w-100">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <div class="namePerson">Rakesh Sharma</div>
+                                </div>
+                                <div class="col-auto">
+                                  <span class="checkBox d-flex align-items-center">
+                                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                                  </span>
+                                  
+                                </div>
+                                <div class="col-12">
+                                  <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div>
+                            <input type="radio" name="selectAddress" class=" selectAddressInput" hidden id="selectAddress3" >
+                            <label for="selectAddress3" class="addressLabel w-100">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <div class="namePerson">Rakesh Sharma</div>
+                                </div>
+                                <div class="col-auto">
+                                  <span class="checkBox d-flex align-items-center">
+                                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                                  </span>
+                                  
+                                </div>
+                                <div class="col-12">
+                                  <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div>
+                            <input type="radio" name="selectAddress" class=" selectAddressInput" hidden id="selectAddress4" >
+                            <label for="selectAddress4" class="addressLabel w-100">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <div class="namePerson">Rakesh Sharma</div>
+                                </div>
+                                <div class="col-auto">
+                                  <span class="checkBox d-flex align-items-center">
+                                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                                  </span>
+                                  
+                                </div>
+                                <div class="col-12">
+                                  <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div>
+                            <input type="radio" name="selectAddress" class=" selectAddressInput" hidden id="selectAddress5" >
+                            <label for="selectAddress5" class="addressLabel w-100">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <div class="namePerson">Rakesh Sharma</div>
+                                </div>
+                                <div class="col-auto">
+                                  <span class="checkBox d-flex align-items-center">
+                                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                                  </span>
+                                  
+                                </div>
+                                <div class="col-12">
+                                  <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-Prescription" role="tabpanel" aria-labelledby="nav-Prescription-tab" tabindex="0">
+            <div class="addressCard bg-white rounded-3 p-4">
+              <div class="row gap-4">
+                <div class="col-12">
+                  <div class="headinginformation">DELIVERY ADDRESS</div>
+                </div>
+                <div class="col-12 dnone">
+                  <div class="emptyCart">
+                    <div class="emptyImg">
+                        <img src="assets/img/futerebrand/empty-cart.svg" alt="empty" class="h-100 w-100 img-fluid object-fit-contain">
+                    </div>
+                    <div class="emptyTitle text-center">Wishlist is empty!</div>
+                    <div class="text-center emptyPera">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Earum, ratione.</div>
+                   <div class="mx-auto w-100 text-center mt-3">
+                    <a class="rounded-3 mx-auto text-decoration-none d-inline-block align-items-center justify-content-center border-0 shadow-none editProfile"> ADD TO WISHLIST</a>
+                   </div>
+                   
+                    <!-- <div class="emptybtnmain text-center d-flex align-items-center justify-content-center">
+                        <a href="javascript:;" class="applyBtn emptyBtn rounded-1 text-decoration-none">Continue Shopping</a>
+                    </div> -->
+                </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-Subscriptions" role="tabpanel" aria-labelledby="nav-Subscriptions-tab" tabindex="0">
+            <div class="addressCard bg-white rounded-3 p-4">
+              <div class="row gap-4">
+                <div class="col-12">
+                  <div class="headinginformation">DELIVERY ADDRESS</div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Account section start  -->
+
+
+  
+  <div class="container-fluid footer ">
+    <div class="row align-items-lg-center gap-sm-0 gap-3 findusSection commonSection">
+      <div class="col-sm-4 ">
+        <div class="d-flex align-items-center findcard">
+          <div class="findicon d-flex align-items-center justify-content-center">
+            <img src="assets/img/location.svg" alt="location" class="h-100 w100 img-fluid">
+          </div>
+          <div class="d-flex align-items-center flex-sm-column gap-2">
+            <div class="cityName">Find Us:-</div>
+            <div class="cityDetail">Vaishali nagar, jaipur</div>
+          </div>
+        </div>
+        <!-- <div class="ContactNumber ">+91-123456789</div> -->
+        <!-- <a href="javascript:;" class="onMap text-decoration-none">ON MAPS</a> -->
+      </div>
+      <div class="col-sm-4 ">
+        <div class="d-flex align-items-center findcard">
+          <div class="findicon d-flex align-items-center justify-content-center">
+            <img src="assets/img/call.svg" alt="location" class="h-100 w100 img-fluid">
+          </div>
+          <div class="d-flex align-items-center flex-sm-column gap-2">
+            <div class="cityName">Call us:-</div>
+            <div class="cityDetail">9876543210 0</div>
+          </div>
+        </div>
+        <!-- <div class="ContactNumber ">+91-123456789</div> -->
+        <!-- <a href="javascript:;" class="onMap text-decoration-none">ON MAPS</a> -->
+      </div>
+      <div class="col-sm-4">
+        <div class="d-flex align-items-center findcard">
+          <div class="findicon d-flex align-items-center justify-content-center">
+            <img src="assets/img/mail.svg" alt="location" class="h-100 w100 img-fluid">
+          </div>
+          <div class="d-flex align-items-center flex-sm-column gap-2">
+            <div class="cityName">Mail us:-</div>
+            <div class="cityDetail">mail@info.com</div>
+          </div>
+        </div>
+        <!-- <div class="ContactNumber ">+91-123456789</div> -->
+        <!-- <a href="javascript:;" class="onMap text-decoration-none">ON MAPS</a> -->
+      </div>
+    </div>
+    <div class="row footerinner commonSection">
+      <div class="col-lg-4 col-md-6 col-sm-8">
+        <a href="index2.html" class="footerlogo d-flex align-items-center justify-content-center"><img src="assets/img/mainlogo.png" alt="logo" class="w-100"></a>
+        <div class="footerdata pb-1">The concept of medicine home delivery has been taken to a new level by the Medhunt online medicine delivery app.</div>
+        <div class="footerHeading pt-2 mb-lg-4 mb-3" >Follow us</div>
+        <div class="d-flex align-items-center footericons">
+          <a href="javascript:;" class="socialIcon rounded-circle d-flex align-items-center justify-content-center">
+            <img src="assets/img/facebook.svg" alt="Facebook" class="h-100 w-100 img-fluid">
+          </a>
+          <a href="javascript:;" class="socialIcon twitter rounded-circle d-flex align-items-center justify-content-center">
+            <img src="assets/img/twiiter.svg" alt="twitter" class="h-100 w-100 img-fluid">
+          </a>
+          <a href="javascript:;" class="socialIcon googlePlus rounded-circle d-flex align-items-center justify-content-center">
+            <img src="assets/img/googleplus.svg" alt="google plus" class="h-100 w-100 img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 companysection">
+        <div class="footerHeading footerheadingtwo position-relative d-inline-block">COMPANY</div>
+        <ul class="list-unstyled m-0 footermenu d-flex flex-column">
+          <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Costumer Speak</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">In the News</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Career</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 shopinsection">
+        <div class="footerHeading footerheadingtwo position-relative d-inline-block">SHOPPING</div>
+        <ul class="list-unstyled m-0 footermenu d-flex flex-column">
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by A-Z</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by Manufacturers</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Health Article</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">Offers / Coupons</a></li>
+          <li><a href="javascript:;" class="text-decoration-none footerLink">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-8 subscribesection">
+        <div class="footerHeading footerheadingtwo position-relative d-inline-block">SUBSCRIBE</div>
+        <div class="footerdata ">
+          Get a free subscription to our health and fitness tip and stay tuned to our latest offers
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control rounded-0 shadow-none bg-transparent border-0" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <button class="btn h-100 d-flex align-items-center justify-content-center rightarrow rounded-0 p0 border-0">
+            <img src="assets/img/newssellter.svg" alt="email" class="h00 w-100 img-fluid">
+          </button>
+        </div>
+        <div class="d-flex align-items-center gap-2 pt-3">
+          <a href="javascript:;" class="d-flex align-items-center justify-content-center download">
+            <img src="assets/img/futerebrand/downloadicon.png" alt="android" class="h-100 w-100 img-fluid">
+          </a>
+          <a href="javascript:;" class="d-flex align-items-center justify-content-center download">
+            <img src="assets/img/futerebrand/download2.png" alt="android" class="h-100 w-100 img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row paymentMain pt4 border-bottom border-secondary border-opacity-25">
+      <div class="col-12 footerHeading mb-0">OUR PAYMENT PARTNERS</div>
+      <div class="col-12 pt-sm-3 pt-2">
+        <div class="d-flex flex-wrap align-items-center gap-md-4 gap-3 justify-contentcontent-center">
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/phonepay.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/rupay.svg" alt="payment" class="h-100">
+          </div>
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
+          </div>
+          <!-- <div class="paymentImg">
+            <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
+          </div> -->
+          <div class="paymentImg">
+            <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
+          </div>
+          <!-- <div class="paymentImg">
+            <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid copyrightmain">
+    <div class="row align-items-center gap-md-0 gap-2">
+      <div class="copyrightTitle col-md text-md-start text-center">Copyright© 2023. All Rights Reserved.</div>
+      <div class="col-md-auto">
+        <ul class="list-unstyled privacymenu d-flex justify-content-md-start flex-wrap justify-content-center m-0">
+          <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Terms and Conditions</a></li>
+          <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Privacy Policy</a></li>
+          <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Shipping and Delivery Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- footer end  -->
+
+  <!-- MAIN JS  -->
+  <script src="assets/js/main.min.js"></script>
+  <!-- BOOTSTRAP JS  -->
+  <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- SWIPER JS  -->
+  <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+
+
+
+
+
+  <!-- edite profile offcanvas  -->
+  <div class="offcanvas offcanvas-end editeProfileOffcanvas " tabindex="-1" id="offcanvasExampleedit" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header offcanvasHeader">
+      <div class="offcanvas-title offcanvasTitle d-flex align-items-center" id="offcanvasExampleLabel"> Edit Profile</div>
+      <button type="button " class="offcanvasTitle border-0 shadow-none bg-transparent d-flex align-items-center" data-bs-dismiss="offcanvas" aria-label="Close"> <span class="d-inline-flex rightIcon"><img src="assets/img/signup/Close.svg" alt="close" class="img-fluid w-100 h-100"></span></button>
+    </div>
+    <div class="offcanvas-body offcanvasBody border-top ">
+      <div class="row">
+        <div class="col-12 ">
+          <form class="formSection">
+            <div class="mb-3">
+              <label for="firstName" class="labelUserin">First Name</label>
+              <!-- <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number"> -->
+              <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="Medh" id="firstName">
+            </div>
+            <div class="mb-3">
+              <label for="LastName" class="labelUserin">Last Name</label>
+              <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="unt" id="LastName">
+            </div>
+            <div class="mb-3">
+              <label for="GENDER" class="labelUserin">GENDER</label>
+              <select class="form-select border-0 shadow-none formInputinformation ps-0 border border-bottom rounded-0 pt-0" aria-label="Default select example">
+                <option selected="">No-data</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mobileNumber" class="labelUserin">Age</label>
+              <div class="input-group ">
+                <!-- <span class=" border-bottom border-end rounded-0 shadow-none formInputinformation border-end"> +91</span> -->
+                <input type="date" class="form-control border-bottom ps-0 border-0 rounded-0  pt-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mobileNumber" class="labelUserin">Email</label>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 ps-0 shadow-none formInputinformation" value="img.@gmail.com" id="mobileNumber">
+                <button class="btn border-0 shadow-none border-bottom rounded-0 formInputinformation text-danger" type="button" id="button-addon2">Verify</button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mobileNumber" class="labelUserin">MOBILE NUMBER</label>
+              <div class="input-group ">
+                <span class=" border-bottom rounded-0 shadow-none formInputinformations"> +91</span>
+                <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 pb-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+              </div>
+            </div>
+            <div class="mt-4">
+              <button class="text-decoration-none border-0 w-100 d-flex align-items-center justify-content-center shadow-none rounded-3 editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleedit" type="button" aria-controls="offcanvasExample">Save Change</button>
+              
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- edite profile offcanvas  end -->
+
+   <!-- how to use modal  -->
+   <div class="modal fade contentModal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalDialog modal-dialog-centered">
+      <div class="modal-content contentSection">
+        <div class="modal-header">
+          <div class="modal-title useTitle fs-5" id="exampleModalLabel">HOW TO USE NMS CASH?</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <ul class="d-flex flex-column gap-2">
+                <li class="usePera">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                <li class="usePera">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, eveniet.</li>
+                <li class="usePera">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maiores maxime amet!  </li>
+                <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit qui unde eligendi, veniam laudantium dolorum.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- how to use modal end   -->
+
+
+
+<!-- signup modal start -->
+
+
+
+<!-- Modal -->
+<div class="modal fade signupModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modalDialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content modalContent">
+      <!-- <div class="modal-header modalHeader">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+      </div> -->
+      <div class="modal-body modalBody">
+        <div class="row align-items-center">
+          <div class="col-12">
+           <button type="button" class="btn-close d-flex justify-content-end border-0 shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="signupImg"><img src="assets/img/signup/signin.png" alt="signup" class="img-fluid w-100 h-100"></div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="row">
+              <div class="col-xl-10  mx-auto">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="signupHeading text-center">Welcome in <span class="signupName">Medhunt</span></div>
+                    <div class="text-center signpera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto rerum earum soluta repellendus iure.</div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <div class="row gap-3"> 
+                      <div class="col-12">
+                        <ul class="nav nav-tabs signupTabs border-0 shadow-none rounded-3 d-flex align-items-center" id="myTab" role="tablist">
+                          <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link active navLink border-0 shadow-none rounded-3  w-100" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Sign In</button>
+                          </li>
+                          <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link navLink border-0 shadow-none rounded-3 w-100" id="sign-tab" data-bs-toggle="tab" data-bs-target="#sign-tab-pane" type="button" role="tab" aria-controls="sign-tab-pane" aria-selected="false">Sign Up</button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
+                            <form class="signUpForm">
+                              <div class="row">
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
+                                  <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
+                                </div>
+                                <d iv class="mb-sm-3 mb-2 col-12">
+                                  <a href="javascript:;" class="text-decoration-none text-end d-flex align-items-center justify-content-end  rounded-3 forgetBtn"> Forgot Password</a>
+                                </d>
+                                <div class="col-12 mb-sm-3 mb-2">
+                                  <label for="exampleFormControlInput1" class="form-label labelYour">Verification code</label>
+                                  <div class="otp-input-fields">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                  </div>
+                              </div>
+                             
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">LOG IN USING OTP</button>
+                                </div>
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <div class="row gap-sm-0 gap-2">
+                                    <div class="col-sm-6">
+                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/Google2.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <div class="signuplink d-flex align-items-center text-nowrap text-center justify-content-center">
+                                   Dont have a Account ?
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn2 ms-1"> Sign up</a>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </form>
+                          </div>
+                          <div class="tab-pane fade" id="sign-tab-pane" role="tabpanel" aria-labelledby="sign-tab" tabindex="0">
+                            <form class="signUpForm">
+                              <div class="row">
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
+                                  <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
+                                </div>
+                                <d iv class="mb-sm-3 mb-2 col-12">
+                                  <a href="javascript:;" class="text-decoration-none text-end d-flex align-items-center justify-content-end  rounded-3 forgetBtn"> Forgot Password</a>
+                                </d>
+                                <div class="col-12 mb-sm-3 mb-2">
+                                  <label for="exampleFormControlInput1" class="form-label labelYour">Verification code</label>
+                                  <div class="otp-input-fields">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                  </div>
+                              </div>
+                             
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">LOG IN USING OTP</button>
+                                </div>
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <div class="row gap-sm-0 gap-2">
+                                    <div class="col-sm-6">
+                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/Google2.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="mb-sm-3 mb-2 col-12">
+                                  <div class="signuplink d-flex align-items-center text-nowrap text-center justify-content-center">
+                                   Dont have a Account ?
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn2 ms-1"> Sign up</a>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </form>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-md-end justify-content-center modalBody ">
+       <div class="row signUpForm">
+        <div class=" col-12">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-auto ">
+              <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn"> Term of Service</a>
+            </div>
+            <div class="col-auto">
+              <a href="javascript:;" class="text-decoration-none  d-flex align-items-center justify-content-center  rounded-3 forgetBtn"> Privacy & Legal Policy</a>
+            </div>
+          </div>
+
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signup modal end -->
+
+
+
+  <!-- location offcanvas  -->
+  <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-light border-bottom">
+      <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+      <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col-12 deliveryData fw-medium">
+          Get access to your Address, Order, and Wishlist
+        </div>
+        <div class="col-7 mx-auto py-3">
+          <button type="button" class="btn mxuto w-100 addaddressbtn rounded-1 d-flex flex-column align-items-center " data-bs-toggle="modal" data-bs-target="#locationmodal">
+            <span class="d-flex align-items-center justify-content-center plusicon">
+              <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
+            </span>
+            <span class="addressTile">Add Address</span>
+          </button>
+          </div>
+          <!-- <div class="col-12 enterpin fw-semibold pt-2 text-center">
+            Enter Pincode
+          </div> -->
+          <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
+            Select Pincode to see product availability
+          </div> -->
+          <div class="col-12 pt-3  border-top border-1">
+            <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
+              <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
+                <input type="text" id="Pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                <label for="Pincode" class="pincodeLabel">PINCODE</label>
+                <button class="btn applypinBtn bg-transparent border-0">Apply</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-3 text-center">
+            <a href="javascript:;" class="detectlocation bg-secondary bg-opacity-25 d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
+              <span class="d-flex align-items-center justify-content-center detecticon">
+                <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
+              </span>
+              Detect my location
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- location modal  -->
+  <div class="modal fade locationmodal" id="locationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog mx-auto locationdialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content ">
+        <div class="modal-header locationHeader">
+          <div class="modal-title locationHeading" id="exampleModalLabel">Add Address</div>
+          <button type="button" class="btn-close d-flex align-items-center justify-content-center shadow-none" data-bs-dismiss="modal" aria-label="Close">
+            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row locationcontent">
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
+                <label for="House" class="pincodeLabel">House No.</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
+                <label for="streetno1" class="pincodeLabel">Street No.1</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="streetno2" class="pincodeLabel">Street No.2</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="city" class="pincodeLabel">City</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="inputpinmain position-relative w-100">
+                <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="state" class="pincodeLabel">State</label>
+              </div>
+            </div>
+            <div class="col-12 pt-2">
+              <div class="d-flex align-items-center justify-conten">
+                <div class="form-check ps-0">
+                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Home">
+                    <label class="form-check-label checkLabel rounded-1" for="Home">
+                      Home
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
+                  <label class="form-check-label checkLabel rounded-1" for="Work">
+                    Work
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
+                  <label class="form-check-label checkLabel rounded-1" for="Other">
+                    Other
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn applyBtn">Save and Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar offcanvas  -->
+  <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-light border-bottom align-items-start">
+      <div class="offcanvas-title offcanvasLogo d-flex align-items-center justify-content-center" id="offcanvasExampleLabel">
+        <img src="assets/img/mainlogo.png" alt="logo" class="h-100 w-100 img-fluid">
+      </div>
+      <button type="button" class="btn-close closebtn mt-1 shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-items d-flex list-unstyled flex-column m-0 justify-content-center flex-grow-1 pe3">
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Medicine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Lab Test</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Medical Devices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Baby Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Beauty Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Supplementary Product</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- future brand slider  -->
+  <script>
+    var swiper = new Swiper(".futurebrand", {
+      // slidesPerView: 1,
+      // spaceBetween: 10,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        500: {
+          slidesPerView: 3,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          // spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 5,
+          // spaceBetween: 20,
+        },
+        1100: {
+          slidesPerView: 6,
+          // spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: ".nextBtn",
+        prevEl: ".prevBtn",
+      },
+    });
+  </script>
+  <!-- future brand slider  -->
+
+  <!-- offer slider  -->
+  <script>
+    var swiper = new Swiper(".offerslider", {
+      // slidesPerView: 1,
+      // spaceBetween: 10,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        500: {
+          slidesPerView: 1,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1100: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: ".nextBtnoffer",
+        prevEl: ".prevBtnoffer",
+      },
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".healthslider", {
+      // slidesPerView: 1,
+      // spaceBetween: 10,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        400: {
+          slidesPerView: 2,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1100: {
+          slidesPerView: 5,
+          spaceBetween: 15,
+        },
+      },
+      navigation: {
+        nextEl: ".nextBtnhealth",
+        prevEl: ".prevBtnhealth",
+      },
+    });
+  </script>
+
+  <script>
+  var swiper = new Swiper(".equipmentslider", {
+    // slidesPerView: 1,
+    // spaceBetween: 10,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      400: {
+        slidesPerView: 2,
+        // spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      1100: {
+        slidesPerView: 5,
+        spaceBetween: 15,
+      },
+    },
+    navigation: {
+      nextEl: ".nextBtnequipment",
+      prevEl: ".prevBtnequipment",
+    },
+  });
+  </script>
+
+  <script>
+  var swiper = new Swiper(".newarrivalslider", {
+    // slidesPerView: 1,
+    // spaceBetween: 10,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      400: {
+        slidesPerView: 2,
+        // spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      1100: {
+        slidesPerView: 5,
+        spaceBetween: 15,
+      },
+    },
+    navigation: {
+      nextEl: ".nextBtnnew",
+      prevEl: ".prevBtnnew",
+    },
+  });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".heroswiper", {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    navigation: {
+      nextEl: ".navNext",
+      prevEl: ".navPrev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        // spaceBetween: 20,
+      },
+      540: {
+        slidesPerView: 2,
+        // spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        // spaceBetween: 40,
+      },
+
+      1191: {
+        slidesPerView: 3,
+        // spaceBetween: 50,
+      },
+      1321: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+    },
+  });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".heroslider", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 1,
+      freeMode: true,
+      watchSlidesProgress: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+    
+  </script>
+
+</body>
+</html>
