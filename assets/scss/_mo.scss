@@ -873,6 +873,34 @@
     }
 }
 
+// payment card start 
+.paytmentcard {
+    padding: 16px;
+}
+// payment card end
+
+
+// address button 
+.addresBtn {
+    font-size: 14px;
+    padding: 8px 14px;
+    background-color: $theme1;
+    color: $white;
+    gap: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    & .iconPlus {
+        height: 14px;
+        width: 14px;
+        & img {
+            filter: brightness(100);
+        }
+    }
+    &:hover {
+        background-color: lighten($theme1, 5);
+    }
+}
+
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}
