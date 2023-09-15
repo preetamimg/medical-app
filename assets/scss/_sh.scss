@@ -2071,7 +2071,7 @@
 @include media-breakpoint-down(sm) {
     .dealSection{
         & .mainCard{
-            padding: 10px;
+            padding: 10px ;
             &:hover{
                 & .navBtn2{
                     & .navBtn{
@@ -2180,6 +2180,7 @@
                 }
             }
             & .cardContent{
+             
                 & .cardheading{
              
                 }
@@ -2196,7 +2197,7 @@
        
         }
         & .cardContent{
-       
+            padding: 7px !important;
     
             & .cardSubheading{
                 font-size: 10px;
@@ -2212,7 +2213,7 @@
                 }
             }
             & .priceSection{
-                font-size: 14px;
+                font-size: 12px;
                 display: flex;
                 flex-wrap: nowrap   ;
                 & .oldprice{
