@@ -880,127 +880,126 @@
     <!-- SWIPER JS  -->
     <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
 
-    <!-- location offcanvas  -->
+    <!-- location offcanvas start-->
     <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header bg-light border-bottom">
-        <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+    <div class="offcanvas-header bg-light border-bottom">
+    <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+    <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+    </button>
+    </div>
+    <div class="offcanvas-body">
+    <div class="row">
+        <div class="col-12 deliveryData fw-medium">
+        Get access to your Address, Order, and Wishlist
+        </div>
+        <div class="col-7 mx-auto py-3">
+        <button type="button" class="btn mxuto w-100 addaddressbtn rounded-1 d-flex flex-column align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
+            <span class="d-flex align-items-center justify-content-center plusicon">
+            <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
+            </span>
+            <span class="addressTile">Add Address</span>
+        </button>
+        </div>
+        <!-- <div class="col-12 enterpin fw-semibold pt-2 text-center">
+            Enter Pincode
+        </div> -->
+        <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
+            Select Pincode to see product availability
+        </div> -->
+        <div class="col-12 pt-3  border-top border-1">
+            <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
+            <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
+                <input type="text" id="pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                <label for="pincode" class="pincodeLabel">PINCODE</label>
+                <button class="btn applypinBtn bg-transparent border-0">Apply</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 pt-3 text-center">
+            <a href="javascript:;" class="detectlocation bg-light d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
+            <span class="d-flex align-items-center justify-content-center detecticon">
+                <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
+            </span>
+            Detect my location
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- location offcanvas end-->
+    
+    <!-- address offcanvas start  -->
+    <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom bg-light">
+        <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Add Address</div>
         <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
             <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
         </button>
         </div>
         <div class="offcanvas-body">
-        <div class="row">
-            <div class="col-12 deliveryData fw-medium">
-                Get access to your Address, Order, and Wishlist
-            </div>
-            <div class="col-7 mx-auto py-3">
-            <button type="button" class="btn mxuto w-100 addaddressbtn rounded-1 d-flex flex-column align-items-center " data-bs-toggle="modal" data-bs-target="#locationmodal">
-                <span class="d-flex align-items-center justify-content-center plusicon">
-                <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
-                </span>
-                <span class="addressTile">Add Address</span>
-            </button>
-            </div>
-            <!-- <div class="col-12 enterpin fw-semibold pt-2 text-center">
-                Enter Pincode
-            </div> -->
-            <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
-                Select Pincode to see product availability
-            </div> -->
-            <div class="col-12 pt-3  border-top border-1">
-                <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
-                <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
-                    <input type="text" id="pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
-                    <label for="pincode" class="pincodeLabel">PINCODE</label>
-                    <button class="btn applypinBtn bg-transparent border-0">Apply</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-12 pt-3 text-center">
-                <a href="javascript:;" class="detectlocation bg-light d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
-                <span class="d-flex align-items-center justify-content-center detecticon">
-                    <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
-                </span>
-                Detect my location
-                </a>
+        <div class="row locationcontent">
+            <div class="col-12">
+            <div class="inputpinmain position-relative w-100">
+                <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
+                <label for="House" class="pincodeLabel">House No.</label>
             </div>
             </div>
-        </div>
-    </div>
-
-    <!-- location modal  -->
-    <div class="modal fade locationmodal" id="locationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog mx-auto locationdialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content ">
-            <div class="modal-header locationHeader">
-            <div class="modal-title locationHeading" id="exampleModalLabel">Add Address</div>
-            <button type="button" class="btn-close d-flex align-items-center justify-content-center shadow-none" data-bs-dismiss="modal" aria-label="Close">
-                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-            </button>
+            <div class="col-12">
+            <div class="inputpinmain position-relative w-100">
+                <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
+                <label for="streetno1" class="pincodeLabel">Street No.1</label>
             </div>
-            <div class="modal-body">
-            <div class="row locationcontent">
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
-                    <label for="House" class="pincodeLabel">House No.</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
-                    <label for="streetno1" class="pincodeLabel">Street No.1</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                    <label for="streetno2" class="pincodeLabel">Street No.2</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                    <label for="city" class="pincodeLabel">City</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                    <label for="state" class="pincodeLabel">State</label>
-                </div>
-                </div>
-                <div class="col-12 pt-2">
-                <div class="d-flex align-items-center justify-conten">
-                    <div class="form-check ps-0">
-                        <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Home">
-                        <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Home">
-                        Home
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
-                    <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Work">
-                        Work
+            </div>
+            <div class="col-12">
+            <div class="inputpinmain position-relative w-100">
+                <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="streetno2" class="pincodeLabel">Street No.2</label>
+            </div>
+            </div>
+            <div class="col-12">
+            <div class="inputpinmain position-relative w-100">
+                <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="city" class="pincodeLabel">City</label>
+            </div>
+            </div>
+            <div class="col-12">
+            <div class="inputpinmain position-relative w-100">
+                <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                <label for="state" class="pincodeLabel">State</label>
+            </div>
+            </div>
+            <div class="col-12 pt-2">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="form-check ps-0">
+                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Home">
+                    <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Home">
+                    Home
                     </label>
-                    </div>
-                    <div class="form-check">
-                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
-                    <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Other">
-                        Other
-                    </label>
-                    </div>
                 </div>
+                <div class="form-check">
+                <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
+                <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Work">
+                    Work
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
+                <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Other">
+                    Other
+                </label>
                 </div>
             </div>
             </div>
-            <div class="modal-footer justify-content-center">
-            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-            <button type="button" class="btn applyBtn">Save and Continue</button>
+            <div class="col-12">
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn applyBtn">Save and Continue</button>
+            </div>
             </div>
         </div>
         </div>
     </div>
+    <!-- address offcanvas end  -->
 
     <!-- navbar offcanvas  -->
     <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">

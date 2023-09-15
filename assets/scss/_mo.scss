@@ -154,32 +154,32 @@
 }
 // select box end 
 
-.locationmodal {
-    & .locationdialog {
-        max-width: 350px;
-        & .locationHeader {
-            & .locationHeading {
-                font-size: 15px;
-                font-weight: 500;
-                color: $black;
-            }
-            & .btn-close {
-                background: none;
-                height: 12px;
-                width: 12px;
-            }
-        }
-        & .locationcontent {
-            gap: 16px;
-            & .checkbox {
-            }
-        }
-        & .applyBtn {
-            padding: 8px 28px;
-            &:active {
-                background-color: lighten($theme1, 6);
-                color: $white;
-            }
+// .locationmodal {
+//     & .locationdialog {
+//         max-width: 350px;
+//         & .locationHeader {
+//             & .locationHeading {
+//                 font-size: 15px;
+//                 font-weight: 500;
+//                 color: $black;
+//             }
+//             & .btn-close {
+//                 background: none;
+//                 height: 12px;
+//                 width: 12px;
+//             }
+//         }
+//     }
+// }
+.locationcontent {
+    gap: 16px;
+    & .checkbox {
+    }
+    & .applyBtn {
+        padding: 8px 28px;
+        &:active {
+            background-color: lighten($theme1, 6);
+            color: $white;
         }
     }
 }
@@ -323,28 +323,16 @@
             font-size: 11px;
         }
     }
-    .locationmodal {
-        & .locationdialog {
-            max-width: 300px;
-            & .locationHeader {
-                & .locationHeading {
-                    font-size: 14px;
-                }
-                & .btn-close {
-                }
-            }
-            & .locationcontent {
-                & .checkbox {
-                }
-                & .checkLabel {
-                }
-                & .checkbox:checked  ~ .checkLabel {
-                }
-            }
-            & .applyBtn {
-                font-size: 12px;
-                &:active {
-                }
+    .locationcontent {
+        & .checkbox {
+        }
+        & .checkLabel {
+        }
+        & .checkbox:checked  ~ .checkLabel {
+        }
+        & .applyBtn {
+            font-size: 12px;
+            &:active {
             }
         }
     }
@@ -1277,7 +1265,6 @@
 .sellingPackages {
     padding-top: 40px;
     padding-bottom: 50px;
-   
 }
 .packagesCard {
     background-color: rgba(255, 0, 0, 0.05);
@@ -2675,3 +2662,12 @@
     }
 }
 // offer page end
+
+// order review page start 
+.addressCard {
+    & .headinginformation {
+        font-size: 16px;
+        line-height: normal;
+    }
+}
+// order review page end 
