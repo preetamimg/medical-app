@@ -868,7 +868,7 @@
 // payment card end
 
 
-// address button 
+// address button start 
 .addresBtn {
     font-size: 14px;
     padding: 8px 14px;
@@ -888,6 +888,8 @@
         background-color: lighten($theme1, 5);
     }
 }
+// address button end 
+
 
 @include media-breakpoint(basic) {}
 
@@ -1038,6 +1040,20 @@
         & .price {
         }
     }
+
+    // address button start 
+    .addresBtn {
+        font-size: 13px;
+        & .iconPlus {
+            height: 13px;
+            width: 13px;
+            & img {
+            }
+        }
+        &:hover {
+        }
+    }
+    // address button end
 }
 
 @include media-breakpoint-down(sm) {
@@ -1149,6 +1165,23 @@
             font-size: 12px;
         }
     }
+
+    // address button start 
+    .addresBtn {
+        font-size: 12px;
+        padding: 8px 12px;
+        gap: 4px;
+        & .iconPlus {
+            height: 12px;
+            width: 12px;
+            & img {
+            }
+        }
+        &:hover {
+        }
+    }
+    // address button end 
+
 }
 // cart page end
 
@@ -2566,6 +2599,15 @@
         }
     }
 }
+
+// order review page start 
+.addressCard {
+    & .headinginformation {
+        font-size: 16px;
+    }
+}
+// order review page end 
+
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}
@@ -2632,6 +2674,14 @@
             }
         }
     }
+
+    // order review page start 
+    .addressCard {
+        & .headinginformation {
+            font-size: 15px;
+        }
+    }
+    // order review page end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -2660,14 +2710,13 @@
             }
         }
     }
+
+    // order review page start 
+    .addressCard {
+        & .headinginformation {
+            font-size: 14px;
+        }
+    }
+    // order review page end 
 }
 // offer page end
-
-// order review page start 
-.addressCard {
-    & .headinginformation {
-        font-size: 16px;
-        line-height: normal;
-    }
-}
-// order review page end 
