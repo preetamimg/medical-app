@@ -160,26 +160,26 @@
                 </div>
                 </div>
                 <div class="col-auto">
-                    <div class="d-flex align-items-center headerIcons">
-                        <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
-                            <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
-                        </a>
-                        <a href="cart.html" class="cardBtn d-flex align-items-center justify-content-center position-relative">
-                            <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
-                            <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
-                        </a>
-                        <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
-                            <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
-                        </a>
-                        <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
-                            <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
-                                <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
-                            </span>
-                            <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
-                            <span class="d-lg-inline-flex d-none"> /</span>
-                            <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
-                        </a>
-                    </div>
+                <div class="d-flex align-items-center headerIcons">
+                    <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
+                        <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                    </a>
+                    <a href="cart.html" class="cardBtn d-flex align-items-center justify-content-center position-relative">
+                        <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
+                        <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
+                    </a>
+                    <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
+                        <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
+                    </a>
+                    <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
+                        <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                            <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+                        </span>
+                        <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
+                        <span class="d-lg-inline-flex d-none"> /</span>
+                        <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+                    </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -211,282 +211,392 @@
     <main class="main">
 
     <!-- cart section start  -->
-    <div class="container-fluid cartsection position-relative">
+    <div class="container-fluid offersection position-relative">
         <div class="row">
-            <div class="pageHeading col-12">Shopping Cart</div>
+            <div class="pageHeading col-12">Offers and Coupan</div>
             <div class="col-12 pt-3">
                 <nav aria-label="breadcrumb" class="pagedetail">
                     <ol class="breadcrumb m-0 align-items-center">
-                        <li class="breadcrumb-item pagename homepage"><a href="index.html" class="position-relative text-decoration-none">Home</a></li>
-                        <li class="breadcrumb-item pagename activepage p-0 active" aria-current="page">Cart</li>
+                        <li class="breadcrumb-item pagename homepage"><a href="index2.html" class="position-relative text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item pagename activepage p-0 active" aria-current="page">Offers</li>
                     </ol>
                 </nav>
             </div>
         </div>
-        <div class="row pt-sm-4 pt-3">
-            <div class="col-md-8">
-                <div class="cardtable">
-                    <div class="tableHead rounded-2 bg-light d-sm-block d-none ">
-                        <div class="row mx0 align-items-center">
-                            <div class="tableTityle col-lg-7 col-6 pe-lg-0">PRODUCT</div>
-                            <div class="tableTityle col-2 px-lg-0 px-4">PRICE</div>
-                            <div class="tableTityle col-2 ps-lg-0">QTY</div>
-                            <div class="tableTityle col-1"></div>
+        <div class="row pt-sm-4 pt-3 accountPage ">
+            <div class="col-lg-3 mb-lg-0 mb-3">
+                <div class="categorycard z-1 sticky-top bg-light rounded-2">
+                    <div class="row categoryfilter">
+                        <div class="col-12 ">
+                            <div class="d-flex align-items-center">
+                                <div class="filterheading d-lg-block d-none">Filter</div>
+                                <div class="filterheading d-lg-none d-inline">Filter:-</div>
+                                <div class="dropdown filterdropdown d-lg-none d-block">
+                                    <button class="btn dropdown-toggle filterbtn border-0" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Medicine
+                                    </button>
+                                    <ul class="dropdown-menu filtermenu overflow-y-auto">
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3s" >
+                                                <label class="form-check-label formCheckLbl" for="flexCheckChecked3s">
+                                                    Medicine
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="labtest" >
+                                                <label class="form-check-label formCheckLbl" for="labtest">
+                                                    Lab Test
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="babyproduct" >
+                                                <label class="form-check-label formCheckLbl" for="babyproduct">
+                                                    Baby Product
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="medicaldevices" >
+                                                <label class="form-check-label formCheckLbl" for="medicaldevices">
+                                                    Medical Devices
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="beautyproduct" >
+                                                <label class="form-check-label formCheckLbl" for="beautyproduct">
+                                                    Beauty Product
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="supplementaryproduct" >
+                                                <label class="form-check-label formCheckLbl" for="supplementaryproduct">
+                                                    Supplementary Product
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="babyproduct1" >
+                                                <label class="form-check-label formCheckLbl" for="babyproduct1">
+                                                    Baby Product
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="medicaldevices1" >
+                                                <label class="form-check-label formCheckLbl" for="medicaldevices1">
+                                                    Medical Devices
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="beautyproduct1" >
+                                                <label class="form-check-label formCheckLbl" for="beautyproduct1">
+                                                    Beauty Product
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="innerdata">
+                                            <div class="form-check formCheckWrapper">
+                                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="supplementaryproduct1" >
+                                                <label class="form-check-label formCheckLbl" for="supplementaryproduct1">
+                                                    Supplementary Product
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
                         </div>
-                    </div>
-                    <div class="tablebody rounded-2 bg-light position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                    <div class="productImg">
-                                        <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row align-items-center">
-                                    <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
-                                        <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                        <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
-                                    </div>
-                                    <div class="col-sm-2 col-4">
-                                        <div class="price">Rs.450</div>
-                                    </div>
-                                        
-                                    <div class="col-sm-3 col-4 ps-sm-3 ps-0">
-                                        <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
-                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
-                                            <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
-                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 col-sm-2 col-4">
-                                        <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tablebody rounded-2 bg-light position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                    <div class="productImg">
-                                        <img src="assets/img/cart/cart2.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row align-items-center">
-                                    <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
-                                        <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                        <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 06:00 pm</span></div>
-                                    </div>
-                                    <div class="col-sm-2 col-4">
-                                        <div class="price">Rs.350</div>
-                                    </div>
-                                        
-                                    <div class="col-sm-3 col-4 ps-sm-3 ps-0">
-                                        <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
-                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
-                                            <div class="quantityinput d-flex align-items-center justify-content-center">45</div>
-                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 col-sm-2 col-4">
-                                        <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tablebody rounded-2 bg-light position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                    <div class="productImg">
-                                        <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row align-items-center">
-                                    <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
-                                        <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                        <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
-                                    </div>
-                                    <div class="col-sm-2 col-4">
-                                        <div class="price">Rs.450</div>
-                                    </div>
-                                        
-                                    <div class="col-sm-3 col-4 ps-sm-3 ps-0">
-                                        <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
-                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
-                                            <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
-                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 col-sm-2 col-4">
-                                        <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                        </button>
-                                    </div>
-                                </div>
+                        <div class="col-12 d-lg-block d-none pt-2 border-top">
+                            <div class="form-check formCheckWrapper">
+                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3s" >
+                                <label class="form-check-label formCheckLbl" for="flexCheckChecked3s">
+                                    Medicine
+                                </label>
                             </div>
                         </div>
-                    </div>
-                    <div class="tablebody rounded-2 bg-light position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                    <div class="productImg">
-                                        <img src="assets/img/cart/cart2.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row align-items-center">
-                                    <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
-                                        <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                        <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 06:00 pm</span></div>
-                                    </div>
-                                    <div class="col-sm-2 col-4">
-                                        <div class="price">Rs.350</div>
-                                    </div>
-                                        
-                                    <div class="col-sm-3 col-4 ps-sm-3 ps-0">
-                                        <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
-                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
-                                            <div class="quantityinput d-flex align-items-center justify-content-center">45</div>
-                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 col-sm-2 col-4">
-                                        <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                        </button>
-                                    </div>
-                                </div>
+                        <div class="col-12 d-lg-block d-none">
+                            <div class="form-check formCheckWrapper">
+                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="labtest" >
+                                <label class="form-check-label formCheckLbl" for="labtest">
+                                    Lab Test
+                                </label>
                             </div>
                         </div>
-                    </div>
-                    <div class="tablebody rounded-2 bg-light position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                    <div class="productImg">
-                                        <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row align-items-center">
-                                    <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
-                                        <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                        <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
-                                    </div>
-                                    <div class="col-sm-2 col-4">
-                                        <div class="price">Rs.450</div>
-                                    </div>
-                                        
-                                    <div class="col-sm-3 col-4 ps-sm-3 ps-0">
-                                        <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
-                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
-                                            <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
-                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 col-sm-2 col-4">
-                                        <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                        </button>
-                                    </div>
-                                </div>
+                        <div class="col-12 d-lg-block d-none">
+                            <div class="form-check formCheckWrapper">
+                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="babyproduct" >
+                                <label class="form-check-label formCheckLbl" for="babyproduct">
+                                    Baby Product
+                                </label>
                             </div>
                         </div>
-                    </div>
-                    <div class="tablebody rounded-2 bg-light position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="productImgMain d-flex align-items-center justify-content-center rounded-1">
-                                    <div class="productImg">
-                                        <img src="assets/img/cart/cart2.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                    </div>
-                                </div>
+                        <div class="col-12 d-lg-block d-none">
+                            <div class="form-check formCheckWrapper">
+                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="medicaldevices" >
+                                <label class="form-check-label formCheckLbl" for="medicaldevices">
+                                    Medical Devices
+                                </label>
                             </div>
-                            <div class="col">
-                                <div class="row align-items-center">
-                                    <div class="tabledata col-lg-6 col-sm-5  ps-sm-2 ps-0">
-                                        <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                        <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 06:00 pm</span></div>
-                                    </div>
-                                    <div class="col-sm-2 col-4">
-                                        <div class="price">Rs.350</div>
-                                    </div>
-                                        
-                                    <div class="col-sm-3 col-4 ps-sm-3 ps-0">
-                                        <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
-                                            <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
-                                            <div class="quantityinput d-flex align-items-center justify-content-center">45</div>
-                                            <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 col-sm-2 col-4">
-                                        <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                            <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                        </button>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-12 d-lg-block d-none">
+                            <div class="form-check formCheckWrapper">
+                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="beautyproduct" >
+                                <label class="form-check-label formCheckLbl" for="beautyproduct">
+                                    Beauty Product
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-block d-none">
+                            <div class="form-check formCheckWrapper">
+                                <input class="form-check-input formCheckInp" type="checkbox" value="" id="supplementaryproduct" >
+                                <label class="form-check-label formCheckLbl" for="supplementaryproduct">
+                                    Supplementary Product
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="summaryCard sticky-top z-1 rounded-2 bg-light">
-                    <div class="row mx-0">
-                        <div class="cartHeading col-12 ">
-                            Order Summary
-                        </div>
-                        <div class="col-12 pb-sm-4 pb-3">
-                            <div class="inputpinmain coupanCode rounded5 d-flex align-items-center position-relative w-100">
-                                <input type="text" id="Pincode" autocomplete="url" class="form-control  ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
-                                <label for="Pincode" class="pincodeLabel">Apply coupon</label>
-                                <button class="btn ps-1 applypinBtn bg-transparent border-0">Apply</button>
+            <div class="col-lg-9 offerCard ">
+                <div class="row pt4 g-2">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer1.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                        <div class="offerHeading">
+                                            <div class="offerCode">NMSNEW</div>
+                                            <div class="couponCode">Coupon Code</div>
+                                        </div>
+                                        <div>
+                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                        </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
                             </div>
                         </div>
-                        <div class="col-12 cartSubheading border-top">Bill Summary</div>
-                        <div class="col-12 cartdata  ">
-                            <div class="d-flex  align-items-center justify-content-between">
-                                <div class="cardTitle">Cart Total</div>
-                                <div class="cardTitle text-dark fw-medium">Rs.1797</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-opacity-10 bg-info overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer2.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
                             </div>
                         </div>
-                        <div class="col-12 cartdata">
-                            <div class="d-flex  align-items-center justify-content-between">
-                                <div class="cardTitle">Total discount</div>
-                                <div class="cardTitle text-dark fw-medium">Rs.24</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
+                        <div>
+                            <div class="cardimg overflow-hidden rounded-2">
+                                <img src="assets/img/offer/offer4.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                            </div>
+                            <div class="carrdData">
+                                <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                </div>
+                                <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
                             </div>
                         </div>
-                        <div class="col-12 cartdata deliverycharge">
-                            <div class="d-flex  align-items-center justify-content-between">
-                                <div class="cardTitle">Delivery Charge</div>
-                                <div class="cardTitle text-dark fw-medium">Rs.197</div>
+                        <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                            <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                            <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer4.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
                             </div>
                         </div>
-                        <div class="col-12 cartSubheading totalpayment border-top">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>Total</div>
-                                <div class="totalpay">Rs.2534</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer5.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
                             </div>
                         </div>
-                        <div class="col-12 cartdata border-top text-center ">
-                            <div class="d-flex align-items-center justify-content-center py-2">
-                                <a href="deliveryaddress.html" class="continueBtn rounded-2 applyBtn text-decoration-none">Continue</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer6.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer7.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer8.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
+                            <div>
+                                <div class="cardimg overflow-hidden rounded-2">
+                                    <img src="assets/img/offer/offer9.png" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
+                                </div>
+                                <div class="carrdData">
+                                    <div class="offerSection mb-2 d-flex justify-content-between">
+                                    <div class="offerHeading">
+                                        <div class="offerCode">NMSNEW</div>
+                                        <div class="couponCode">Coupon Code</div>
+                                    </div>
+                                    <div>
+                                    <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
+                                    </div>
+                                    </div>
+                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
+                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
+                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -497,7 +607,7 @@
             <div class="emptyImg">
                 <img src="assets/img/futerebrand/empty-cart.svg" alt="empty" class="h-100 w-100 img-fluid object-fit-contain">
             </div>
-            <div class="emptyTitle text-center">Your cart is empty</div>
+            <div class="emptyTitle text-center">No offers</div>
             <div class="emptybtnmain text-center d-flex align-items-center justify-content-center">
                 <a href="javascript:;" class="applyBtn emptyBtn rounded-1 text-decoration-none">Continue Shopping</a>
             </div>
@@ -608,7 +718,6 @@
             </div>
         </div>
         <!-- search offcanvas end  -->
-
     </div>
     <!-- cart section end  -->
 
@@ -722,32 +831,32 @@
             </div>
         </div>
         <div class="row paymentMain pt4 border-bottom border-secondary border-opacity-25">
-          <div class="col-12 footerHeading mb-0 text-sm-start text-center">OUR PAYMENT PARTNERS</div>
-          <div class="col-12 pt-sm-3 pt-2">
-            <div class="d-flex flex-wrap align-items-center gap-md-4 gap-2 justify-content-sm-start justify-content-center">
-              <div class="paymentImg">
-                <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
-              </div>
-              <div class="paymentImg">
-                <img src="assets/img/futerebrand/phonepay.svg" alt="payment" class="h-100">
-              </div>
-              <div class="paymentImg">
-                <img src="assets/img/futerebrand/rupay.svg" alt="payment" class="h-100">
-              </div>
-              <div class="paymentImg">
-                <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
-              </div>
-              <!-- <div class="paymentImg">
-                <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
-              </div> -->
-              <div class="paymentImg">
-                <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
-              </div>
-              <!-- <div class="paymentImg">
-                <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
-              </div> -->
+            <div class="col-12 footerHeading mb-0 text-sm-start text-center">OUR PAYMENT PARTNERS</div>
+            <div class="col-12 pt-sm-3 pt-2">
+                <div class="d-flex flex-wrap align-items-center gap-md-4 gap-2 justify-content-sm-start justify-content-center">
+                <div class="paymentImg">
+                    <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
+                </div>
+                <div class="paymentImg">
+                    <img src="assets/img/futerebrand/phonepay.svg" alt="payment" class="h-100">
+                </div>
+                <div class="paymentImg">
+                    <img src="assets/img/futerebrand/rupay.svg" alt="payment" class="h-100">
+                </div>
+                <div class="paymentImg">
+                    <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
+                </div>
+                <!-- <div class="paymentImg">
+                    <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
+                </div> -->
+                <div class="paymentImg">
+                    <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
+                </div>
+                <!-- <div class="paymentImg">
+                    <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
+                </div> -->
+                </div>
             </div>
-          </div>
         </div>
     </div>
     <div class="container-fluid copyrightmain">
@@ -773,53 +882,53 @@
 
     <!-- location offcanvas start-->
     <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header bg-light border-bottom">
-        <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
-        <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+    <div class="offcanvas-header bg-light border-bottom">
+    <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+    <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+    </button>
+    </div>
+    <div class="offcanvas-body">
+    <div class="row">
+        <div class="col-12 deliveryData fw-medium">
+        Get access to your Address, Order, and Wishlist
+        </div>
+        <div class="col-7 mx-auto py-3">
+        <button type="button" class="btn mxuto w-100 addaddressbtn rounded-1 d-flex flex-column align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
+            <span class="d-flex align-items-center justify-content-center plusicon">
+            <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
+            </span>
+            <span class="addressTile">Add Address</span>
         </button>
         </div>
-        <div class="offcanvas-body">
-        <div class="row">
-            <div class="col-12 deliveryData fw-medium">
-            Get access to your Address, Order, and Wishlist
-            </div>
-            <div class="col-7 mx-auto py-3">
-            <button type="button" class="btn mxuto w-100 addaddressbtn rounded-1 d-flex flex-column align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
-                <span class="d-flex align-items-center justify-content-center plusicon">
-                <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
-                </span>
-                <span class="addressTile">Add Address</span>
-            </button>
-            </div>
-            <!-- <div class="col-12 enterpin fw-semibold pt-2 text-center">
-                Enter Pincode
-            </div> -->
-            <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
-                Select Pincode to see product availability
-            </div> -->
-            <div class="col-12 pt-3  border-top border-1">
-                <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
-                <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
-                    <input type="text" id="pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
-                    <label for="pincode" class="pincodeLabel">PINCODE</label>
-                    <button class="btn applypinBtn bg-transparent border-0">Apply</button>
-                </div>
-                </div>
-            </div>
-            <div class="col-12 pt-3 text-center">
-                <a href="javascript:;" class="detectlocation bg-light d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
-                <span class="d-flex align-items-center justify-content-center detecticon">
-                    <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
-                </span>
-                Detect my location
-                </a>
+        <!-- <div class="col-12 enterpin fw-semibold pt-2 text-center">
+            Enter Pincode
+        </div> -->
+        <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
+            Select Pincode to see product availability
+        </div> -->
+        <div class="col-12 pt-3  border-top border-1">
+            <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
+            <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
+                <input type="text" id="pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                <label for="pincode" class="pincodeLabel">PINCODE</label>
+                <button class="btn applypinBtn bg-transparent border-0">Apply</button>
             </div>
             </div>
         </div>
+        <div class="col-12 pt-3 text-center">
+            <a href="javascript:;" class="detectlocation bg-light d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
+            <span class="d-flex align-items-center justify-content-center detecticon">
+                <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
+            </span>
+            Detect my location
+            </a>
+        </div>
+        </div>
+    </div>
     </div>
     <!-- location offcanvas end-->
-
+    
     <!-- address offcanvas start  -->
     <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header border-bottom bg-light">
@@ -891,79 +1000,6 @@
         </div>
     </div>
     <!-- address offcanvas end  -->
-
-    <!-- location modal  -->
-    <!-- <div class="modal fade locationmodal" id="locationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog mx-auto locationdialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content ">
-            <div class="modal-header locationHeader">
-            <div class="modal-title locationHeading" id="exampleModalLabel">Add Address</div>
-            <button type="button" class="btn-close d-flex align-items-center justify-content-center shadow-none" data-bs-dismiss="modal" aria-label="Close">
-                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-            </button>
-            </div>
-            <div class="modal-body">
-            <div class="row locationcontent">
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
-                    <label for="House" class="pincodeLabel">House No.</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
-                    <label for="streetno1" class="pincodeLabel">Street No.1</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                    <label for="streetno2" class="pincodeLabel">Street No.2</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                    <label for="city" class="pincodeLabel">City</label>
-                </div>
-                </div>
-                <div class="col-12">
-                <div class="inputpinmain position-relative w-100">
-                    <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                    <label for="state" class="pincodeLabel">State</label>
-                </div>
-                </div>
-                <div class="col-12 pt-2">
-                <div class="d-flex align-items-center justify-conten">
-                    <div class="form-check ps-0">
-                        <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Home">
-                        <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Home">
-                        Home
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
-                    <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Work">
-                        Work
-                    </label>
-                    </div>
-                    <div class="form-check">
-                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
-                    <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Other">
-                        Other
-                    </label>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="modal-footer justify-content-center">
-            <button type="button" class="btn applyBtn">Save and Continue</button>
-            </div>
-        </div>
-        </div>
-    </div> -->
 
     <!-- navbar offcanvas  -->
     <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">

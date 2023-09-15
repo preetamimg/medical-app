@@ -154,32 +154,32 @@
 }
 // select box end 
 
-.locationmodal {
-    & .locationdialog {
-        max-width: 350px;
-        & .locationHeader {
-            & .locationHeading {
-                font-size: 15px;
-                font-weight: 500;
-                color: $black;
-            }
-            & .btn-close {
-                background: none;
-                height: 12px;
-                width: 12px;
-            }
-        }
-        & .locationcontent {
-            gap: 16px;
-            & .checkbox {
-            }
-        }
-        & .applyBtn {
-            padding: 8px 28px;
-            &:active {
-                background-color: lighten($theme1, 6);
-                color: $white;
-            }
+// .locationmodal {
+//     & .locationdialog {
+//         max-width: 350px;
+//         & .locationHeader {
+//             & .locationHeading {
+//                 font-size: 15px;
+//                 font-weight: 500;
+//                 color: $black;
+//             }
+//             & .btn-close {
+//                 background: none;
+//                 height: 12px;
+//                 width: 12px;
+//             }
+//         }
+//     }
+// }
+.locationcontent {
+    gap: 16px;
+    & .checkbox {
+    }
+    & .applyBtn {
+        padding: 8px 28px;
+        &:active {
+            background-color: lighten($theme1, 6);
+            color: $white;
         }
     }
 }
@@ -323,28 +323,16 @@
             font-size: 11px;
         }
     }
-    .locationmodal {
-        & .locationdialog {
-            max-width: 300px;
-            & .locationHeader {
-                & .locationHeading {
-                    font-size: 14px;
-                }
-                & .btn-close {
-                }
-            }
-            & .locationcontent {
-                & .checkbox {
-                }
-                & .checkLabel {
-                }
-                & .checkbox:checked  ~ .checkLabel {
-                }
-            }
-            & .applyBtn {
-                font-size: 12px;
-                &:active {
-                }
+    .locationcontent {
+        & .checkbox {
+        }
+        & .checkLabel {
+        }
+        & .checkbox:checked  ~ .checkLabel {
+        }
+        & .applyBtn {
+            font-size: 12px;
+            &:active {
             }
         }
     }
@@ -732,6 +720,7 @@
 // cart page start 
 .cartsection {
     padding-top: 45px;
+    transform: translate(0 , 0);
     & .cardtable {
         & .tableHead {
             background: #f2f2f2;
@@ -784,27 +773,12 @@
         }
         
     }
-    & .emptyCart {
-        padding-top: 30px;
-        & .emptyImg {
-            aspect-ratio: 5/1;
-        }
-        & .emptyTitle {
-            font-size: 16px;
-            font-weight: 600;
-            color: rgba($black , .4);
-            padding-top: 14px;
-            padding-bottom: 14px;
-        }
-        & .emptyBtn {
-            padding: 7px 22px;
-        }
-    }
+    
 }
 .tablebody {
     background: #f2f2f2;
     padding: 14px 16px;
-    margin-top: 7px;
+    margin-top: 10px;
     & .tabledata {
     }
     & .productImgMain {
@@ -854,7 +828,22 @@
         }
     }
 }
-
+.emptyCart {
+    padding-top: 30px;
+    & .emptyImg {
+        aspect-ratio: 5/1;
+    }
+    & .emptyTitle {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba($black , .4);
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    & .emptyBtn {
+        padding: 7px 22px;
+    }
+}
 .qualiltymain {
     height: 35px;
     & .qualityicon {
@@ -869,6 +858,34 @@
         font-size: 14px;
         font-weight: 500;
         color: $black;
+    }
+}
+
+// payment card start 
+.paytmentcard {
+    padding: 16px;
+}
+// payment card end
+
+
+// address button 
+.addresBtn {
+    font-size: 14px;
+    padding: 8px 14px;
+    background-color: $theme1;
+    color: $white;
+    gap: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    & .iconPlus {
+        height: 14px;
+        width: 14px;
+        & img {
+            filter: brightness(100);
+        }
+    }
+    &:hover {
+        background-color: lighten($theme1, 5);
     }
 }
 
@@ -899,6 +916,7 @@
         }
         
         & .summaryCard {
+            top: 90px;
             & .cartHeading {
             }
             & .cartSubheading {
@@ -918,14 +936,7 @@
             }
             
         }
-        & .emptyCart {
-            & .emptyImg {
-            }
-            & .emptyTitle {
-            }
-            & .emptyBtn {
-            }
-        }
+       
     }
     .tablebody {
         padding: 10px;
@@ -952,6 +963,14 @@
         & .price {
         }
     }
+    .emptyCart {
+        & .emptyImg {
+        }
+        & .emptyTitle {
+        }
+        & .emptyBtn {
+        }
+    }
     .qualiltymain {
         height:30px;
         & .qualityicon {
@@ -972,7 +991,7 @@
             }
         }
         & .summaryCard {
-            margin-top: 10px;
+            margin-top:40px;
             & .cartHeading {
                 font-size: 15px;
             }
@@ -1032,7 +1051,7 @@
         }
         & .summaryCard {
             padding: 10px;
-            margin-top: 15px;
+            margin-top:30px;
             & .cartHeading {
                 font-size: 14px;
                 padding-bottom: 10px;
@@ -1061,25 +1080,11 @@
             }
             
         }
-        & .emptyCart {
-            padding-top: 30px;
-            & .emptyImg {
-                aspect-ratio: 3/1;
-            }
-            & .emptyTitle {
-                font-size: 15px;
-                font-weight: 600;
-                color: rgba($black , .4);
-                padding-top: 14px;
-                padding-bottom: 14px;
-            }
-            & .emptyBtn {
-                padding: 7px 22px;
-            }
-        }
+        
     }
     .tablebody {
         padding: 10px;
+        margin-top: 10px;
         & .tabledata {
             padding-bottom: 10px;
         }
@@ -1116,6 +1121,22 @@
             }
         }
     }
+    .emptyCart {
+        padding-top: 30px;
+        & .emptyImg {
+            aspect-ratio: 3/1;
+        }
+        & .emptyTitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba($black , .4);
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+        & .emptyBtn {
+            padding: 7px 22px;
+        }
+    }
     .qualiltymain {
         height: 25px;
         // margin-top: 5px;
@@ -1137,6 +1158,7 @@
 // lab test section start 
 .labtestherosection {
     padding-top: 45px;
+    transform: translate(0 , 0);
     & .labads {
         & .labtestbanner {
             aspect-ratio:7/3;
@@ -1147,6 +1169,9 @@
     }
     & .formCard {
         padding: 15px;
+        &.pathologyform {
+            top: 130px;
+        }
         & .pathologybtn {
             padding:6px 20px;
             border-radius: 5px;
@@ -1184,7 +1209,7 @@
 // popular test Section start 
 .populartestSection {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     & .cardMain {
         & >* {
             flex: 1 1 20%;
@@ -1239,62 +1264,62 @@
 // top selling packages section start 
 .sellingPackages {
     padding-top: 40px;
-    padding-bottom: 40px;
-    & .packagesCard {
-        background-color: rgba(255, 0, 0, 0.05);
-        // padding: 15px;
-        padding: 13px;
-        & .carrdData {
-            padding-top: 13px;
+    padding-bottom: 50px;
+}
+.packagesCard {
+    background-color: rgba(255, 0, 0, 0.05);
+    // padding: 15px;
+    padding: 13px;
+    & .carrdData {
+        padding-top: 13px;
+    }
+    & .cardimg {
+        height: 150px;
+        // max-width: 100px;
+        // min-width: 100px;
+        & img {
+            transition: all 0.3s ease-in-out;
         }
-        & .cardimg {
-            height: 150px;
-            // max-width: 100px;
-            // min-width: 100px;
-            & img {
-                transition: all 0.3s ease-in-out;
-            }
-        }
-        & .cardHeading {
-            font-size: 16px;
-            font-weight: 600;
-            color: $black;
-        }
-        & .carddetail {
+    }
+    & .cardHeading {
+        font-size: 16px;
+        font-weight: 600;
+        color: $black;
+    }
+    & .carddetail {
+        font-size: 12px;
+        font-weight: 500;
+        color: lighten($black, 20);
+        line-height: 19px;
+        padding-top: 5px;
+        display: inline;
+        -webkit-line-clamp: 5;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;/* Important for long words! */
+    }
+    & .cardContent {
+        padding-top: 17px;
+    }
+    & .cardprice {
+        font-size: 15px;
+        font-weight: 600;
+        color: $black;
+        & del {
             font-size: 12px;
             font-weight: 500;
-            color: lighten($black, 20);
-            line-height: 19px;
-            padding-top: 5px;
-            display: inline;
-            -webkit-line-clamp: 5;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            word-wrap: break-word;/* Important for long words! */
         }
-        & .cardContent {
-            padding-top: 17px;
-        }
-        & .cardprice {
-            font-size: 15px;
-            font-weight: 600;
-            color: $black;
-            & del {
-                font-size: 12px;
-                font-weight: 500;
-            }
-        }
-        &:hover {
-            & .cardimg {
-                img {
-                    filter: brightness(0.8);
-                }
-            }
-        }
-        
     }
+    &:hover {
+        & .cardimg {
+            img {
+                filter: brightness(0.8);
+            }
+        }
+    }
+    
 }
 // top selling packages section end
 
@@ -1478,13 +1503,17 @@
 
 // cta section start 
 .ctaSection {
+    padding-bottom:50px;
     & .bookappoitment {
-        background: rgba($theme1, 1);
+        background: rgba($theme1, 0.3);
         padding: 22px 6px;
         & .ctaheading {
             font-size: 28px;
             font-weight: 600;
-            color: $theme2;
+            color: $black;
+            & span {
+                color: $white;
+            }
         }
         & .number {
             font-size: 18px;
@@ -1494,8 +1523,7 @@
         }
         & .whatsappbtn {
             font-size: 18px;
-            // background-color: $white;
-            border: 2px solid $white;
+            background-color: $theme1;
             padding: 10px 22px;
             font-weight: 500;
             gap: 8px;
@@ -1508,6 +1536,172 @@
     }
 }
 // cta section end 
+
+// pathology page start 
+.pathologysection {
+    padding: 18px;
+    & .pathologyheading {
+        font-size: 22px;
+        font-weight: 600;
+        color: $black;
+        line-height: normal;
+        & span {
+            color: $theme1;
+            font-size: 38px;
+        }
+    }
+    & .pathologyheadingtwo {
+        padding-top: 25px;
+    }
+    & .pathologycardmain {
+        & .offercard {
+            padding: 8px;
+            & .cardicon {
+                height: 40px;
+                max-width: 40px;
+                min-width: 40px;
+                background-color: $theme1;
+                padding: 8px;
+                transition: all 0.3s ease-in-out;
+                & img {
+                    filter: invert(1);
+                }
+            }
+            & .cardheading {
+                font-size: 14px;
+                font-weight: 500;
+                color: $theme1;
+                line-height: 16px;
+                
+            }
+            & .starting {
+                font-size: 13px;
+                font-weight: 500;
+                color: $black;
+            }
+            & .price {
+                font-size: 13px;
+                font-weight: 500;
+                color: red;
+            }
+            &:hover {
+                & .cardicon {
+                    background-color: $theme2;
+                }
+            }
+        }
+    }
+    & .offcardmaiin {
+        top: -15px;
+        right: 20px;
+
+        & .offcard {
+            background-color: rgba($theme1, 1);
+            padding: 5px 8px;
+            border-radius: 4px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 2.5px;
+                left: -7px;
+                height: 20px;
+                width: 20px;
+                background-color: $theme1;
+                transform: rotate(38deg);
+                z-index: -1;
+                border-radius: 4px 0 0 0 ;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 2.5px;
+                right: -7px;
+                height: 20px;
+                width: 20px;
+                background-color: $theme1;
+                transform: rotate(53deg);
+                z-index: -1;
+                border-radius: 4px 0 0 0 ;
+            }
+            & .offheading {
+                font-size: 16px;
+                font-weight: 700;
+                color: $white;
+            }
+            & .totaloff {
+                font-size: 30px;
+                font-weight: 700;
+                color: #ffc107;
+            }
+            & .offtitle {
+                font-size: 16px;
+                font-weight: 600;
+                color: $white;
+                line-height: normal;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    transform: translateY(-50%);
+                    height: 2px;
+                    width: 12px;
+                    background-color: $white;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 1px;
+                    transform: translateY(-50%);
+                    height: 2px;
+                    width: 12px;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+    & .bestprices {
+        font-size: 14px;
+        font-weight: 500;
+        color: $black;
+        padding-top: 10px;
+        & span {
+            color: red;
+        }
+    }
+    & .testscard {
+        padding: 11px;
+        border: 1px solid $theme1;
+        transition: all 0.3s ease-in-out;
+        gap: 8px;
+        & .testimg {
+            height: 45px;
+            min-width: 45px;
+            max-width: 45px;
+            padding: 5px;
+        }
+        & .testTitle {
+            font-size: 13px;
+            font-weight: 500;
+            color: $theme1;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+.whatsappbtn {
+    font-size: 16px;
+    font-weight: 600;
+    gap: 8px;
+    background-color: $theme1;
+    padding: 9px 14px;
+    color: $white;
+    & .whatsappicon {
+        height: 35px;
+        width: 35px;
+    }
+}
+// pathology page end
 
 
 @include media-breakpoint(basic) {}
@@ -1646,6 +1840,99 @@
     }
     // faq section end
 
+     // cta section start 
+    .ctaSection {
+        & .bookappoitment {
+            padding: 22px 6px;
+            & .ctaheading {
+                font-size: 26px;
+                & span {
+                }
+            }
+            & .number {
+                font-size: 17px;
+                padding-top: 6px;
+            }
+            & .whatsappbtn {
+                font-size: 17px;
+                & .whatsappicon {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+    // cta section end 
+
+     // pathology page start 
+    .pathologysection {
+        & .pathologyheading {
+            font-size: 20px;
+            & span {
+                font-size: 34px;
+            }
+        }
+        & .pathologyheadingtwo {
+            padding-top: 15px;
+        }
+        & .pathologycardmain {
+            & .offercard {
+                & .cardicon {
+                    & img {
+                    }
+                }
+                & .cardheading {
+                    
+                }
+                & .starting {
+                }
+                & .price {
+                }
+                &:hover {
+                    & .cardicon {
+                    }
+                }
+            }
+        }
+        & .offcardmaiin {
+            right: 15px;
+            & .offcard {
+                &::after {
+                }
+                &::before {
+                }
+                & .offheading {
+                    font-size: 15px;
+                }
+                & .totaloff {
+                    font-size: 27px;
+                }
+                & .offtitle {
+                    font-size: 15px;
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .bestprices {
+            & span {
+            }
+        }
+        & .testscard {
+            & .testimg {
+            }
+            & .testTitle {
+            }
+        }
+    }
+    .whatsappbtn {
+        & .whatsappicon {
+        }
+    }
+    // pathology page end
+
 }
 
 @include media-breakpoint-down(md) {
@@ -1700,31 +1987,31 @@
     // top selling packages section start 
     .sellingPackages {
         padding-top: 30px;
-        & .packagesCard {
-            & .carrdData {
-            }
-            & .cardimg {
-                & img {
-                }
-            }
-            & .cardHeading {
-            }
-            & .carddetail {
-            }
-            & .cardContent {
-            }
-            & .cardprice {
-                & del {
-                }
-            }
-            &:hover {
-                & .cardimg {
-                    img {
-                    }
-                }
-            }
-            
+    }
+    .packagesCard {
+        & .carrdData {
         }
+        & .cardimg {
+            & img {
+            }
+        }
+        & .cardHeading {
+        }
+        & .carddetail {
+        }
+        & .cardContent {
+        }
+        & .cardprice {
+            & del {
+            }
+        }
+        &:hover {
+            & .cardimg {
+                img {
+                }
+            }
+        }
+        
     }
     // top selling packages section end
 
@@ -1787,12 +2074,114 @@
         }
     }
     // faq section end
+
+    // cta section start 
+    .ctaSection {
+        & .bookappoitment {
+            padding: 18px 6px;
+            & .ctaheading {
+                font-size: 22px;
+                & span {
+                }
+            }
+            & .number {
+                font-size: 16px;
+                padding-top: 6px;
+            }
+            & .whatsappbtn {
+                font-size: 15px;
+                padding: 10px 18px;
+                & .whatsappicon {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+        }
+    }
+    // cta section end 
+
+    // pathology page start 
+    .pathologysection {
+        padding: 16px;
+        & .pathologyheading {
+            font-size: 18px;
+            & span {
+                font-size: 28px;
+            }
+        }
+        & .pathologyheadingtwo {
+            padding-top: 20px;
+        }
+        & .pathologycardmain {
+            & .offercard {
+                padding: 10px;
+                & .cardicon {
+                    & img {
+                    }
+                }
+                & .cardheading {
+                    
+                }
+                & .starting {
+                    font-size: 12px;
+                }
+                & .price {
+                    font-size: 12px;
+                }
+                &:hover {
+                    & .cardicon {
+                    }
+                }
+            }
+        }
+        & .offcardmaiin {
+            right: 15px;
+            & .offcard {
+                &::after {
+                }
+                &::before {
+                }
+                & .offheading {
+                    font-size: 13px;
+                }
+                & .totaloff {
+                    font-size: 25px;
+                }
+                & .offtitle {
+                    font-size: 14px;
+                    &::before {
+                        width: 10px;
+                    }
+                    &::after {
+                        width: 10px;
+                    }
+                }
+            }
+        }
+        & .bestprices {
+            font-size: 14px;
+            & span {
+            }
+        }
+        & .testscard {
+            & .testimg {
+            }
+            & .testTitle {
+            }
+        }
+    }
+    .whatsappbtn {
+        font-size: 15px;
+        & .whatsappicon {
+        }
+    }
+    // pathology page end
 }
 
 @include media-breakpoint-down(sm) {
     // popular test Section start 
     .labtestherosection {
-        padding-top: 16px;
+        padding-top: 10px;
         & .labads {
             & .labtestbanner {
                 & img {
@@ -1826,7 +2215,7 @@
     // popular test Section start 
     .populartestSection {
         padding-top: 35px;
-        padding-bottom: 35px;
+        padding-bottom: 40px;
         & .sectionTitle {
             font-size: 13px;
             padding-top: 2px;
@@ -1869,37 +2258,37 @@
 
     // top selling packages section start 
     .sellingPackages {
-        padding-top: 25px;
-        & .packagesCard {
-            & .carrdData {
-            }
-            & .cardimg {
-                & img {
-                }
-            }
-            & .cardHeading {
-                font-size: 15px;
-            }
-            & .carddetail {
-            }
-            & .cardContent {
-                padding-top: 15px;
-            }
-            & .cardprice {
-                font-size: 14px;
-                & del {
-                    font-size: 11px;
-                }
-            }
-            &:hover {
-                & .cardimg {
-                    img {
-                        filter: brightness(1);
-                    }
-                }
-            }
-            
+        padding-top: 30px;
+    }
+    .packagesCard {
+        & .carrdData {
         }
+        & .cardimg {
+            & img {
+            }
+        }
+        & .cardHeading {
+            font-size: 15px;
+        }
+        & .carddetail {
+        }
+        & .cardContent {
+            padding-top: 15px;
+        }
+        & .cardprice {
+            font-size: 14px;
+            & del {
+                font-size: 11px;
+            }
+        }
+        &:hover {
+            & .cardimg {
+                img {
+                    filter: brightness(1);
+                }
+            }
+        }
+        
     }
     // top selling packages section end
 
@@ -2014,5 +2403,271 @@
     }
     // testimonal section end 
 
+    // cta section start 
+    .ctaSection {
+        padding-bottom: 45px;
+        & .bookappoitment {
+            padding: 16px 6px;
+            & .ctaheading {
+                font-size: 18px;
+                & span {
+                }
+            }
+            & .number {
+                font-size: 14px;
+                padding-top: 6px;
+            }
+            & .whatsappbtn {
+                font-size: 14px;
+                padding: 7px 18px;
+                & .whatsappicon {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+    // cta section end 
+
+    // pathology page start 
+    .pathologysection {
+        padding: 14px;
+        & .pathologyheading {
+            font-size: 15px;
+            & span {
+                font-size: 24px;
+            }
+        }
+        & .pathologyheadingtwo {
+            padding-top: 20px;
+        }
+        & .pathologycardmain {
+            & .offercard {
+                padding: 8px;
+                & .cardicon {
+                    height: 35px;
+                    max-width: 35px;
+                    min-width: 35px;
+                    padding: 6px;
+                    & img {
+                    }
+                }
+                & .cardheading {
+                    font-size: 12px;
+                    
+                }
+                & .starting {
+                    font-size: 11px;
+                }
+                & .price {
+                    font-size: 11px;
+                }
+                &:hover {
+                    & .cardicon {
+                        background-color: $theme1;
+                    }
+                }
+            }
+        }
+        & .offcardmaiin {  
+            top: -15px;
+            right: 10px;
+            & .offcard {
+                padding: 3px 4px;
+                &::after {
+                    top: 3px;
+                }
+                &::before {
+                    top: 3px;
+                }
+                & .offheading {
+                    font-size: 12px;
+                }
+                & .totaloff {
+                    font-size: 22px;
+                    line-height: normal;
+                }
+                & .offtitle {
+                    font-size: 13px;
+                    &::before {
+                        width: 8px;
+                    }
+                    &::after {
+                        width: 8px;
+                    }
+                }
+            }
+        }
+        & .bestprices {
+            font-size: 12px;
+            padding-top: 10px;
+            & span {
+            }
+        }
+        & .testscard {
+            & .testimg {
+            }
+            & .testTitle {
+                font-size: 12px;
+            }
+        }
+    }
+    .whatsappbtn {
+        font-size: 14px;
+        gap: 7px;
+        padding: 9px 14px;
+        & .whatsappicon {
+            height: 30px;
+            width: 30px;
+        }
+    }
+    // pathology page end
+
 }
 // lab test page end 
+
+
+// offer page start 
+.offersection {
+    padding-top: 45px;
+    transform: translate(0 ,0);
+    & .categorycard {
+        padding: 15px;
+        top: 135px;
+        & .formCheckWrapper {
+            // gap: 5px;
+            & .formCheckLbl {
+                margin-left: 2px;
+            }
+        }
+        & .categoryfilter {
+            gap: 10px;
+        }
+        & .filterheading {
+            font-size: 18px;
+            font-weight: 700;
+            color: $black;
+        }
+        & .filterdropdown {
+            & .filterbtn {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            & .filtermenu {
+                max-height: 20rem;
+                background-color: $white;
+                min-width: auto;
+                max-width: 13rem;
+                gap: 5px;
+                & .innerdata {
+                    padding: 3px 12px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .offersection {
+        & .categorycard {
+            padding:8px 12px;
+            display: inline-flex;
+            & .formCheckWrapper {
+                // gap: 5px;
+                & .formCheckLbl {
+                }
+            }
+            & .categoryfilter {
+            }
+            & .filterheading {
+            }
+            & .filterdropdown {
+                & .filterbtn {
+                }
+                & .filtermenu {
+                    & .innerdata {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .offersection {
+        padding-top: 40px;
+        & .categorycard {
+            padding: 7px 12px;
+            & .formCheckWrapper {
+                & .formCheckLbl {
+                }
+            }
+            & .categoryfilter {
+            }
+            & .filterheading {
+                font-size: 17px;
+            }
+            & .filterdropdown {
+                & .filterbtn {
+                }
+                & .filtermenu {
+                    & .innerdata {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .offersection {
+        padding-top: 30px;
+        & .categorycard {
+            padding: 6px 10px;
+            & .formCheckWrapper {
+                & .formCheckLbl {
+                }
+            }
+            & .categoryfilter {
+            }
+            & .filterheading {
+                font-size: 16px;
+            }
+            & .filterdropdown {
+                & .filterbtn {
+                    font-size: 13px;
+                }
+                & .filtermenu {
+                    max-height: 15rem;
+                    & .innerdata {
+                    }
+                }
+            }
+        }
+    }
+}
+// offer page end
+
+// order review page start 
+.addressCard {
+    & .headinginformation {
+        font-size: 16px;
+        line-height: normal;
+    }
+}
+// order review page end 
