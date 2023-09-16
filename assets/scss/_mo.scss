@@ -5,6 +5,9 @@
         font-size: 17px;
         color: $black;
     }
+    & .addressmain {
+        gap: 20px;
+    }
     & .closebtn {
         height: 12px;
         width: 12px;
@@ -19,8 +22,8 @@
         // width: 80px;
         background-color:#f8f9fa;
         transition: all 0.3s ease-in-out;
-        gap: 6px;
-        padding: 14px 15px;
+        gap: 8px;
+        padding: 17px 15px;
         &:active {
             background-color: #f8f9fa;
             border-color: #f8f9fa;
@@ -36,10 +39,6 @@
             & img {
                 filter: brightness(0);
             }
-        }
-        &:hover {
-            // box-shadow: 0 0.5em 0.5em -0.4em rgba($theme1, 1);
-            transform: translateY(-0.25em);
         }
     }
     & .enterpin {
@@ -57,12 +56,21 @@
     }
     & .detectlocation {
         font-size: 14px;
-        font-weight: 500;
-        color: $theme1;
-        padding: 4px 12px;
+        font-weight: 600;
+        color:$black;
+        padding: 17px 12px;
         & .detecticon {
-            height: 14px;
-            width: 14px;
+            height: 15px;
+            width: 15px;
+            & img {
+                filter: brightness(0);
+            }
+        }
+    }
+    & .offcnavas-footer {
+        padding: 18px 16px;
+        & .applyBtn {
+            padding: 10px 0;
         }
     }
 }
@@ -197,7 +205,7 @@
     border-color: $theme1;
     color: $white;
     background-color: $theme1;
-    box-shadow: 0 0.5em 0.5em -0.6em $theme1;
+    // box-shadow: 0 0.5em 0.5em -0.6em $theme1;
     // transform: translateY(-0.25em);
 }
 @include media-breakpoint(basic) {}
@@ -268,10 +276,7 @@
             font-size: 12px;
         }
         & .addaddressbtn {
-            gap: 2px;
-            padding: 8px 12px;
-            box-shadow:none !important;
-            transform: translateY(0) !important;
+            padding: 15px 12px;
             &:active {
             }
             & .addressTile {
@@ -295,8 +300,12 @@
         }
         & .detectlocation {
             font-size: 13px;
+            padding: 15px 0;
             & .detecticon {
             }
+        }
+        & .addressmain {
+            gap: 15px;
         }
     }
     .inputpinmain {
