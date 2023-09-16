@@ -3777,12 +3777,20 @@
                             transition: all 0.3s ease-in-out;
 
                         }
+                     
                         &:hover {
                             background-color:lighten($theme1,10);
                             color: $white !important;
-                            & img{
+                            & .googleImg{
+
                                 filter: brightness(100) contrast(200);
+                                &.facebook{
+                                    // display: none;
+                                    filter: invert(1) !important;
+                                }
                             }
+                          
+                           
                         }
                         & .googleImg{
                             min-width: 15px;
@@ -3791,6 +3799,7 @@
                             max-height: 15px;
                     
                         }
+                    
                     }
                     & .otp-input-fields {
                         width: auto;
@@ -4310,7 +4319,7 @@
     
             & .navLinkSide{
                 font-size: 14px;
-                font-weight: 300;
+                font-weight: 400;
                 color: lighten($black,30);
                 position: relative;
                 &::before{
@@ -4363,6 +4372,11 @@
         }
     }
     // information 
+    & .rsHeading2{
+        font-size: 24px;
+        color: $black;
+        font-weight: 600;
+    }
     & .headinginformation{
         font-size: 12px;
         color:$theme1;
@@ -4403,11 +4417,7 @@
     // wallet Section 
 
     & .walletSection{
-        & .rsHeading{
-            font-size: 20px;
-            color: $black;
-            font-weight: 600;
-        }
+        
         & .WalletCard{
             & .walletImg{
                 & img{
@@ -4425,6 +4435,14 @@
                 color: $black;
                 font-weight: 400;
             }
+        }
+        & .inviteHeading{
+            font-size: 28px;
+            color: $black;
+        }
+        & .pera{
+            font-size: 20px;
+            color: $black;
         }
     }
     & .emptyCart {
@@ -4597,38 +4615,11 @@
             color: $black;
             letter-spacing: -.07em;
             text-shadow: white 2px 2px 2px;
-            & .valueRs{
-                font-size: 35px;
-                color: $black;
-            }
-          }
-           & .inputRange[type="range"] {
-            display: block;
-            -webkit-appearance:none;
-            background-color: #bdc3c7 !important;
-            width: 72%;
-            height: 7px;
-            border-radius: 5px;
-            margin: 0 auto;
-            outline: 0;
-          }
-          & .inputRange[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            background-color:$theme1;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            // border: 2px solid white;
-            cursor: pointer;
-            transition: .3s ease-in-out;
-          }​
-            & .inputRange[type="range"]::-webkit-slider-thumb:hover {
-              background-color: white;
-              border: 2px solid #e74c3c;
-            }
-            & .inputRange[type="range"]::-webkit-slider-thumb:active {
-              transform: scale(1.1);
-            }
+        }
+        & .valueRs{
+            font-size: 35px;
+            color: $black;
+        }
             & .stap{
                 font-size: 18px;
                 color: $black;
@@ -4639,6 +4630,92 @@
                 font-weight: 400;
                 color: $black;
             }
+
+
+            input[type="range"] {
+                /* removing default appearance */
+                -webkit-appearance: none;
+                appearance: none; 
+                /* creating a custom design */
+                width: 100%;
+                cursor: pointer;
+                outline: none;
+                /*  slider progress trick  */
+                overflow: hidden;
+                border-radius: 16px;
+              }
+              
+              /* Track: webkit browsers */
+              input[type="range"]::-webkit-slider-runnable-track {
+                height: 12px;
+                background: #ccc;
+                border-radius: 16px;
+              }
+              
+              /* Track: Mozilla Firefox */
+              input[type="range"]::-moz-range-track {
+                height: 12px;
+                background: #ccc;
+                border-radius: 16px;
+              }
+              
+              /* Thumb: webkit */
+              input[type="range"]::-webkit-slider-thumb {
+                /* removing default appearance */
+                -webkit-appearance: none;
+                appearance: none; 
+                /* creating a custom design */
+                height: 12px;
+                width: 12px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 2px solid $theme1;
+                /*  slider progress trick  */
+                box-shadow: -407px 0 0 400px $theme1;
+              }
+              
+              
+              /* Thumb: Firefox */
+              input[type="range"]::-moz-range-thumb {
+                height: 12px;
+                width: 12px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid $theme1
+                /*  slider progress trick  */
+                // box-shadow: -407px 0 0 400px $theme1;
+              }
+              
+              
+              /*=============
+              Aesthetics 
+              =========================*/
+              
+              body {
+                font-family: system-ui;
+              }
+              
+              h1 {
+                color: #4b4949; 
+                text-align: center;
+              }
+              
+     
+              
+              .range {
+                display: flex;
+                align-items: center;
+                max-width: 675px;
+                height: 7px;
+                width: 100%;
+                background: #fff;
+                padding: 0px 10px;
+                justify-content: center;
+                margin: auto;
+              }
+              
+              
+
     }
 
     // referCard section 
@@ -5044,6 +5121,9 @@
                 }
             }
         }
+        & .rsHeading2{
+            font-size: 22px;
+        }
         // information 
         & .headinginformation{
            
@@ -5279,6 +5359,9 @@
                 }
             }
         }
+        & .rsHeading2{
+            font-size: 20px;
+        }
         // information 
         & .headinginformation{
            
@@ -5510,6 +5593,9 @@
                 }
             }
         }
+        & .rsHeading2{
+            font-size: 18px;
+        }
         // information 
         & .headinginformation{
            
@@ -5537,9 +5623,7 @@
         // wallet Section 
     
         & .walletSection{
-            & .rsHeading{
-          
-            }
+         
             & .WalletCard{
                 & .walletImg{
                     & img{
@@ -5552,6 +5636,12 @@
                 & .subheading{
                  
                 }
+            }
+            & .inviteHeading{
+              font-size: 20px;
+            }
+            & .pera{
+               font-size: 14px;
             }
         }
         & .emptyCart {
@@ -5670,10 +5760,10 @@
 
         & .value {
             font-size: 25px;
-            & .valueRs{
-                font-size: 25px;
-        
-            }
+        }
+        & .valueRs{
+            font-size: 25px;
+    
         }
         & .inputRange[type="range"] {
     
@@ -5854,9 +5944,7 @@
         // wallet Section 
     
         & .walletSection{
-            & .rsHeading{
-          
-            }
+        
             & .WalletCard{
                 & .walletImg{
                     & img{
@@ -5870,6 +5958,12 @@
                  
                 }
             }
+            & .inviteHeading{
+                font-size: 16px;
+              }
+              & .pera{
+                 font-size: 14px;
+              }
         }
         & .emptyCart {
         
@@ -5983,9 +6077,9 @@
 
             & .value {
         
-                & .valueRs{
-            
-                }
+            }
+            & .valueRs{
+        
             }
             & .inputRange[type="range"] {
         
@@ -6162,17 +6256,23 @@
 // accordion 
 .medicalAccordion{
     & .accordion-item{
-        border: 1px solid $theme1
+      border-radius: 10px;
+      border: none;
+    //   box-shadow: 0 2px 14px rgba(216,217,255,) !important;
+        box-shadow: 0 5px 9px -4px #d8d9ff !important; 
+        overflow: hidden;
     }
     & .accordionButton{
         font-size: 16px;
         color:$black;
         font-weight: 600;
         overflow: hidden;
+        border-radius: 10px;
+
         // border: 1px solid $theme1;
         &:not(.collapsed){
-            background-color: $theme1;
-            color: $white;
+           background-color: transparent !important;
+            color: $black;
             &::after{
                 background-image: url(../img/signup/Minusaccordion.svg);
                 background-repeat: no-repeat;
@@ -6180,7 +6280,7 @@
                 background-position: center;
                 width: 18px;
                 height: 18px;
-                filter: invert(1);
+                
             }
         }
         &::after{
@@ -6191,19 +6291,10 @@
             width: 18px;
             height: 18px;
         }
-        &::before{
-            position: absolute;
-            content: '';
-            background-color: $theme1;
-            width: 3px;
-            height: 100%;
-            left: 0;
-            top:0;
-            
-        }
+      
     }
     & .accordionPera{
-        font-size: 13px;
+        font-size: 14px;
         color: $black;
         font-weight: 400;
     }
@@ -6287,7 +6378,7 @@
          
         }
         & .accordionButton{
-            font-size: 13px;
+            font-size: 14px;
         
             
             &:not(.collapsed){
@@ -6305,7 +6396,7 @@
             }
         }
         & .accordionPera{
-            font-size: 11px;
+            font-size: 12px;
      
         }
     }

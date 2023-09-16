@@ -250,9 +250,17 @@
           <div class="tab-pane fade show active" id="nav-account" role="tabpanel" aria-labelledby="nav-account-tab" tabindex="0">
             <div class="userInformation p-lg-4 p-3 bg-white rounded-3">
               <div class="row">
-                <div class="col-12 mb-4">
-                  <div class="rsHeading">Your Account</div>
-                  <!-- <div class="headinginformation">Save more with exclusive membership</div> -->
+                <div class="col-12 mb-3">
+                  <div class="row">
+
+                    <div class="col">
+                      <div class=" rsHeading2">Your Account</div>
+                    </div>
+                    <div class="col-auto">
+                      <button class="text-decoration-none border-0 d-flex align-items-center justify-content-center shadow-none rounded-3 editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleedit"  type="button" aria-controls="offcanvasExample"><span class="d-inline-flex align-items-center me-2 editIcon"><img src="assets/img/profile/edit.svg" alt="edit" class="img-fluid w-100 h-100"></span>Edit profile</button>
+  
+                    </div>
+                  </div>
                 </div>
                 <div class="col-sm-6 ">
                   <div class="row">
@@ -288,7 +296,7 @@
                           <label for="namelUser" class="labelUserin">FULL NAME</label>
                           <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="Medhunt" id="namelUser"/>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb3">
                           <label for="GENDER" class="labelUserin">GENDER</label>
                           <select class="form-select border-0 shadow-none formInputinformation ps-0 border border-bottom rounded-0 pt-0" aria-label="Default select example">
                             <option selected>No-data</option>
@@ -296,9 +304,6 @@
                             <option value="2">Female</option>
                             <option value="3">Other</option>
                           </select>
-                        </div>
-                        <div class="mb3">
-                          <button class="text-decoration-none border-0 d-flex align-items-center justify-content-center shadow-none rounded-3 editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleedit"  type="button" aria-controls="offcanvasExample"><span class="d-inline-flex align-items-center me-2 editIcon"><img src="assets/img/profile/edit.svg" alt="edit" class="img-fluid w-100 h-100"></span>Edit profile</button>
                         </div>
                       </form>
                     </div>
@@ -309,16 +314,19 @@
           </div>
           <div class="tab-pane fade" id="nav-wallet" role="tabpanel" aria-labelledby="nav-wallet-tab" tabindex="0">
             <div class="walletSection bg-white rounded-3 p-lg-4 p-3">
-              <div class="row gap-3">
-                <div class="col-12 mb-4">
-                  <div class="rsHeading">My-Wallet</div>
-                  <!-- <div class="headinginformation">Save more with exclusive membership</div> -->
+              <div class="row ">
+                <div class="col-12 mb-3">
+                  <div class="row">
+                    <div class="col">
+                      <div class="rsHeading2">My Wallet</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12">
-                  <div class="headinginformation">AVAILABLE BALANCEN</div>
-                  <div class="rsHeading">Rs. 0.00</div>
+                  <div class="inviteHeading fw-semibold text-center">AVAILABLE BALANCE</div>
+                  <div class="pera text-center fw-medium">Rs. 0.00</div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mt-4">
                   <div class="row">
                     <div class="col-6">
                       <div  class="card WalletCard rounded-3">
@@ -347,9 +355,15 @@
           </div>
           <div class="tab-pane fade" id="nav-wishList" role="tabpanel" aria-labelledby="nav-wishList-tab" tabindex="0">
             <div class="wislistCard rounded-3 bg-white p-3">
-              <div class="col-12 mb-4">
-                <div class="rsHeading">My-WhisList</div>
-                <!-- <div class="headinginformation">Save more with exclusive membership</div> -->
+              <div class="col-12 mb-3">
+                <div class="row align-items-center">
+                  <div class=col>
+                    <div class="rsHeading2">My Wishlist</div>
+                  </div>
+                  <div class="col-auto">
+                    <button class=" text-decoration-none bg-transparent border-0 shadow-none position-relative seeall">Clear All</button>
+                  </div>
+                </div>
               </div>
               <div class="row">
                 <div class="col-12">
@@ -372,7 +386,7 @@
                                     <div class="price">Rs.450</div>
                                 </div>
                                     
-                                <div class="col-md-3 col ps-md-3 px-md-2 px-0 ">
+                                <div class="col-md-3 col  px-0 ">
                                   <button class="text-decoration-none mx-auto d-flex align-items-center border-0 shadow-none editProfile editProfile2 rounded-3 ">Add To Cart</button>
                                 </div>
                                 <div class="col-lg-1 col-md-2 col-auto">
@@ -405,8 +419,8 @@
                                     <div class="price">Rs.450</div>
                                 </div>
                                     
-                                <div class="col-md-3 col ps-md-3 px-md-2 px-0 ">
-                                  <button class="text-decoration-none mx-auto d-flex align-items-center border-0 shadow-none editProfile rounded-3 editProfile2 ">Add To Cart</button>
+                                <div class="col-md-3 col  px-0 ">
+                                  <button class="text-decoration-none mx-auto d-flex align-items-center border-0 shadow-none editProfile editProfile2 rounded-3 ">Add To Cart</button>
                                 </div>
                                 <div class="col-lg-1 col-md-2 col-auto">
                                     <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
@@ -438,41 +452,8 @@
                                     <div class="price">Rs.450</div>
                                 </div>
                                     
-                                <div class="col-md-3 col ps-md-3 px-md-2 px-0 ">
-                                  <button class="text-decoration-none mx-auto d-flex align-items-center border-0 shadow-none editProfile rounded-3 editProfile2">Add To Cart</button>
-                                </div>
-                                <div class="col-lg-1 col-md-2 col-auto">
-                                    <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                        <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-12">
-                  <div class="tablebody rounded-2 bg-light position-relative">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <div class="productImgMain  d-flex align-items-center justify-content-center rounded-1">
-                                <div class="productImg">
-                                    <img src="assets/img/cart/cart2.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row align-items-center">
-                                <div class="tabledata col-lg-6 col-md-5  ps-sm-2 ps-0 pb-md-0 pb-2">
-                                    <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                    <div class="deliverytilte pt-sm-2 pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div>
-                                </div>
-                                <div class="col-md-2 col-auto ps-sm-2 ps-0">
-                                    <div class="price">Rs.450</div>
-                                </div>
-                                    
-                                <div class="col-md-3 col ps-md-3 px-md-2 px-0 ">
-                                  <button class="text-decoration-none mx-auto d-flex align-items-center border-0 shadow-none editProfile rounded-3 editProfile2">Add To Cart</button>
+                                <div class="col-md-3 col  px-0 ">
+                                  <button class="text-decoration-none mx-auto d-flex align-items-center border-0 shadow-none editProfile editProfile2 rounded-3 ">Add To Cart</button>
                                 </div>
                                 <div class="col-lg-1 col-md-2 col-auto">
                                     <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
@@ -490,13 +471,19 @@
           <div class="tab-pane fade" id="nav-Offers" role="tabpanel" aria-labelledby="nav-Offers-tab" tabindex="0">
             <div class="offerCard bg-white rounded-3 p-3">
               <div class="row">
-                <div class="col-12 mb-4">
-                  <div class="rsHeading">Medhunt Coupons and Offers</div>
-                  <!-- <div class="headinginformation">Save more with exclusive membership</div> -->
+                <div class="col-12 mb-3">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <div class="rsHeading2">Medhunt Coupons and Offers</div>
+                    </div>
+                    <div class="col-auto">
+                    
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12 sellingPackages offerCard py-0">
                   <div class="row pt4  g-3">
-                    <div class="col-md-6">
+                    <div class="col-xxl-4 col-md-6">
                         <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 overflow-hidden">
                             <div>
                                 <div class="cardimg overflow-hidden rounded-2">
@@ -522,7 +509,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xxl-4 col-md-6">
                         <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-opacity-10 bg-info overflow-hidden">
                           <div>
                             <div class="cardimg overflow-hidden rounded-2">
@@ -548,7 +535,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xxl-4 col-md-6">
                         <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
                           <div>
                             <div class="cardimg overflow-hidden rounded-2">
@@ -574,7 +561,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xxl-4 col-md-6">
                         <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
                           <div>
                             <div class="cardimg overflow-hidden rounded-2">
@@ -600,7 +587,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xxl-4 col-md-6">
                         <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
                           <div>
                             <div class="cardimg overflow-hidden rounded-2">
@@ -626,7 +613,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xxl-4 col-md-6">
                         <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
                           <div>
                             <div class="cardimg overflow-hidden rounded-2">
@@ -660,8 +647,13 @@
             <div class="pricesCard p-lg-4 p-3 bg-white rounded-3">
               <div class="row gap-lg-5 gap md-4 gap-3">
                 <div class="col-12">
-                  <div class="rsHeading">Medhunt First Membership</div>
-                  <div class="headinginformation">Save more with exclusive membership</div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="rsHeading2 mb-1">Medhunt First Membership</div>
+                      <div class="headinginformation">Save more with exclusive membership</div>
+                    </div>
+                      <div class="col-auto"></div>
+                  </div>
                 </div>
                 <div class="col-12">
                   <div class="row mx-0 g-3">
@@ -708,8 +700,7 @@
                               <li class="priceLi">
                                 <div class="row">
                                   <div class="col-auto">
-                                    <div class="ConsultationsHeading">1</div>
-                                    <!-- <div class="iconPrice"><img src="assets/img/signup/onsult.png" alt="save" class="img-fluid w-100 h-100"></div> -->
+                                    <div class="iconPrice"><img src="assets/img/signup/OneNumber.svg" alt="save" class="img-fluid w-100 h-100"></div>
                                   </div>
                                   <div class="col ps-0">
                                     <div class="pricesLiHeading p">Free Consultations</div>
@@ -779,8 +770,7 @@
                               <li class="priceLi">
                                 <div class="row">
                                   <div class="col-auto">
-                                    <div class="ConsultationsHeading">1</div>
-                                    <!-- <div class="iconPrice"><img src="assets/img/signup/onsult.png" alt="save" class="img-fluid w-100 h-100"></div> -->
+                                    <div class="iconPrice"><img src="assets/img/signup/Two.svg" alt="save" class="img-fluid w-100 h-100"></div>
                                   </div>
                                   <div class="col ps-0">
                                     <div class="pricesLiHeading p">Free Consultations</div>
@@ -850,8 +840,7 @@
                               <li class="priceLi">
                                 <div class="row">
                                   <div class="col-auto">
-                                    <div class="ConsultationsHeading">1</div>
-                                    <!-- <div class="iconPrice"><img src="assets/img/signup/onsult.png" alt="save" class="img-fluid w-100 h-100"></div> -->
+                                    <div class="iconPrice"><img src="assets/img/signup/Three.svg" alt="save" class="img-fluid w-100 h-100"></div>
                                   </div>
                                   <div class="col ps-0">
                                     <div class="pricesLiHeading p">Free Consultations</div>
@@ -881,10 +870,10 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="rsHeading mb-3">Faq</div>
+                  <div class="rsHeading mb-3">Frequently Asked Question</div>
 
                   <div class="accordion medicalAccordion overflow-hidden" id="accordionExample">
-                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                    <div class="accordion-item  mb-3 overflow-hidden">
                       <div class="accordion-header">
                         <button class="accordion-button accordionButton shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           1. How long is my Medhunt First Membership valid for?
@@ -956,7 +945,7 @@
                       </div>
                     </div>
                     </div>
-                    <div class="accordion-item shadow-none mb-3 overflow-hidden">
+                    <div class="accordion-item shadow-none overflow-hidden">
                       <div class="accordion-header">
                         <button class="accordion-button accordionButton collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeveen" aria-expanded="true" aria-controls="collapseSeveen">
                           7. Can I cancel my membership after buying it?
@@ -977,12 +966,15 @@
           <div class="tab-pane fade" id="nav-Delivery" role="tabpanel" aria-labelledby="nav-Delivery-tab" tabindex="0">
             <div class="addressCard bg-white rounded-3 p-4">
               <div class="row ">
-                <div class="col-12 mb-4">
-                  <div class="rsHeading">DELIVERY ADDRESS</div>
-                  <!-- <div class="headinginformation">Save more with exclusive membership</div> -->
-                </div>
-                <div class="col-auto">
-                  <button class="text-decoration-none d-flex align-items-center rounded3 editProfile rounded-3 addresBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location"> <span class="d-inline-flex align-items-center editIcon iconPlus me-3"><img src="assets/img/signup/plus.svg" alt="plus" class="img-fluid w-100 h-100"></span> ADD TO ADDRESS</button>
+                <div class="col-12 mb-3">
+                  <div class="row">
+                    <div class="col">
+                      <div class="rsHeading2">DELIVERY ADDRESS</div>
+                    </div>
+                    <div class="col-auto">
+                      <button class="text-decoration-none d-flex align-items-center rounded3 editProfile rounded-3 addresBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location"> <span class="d-inline-flex align-items-center editIcon iconPlus me-3"><img src="assets/img/signup/plus.svg" alt="plus" class="img-fluid w-100 h-100"></span> ADD NEW ADDRESS</button>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12 mt-4 dnone">
                   <div class="row gap-3">
@@ -1121,8 +1113,15 @@
           <div class="tab-pane fade" id="nav-Prescription" role="tabpanel" aria-labelledby="nav-Prescription-tab" tabindex="0">
             <div class="addressCard bg-white rounded-3 p-4">
               <div class="row">
-                <div class="col-12 mb-4">
-                  <div class="rsHeading">My Prescription</div>
+                <div class="col-12 mb-3">
+                  <div class="row">
+                    <div class=col>
+                      <div class="rsHeading2">My Prescription</div>
+                    </div> 
+                    <div class="col-auto">
+                      <a href="prescription.html" class="text-decoration-none mx-auto d-flex align-items-center border-0 shadow-none editProfile  rounded-3 ">Add Prescription</a>
+                    </div>
+                  </div>
                   <!-- <div class="headinginformation">Save more with exclusive membership</div> -->
                 </div>
                 <div class="col-12 dnone">
@@ -1147,25 +1146,26 @@
           </div>
           <div class="tab-pane fade" id="nav-Subscriptions" role="tabpanel" aria-labelledby="nav-Subscriptions-tab" tabindex="0">
             <div class="SubscriptionsCard bg-white rounded-3 p-4">
-              <div class="row gap-4">
+              <div class="row ">
                 <div class="col-12">
                   <div class="row"> 
                     <div class="col">
-                      <div class="rsHeading">YOUR SAVING WITH NETMEDS SUBSCRIPTION</div>
+                      <div class="rsHeading2">YOUR SAVING WITH NETMEDS SUBSCRIPTION</div>
                     </div>
                     <div class="col-auto ">
-                      <a href="javascript:;" class="addCardIcon text-decoration-none d-flex align-items-center"><img src="assets/img/signup/Cart.svg" alt="cart" class="img-fluid w-100 h-100"></a>
-                    </div>
-                    <div class="col-12 mt-2">
-                      <a href="javascript:;" class="text-decoration-none d-inline-flex align-items-center border-0 shadow-none rounded-3 editProfile">CREATE NEW SUBSCRIPTION</a>
+                      <a href="javascript:;" class="text-decoration-none d-inline-flex align-items-center border-0 shadow-none rounded-3 seeall">CREATE NEW SUBSCRIPTION</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="uptoHeading text-center fw-medium ">You save upto</div>
+                  <div class="uptoHeading text-center fw-medium mt-lg-5 mt-md-4 mt-3 ">You save upto</div>
 
-                  <div class="value" > <span class="valueRs">₹</span>0</div>
-                  <input class="inputRange" type="range" min="0" max="1200" step="600"  value="0">
+                  <div class=" text-center" > <span class="valueRs">₹</span> <span class="value">0</span></div>
+                  <div class="wrapper mt-1">
+                    <div class="range">  
+                      <input type="range"/>
+                    </div>
+                  </div>
                   <div class="row align-items-center justify-content-center text-center mt-3">
                     <div class="col">
                       <div class="stap">3</div>
@@ -1181,7 +1181,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 mt-3">
+                <div class="col-12 mt-lg-5 mt-md-4 mt-3">
                   <div class="row gap-3">
                     <div class="col-12">
                       <div class="rsHeading">Netmeds Subscription Benefits</div>
@@ -1193,11 +1193,11 @@
                             <div class="card-body">
                               <div class="row align-items-center">
                                 <div class="col-auto">
-                                  <div class="imgCard"><img src="assets/img/index/setting.png" alt="savemore" class="img-fluid w-100 h-100"></div>
+                                  <div class="imgCard"><img src="assets/img/signup/save_more.png" alt="savemore" class="img-fluid w-100 h-100"></div>
                                 </div>
                                 <div class="col ps-0">
-                                  <div class="headingMember fw-semibold">Superfast Delivery</div>
-                                  <div class="memberPera fw-normal">high priority delivery for all orders</div>
+                                  <div class="headingMember fw-semibold">Flat 18% off on every delivery</div>
+                                  <div class="memberPera fw-normal">Guaranteed savings on every subscription order</div>
                                 </div>
                                 <a href="javascript:;" class="text-decoration-none d-fle"></a>
                               </div>
@@ -1209,11 +1209,11 @@
                             <div class="card-body">
                               <div class="row align-items-center">
                                 <div class="col-auto">
-                                  <div class="imgCard"><img src="assets/img/index/setting.png" alt="savemore" class="img-fluid w-100 h-100"></div>
+                                  <div class="imgCard"><img src="assets/img/signup/free_delivery.png" alt="savemore" class="img-fluid w-100 h-100"></div>
                                 </div>
                                 <div class="col ps-0">
-                                  <div class="headingMember fw-semibold">Superfast Delivery</div>
-                                  <div class="memberPera fw-normal">high priority delivery for all orders</div>
+                                  <div class="headingMember fw-semibold">FREE delivery on all orders</div>
+                                  <div class="memberPera fw-normal">Zero shipping charges for all your subscription orders</div>
                                 </div>
                                 <a href="javascript:;" class="text-decoration-none d-fle"></a>
                               </div>
@@ -1225,11 +1225,11 @@
                             <div class="card-body">
                               <div class="row align-items-center">
                                 <div class="col-auto">
-                                  <div class="imgCard"><img src="assets/img/index/setting.png" alt="savemore" class="img-fluid w-100 h-100"></div>
+                                  <div class="imgCard"><img src="assets/img/signup/composition.png" alt="savemore" class="img-fluid w-100 h-100"></div>
                                 </div>
                                 <div class="col ps-0">
-                                  <div class="headingMember fw-semibold">Superfast Delivery</div>
-                                  <div class="memberPera fw-normal">high priority delivery for all orders</div>
+                                  <div class="headingMember fw-semibold">Auto-delivery of your medicines</div>
+                                  <div class="memberPera fw-normal">We will be at your doorstep with your order on your preferred date and time</div>
                                 </div>
                                 <a href="javascript:;" class="text-decoration-none d-fle"></a>
                               </div>
@@ -1241,11 +1241,11 @@
                             <div class="card-body">
                               <div class="row align-items-center">
                                 <div class="col-auto">
-                                  <div class="imgCard"><img src="assets/img/index/setting.png" alt="savemore" class="img-fluid w-100 h-100"></div>
+                                  <div class="imgCard"><img src="assets/img/signup/safe.png" alt="savemore" class="img-fluid w-100 h-100"></div>
                                 </div>
                                 <div class="col ps-0">
-                                  <div class="headingMember fw-semibold">Superfast Delivery</div>
-                                  <div class="memberPera fw-normal">high priority delivery for all orders</div>
+                                  <div class="headingMember fw-semibold">Cancel, skip or reschedule anytime</div>
+                                  <div class="memberPera fw-normal">You have full control over your Netmeds subscription, no questions asked!</div>
                                 </div>
                                 <a href="javascript:;" class="text-decoration-none d-fle"></a>
                               </div>
@@ -1257,7 +1257,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                    <div class="row mb-lg-5 mb-md-4 mb-3 commonSection">
+                    <div class="row  commonSection">
                       <div class="col-12">
                         <div class="d-flex align-items-center justify-content-between">
                           <div class="d-flex align-items-center">
@@ -1521,11 +1521,11 @@
                 <div class="col-12">
                   <div class=row>
                     <div class="col">
+                      <div class="rsHeading2 ">Refer & Earn</div>
                       <div class="headinginformation">Instant Rewards</div>
-                      <div class="rsHeading">Refer & Earn</div>
                     </div>
                     <div class="col-auto">
-                      <div class="iconrefer"><img src="assets/img/signup/referral.png" alt="referral" class="img-fluid h-100 w-100"></div>
+                      
                     </div>
                   </div>
                 </div>
@@ -1633,10 +1633,16 @@
           </div>
           <div class="tab-pane fade" id="nav-Help" role="tabpanel" aria-labelledby="nav-Help-tab" tabindex="0">
             <div class="referCard rounded-3 p-lg-4 p-3 bg-white">
-              <div class="row gap-2">
+              <div class="row ">
                 <div class="col-12">
-                  <div class="rsHeading mb-3">Order Enquiry | SELECT TOPIC</div>
-
+                  <div class="row">
+                    <div class="col">
+                      <div class="rsHeading2 mb-3">Order Enquiry | SELECT TOPIC</div>
+                    </div>
+                    <div class="col-auto"></div>
+                  </div>
+                </div>
+                <div class="col-12">
                   <div class="accordion medicalAccordion overflow-hidden" id="accordionExample">
                     <div class="accordion-item shadow-none mb-3 overflow-hidden">
                       <div class="accordion-header">
@@ -1742,7 +1748,7 @@
                 </div>
                 <div class="col-12">
                   <a href="javascript:;" class="text-decoration-none  align-items-center justify-content-center border-0 rounded-3 shadow-none editProfile">Still Need Help?</a>
-                </divc>
+                </div>
               </div>
             </div>
           </div>
@@ -2069,7 +2075,7 @@
                               </div>
                              
                                 <div class="mb-sm-3 mb-2 col-12">
-                                  <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">LOG IN USING OTP</button>
+                                  <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">Sign In</button>
                                 </div>
                                 <div class="mb-sm-3 mb-2 col-12">
                                   <div class="row gap-sm-0 gap-2">
@@ -2077,7 +2083,7 @@
                                       <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/Google2.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
                                     </div>
                                     <div class="col-sm-6">
-                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class=" googleImg facebook me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Facebook</button>
                                     </div>
                                   </div>
                                 </div>
@@ -2098,9 +2104,9 @@
                                   <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
                                   <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
                                 </div>
-                                <d iv class="mb-sm-3 mb-2 col-12">
+                                <!-- <div class="mb-sm-3 mb-2 col-12">
                                   <a href="javascript:;" class="text-decoration-none text-end d-flex align-items-center justify-content-end  rounded-3 forgetBtn"> Forgot Password</a>
-                                </d>
+                                </div> -->
                                 <div class="col-12 mb-sm-3 mb-2">
                                   <label for="exampleFormControlInput1" class="form-label labelYour">Verification code</label>
                                   <div class="otp-input-fields">
@@ -2114,29 +2120,26 @@
                               </div>
                              
                                 <div class="mb-sm-3 mb-2 col-12">
-                                  <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">LOG IN USING OTP</button>
+                                  <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">Sign Up</button>
                                 </div>
                                 <div class="mb-sm-3 mb-2 col-12">
                                   <div class="row gap-sm-0 gap-2">
                                     <div class="col-sm-6">
-                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/Google2.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/Google2.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign up with Google</button>
                                     </div>
                                     <div class="col-sm-6">
-                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                      <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg facebok me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign ip with Google</button>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="mb-sm-3 mb-2 col-12">
                                   <div class="signuplink d-flex align-items-center text-nowrap text-center justify-content-center">
-                                   Dont have a Account ?
-                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn2 ms-1"> Sign up</a>
+                                    Have a Account ?
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn2 ms-1"> Sign in</a>
                                   </div>
                                 </div>
                               </div>
-                              
                             </form>
-
-
                           </div>
                         </div>
                       </div>
@@ -2148,7 +2151,7 @@
           </div>
         </div>
       </div>
-      <div class="modal-footer justify-content-md-end justify-content-center modalBody ">
+      <!-- <div class="modal-footer justify-content-md-end justify-content-center modalBody ">
        <div class="row signUpForm">
         <div class=" col-12">
           <div class="row justify-content-center align-items-center">
@@ -2162,7 +2165,7 @@
 
         </div>
        </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
