@@ -171,11 +171,11 @@
             <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
               <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
             </a>
-            <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
               <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
                 <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
               </span>
-              <span class="login loginsign d-lg-inline-flex d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</span> 
+              <span class="login loginsign d-lg-inline-flex d-none" data-bs-toggle="modal" data-bs-target="#signup">Login</span> 
               <span class="d-lg-inline-flex d-none"> /</span>
               <span class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
             </a>
@@ -1146,9 +1146,15 @@
             <div class="tab-pane fade" id="nav-Prescription" role="tabpanel" aria-labelledby="nav-Prescription-tab" tabindex="0">
               <div class="addressCard bg-white rounded-3 p-4">
                 <div class="row">
-                  <div class="col-12 mb-4">
-                    <div class="rsHeading">My Prescription</div>
-                    <!-- <div class="headinginformation">Save more with exclusive membership</div> -->
+                  <div class="col-12">
+                    <div class="row"> 
+                      <div class="col">
+                        <div class="rsHeading2">My Prescription</div>
+                      </div>
+                      <div class="col-auto ">
+                        <a href="prescription.html" class="text-decoration-none d-inline-flex align-items-center border-0 shadow-none rounded-3 seeall">Add Prescription</a>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-12 dnone">
                     <div class="emptyCart">
@@ -2038,11 +2044,7 @@
   <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- SWIPER JS  -->
   <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
-
-
-
-
-
+  
   <!-- edite profile offcanvas  -->
   <div class="offcanvas offcanvas-end editeProfileOffcanvas " tabindex="-1" id="offcanvasExampleedit" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header offcanvasHeader">
@@ -2133,68 +2135,49 @@
   </div>
   <!-- how to use modal end   -->
 
-
-
-<!-- signup modal start -->
-
-
-
-<!-- Modal -->
-<div class="modal fade signupModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modalDialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content modalContent">
-      <!-- <div class="modal-header modalHeader">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-      </div> -->
-      <div class="modal-body modalBody">
-        <div class="row align-items-center">
-          <div class="col-12">
-           <button type="button" class="btn-close d-flex justify-content-end border-0 shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="col-lg-6 ">
-            <div class="signupImg"><img src="assets/img/signup/signin.png" alt="signup" class="img-fluid w-100 h-100"></div>
-          </div>
-          <div class="col-lg-6 ">
-            <div class="row">
-              <div class="col-xl-10  mx-auto">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="signupHeading text-center">Welcome in <span class="signupName">Medhunt</span></div>
-                    <div class="text-center signpera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto rerum earum soluta repellendus iure.</div>
-                  </div>
-                  <div class="col-12 mt-4">
-                    <div class="row gap-3"> 
-                      <div class="col-12">
-                        <ul class="nav nav-tabs signupTabs border-0 shadow-none rounded-3 d-flex align-items-center" id="myTab" role="tablist">
-                          <li class="nav-item w-50" role="presentation">
-                            <button class="nav-link active navLink border-0 shadow-none rounded-3  w-100" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Sign In</button>
-                          </li>
-                          <li class="nav-item w-50" role="presentation">
-                            <button class="nav-link navLink border-0 shadow-none rounded-3 w-100" id="sign-tab" data-bs-toggle="tab" data-bs-target="#sign-tab-pane" type="button" role="tab" aria-controls="sign-tab-pane" aria-selected="false">Sign Up</button>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-12">
-                        <div class="tab-content" id="myTabContent">
-                          <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
-                            <form class="signUpForm">
-                              <div class="row">
-                                <div class="mb-sm-3 mb-2 col-12">
-                                  <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
-                                  <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
-                                </div>
-                                <d iv class="mb-sm-3 mb-2 col-12">
-                                  <a href="javascript:;" class="text-decoration-none text-end d-flex align-items-center justify-content-end  rounded-3 forgetBtn"> Forgot Password</a>
-                                </d>
-                                <div class="col-12 mb-sm-3 mb-2">
-                                  <label for="exampleFormControlInput1" class="form-label labelYour">Verification code</label>
-                                  <div class="otp-input-fields">
-                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
-                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
-                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
-                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
-                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
-                                      <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+  <!-- signup modal start -->
+  <div class="modal fade signupModal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalDialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content modalContent">
+        <!-- <div class="modal-header modalHeader">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        </div> -->
+        <div class="modal-body modalBody">
+          <div class="row align-items-center">
+            <div class="col-12">
+            <button type="button" class="btn-close d-flex justify-content-end border-0 shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="col-lg-6 ">
+              <div class="signupImg"><img src="assets/img/signup/signin.png" alt="signup" class="img-fluid w-100 h-100"></div>
+            </div>
+            <div class="col-lg-6 ">
+              <div class="row">
+                <div class="col-xl-10  mx-auto">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="signupHeading text-center">Welcome in <span class="signupName">Medhunt</span></div>
+                      <div class="text-center signpera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto rerum earum soluta repellendus iure.</div>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <div class="row gap-3"> 
+                        <div class="col-12">
+                          <ul class="nav nav-tabs signupTabs border-0 shadow-none rounded-3 d-flex align-items-center" id="myTab" role="tablist">
+                            <li class="nav-item w-50" role="presentation">
+                              <button class="nav-link active navLink border-0 shadow-none rounded-3  w-100" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Sign In</button>
+                            </li>
+                            <li class="nav-item w-50" role="presentation">
+                              <button class="nav-link navLink border-0 shadow-none rounded-3 w-100" id="sign-tab" data-bs-toggle="tab" data-bs-target="#sign-tab-pane" type="button" role="tab" aria-controls="sign-tab-pane" aria-selected="false">Sign Up</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-12">
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
+                              <form class="signUpForm">
+                                <div class="row">
+                                  <div class="mb-sm-3 mb-2 col-12">
+                                    <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
+                                    <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
                                   </div>
                               </div>
                              
@@ -2211,13 +2194,6 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="mb-sm-3 mb-2 col-12">
-                                  <div class="signuplink d-flex align-items-center text-nowrap text-center justify-content-center">
-                                   Dont have a Account ?
-                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn2 ms-1"> Sign up</a>
-                                  </div>
-                                </div>
-                              </div>
                               
                             </form>
                           </div>
@@ -2261,6 +2237,19 @@
                                     Have a Account ?
                                     <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn2 ms-1"> Sign in</a>
                                   </div>
+                                  <d iv class="mb-sm-3 mb-2 col-12">
+                                    <a href="javascript:;" class="text-decoration-none text-end d-flex align-items-center justify-content-end  rounded-3 forgetBtn"> Forgot Password</a>
+                                  </d>
+                                  <div class="col-12 mb-sm-3 mb-2">
+                                    <label for="exampleFormControlInput1" class="form-label labelYour">Verification code</label>
+                                    <div class="otp-input-fields">
+                                        <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                        <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                        <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                        <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                        <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                        <input type="text" value="0" maxlength="1" class="border-0 shadow-none text-white">
+                                    </div>
                                 </div>
                               </div>
                             </form>
@@ -2268,8 +2257,8 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div> 
+                  </div> 
+                </div>
               </div>
             </div>
           </div>
@@ -2282,186 +2271,182 @@
             <div class="col-auto ">
               <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn"> Term of Service</a>
             </div>
-            <div class="col-auto">
-              <a href="javascript:;" class="text-decoration-none  d-flex align-items-center justify-content-center  rounded-3 forgetBtn"> Privacy & Legal Policy</a>
-            </div>
-          </div>
 
+          </div>
+        </div>
         </div>
        </div>
       </div> -->
     </div>
+    </div>
   </div>
-</div>
-
-<!-- signup modal end -->
+  <!-- signup modal end -->
 
 
-
-<!-- location offcanvas start-->
-<div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header bg-light border-bottom">
-    <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
-    <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-      <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-    </button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="row addressmain">
-        <div class="col-12 deliveryData fw-medium">
-          Get access to your Address, Order, and Wishlist
-        </div>
-        <div class="col-12 mx-auto py3">
-        <button type="button" class="btn mxuto w-100 addaddressbtn justify-content-center rounded-1 d-flex flexcolumn align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
-          <span class="d-flex align-items-center justify-content-center plusicon">
-            <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
-          </span>
-          <span class="addressTile">Add Address</span>
-        </button>
-        </div>
-        <div class="col-12 pt2 text-center">
-          <a href="javascript:;" class="detectlocation bg-light justify-content-center d-flex rounded-2 align-items-center gap-2 text-decoration-none">
-            <span class="d-flex align-items-center justify-content-center detecticon">
-              <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
+  <!-- location offcanvas start-->
+  <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-light border-bottom">
+      <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+      <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row addressmain">
+          <div class="col-12 deliveryData fw-medium">
+            Get access to your Address, Order, and Wishlist
+          </div>
+          <div class="col-12 mx-auto py3">
+          <button type="button" class="btn mxuto w-100 addaddressbtn justify-content-center rounded-1 d-flex flexcolumn align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
+            <span class="d-flex align-items-center justify-content-center plusicon">
+              <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
             </span>
-            Detect my location
-          </a>
+            <span class="addressTile">Add Address</span>
+          </button>
+          </div>
+          <div class="col-12 pt2 text-center">
+            <a href="javascript:;" class="detectlocation bg-light justify-content-center d-flex rounded-2 align-items-center gap-2 text-decoration-none">
+              <span class="d-flex align-items-center justify-content-center detecticon">
+                <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
+              </span>
+              Detect my location
+            </a>
+          </div>
+          <div class="col-12 py4">
+            <div>
+              <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress5">
+              <label for="selectAddress5" class="addressLabel w-100">
+                <div class="row align-items-center">
+                  <div class="col">
+                      <div class="namePerson2">Delivery Address</div>
+                    <div class="namePerson mt-2">Rakesh Sharma</div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="checkBox d-flex align-items-center">
+                      <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                    </span>
+                    
+                  </div>
+                  <div class="col-12">
+                    <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                    <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                  </div>
+                
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div>
+              <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress4">
+              <label for="selectAddress4" class="addressLabel w-100">
+                <div class="row align-items-center">
+                  <div class="col">
+                      <div class="namePerson2">Delivery Address</div>
+                    <div class="namePerson mt-2">Rakesh Sharma</div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="checkBox d-flex align-items-center">
+                      <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                    </span>
+                    
+                  </div>
+                  <div class="col-12">
+                    <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                    <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                  </div>
+                
+                </div>
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="col-12 py4">
-          <div>
-            <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress5">
-            <label for="selectAddress5" class="addressLabel w-100">
-              <div class="row align-items-center">
-                <div class="col">
-                    <div class="namePerson2">Delivery Address</div>
-                  <div class="namePerson mt-2">Rakesh Sharma</div>
-                </div>
-                <div class="col-auto">
-                  <span class="checkBox d-flex align-items-center">
-                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
-                  </span>
-                  
-                </div>
-                <div class="col-12">
-                  <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
-                  <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
-                </div>
-              
-              </div>
-            </label>
+    </div>
+    <div class="offcnavas-footer bglight border-top">
+      <div class="d-flex align-items-center justify-content-center">
+        <button type="button" class="btn applyBtn w-100">Save and Continue</button>
+      </div>
+    </div>
+  </div>
+  <!-- location offcanvas end-->
+
+  <!-- address offcanvas start  -->
+  <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header border-bottom bg-light">
+      <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Add Address</div>
+      <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row locationcontent">
+        <div class="col-12">
+          <div class="inputpinmain position-relative w-100">
+            <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
+            <label for="House" class="pincodeLabel">House No.</label>
           </div>
         </div>
         <div class="col-12">
-          <div>
-            <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress4">
-            <label for="selectAddress4" class="addressLabel w-100">
-              <div class="row align-items-center">
-                <div class="col">
-                    <div class="namePerson2">Delivery Address</div>
-                  <div class="namePerson mt-2">Rakesh Sharma</div>
-                </div>
-                <div class="col-auto">
-                  <span class="checkBox d-flex align-items-center">
-                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
-                  </span>
-                  
-                </div>
-                <div class="col-12">
-                  <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
-                  <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
-                </div>
-              
-              </div>
-            </label>
+          <div class="inputpinmain position-relative w-100">
+            <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
+            <label for="streetno1" class="pincodeLabel">Street No.1</label>
           </div>
         </div>
-      </div>
-  </div>
-  <div class="offcnavas-footer bglight border-top">
-    <div class="d-flex align-items-center justify-content-center">
-      <button type="button" class="btn applyBtn w-100">Save and Continue</button>
-    </div>
-  </div>
-</div>
-<!-- location offcanvas end-->
-
-<!-- address offcanvas start  -->
-<div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header border-bottom bg-light">
-    <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Add Address</div>
-    <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-      <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-    </button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="row locationcontent">
-      <div class="col-12">
-        <div class="inputpinmain position-relative w-100">
-          <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
-          <label for="House" class="pincodeLabel">House No.</label>
+        <div class="col-12">
+          <div class="inputpinmain position-relative w-100">
+            <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
+            <label for="streetno2" class="pincodeLabel">Street No.2</label>
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="inputpinmain position-relative w-100">
-          <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
-          <label for="streetno1" class="pincodeLabel">Street No.1</label>
+        <div class="col-12">
+          <div class="inputpinmain position-relative w-100">
+            <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
+            <label for="city" class="pincodeLabel">City</label>
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="inputpinmain position-relative w-100">
-          <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
-          <label for="streetno2" class="pincodeLabel">Street No.2</label>
+        <div class="col-12">
+          <div class="inputpinmain position-relative w-100">
+            <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
+            <label for="state" class="pincodeLabel">State</label>
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="inputpinmain position-relative w-100">
-          <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
-          <label for="city" class="pincodeLabel">City</label>
+        <div class="col-12">
+          <div class="inputpinmain position-relative w-100">
+            <input type="text" id="Pincode" class="form-control shadow-none  pincodeInput w-100 ps-0">
+            <label for="Pincode" class="pincodeLabel">Pincode</label>
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="inputpinmain position-relative w-100">
-          <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
-          <label for="state" class="pincodeLabel">State</label>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="inputpinmain position-relative w-100">
-          <input type="text" id="Pincode" class="form-control shadow-none  pincodeInput w-100 ps-0">
-          <label for="Pincode" class="pincodeLabel">Pincode</label>
-        </div>
-      </div>
-      <div class="col-12 pt-2">
-        <div class="d-flex align-items-center gap-3">
-          <div class="form-check p-0">
-              <input class="form-check-input checkbox" name="check" hidden type="radio" checked value="" id="Home">
-              <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Home">
-                Home
+        <div class="col-12 pt-2">
+          <div class="d-flex align-items-center gap-3">
+            <div class="form-check p-0">
+                <input class="form-check-input checkbox" name="check" hidden type="radio" checked value="" id="Home">
+                <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Home">
+                  Home
+                </label>
+            </div>
+            <div class="form-check p-0">
+              <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
+              <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Work">
+                Work
               </label>
-          </div>
-          <div class="form-check p-0">
-            <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
-            <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Work">
-              Work
-            </label>
-          </div>
-          <div class="form-check p-0">
-            <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
-            <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Other">
-              Other
-            </label>
+            </div>
+            <div class="form-check p-0">
+              <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
+              <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Other">
+                Other
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="offcnavas-footer bglight border-top">
-    <div class="d-flex align-items-center justify-content-center">
-      <button type="button" class="btn applyBtn w-100">Save and Continue</button>
+    <div class="offcnavas-footer bglight border-top">
+      <div class="d-flex align-items-center justify-content-center">
+        <button type="button" class="btn applyBtn w-100">Save and Continue</button>
+      </div>
     </div>
   </div>
-</div>
-<!-- address offcanvas end  -->
+  <!-- address offcanvas end  -->
 
   <!-- navbar offcanvas  -->
   <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">
@@ -2665,39 +2650,39 @@
   });
   </script>
 
-    <!-- account page product Subscriptions -->
-    <script>
-      var swiper = new Swiper(".Subscriptions", {
-        // slidesPerView: 1,
-        // spaceBetween: 10,
-        breakpoints: {
-          0: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-          },
-          400: {
-            slidesPerView: 2,
-            // spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-          991: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          1191: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
+  <!-- account page product Subscriptions -->
+  <script>
+    var swiper = new Swiper(".Subscriptions", {
+      // slidesPerView: 1,
+      // spaceBetween: 10,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 0,
         },
-        navigation: {
-          nextEl: ".nextBtnnew",
-          prevEl: ".prevBtnnew",
+        400: {
+          slidesPerView: 2,
+          // spaceBetween: 20,
         },
-      });
-    </script>
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1191: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+      },
+      navigation: {
+        nextEl: ".nextBtnnew",
+        prevEl: ".prevBtnnew",
+      },
+    });
+  </script>
 
   <script>
     var swiper = new Swiper(".heroswiper", {
