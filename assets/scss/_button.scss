@@ -286,8 +286,8 @@ font-size: 14px;
 
 @include media-breakpoint-down(sm) {
     .editProfile{
-        // font-size: 8px;
-        // padding: 7px 8px;
+        font-size: 12px;
+        padding: 7px 15px;
         & .editIcon{
          
         }
