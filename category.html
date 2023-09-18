@@ -463,10 +463,13 @@
               <div class="col-12">
                 <div class="mainHeader">
                   <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-auto col-12 mb-2 mb-sm-0"><div class="leftTxt"> <span>Baby Products</span> <span></span></div></div>
-                    <div class="col-sm-auto col-12 d-flex align-items-center">
+                    <div class="col"><div class="leftTxt"> <span>Baby Products </span> <span></span></div></div>
+                    <div class="col-auto d-flex align-items-center">
                       <!-- <div class="filterBtn d-lg-none d-block child"><img src="assets/img/index/filter.svg" alt=""></div> -->
-                      <div class="rytTxt pe-3">Sort by:</div>
+                      <div class="rytTxt pe-3 d-none d-lg-block">Sort by:</div>
+                      <div class="filterBtn d-lg-none">
+                        <img src="assets/img/index/filter.svg" alt="" srcset="">
+                      </div>
                       <div class="drop">
                         <div class="dropdown">
                           <button class="btn dropBtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -676,31 +679,13 @@
             <div class="row mx-0">
               <div class="col-12 d-flex justify-content-sm-end justify-content-center">
                 <div class="pagination gap-2">
-                  <button class="paginationBtn"><img src="assets/img/index/navarrow2.svg" alt=""></button>
-                  <span class="">1</span>
-                  <span class="">2</span>
-                  <span class="">...</span>
-                  <span class="">12</span>
-                  <span class="">13</span>
-                  <button class="paginationBtn" disabled><img src="assets/img/index/navarrow.svg" alt=""></button>
-                </div>
-              </div>
-            </div>
-            <div class="row mx-0 mt-3 d-lg-none d-flex border-bottom border-top fixed-bottom footerBar">
-              <div class="col-6 border-end py-2">
-                <a href="#offcanvasBottom" class="sortingBtn d-flex justify-content-center text-decoration-none" data-bs-toggle="offcanvas" aria-controls="offcanvasBottom">
-                  <div class="row align-items-center justify-content-center">
-                    <div class="col-auto pe-0"><div class="sort"><img src="assets/img/sort.svg" alt="" srcset=""></div></div>
-                    <div class="col"><div class="txt">Sort by</div><div class="txt1">Applying Sorting</div></div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-6 py-2">
-                <div class="sortingBtn d-flex justify-content-center">
-                  <div class="row align-items-center justify-content-center filterBtn  child">
-                    <div class="col-auto pe-0"><div class="sort"><img src="assets/img/index/filter.svg" alt="" srcset=""></div></div>
-                    <div class="col"><div class="txt">Filter by</div><div class="txt1">Applying Filters</div></div>
-                  </div>
+                  <button class="paginationBtn prev"><img src="assets/img/index/navarrow2.svg" alt=""></button>
+                  <button class="paginationBtn">1</button>
+                  <button class="paginationBtn">2</button>
+                  <button class="paginationBtn">...</button>
+                  <button class="paginationBtn">12</button>
+                  <button class="paginationBtn">13</button>
+                  <button class="paginationBtn next" disabled><img src="assets/img/index/navarrow.svg" alt=""></button>
                 </div>
               </div>
             </div>
@@ -1039,63 +1024,6 @@
   <!-- SWIPER JS  -->
   <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
 
-  <!-- sorting offcanvas -->
-
-  <div class="offcanvas offcanvasBottom offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header offcanvasBottomHeader">
-      <div class="offcanvas-title offcanvasBottomTitle" id="offcanvasBottomLabel">Sort By</div>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body offcanvasBottomBody small">
-      <div class="row">
-        
-        <div class="col-12">
-          <ul class="categoryUl ps-0">
-            <li class="categoryLi list-unstyled">
-              <div class="form-check formCheckWrapper">
-                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked00" >
-                <label class="form-check-label formCheckLbl" for="flexCheckChecked00">
-                  B Positive(1)
-                </label>
-              </div>
-            </li>
-            <li class="categoryLi list-unstyled">
-              <div class="form-check formCheckWrapper">
-                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked11" >
-                <label class="form-check-label formCheckLbl" for="flexCheckChecked11">
-                  Bionote(36)
-                </label>
-              </div>
-            </li>
-            <li class="categoryLi list-unstyled">
-              <div class="form-check formCheckWrapper">
-                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked22" >
-                <label class="form-check-label formCheckLbl" for="flexCheckChecked22">
-                  Canine(9)
-                </label>
-              </div>
-            </li>
-            <li class="categoryLi list-unstyled">
-              <div class="form-check formCheckWrapper">
-                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked33" >
-                <label class="form-check-label formCheckLbl" for="flexCheckChecked33">
-                  Capt.Zack(15)
-                </label>
-              </div>
-            </li>
-            <li class="categoryLi list-unstyled">
-              <div class="form-check formCheckWrapper">
-                <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked44" >
-                <label class="form-check-label formCheckLbl" for="flexCheckChecked44">
-                  Capt.Zack(15)
-                </label>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
