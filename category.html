@@ -1026,53 +1026,90 @@
 
 
 
-
   <!-- location offcanvas start-->
   <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header bg-light border-bottom">
-  <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
-  <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-      <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-  </button>
-  </div>
-  <div class="offcanvas-body">
-  <div class="row">
-      <div class="col-12 deliveryData fw-medium">
-      Get access to your Address, Order, and Wishlist
-      </div>
-      <div class="col-7 mx-auto py-3">
-      <button type="button" class="btn mxuto w-100 addaddressbtn rounded-1 d-flex flex-column align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
-          <span class="d-flex align-items-center justify-content-center plusicon">
-          <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
-          </span>
-          <span class="addressTile">Add Address</span>
-      </button>
-      </div>
-      <!-- <div class="col-12 enterpin fw-semibold pt-2 text-center">
-          Enter Pincode
-      </div> -->
-      <!-- <div class="col-12 deliveryData fw-medium pt-1 te">
-          Select Pincode to see product availability
-      </div> -->
-      <div class="col-12 pt-3  border-top border-1">
-          <div class="d-flex flex-sm-row flex-column align-items-center gap-2 ">
-          <div class="inputpinmain rounded5 d-flex align-items-center position-relative w-100">
-              <input type="text" id="pincode" class="form-control ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
-              <label for="pincode" class="pincodeLabel">PINCODE</label>
-              <button class="btn applypinBtn bg-transparent border-0">Apply</button>
-          </div>
-          </div>
-      </div>
-      <div class="col-12 pt-3 text-center">
-          <a href="javascript:;" class="detectlocation bg-light d-inline-flex rounded-5 align-items-center gap-2 text-decoration-none">
-          <span class="d-flex align-items-center justify-content-center detecticon">
-              <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
-          </span>
-          Detect my location
-          </a>
-      </div>
-      </div>
-  </div>
+    <div class="offcanvas-header bg-light border-bottom">
+        <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+        <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row addressmain">
+        <div class="col-12 deliveryData fw-medium">
+            Get access to your Address, Order, and Wishlist
+        </div>
+        <div class="col-12 mx-auto py3">
+        <button type="button" class="btn mxuto w-100 addaddressbtn justify-content-center rounded-1 d-flex flexcolumn align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
+            <span class="d-flex align-items-center justify-content-center plusicon">
+            <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
+            </span>
+            <span class="addressTile">Add Address</span>
+        </button>
+        </div>
+        <div class="col-12 pt2 text-center">
+            <a href="javascript:;" class="detectlocation bg-light justify-content-center d-flex rounded-2 align-items-center gap-2 text-decoration-none">
+            <span class="d-flex align-items-center justify-content-center detecticon">
+                <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
+            </span>
+            Detect my location
+            </a>
+        </div>
+        <div class="col-12 py4">
+            <div>
+            <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress5">
+            <label for="selectAddress5" class="addressLabel w-100">
+                <div class="row align-items-center">
+                <div class="col">
+                    <div class="namePerson2">Delivery Address</div>
+                    <div class="namePerson mt-2">Rakesh Sharma</div>
+                </div>
+                <div class="col-auto">
+                    <span class="checkBox d-flex align-items-center">
+                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                    </span>
+                    
+                </div>
+                <div class="col-12">
+                    <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                    <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                </div>
+                
+                </div>
+            </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div>
+            <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress4">
+            <label for="selectAddress4" class="addressLabel w-100">
+                <div class="row align-items-center">
+                <div class="col">
+                    <div class="namePerson2">Delivery Address</div>
+                    <div class="namePerson mt-2">Rakesh Sharma</div>
+                </div>
+                <div class="col-auto">
+                    <span class="checkBox d-flex align-items-center">
+                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                    </span>
+                    
+                </div>
+                <div class="col-12">
+                    <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                    <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                </div>
+                
+                </div>
+            </label>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="offcnavas-footer bglight border-top">
+        <div class="d-flex align-items-center justify-content-center">
+            <button type="button" class="btn applyBtn w-100">Save and Continue</button>
+        </div>
+    </div>
   </div>
   <!-- location offcanvas end-->
 
@@ -1116,33 +1153,39 @@
               <label for="state" class="pincodeLabel">State</label>
           </div>
           </div>
+          <div class="col-12">
+          <div class="inputpinmain position-relative w-100">
+              <input type="text" id="Pincode" class="form-control shadow-none  pincodeInput w-100 ps-0">
+              <label for="Pincode" class="pincodeLabel">Pincode</label>
+          </div>
+          </div>
           <div class="col-12 pt-2">
-          <div class="d-flex align-items-center justify-content-center">
-              <div class="form-check ps-0">
-                  <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Home">
-                  <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Home">
+          <div class="d-flex align-items-center gap-3">
+              <div class="form-check p-0">
+                  <input class="form-check-input checkbox" name="check" hidden type="radio" checked value="" id="Home">
+                  <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Home">
                   Home
                   </label>
               </div>
-              <div class="form-check">
+              <div class="form-check p-0">
               <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
-              <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Work">
+              <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Work">
                   Work
               </label>
               </div>
-              <div class="form-check">
+              <div class="form-check p-0">
               <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
-              <label class="form-check-label checkLabel checkLabel2 rounded-pill" for="Other">
+              <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Other">
                   Other
               </label>
               </div>
           </div>
           </div>
-          <div class="col-12">
-          <div class="d-flex align-items-center justify-content-center">
-              <button type="button" class="btn applyBtn">Save and Continue</button>
-          </div>
-          </div>
+      </div>
+      </div>
+      <div class="offcnavas-footer bglight border-top">
+      <div class="d-flex align-items-center justify-content-center">
+          <button type="button" class="btn applyBtn w-100">Save and Continue</button>
       </div>
       </div>
   </div>

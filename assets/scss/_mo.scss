@@ -5,6 +5,9 @@
         font-size: 17px;
         color: $black;
     }
+    & .addressmain {
+        gap: 20px;
+    }
     & .closebtn {
         height: 12px;
         width: 12px;
@@ -19,8 +22,8 @@
         // width: 80px;
         background-color:#f8f9fa;
         transition: all 0.3s ease-in-out;
-        gap: 6px;
-        padding: 14px 15px;
+        gap: 8px;
+        padding: 17px 15px;
         &:active {
             background-color: #f8f9fa;
             border-color: #f8f9fa;
@@ -36,10 +39,6 @@
             & img {
                 filter: brightness(0);
             }
-        }
-        &:hover {
-            // box-shadow: 0 0.5em 0.5em -0.4em rgba($theme1, 1);
-            transform: translateY(-0.25em);
         }
     }
     & .enterpin {
@@ -57,12 +56,21 @@
     }
     & .detectlocation {
         font-size: 14px;
-        font-weight: 500;
-        color: $theme1;
-        padding: 4px 12px;
+        font-weight: 600;
+        color:$black;
+        padding: 17px 12px;
         & .detecticon {
-            height: 14px;
-            width: 14px;
+            height: 15px;
+            width: 15px;
+            & img {
+                filter: brightness(0);
+            }
+        }
+    }
+    & .offcnavas-footer {
+        padding: 18px 16px;
+        & .applyBtn {
+            padding: 10px 0;
         }
     }
 }
@@ -197,7 +205,7 @@
     border-color: $theme1;
     color: $white;
     background-color: $theme1;
-    box-shadow: 0 0.5em 0.5em -0.6em $theme1;
+    // box-shadow: 0 0.5em 0.5em -0.6em $theme1;
     // transform: translateY(-0.25em);
 }
 @include media-breakpoint(basic) {}
@@ -268,10 +276,7 @@
             font-size: 12px;
         }
         & .addaddressbtn {
-            gap: 2px;
-            padding: 8px 12px;
-            box-shadow:none !important;
-            transform: translateY(0) !important;
+            padding: 15px 12px;
             &:active {
             }
             & .addressTile {
@@ -295,8 +300,12 @@
         }
         & .detectlocation {
             font-size: 13px;
+            padding: 15px 0;
             & .detecticon {
             }
+        }
+        & .addressmain {
+            gap: 15px;
         }
     }
     .inputpinmain {
@@ -1224,7 +1233,7 @@
             color: $black;
         }
         & .bookBtn {
-            padding: 6px 18px;
+            padding: 10px 18px;
         }
     }
 }
@@ -1520,6 +1529,46 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    &.dots {
+        padding: 2px 0;
+        bottom: 5px !important;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        & .swiper-pagination-bullet {
+            height: 10px;
+            width: 10px;
+            background-color:gray ;
+            transform: scale(0.7) !important;
+            margin: 0 !important;
+            &.swiper-pagination-bullet-active {
+                transform: scale(1.1) !important;
+                background-color: $theme1;
+            }
+        }
+    }
+    & .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background-color:gray ;
+        transform: scale(0.7) !important;
+        margin: 0 !important;
+        &.swiper-pagination-bullet-active {
+            transform: scale(1.1) !important;
+            background-color: $theme1;
+        }
+    }
+}
+.dots {
+    padding: 2px 0;
+    bottom: 5px !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     & .swiper-pagination-bullet {
         height: 10px;
         width: 10px;
@@ -1545,13 +1594,13 @@
             font-weight: 600;
             color: $black;
             & span {
-                color: $white;
+                // color: $dark;
             }
         }
         & .number {
             font-size: 18px;
             font-weight: 600;
-            color: $white;
+            color: $dark;
             padding-top: 6px;
         }
         & .whatsappbtn {
@@ -1574,13 +1623,13 @@
 .pathologysection {
     padding: 18px;
     & .pathologyheading {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 600;
         color: $black;
         line-height: normal;
         & span {
             color: $theme1;
-            font-size: 38px;
+            font-size: 28px;
         }
     }
     & .pathologyheadingtwo {
@@ -1900,9 +1949,9 @@
      // pathology page start 
     .pathologysection {
         & .pathologyheading {
-            font-size: 20px;
+            font-size: 19px;
             & span {
-                font-size: 34px;
+                font-size: 27px;
             }
         }
         & .pathologyheadingtwo {
@@ -2137,9 +2186,9 @@
     .pathologysection {
         padding: 16px;
         & .pathologyheading {
-            font-size: 18px;
+            font-size: 16px;
             & span {
-                font-size: 28px;
+                font-size: 26px;
             }
         }
         & .pathologyheadingtwo {
@@ -2423,6 +2472,20 @@
     .swiper-pagination {
         padding: 2px 0;
         bottom: 5px !important;
+        &.dots {
+            padding: 2px 0;
+            bottom: 5px !important;
+            & .swiper-pagination-bullet {
+                height: 8px;
+                width: 8px;
+                background-color:gray ;
+                transform: scale(0.7) !important;
+                &.swiper-pagination-bullet-active {
+                    transform: scale(1.1) !important;
+                    background-color: $theme1;
+                }
+            }
+        }
         & .swiper-pagination-bullet {
             height: 8px;
             width: 8px;
@@ -2466,9 +2529,9 @@
     .pathologysection {
         padding: 14px;
         & .pathologyheading {
-            font-size: 15px;
+            font-size: 14px;
             & span {
-                font-size: 24px;
+                font-size: 20px;
             }
         }
         & .pathologyheadingtwo {
@@ -2517,7 +2580,7 @@
                     font-size: 12px;
                 }
                 & .totaloff {
-                    font-size: 22px;
+                    font-size: 20px;
                     line-height: normal;
                 }
                 & .offtitle {
