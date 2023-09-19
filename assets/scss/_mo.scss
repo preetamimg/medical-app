@@ -742,101 +742,102 @@
         }
         
     }
-    & .summaryCard {
-        padding: 14px;
-        background: #f2f2f2;
-        top: 140px;
-        & .cartHeading {
-            font-size: 16px;
-            font-weight: 600;
-            color: $black;
-            padding-bottom: 14px;
-        }
-        & .cartSubheading {
-            font-size: 15px;
-            font-weight: 600;
-            color: $black;
-            padding-top: 14px;
-        }
-        & .cartdata {
-            padding-top: 14px;
-            & .cardTitle {
-                font-size: 13px;
-                font-weight: 500;
-                color: lighten($black, 40);
-            }
-            &.deliverycharge {
-                padding-bottom: 14px;
-            }
-        }
-        & .totalpayment {
-            padding-bottom: 14px;
-        }
-        & .totalpay {
-            font-size: 14px;
-            font-weight: 600;
-            color: $black;
-        }
-        & .continueBtn {
-            padding: 8px 26px;
-        }
-        
-    }
     
 }
-.tablebody {
-    background: #f2f2f2;
-    padding: 14px 16px;
-    margin-top: 10px;
-    & .tabledata {
-    }
-    & .productImgMain {
-        height: 80px;
-        min-width: 80px;
-        max-width: 80px;
-        background-color: $white;
-        & .productImg {
-            height: 60px;
-            width: 60px;
-            transition: all 0.3s ease-in-out;
-        }
-    }
-    & .productName {
-        font-size: 12px;
-        color: $black;
-        font-weight: 600;
-        display: inline;
-        -webkit-line-clamp: 2;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-    }
-    & .deliverytilte {
-        font-size: 11px;
-        font-weight: 400;
-        color: lighten($black, 50);
-    }
-    & .deleteIcon {
-        height: 22px;
-        width: 18px;
-        & img {
-            filter: brightness(0);
-        }
-    }
-    & .price {
-        font-size: 14px;
-        font-weight: 600;
-        color: $black;
-    }
-    &:hover {
-        & .productImgMain {
-            & .productImg {
-                transform: scale(0.9);
-            }
-        }
-    }
-}
+// .summaryCard {
+//     padding: 14px;
+//     background: #f2f2f2;
+//     top: 140px;
+//     & .cartHeading {
+//         font-size: 16px;
+//         font-weight: 600;
+//         color: $black;
+//         padding-bottom: 14px;
+//     }
+//     & .cartSubheading {
+//         font-size: 15px;
+//         font-weight: 600;
+//         color: $black;
+//         padding-top: 14px;
+//     }
+//     & .cartdata {
+//         padding-top: 14px;
+//         & .cardTitle {
+//             font-size: 13px;
+//             font-weight: 500;
+//             color: lighten($black, 40);
+//         }
+//         &.deliverycharge {
+//             padding-bottom: 14px;
+//         }
+//     }
+//     & .totalpayment {
+//         padding-bottom: 14px;
+//     }
+//     & .totalpay {
+//         font-size: 14px;
+//         font-weight: 600;
+//         color: $black;
+//     }
+//     & .continueBtn {
+//         padding: 8px 26px;
+//     }
+// }
+
+
+// .tablebody {
+//     background: #f2f2f2;
+//     padding: 14px 16px;
+//     margin-top: 10px;
+//     & .tabledata {
+//     }
+//     & .productImgMain {
+//         height: 80px;
+//         min-width: 80px;
+//         max-width: 80px;
+//         background-color: $white;
+//         & .productImg {
+//             height: 60px;
+//             width: 60px;
+//             transition: all 0.3s ease-in-out;
+//         }
+//     }
+//     & .productName {
+//         font-size: 12px;
+//         color: $black;
+//         font-weight: 600;
+//         display: inline;
+//         -webkit-line-clamp: 2;
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//         display: -webkit-box;
+//         -webkit-box-orient: vertical;
+//     }
+//     & .deliverytilte {
+//         font-size: 11px;
+//         font-weight: 400;
+//         color: lighten($black, 50);
+//     }
+//     & .deleteIcon {
+//         height: 22px;
+//         width: 18px;
+//         & img {
+//             filter: brightness(0);
+//         }
+//     }
+//     & .price {
+//         font-size: 14px;
+//         font-weight: 600;
+//         color: $black;
+//     }
+//     &:hover {
+//         & .productImgMain {
+//             & .productImg {
+//                 transform: scale(0.9);
+//             }
+//         }
+//     }
+// }
 .emptyCart {
     padding-top: 30px;
     & .emptyImg {
@@ -925,55 +926,53 @@
                 }
             }
         }
+    }
+    // & .summaryCard {
+    //     top: 90px;
+    //     & .cartHeading {
+    //     }
+    //     & .cartSubheading {
+    //     }
+    //     & .cartdata {
+    //         & .cardTitle {
+    //         }
+    //         &.deliverycharge {
+    //         }
+    //     }
+    //     & .totalpayment {
+    //     }
+    //     & .totalpay {
+
+    //     }
+    //     & .continueBtn {
+    //     }
         
-        & .summaryCard {
-            top: 90px;
-            & .cartHeading {
-            }
-            & .cartSubheading {
-            }
-            & .cartdata {
-                & .cardTitle {
-                }
-                &.deliverycharge {
-                }
-            }
-            & .totalpayment {
-            }
-            & .totalpay {
+    // }
+    // .tablebody {
+    //     padding: 10px;
+    //     & .tabledata {
+    //     }
+    //     & .productImgMain {
+    //         height: 70px;
+    //         min-width: 70px;
+    //         max-width: 70px;
+    //         & .productImg {
+    //             height: 60px;
+    //             width: 60px;
+    //         }
+    //     }
+    //     & .productName {
 
-            }
-            & .continueBtn {
-            }
-            
-        }
-       
-    }
-    .tablebody {
-        padding: 10px;
-        & .tabledata {
-        }
-        & .productImgMain {
-            height: 70px;
-            min-width: 70px;
-            max-width: 70px;
-            & .productImg {
-                height: 60px;
-                width: 60px;
-            }
-        }
-        & .productName {
-
-        }
-        & .deliverytilte {
-        }
-        & .deleteIcon {
-            & img {
-            }
-        }
-        & .price {
-        }
-    }
+    //     }
+    //     & .deliverytilte {
+    //     }
+    //     & .deleteIcon {
+    //         & img {
+    //         }
+    //     }
+    //     & .price {
+    //     }
+    // }
     .emptyCart {
         & .emptyImg {
         }
@@ -1001,27 +1000,6 @@
                 }
             }
         }
-        & .summaryCard {
-            margin-top:40px;
-            & .cartHeading {
-                font-size: 15px;
-            }
-            & .cartSubheading {
-            }
-            & .cartdata {
-                & .cardTitle {
-                }
-                &.deliverycharge {
-                }
-            }
-            & .totalpayment {
-            }
-            & .totalpay {
-            }
-            & .continueBtn {
-            }
-            
-        }
         & .emptyCart {
             & .emptyImg {
             }
@@ -1030,25 +1008,48 @@
             & .emptyBtn {
             }
         }
+    
     }
-    .tablebody {
-        & .tabledata {
-        }
-        & .productImgMain {
-            & .productImg {
-            }
-        }
-        & .productName {
-        }
-        & .deliverytilte {
-        }
-        & .deleteIcon {
-            & img {
-            }
-        }
-        & .price {
-        }
-    }
+
+    // .summaryCard {
+    //     margin-top:40px;
+    //     & .cartHeading {
+    //         font-size: 15px;
+    //     }
+    //     & .cartSubheading {
+    //     }
+    //     & .cartdata {
+    //         & .cardTitle {
+    //         }
+    //         &.deliverycharge {
+    //         }
+    //     }
+    //     & .totalpayment {
+    //     }
+    //     & .totalpay {
+    //     }
+    //     & .continueBtn {
+    //     }
+        
+    // }
+    // .tablebody {
+    //     & .tabledata {
+    //     }
+    //     & .productImgMain {
+    //         & .productImg {
+    //         }
+    //     }
+    //     & .productName {
+    //     }
+    //     & .deliverytilte {
+    //     }
+    //     & .deleteIcon {
+    //         & img {
+    //         }
+    //     }
+    //     & .price {
+    //     }
+    // }
 
     // address button start 
     .addresBtn {
@@ -1074,78 +1075,78 @@
                 }
             }
         }
-        & .summaryCard {
-            padding: 10px;
-            margin-top:30px;
-            & .cartHeading {
-                font-size: 14px;
-                padding-bottom: 10px;
-            }
-            & .cartSubheading {
-                font-size: 13px;
-                padding-top: 14px;
-            }
-            & .cartdata {
-                padding-top: 10px;
-                & .cardTitle {
-                    font-size: 12px;
-                }
-                &.deliverycharge {
-                    padding-bottom: 12px;
-                }
-            }
-            & .totalpayment {
-                padding-bottom: 12px;
-            }
-            & .totalpay {
-                font-size: 12px;
-            }
-            & .continueBtn {
-                padding: 8px 26px;
-            }
-            
-        }
         
     }
-    .tablebody {
-        padding: 10px;
-        margin-top: 10px;
-        & .tabledata {
-            padding-bottom: 10px;
-        }
-        & .productImgMain {
-            height: 75px;
-            min-width: 75px;
-            max-width: 75px;
-            & .productImg {
-            }
-        }
-        & .productName {
-            font-size: 11px;
-            -webkit-line-clamp: 1;
-        }
-        & .deliverytilte {
-            font-size: 10px;
-        }
-        & .deleteIcon {
-            height: 19px;
-            width: 15px;
-            & img {
-            }
-        }
-        & .price {
-            font-size: 12px;
-            font-weight: 600;
-            color: $black;
-        }
-        &:hover {
-            & .productImgMain {
-                & .productImg {
-                    transform: scale(1);
-                }
-            }
-        }
-    }
+    // .summaryCard {
+    //     padding: 10px;
+    //     margin-top:30px;
+    //     & .cartHeading {
+    //         font-size: 14px;
+    //         padding-bottom: 10px;
+    //     }
+    //     & .cartSubheading {
+    //         font-size: 13px;
+    //         padding-top: 14px;
+    //     }
+    //     & .cartdata {
+    //         padding-top: 10px;
+    //         & .cardTitle {
+    //             font-size: 12px;
+    //         }
+    //         &.deliverycharge {
+    //             padding-bottom: 12px;
+    //         }
+    //     }
+    //     & .totalpayment {
+    //         padding-bottom: 12px;
+    //     }
+    //     & .totalpay {
+    //         font-size: 12px;
+    //     }
+    //     & .continueBtn {
+    //         padding: 8px 26px;
+    //     }
+        
+    // }
+    // .tablebody {
+    //     padding: 10px;
+    //     margin-top: 10px;
+    //     & .tabledata {
+    //         padding-bottom: 10px;
+    //     }
+    //     & .productImgMain {
+    //         height: 75px;
+    //         min-width: 75px;
+    //         max-width: 75px;
+    //         & .productImg {
+    //         }
+    //     }
+    //     & .productName {
+    //         font-size: 11px;
+    //         -webkit-line-clamp: 1;
+    //     }
+    //     & .deliverytilte {
+    //         font-size: 10px;
+    //     }
+    //     & .deleteIcon {
+    //         height: 19px;
+    //         width: 15px;
+    //         & img {
+    //         }
+    //     }
+    //     & .price {
+    //         font-size: 12px;
+    //         font-weight: 600;
+    //         color: $black;
+    //     }
+    //     &:hover {
+    //         & .productImgMain {
+    //             & .productImg {
+    //                 transform: scale(1);
+    //             }
+    //         }
+    //     }
+    // }
     .emptyCart {
         padding-top: 30px;
         & .emptyImg {
@@ -2783,3 +2784,288 @@
     // order review page end 
 }
 // offer page end
+
+
+// cart offcanvas start 
+.cartoffcanvas {
+    width: 400px !important;
+    & .tablebody {
+        padding: 10px 5px;
+        margin-top: 10px;
+        background: #f2f2f2;
+        & .tabledata {
+            padding-bottom: 10px;
+        }
+        & .productImgMain {
+            height: 75px;
+            min-width: 75px;
+            max-width: 75px;
+            background-color: $white;
+            & .productImg {
+                height: 60px;
+                width: 60px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .productName {
+            color: $black;
+            font-weight: 600;
+            display: inline;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            font-size: 11px;
+            -webkit-line-clamp: 2;
+        }
+        & .deliverytilte {
+            font-size: 10px;
+            font-weight: 400;
+            color: lighten($black, 50);
+        }
+        & .deleteIcon {
+            height: 19px;
+            width: 15px;
+            & img {
+                filter: brightness(0);
+            }
+        }
+        & .price {
+            font-size: 12px;
+            font-weight: 600;
+            color: $black;
+        }
+        &:hover {
+            & .productImgMain {
+                & .productImg {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+    & .btn-close {
+        background-size: 12px;
+    }
+    & .cartTitle {
+        font-size: 17px;
+        color: $black;
+    }
+    & .selectCard {
+        padding: 13px 5px;
+        border: 1px solid #e1e1e1;
+        transition: all 0.3s ease-in-out;
+        margin-top: 17px;
+        & .medicineimg {
+            height: 60px;
+        }
+        & .selectTitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: $black;
+            line-height: normal;
+        }
+        & .selectTitletwo {
+            font-size: 13px;
+            font-weight: 500;
+            color: #999999;
+            line-height: normal;
+            margin-top: 6px;
+        }
+        &:hover {
+            border-color: $theme1;
+        }
+    }
+}
+
+.summaryCard {
+    padding: 10px;
+    background: #f2f2f2;
+    margin-top:30px;
+    & .cartHeading {
+        font-size: 14px;
+        font-weight: 600;
+        color: $black;
+        padding-bottom: 10px;
+    }
+    & .cartSubheading {
+        font-size: 14px;
+        font-weight: 600;
+        color: $black;
+        padding-top: 14px;
+    }
+    & .cartdata {
+        padding-top: 10px;
+        & .cardTitle {
+            font-size: 13px;
+            font-weight: 500;
+            color: lighten($black, 40);
+            &.discount {
+                color: rgb(32, 219, 32);
+            }
+        }
+        &.deliverycharge {
+            padding-bottom: 12px;
+        }
+    }
+    & .totalpayment {
+        padding-bottom: 7px;
+    }
+    & .totalpay {
+        font-size: 13px;
+        font-weight: 600;
+        color: $black;
+    }
+    & .continueBtn {
+        padding: 8px 26px;
+    }
+    
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .cartoffcanvas {
+        width: 100% !important;
+        & .tablebody {
+            padding: 10px 2px;
+            margin-top: 10px;
+            background: #f2f2f2;
+            & .tabledata {
+                padding-bottom: 10px;
+            }
+            & .productImgMain {
+                height: 75px;
+                min-width: 75px;
+                max-width: 75px;
+                background-color: $white;
+                & .productImg {
+                    height: 60px;
+                    width: 60px;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            & .productName {
+                color: $black;
+                font-weight: 600;
+                display: inline;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                font-size: 11px;
+                -webkit-line-clamp: 2;
+            }
+            & .deliverytilte {
+                font-size: 10px;
+                font-weight: 400;
+                color: lighten($black, 50);
+            }
+            & .deleteIcon {
+                height: 19px;
+                width: 15px;
+                & img {
+                    filter: brightness(0);
+                }
+            }
+            & .price {
+                font-size: 12px;
+                font-weight: 600;
+                color: $black;
+                &.pricetwo {
+                    font-size: 11px;
+                }
+            }
+            &:hover {
+                & .productImgMain {
+                    & .productImg {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+        & .btn-close {
+            background-size: 12px;
+        }
+        & .cartTitle {
+            font-size: 17px;
+            color: $black;
+        }
+        & .selectCard {
+            padding: 13px 5px;
+            border: 1px solid #e1e1e1;
+            transition: all 0.3s ease-in-out;
+            margin-top: 17px;
+            & .medicineimg {
+                height: 60px;
+            }
+            & .selectTitle {
+                font-size: 15px;
+                font-weight: 600;
+                color: $black;
+                line-height: normal;
+            }
+            & .selectTitletwo {
+                font-size: 13px;
+                font-weight: 500;
+                color: #999999;
+                line-height: normal;
+                margin-top: 6px;
+            }
+            &:hover {
+                border-color: $theme1;
+            }
+        }
+    }
+
+    .summaryCard {
+        padding: 12px 4px;
+        margin-top:25px;
+        & .cartHeading {
+            font-size: 13px;
+        }
+        & .cartSubheading {
+            font-size: 13px;
+        }
+        & .cartdata {
+            padding-top: 10px;
+            & .cardTitle {
+                font-size: 12px;
+                font-weight: 500;
+                color: lighten($black, 40);
+            }
+            &.deliverycharge {
+                padding-bottom: 12px;
+            }
+        }
+        & .totalpayment {
+            padding-bottom: 4px;
+        }
+        & .totalpay {
+            font-size: 12px;
+            font-weight: 600;
+            color: $black;
+        }
+        & .continueBtn {
+            padding: 8px 26px;
+        }
+        
+    }
+}
+// cart offcanvas end
