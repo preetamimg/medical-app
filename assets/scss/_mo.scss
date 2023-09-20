@@ -125,11 +125,11 @@
         input:focus ~ label{
             background-color: transparent;
         }
-        & .applypinBtn {
-            font-size: 14px;
-            font-weight: 500;
-            color: $theme1;
-        }
+    }
+    & .applypinBtn {
+        font-size: 14px;
+        font-weight: 500;
+        color: $theme1;
     }
     & .pincodeLabel {
         font-size: 13px;
@@ -254,12 +254,12 @@
         }
         & .enterpin {
         }
-        & .applypinBtn {
-            font-size: 13px;
-        }
         & .detectlocation {
             & .detecticon {
             }
+        }
+        & .applypinBtn {
+            font-size: 13px;
         }
     }
 }
@@ -324,9 +324,9 @@
             }
             input:focus ~ label{
             }
-            & .applypinBtn {
-                font-size: 12px;
-            }
+        }
+        & .applypinBtn {
+            font-size: 12px;
         }
         input:focus ~ label{
             font-size: 11px;
@@ -2788,7 +2788,7 @@
 
 // cart offcanvas start 
 .cartoffcanvas {
-    width: 400px !important;
+    width: 350px !important;
     & .tablebody {
         padding: 10px 5px;
         margin-top: 10px;
@@ -2802,9 +2802,14 @@
             max-width: 75px;
             background-color: $white;
             & .productImg {
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
                 transition: all 0.3s ease-in-out;
+            }
+            & .pack {
+                font-size: 11px;
+                color: $black;
+                font-weight: 500;
             }
         }
         & .productName {
@@ -2875,12 +2880,67 @@
             border-color: $theme1;
         }
     }
+    & .offcanvas-footer {
+        padding: 16px;
+        & .billed {
+            font-size: 14px;
+            font-weight: 500;
+            color:#525252b3;
+            line-height: normal;
+        }
+        & .pincode {
+            font-size: 14px;
+            line-height: normal;
+            margin-top: 1px;
+        }
+        & .changeadd {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(87, 87, 207);
+        }
+        & .amoutpay {
+            font-size: 14px;
+            font-weight: 500;
+            color: $black;
+        }
+        & .totalpay {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(24, 194, 24);
+        }
+        & .applyBtn {
+            padding: 7px 17px;
+        }
+        & .locationicon {
+            height: 14px;
+            margin-bottom: 2px;
+            & img {
+                filter: brightness(0);
+            }
+        }
+    }
+    .qualiltymain {
+        height: 27px;
+        & .qualityicon {
+            width: 27px;
+            font-size: 18px;
+            font-weight: 600;
+            color: $black;
+            cursor: pointer;
+        }
+        & .quantityinput {
+            width: 32px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $black;
+        }
+    }
 }
 
 .summaryCard {
     padding: 10px;
     background: #f2f2f2;
-    margin-top:30px;
+    margin-top:18px;
     & .cartHeading {
         font-size: 14px;
         font-weight: 600;
