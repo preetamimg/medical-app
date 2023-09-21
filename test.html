@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,177 +12,181 @@
     <!-- SWIPER CSS-->
     <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
 </head>
+
 <body>
+    <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
+        <img src="assets/img/labtest/whatspp.png" alt="whatspp" class="h-100 w-100 img-fluid">
+    </a>
     <!-- navbar start  -->
     <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
         <div class="headermain w-100 position-relative bg-white">
-            <div class="row m0 align-items-center justify-content-between">
-                <div class="col-auto">
-                <div class="d-flex align-items-center gap-md-3 gap-2">
-                    <button class="navbar-toggler p-0 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navoffcanvas" aria-controls="navoffcanvas" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><img src="assets/img/menu.svg" alt="menu" class="h-100 w-100 img-fluid"></span>
-                    </button>
-                    <a class="navbar-brand navLogo m-0" href="index.html">
-                    <img src="assets/img/mainlogo.png" alt="logo" class="h-100">
-                    </a>
-                    <button class="btn pincodeBtn pe-0 ps-sm-3 ps-2 dflex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="d-flex align-items-center justify-content-center locationicon">
-                            <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
-                            </div>
-                            <div class="deliveryAdd text-start">Delivery Address</div>
-                        </div>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="selectAddress text-start">Select Adderss</div>
-                            <span class="d-flex align-items-center justify-content-center dropdwonarrow">
-                            <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
-                            </span>
-                        </div>
-                    </button>
-                </div>
-                </div>
-                <div class="col d-md-block d-none ">
-                <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
-                    <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+        <div class="row m0 align-items-center justify-content-between">
+            <div class="col-auto">
+            <div class="d-flex align-items-center gap-md-3 gap-2">
+                <button class="navbar-toggler p-0 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navoffcanvas" aria-controls="navoffcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><img src="assets/img/menu.svg" alt="menu" class="h-100 w-100 img-fluid"></span>
+                </button>
+                <a class="navbar-brand navLogo m-0" href="index.html">
+                <img src="assets/img/mainlogo.png" alt="logo" class="h-100">
+                </a>
+                <button class="btn pincodeBtn pe-0 dflex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+                <div class="d-flex align-items-center gap-1">
                     <div class="d-flex align-items-center justify-content-center locationicon">
-                        <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
                     </div>
                     <div class="deliveryAdd text-start">Delivery Address</div>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                    <div class="selectAddress text-start">Select Adderss</div>
                     <span class="d-flex align-items-center justify-content-center dropdwonarrow">
-                        <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
                     </span>
-                    </button> -->
-                    <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
-                    <div class="d-flex align-items-center justify-content-center locationicon">
-                        <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
-                    </div>
-                    <div class="deliveryAdd text-start">Delivery Address</div>
-                    <span class="d-flex align-items-center justify-content-center dropdwonarrow">
-                        <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
-                    </span>
-                    </button> -->
-                    <div class="d-flex w-100 h-100 px2 align-items-center searchData">
-                    <!-- <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
-                        <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
-                    </span> -->
-                    <div class="dropdown searchdrop position-relative border-end">
-                        <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Medicine
-                        </button>
-                        <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
-                        <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
-                        <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
-                        <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                </div>
+                </button>
+            </div>
+            </div>
+            <div class="col d-md-block d-none ">
+            <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
+                <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+                </button> -->
+                <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+                </button> -->
+                <div class="d-flex w-100 h-100 px2 align-items-center searchData">
+                <!-- <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
+                    <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                </span> -->
+                <div class="dropdown searchdrop position-relative border-end">
+                    <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Medicine
+                    </button>
+                    <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center position-relative w-100 h-100">
+                    <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                    <button class="btn searchBtn rounded-5 h-100">Search</button>
+                    <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                    <div class=" h-100 overflow-y-auto ">
+                        <ul class="list-unstyled h-100">
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
                         </ul>
                     </div>
-                    <div class="d-flex align-items-center position-relative w-100 h-100">
-                        <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
-                        <button class="btn searchBtn rounded-5 h-100">Search</button>
-                        <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
-                        <div class=" h-100 overflow-y-auto ">
-                            <ul class="list-unstyled h-100">
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
                     </div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-auto">
-                <div class="d-flex align-items-center headerIcons">
-                    <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
-                        <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
-                    </a>
-                    <a class="cardBtn d-flex align-items-center justify-content-center position-relative" data-bs-toggle="offcanvas" href="#cartoffcanvas" role="button" aria-controls="cartoffcanvas">
-                        <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
-                        <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
-                    </a>
-                    <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
-                        <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
-                    </a>
-                    <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
-                        <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
-                            <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
-                        </span>
-                        <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
-                        <span class="d-lg-inline-flex d-none"> /</span>
-                        <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
-                    </a>
                 </div>
                 </div>
             </div>
+            </div>
+            <div class="col-auto">
+            <div class="d-flex align-items-center headerIcons">
+                <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
+                    <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                </a>
+                <a class="cardBtn d-flex align-items-center justify-content-center position-relative" data-bs-toggle="offcanvas" href="#cartoffcanvas" role="button" aria-controls="cartoffcanvas">
+                    <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
+                </a>
+                <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
+                    <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
+                </a>
+                <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
+                    <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                        <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    </span>
+                    <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
+                    <span class="d-lg-inline-flex d-none"> /</span>
+                    <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+                </a>
+            </div>
+            </div>
+        </div>
         </div>
         <div class="offcanvasNav bg-light h100 align-items-center w-100">
             <ul class="navbar-items d-flex list-unstyled m-0 justify-content-center flex-grow-1 pe3">
@@ -208,414 +213,54 @@
     </nav>
     <!-- navbar start  -->
 
-    <main class="main">
+    <main class="main bg-light">
 
-        <!-- cart section start  -->
-        <div class="container-fluid offersection position-relative">
-            <div class="row">
-                <div class="pageHeading col-12">Offers and Coupan</div>
-                <div class="col-12 pt-3">
-                    <nav aria-label="breadcrumb" class="pagedetail">
-                        <ol class="breadcrumb m-0 align-items-center">
-                            <li class="breadcrumb-item pagename homepage"><a href="index2.html" class="position-relative text-decoration-none">Home</a></li>
-                            <li class="breadcrumb-item pagename activepage p-0 active" aria-current="page">Offers</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-            <div class="row pt-sm-4 pt-3 accountPage ">
-                <div class="col-lg-3 mb-lg-0 mb-3">
-                    <div class="categorycard z-1 sticky-top bg-light rounded-2">
-                        <div class="row categoryfilter">
-                            <div class="col-12 ">
-                                <div class="d-flex align-items-center">
-                                    <div class="filterheading d-lg-block d-none">Filter</div>
-                                    <div class="filterheading d-lg-none d-inline">Filter:-</div>
-                                    <div class="dropdown filterdropdown d-lg-none d-block">
-                                        <button class="btn dropdown-toggle filterbtn border-0" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Medicine
-                                        </button>
-                                        <ul class="dropdown-menu filtermenu overflow-y-auto">
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3s" >
-                                                    <label class="form-check-label formCheckLbl" for="flexCheckChecked3s">
-                                                        Medicine
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="labtest" >
-                                                    <label class="form-check-label formCheckLbl" for="labtest">
-                                                        Lab Test
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="babyproduct" >
-                                                    <label class="form-check-label formCheckLbl" for="babyproduct">
-                                                        Baby Product
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="medicaldevices" >
-                                                    <label class="form-check-label formCheckLbl" for="medicaldevices">
-                                                        Medical Devices
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="beautyproduct" >
-                                                    <label class="form-check-label formCheckLbl" for="beautyproduct">
-                                                        Beauty Product
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="supplementaryproduct" >
-                                                    <label class="form-check-label formCheckLbl" for="supplementaryproduct">
-                                                        Supplementary Product
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="babyproduct1" >
-                                                    <label class="form-check-label formCheckLbl" for="babyproduct1">
-                                                        Baby Product
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="medicaldevices1" >
-                                                    <label class="form-check-label formCheckLbl" for="medicaldevices1">
-                                                        Medical Devices
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="beautyproduct1" >
-                                                    <label class="form-check-label formCheckLbl" for="beautyproduct1">
-                                                        Beauty Product
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li class="innerdata">
-                                                <div class="form-check formCheckWrapper">
-                                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="supplementaryproduct1" >
-                                                    <label class="form-check-label formCheckLbl" for="supplementaryproduct1">
-                                                        Supplementary Product
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+        <!-- lab test hero section start  -->
+        <div class="container-fluid labtestherosection">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="labads overflow-hidden rounded-2 h-100">
+                        <div class="swiper mySwiper h-100 labtestslider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest1.png" alt="lab test" class="h-100 w-100 img-fluid">
                                     </div>
                                 </div>
-                                
-                            </div>
-                            <div class="col-12 d-lg-block d-none pt-2 border-top">
-                                <div class="form-check formCheckWrapper">
-                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="flexCheckChecked3s" >
-                                    <label class="form-check-label formCheckLbl" for="flexCheckChecked3s">
-                                        Medicine
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 d-lg-block d-none">
-                                <div class="form-check formCheckWrapper">
-                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="labtest" >
-                                    <label class="form-check-label formCheckLbl" for="labtest">
-                                        Lab Test
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 d-lg-block d-none">
-                                <div class="form-check formCheckWrapper">
-                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="babyproduct" >
-                                    <label class="form-check-label formCheckLbl" for="babyproduct">
-                                        Baby Product
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 d-lg-block d-none">
-                                <div class="form-check formCheckWrapper">
-                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="medicaldevices" >
-                                    <label class="form-check-label formCheckLbl" for="medicaldevices">
-                                        Medical Devices
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 d-lg-block d-none">
-                                <div class="form-check formCheckWrapper">
-                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="beautyproduct" >
-                                    <label class="form-check-label formCheckLbl" for="beautyproduct">
-                                        Beauty Product
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 d-lg-block d-none">
-                                <div class="form-check formCheckWrapper">
-                                    <input class="form-check-input formCheckInp" type="checkbox" value="" id="supplementaryproduct" >
-                                    <label class="form-check-label formCheckLbl" for="supplementaryproduct">
-                                        Supplementary Product
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9 offerCard ">
-                    <div class="row pt4 g-2">
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer1.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                            <div class="offerHeading">
-                                                <div class="offerCode">NMSNEW</div>
-                                                <div class="couponCode">Coupon Code</div>
-                                            </div>
-                                            <div>
-                                            <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                            </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest2" alt="lab test" class="h-100 w-100 img-fluid">
                                     </div>
                                 </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest2.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest3.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest4.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest5.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-opacity-10 bg-info overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer2.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
-                            <div>
-                                <div class="cardimg overflow-hidden rounded-2">
-                                    <img src="assets/img/offer/offer4.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                </div>
-                                <div class="carrdData">
-                                    <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                    </div>
-                                    <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer4.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer5.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer6.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer7.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer8.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                                <div>
-                                    <div class="cardimg overflow-hidden rounded-2">
-                                        <img src="assets/img/offer/offer9.png" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div class="carrdData">
-                                        <div class="offerSection mb-2 d-flex justify-content-between">
-                                        <div class="offerHeading">
-                                            <div class="offerCode">NMSNEW</div>
-                                            <div class="couponCode">Coupon Code</div>
-                                        </div>
-                                        <div>
-                                        <button href="javascript:;" class="text-decoration-none applyBtn applyBtn rounded-1">COPY CODE</button>
-                                        </div>
-                                        </div>
-                                        <div class="carddetail pb-3">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-itemscenter justify-content-between cardContent border-top">
-                                    <div class=" offerValid">VALID TILL 30 SEP 2023</div>
-                                    <a href="javascript:;" class="text-decoration-none viewDetails rounded-1">View Details</a>
-                                </div>
-                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="emptyCart d-none">
-                <div class="emptyImg">
-                    <img src="assets/img/futerebrand/empty-cart.svg" alt="empty" class="h-100 w-100 img-fluid object-fit-contain">
-                </div>
-                <div class="emptyTitle text-center">No offers</div>
-                <div class="emptybtnmain text-center d-flex align-items-center justify-content-center">
-                    <a href="javascript:;" class="applyBtn emptyBtn rounded-1 text-decoration-none">Continue Shopping</a>
-                </div>
-            </div>
-
             <!-- search offcanvas start  -->
             <div class="offcanvas offcanvas-top searchOffcanvas" tabindex="-1" id="searchoffcanvas" aria-labelledby="offcanvasTopLabel">
-                <div class="offcanvas-body p-sm-3 p-2 d-flex align-items-center overflow-visible">
+                <div class="offcanvas-body d-flex align-items-center overflow-visible">
                     <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
                         <div class="d-flex w-100 h-100 px2 align-items-center searchData">
                         <div class="dropdown searchdrop position-relative border-end">
@@ -719,11 +364,208 @@
             </div>
             <!-- search offcanvas end  -->
         </div>
-        <!-- cart section end  -->
-
+        <!-- lab test hero section end -->
+        
+        <!--lab test detail section start  -->
+        <div class="container-fluid labdetailsection ">
+            <div class="heading">Lab Test Name</div>
+            <div class="row detailmain row-cols-lg-3 row-cols-sm-2 row-cols-1 g-3 pt-3">
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
+                        <div class="labName">
+                            Lab Name:- Apollo Women health-Basic
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                            <div class="totaltests mt-0">
+                                Total Tests:30
+                            </div>
+                            <!-- <div class="totaltests mt-0">
+                                Timing: 10:00AM - 7:00 PM
+                            </div> -->
+                        </div>
+                        <div class="totaltests">
+                            Glucose Random
+                        </div>
+                        <div class="totaltests totalteststwo ">
+                            Tyyroiv Stimulatig Hormon Tish  <a href="lab-test-detail.html" class="text-decoration-none more stretched-link">+28 More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--lab test detail section end  -->
     </main>
 
-    <!-- footer start -->
+
+    <!-- footer start  -->
     <div class="container-fluid footer ">
         <div class="row align-items-lg-center gap-sm-0 gap-3 findusSection commonSection">
             <div class="col-sm-4 ">
@@ -831,32 +673,32 @@
             </div>
         </div>
         <div class="row paymentMain pt4 border-bottom border-secondary border-opacity-25">
-            <div class="col-12 footerHeading mb-0 text-sm-start text-center">OUR PAYMENT PARTNERS</div>
-            <div class="col-12 pt-sm-3 pt-2">
-                <div class="d-flex flex-wrap align-items-center gap-md-4 gap-2 justify-content-sm-start justify-content-center">
-                <div class="paymentImg">
-                    <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
-                </div>
-                <div class="paymentImg">
-                    <img src="assets/img/futerebrand/phonepay.svg" alt="payment" class="h-100">
-                </div>
-                <div class="paymentImg">
-                    <img src="assets/img/futerebrand/rupay.svg" alt="payment" class="h-100">
-                </div>
-                <div class="paymentImg">
-                    <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
-                </div>
-                <!-- <div class="paymentImg">
-                    <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
-                </div> -->
-                <div class="paymentImg">
-                    <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
-                </div>
-                <!-- <div class="paymentImg">
-                    <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
-                </div> -->
-                </div>
+        <div class="col-12 footerHeading mb-0 text-sm-start text-center">OUR PAYMENT PARTNERS</div>
+        <div class="col-12 pt-sm-3 pt-2">
+            <div class="d-flex flex-wrap align-items-center gap-md-4 gap-2 justify-content-sm-start justify-content-center">
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
             </div>
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/phonepay.svg" alt="payment" class="h-100">
+            </div>
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/rupay.svg" alt="payment" class="h-100">
+            </div>
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
+            </div>
+            <!-- <div class="paymentImg">
+                <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
+            </div> -->
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
+            </div>
+            <!-- <div class="paymentImg">
+                <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
+            </div> -->
+            </div>
+        </div>
         </div>
     </div>
     <div class="container-fluid copyrightmain">
@@ -880,6 +722,13 @@
     <!-- SWIPER JS  -->
     <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
 
+    <!-- toolpits start  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- toolpits end  -->
+
     <!-- location offcanvas start-->
     <div class="offcanvas offcanvas-end deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header bg-light border-bottom">
@@ -890,10 +739,10 @@
         </div>
         <div class="offcanvas-body">
             <div class="row addressmain">
-                <div class="col-12 deliveryData fw-medium">
-                    Get access to your Address, Order, and Wishlist
-                </div>
-                <div class="col-12 mx-auto py3">
+            <div class="col-12 deliveryData fw-medium">
+                Get access to your Address, Order, and Wishlist
+            </div>
+            <div class="col-12 mx-auto py3">
             <button type="button" class="btn mxuto w-100 addaddressbtn justify-content-center rounded-1 d-flex flexcolumn align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
                 <span class="d-flex align-items-center justify-content-center plusicon">
                     <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
@@ -1123,12 +972,13 @@
                     <div class="col">
                         <div class="row align-items-center">
                             <div class="tabledata col-12 ps-0">
-                                <div class="d-flex justify-content-between gap-2">
-                                    <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
-                                    <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
-                                        <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
-                                    </button>
-                                </div>
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
                             </div>
                             <div class="col-auto px-0">
                             <div class="d-flex flex-column">
@@ -1236,6 +1086,14 @@
                         <div class="cartHeading col-12 ">
                         Cart Breakdown
                         </div>
+                        <!-- <div class="col-12 pb-sm-4 pb-3">
+                            <div class="inputpinmain coupanCode rounded5 d-flex align-items-center position-relative w-100">
+                                <input type="text" id="Pincode" autocomplete="url" class="form-control  ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                                <label for="Pincode" class="pincodeLabel">Apply coupon</label>
+                                <button class="btn ps-1 applypinBtn bg-transparent border-0">Apply</button>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-12 cartSubheading border-top">Bill Summary</div> -->
                         <div class="col-12 cartdata border-top ">
                             <div class="d-flex  align-items-center justify-content-between">
                                 <div class="cardTitle">Cart Total</div>
@@ -1266,6 +1124,11 @@
                                 <div class="totalpay">Rs.2534.00</div>
                             </div>
                         </div>
+                        <!-- <div class="col-12 cartdata border-top text-center ">
+                            <div class="d-flex align-items-center justify-content-center py-2">
+                                <a href="deliveryaddress.html" class="continueBtn rounded-2 applyBtn text-decoration-none">Continue</a>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
                 </div>
@@ -1310,81 +1173,81 @@
         </div>
     </div>
     <!-- cart offcanvas end  -->
-    
+
     <!-- address offcanvas start  -->
     <div class="offcanvas offcanvas-end deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header border-bottom bg-light">
-        <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Add Address</div>
-        <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-        </button>
+            <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Add Address</div>
+            <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+            </button>
         </div>
         <div class="offcanvas-body">
-        <div class="row locationcontent">
-            <div class="col-12">
-            <div class="inputpinmain position-relative w-100">
-                <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
-                <label for="House" class="pincodeLabel">House No.</label>
-            </div>
-            </div>
-            <div class="col-12">
-            <div class="inputpinmain position-relative w-100">
-                <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
-                <label for="streetno1" class="pincodeLabel">Street No.1</label>
-            </div>
-            </div>
-            <div class="col-12">
-            <div class="inputpinmain position-relative w-100">
-                <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                <label for="streetno2" class="pincodeLabel">Street No.2</label>
-            </div>
-            </div>
-            <div class="col-12">
-            <div class="inputpinmain position-relative w-100">
-                <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                <label for="city" class="pincodeLabel">City</label>
-            </div>
-            </div>
-            <div class="col-12">
-            <div class="inputpinmain position-relative w-100">
-                <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                <label for="state" class="pincodeLabel">State</label>
-            </div>
-            </div>
-            <div class="col-12">
-            <div class="inputpinmain position-relative w-100">
-                <input type="text" id="Pincode" class="form-control shadow-none  pincodeInput w-100 ps-0">
-                <label for="Pincode" class="pincodeLabel">Pincode</label>
-            </div>
-            </div>
-            <div class="col-12 pt-2">
-            <div class="d-flex align-items-center gap-3">
-                <div class="form-check p-0">
-                    <input class="form-check-input checkbox" name="check" hidden type="radio" checked value="" id="Home">
-                    <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Home">
-                    Home
+            <div class="row locationcontent">
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
+                    <label for="House" class="pincodeLabel">House No.</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
+                    <label for="streetno1" class="pincodeLabel">Street No.1</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="streetno2" class="pincodeLabel">Street No.2</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="city" class="pincodeLabel">City</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="state" class="pincodeLabel">State</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="Pincode" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="Pincode" class="pincodeLabel">Pincode</label>
+                </div>
+                </div>
+                <div class="col-12 pt-2">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="form-check p-0">
+                        <input class="form-check-input checkbox" name="check" hidden type="radio" checked value="" id="Home">
+                        <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Home">
+                        Home
+                        </label>
+                    </div>
+                    <div class="form-check p-0">
+                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
+                    <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Work">
+                        Work
                     </label>
+                    </div>
+                    <div class="form-check p-0">
+                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
+                    <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Other">
+                        Other
+                    </label>
+                    </div>
                 </div>
-                <div class="form-check p-0">
-                <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
-                <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Work">
-                    Work
-                </label>
-                </div>
-                <div class="form-check p-0">
-                <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
-                <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Other">
-                    Other
-                </label>
                 </div>
             </div>
-            </div>
-        </div>
         </div>
         <div class="offcnavas-footer bglight border-top">
-        <div class="d-flex align-items-center justify-content-center">
-            <button type="button" class="btn applyBtn w-100">Save and Continue</button>
-        </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn applyBtn w-100">Save and Continue</button>
+            </div>
         </div>
     </div>
     <!-- address offcanvas end  -->
@@ -1448,7 +1311,7 @@
         </div>
     </div>
     <!-- edite profile offcanvas  end -->
-
+    
     <!-- how to use modal  -->
     <div class="modal fade contentModal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modalDialog modal-dialog-centered">
@@ -1479,7 +1342,7 @@
     </div>
     <!-- how to use modal end   -->
 
-    <!-- navbar offcanvas start-->
+    <!-- navbar offcanvas start -->
     <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header bg-light border-bottom align-items-start">
         <div class="offcanvas-title offcanvasLogo d-flex align-items-center justify-content-center" id="offcanvasExampleLabel">
@@ -1512,7 +1375,7 @@
         </ul>
         </div>
     </div>
-    <!-- navbar offcanvas end-->
+    <!-- navbar offcanvas end -->
 
     <!-- signup modal start -->
     <div class="modal fade signupModal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1594,7 +1457,7 @@
         breakpoints: {
             0: {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 10,
             },
             500: {
             slidesPerView: 3,
@@ -1661,12 +1524,12 @@
         // spaceBetween: 10,
         breakpoints: {
             0: {
-            slidesPerView: 1,
-            spaceBetween: 0,
+            slidesPerView: 2,
+            spaceBetween: 5,
             },
             400: {
             slidesPerView: 2,
-            // spaceBetween: 20,
+            spaceBetween: 10,
             },
             768: {
             slidesPerView: 3,
@@ -1694,12 +1557,12 @@
         // spaceBetween: 10,
         breakpoints: {
         0: {
-            slidesPerView: 1,
-            spaceBetween: 0,
+            slidesPerView: 2,
+            spaceBetween: 5,
         },
         400: {
             slidesPerView: 2,
-            // spaceBetween: 20,
+            spaceBetween: 10,
         },
         768: {
             slidesPerView: 3,
@@ -1722,17 +1585,17 @@
     </script>
 
     <script>
-    var swiper = new Swiper(".newarrivalslider", {
+        var swiper = new Swiper(".newarrivalslider", {
         // slidesPerView: 1,
         // spaceBetween: 10,
         breakpoints: {
         0: {
-            slidesPerView: 1,
-            spaceBetween: 0,
+            slidesPerView: 2,
+            spaceBetween: 5,
         },
         400: {
             slidesPerView: 2,
-            // spaceBetween: 20,
+            spaceBetween: 10,
         },
         768: {
             slidesPerView: 3,
@@ -1788,6 +1651,7 @@
     });
     </script>
 
+    <!-- hero slider start  -->
     <script>
         var swiper = new Swiper(".heroslider", {
         loop: true,
@@ -1808,6 +1672,108 @@
 
         
     </script>
+    <!-- hero slider end -->
 
+    <!-- lab test banner slider start  -->
+    <script>
+        var swiper = new Swiper(".labtestslider", {
+            spaceBetween:10,
+            autoplay: {
+                delay: 2000,
+                // disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+            breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            540: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            1191: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            1321: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+        },
+        });
+    </script>
+    <!-- lab test banner slider end  -->
+
+    <!-- partner slider start -->
+    <script>
+        var swiper = new Swiper(".partnerSlider", {
+            spaceBetween: 20,
+            // centeredSlides: true,
+            loop: true,
+            speed:2000,
+            autoplay: {
+                delay:0,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                slidesPerView: 2.5,
+                spaceBetween: 15,
+                },
+                640: {
+                slidesPerView: 4,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                },
+                1024: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- partner slider  end-->
+
+    <!-- testimonal slider  start -->
+    <script>
+        var swiper = new Swiper(".testimonalslider", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                991: {
+                slidesPerView:3,
+                spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- testimonal slider  end -->
 </body>
+
 </html>

@@ -6182,6 +6182,8 @@
     
     }
 }
+
+
 // edite profile offcanvas 
 .editeProfileOffcanvas{
     & .offcanvasHeader{
@@ -6416,7 +6418,8 @@
         font-size: 16px;
         font-weight: 700;
         color: $black;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
+        line-height: normal;
     }
     & .namePerson{
         
@@ -6442,14 +6445,27 @@
         color:$black;
         width: 90%;
     }
+    & .cardheader {
+        gap: 12px;
+    }
+    & .deletebtn {
+        height: 14px;
+        min-width: 14px;
+        max-width: 14px;
+    }
+    & .editbtn {
+        height: 14px;
+        width: 14px;
+    }
+
 }
 .selectAddressInput:checked ~ .addressLabel  {
-   border-color: $theme1;
-   & .checkBox{
+    border-color: $theme1;
+    & .checkBox{
     // background-color: $theme1;
-    border: none;
-    width: 20px;
-    height: 20px;
+        // border: none;
+        // width: 20px;
+        // height: 20px;
     & img{
         visibility: visible !important;
         opacity: 1 !important;
