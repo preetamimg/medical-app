@@ -3681,7 +3681,8 @@
     padding-top: 45px;
     & .cbacard {
         padding: 15px;
-        top: 130px;
+        top: 134px;
+        position: sticky;
         & .cbaHeading {
             font-size: 18px;
             font-weight: 700;
@@ -3733,6 +3734,163 @@
                 color: $black;
                 line-height: normal;
                 margin-top: 1px;
+            }
+        }
+    }
+    & .cbarightcard {
+        padding: 20px;
+        & .cardHeading {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+            line-height: normal;
+        }
+        & .aboutdata {
+            font-size: 14px;
+            color: #222222;
+            margin-top: 13px;
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .cbaSection {
+        padding-top: 40px;
+        & .cbacard {
+            & .cbaHeading {
+            }
+            & .cbadata {
+            }
+            & .getreport {
+                & .timeicon {
+                }
+                & .time {
+                }
+                &.norequire {
+                }
+            }
+            & .cardfooter {
+                & .mrp {
+                }
+                & .offertitle {
+                    & del {
+                    }
+                }
+                & .price {
+                }
+            }
+        }
+        & .cbarightcard {
+            margin-top: 35px;
+            & .cardHeading {
+            }
+            & .aboutdata {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .cbaSection {
+        padding-top: 40px;
+        & .cbacard {
+            padding: 15px;
+            & .cbaHeading {
+                font-size: 17px;
+            }
+            & .cbadata {
+            }
+            & .getreport {
+                & .timeicon {
+                }
+                & .time {
+                }
+                &.norequire {
+                }
+            }
+            & .cardfooter {
+                & .mrp {
+                }
+                & .offertitle {
+                    & del {
+                    }
+                }
+                & .price {
+                }
+            }
+        }
+        & .cbarightcard {
+            padding: 15px;
+            margin-top: 30px;
+            & .cardHeading {
+                font-size: 17px;
+            }
+            & .aboutdata {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .cbaSection {
+        padding-top: 30px;
+        & .cbacard {
+            padding: 12px;
+            & .cbaHeading {
+                font-size: 16px;
+            }
+            & .cbadata {
+                font-size: 12px;
+                margin-top: 7px;
+            }
+            & .getreport {
+                font-size: 13px;
+                & .timeicon {
+                    height: 15px;
+                    max-width: 15px;
+                    min-width: 15px;
+                }
+                & .time {
+                }
+                &.norequire {
+                }
+            }
+            & .cardfooter {
+                & .mrp {
+                }
+                & .offertitle {
+                    & del {
+                    }
+                }
+                & .price {
+                }
+            }
+        }
+        & .cbarightcard {
+            padding: 12px;
+            margin-top: 30px;
+            & .cardHeading {
+                font-size: 16px;
+            }
+            & .aboutdata {
+                font-size: 12px;
+                margin-top: 10px;
             }
         }
     }
