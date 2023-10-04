@@ -1596,6 +1596,7 @@
 // cta section start 
 .ctaSection {
     padding-bottom:50px;
+    
     & .bookappoitment {
         background: rgba($theme1, 0.3);
         padding: 22px 6px;
@@ -3824,6 +3825,7 @@
         padding-top: 40px;
         & .cbacard {
             padding: 15px;
+            position: unset;
             & .cbaHeading {
                 font-size: 17px;
             }
