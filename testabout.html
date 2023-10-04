@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
+    <!-- <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
         <img src="assets/img/labtest/whatspp.png" alt="whatspp" class="h-100 w-100 img-fluid">
-    </a>
+    </a> -->
     <!-- navbar start  -->
     <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
         <div class="headermain w-100 position-relative bg-white">
@@ -46,151 +46,145 @@
             </div>
             </div>
             <div class="col d-md-block d-none ">
-                <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
-                    <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
-                    <div class="d-flex align-items-center justify-content-center locationicon">
-                        <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
-                    </div>
-                    <div class="deliveryAdd text-start">Delivery Address</div>
-                    <span class="d-flex align-items-center justify-content-center dropdwonarrow">
-                        <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
-                    </span>
-                    </button> -->
-                    <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
-                    <div class="d-flex align-items-center justify-content-center locationicon">
-                        <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
-                    </div>
-                    <div class="deliveryAdd text-start">Delivery Address</div>
-                    <span class="d-flex align-items-center justify-content-center dropdwonarrow">
-                        <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
-                    </span>
-                    </button> -->
-                    <div class="d-flex w-100 h-100 px2 align-items-center searchData">
-                    <!-- <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
-                        <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
-                    </span> -->
-                    <div class="dropdown searchdrop position-relative border-end">
-                        <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Medicine
-                        </button>
-                        <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
-                        <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
-                        <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
-                        <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+            <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
+                <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+                </button> -->
+                <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+                </button> -->
+                <div class="d-flex w-100 h-100 px2 align-items-center searchData">
+                <!-- <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
+                    <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                </span> -->
+                <div class="dropdown searchdrop position-relative border-end">
+                    <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Medicine
+                    </button>
+                    <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center position-relative w-100 h-100">
+                    <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                    <button class="btn searchBtn rounded-5 h-100">Search</button>
+                    <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                    <div class=" h-100 overflow-y-auto ">
+                        <ul class="list-unstyled h-100">
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
                         </ul>
                     </div>
-                    <div class="d-flex align-items-center position-relative w-100 h-100">
-                        <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
-                        <button class="btn searchBtn rounded-5 h-100">Search</button>
-                        <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
-                        <div class=" h-100 overflow-y-auto ">
-                            <ul class="list-unstyled h-100">
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
-                                Medical
-                                <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
-                                    <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-                                </button>
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
                     </div>
-                    </div>
+                </div>
                 </div>
             </div>
+            </div>
             <div class="col-auto">
-                <div class="d-flex align-items-center headerIcons">
-                    <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
-                        <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
-                    </a>
-                    <a class="cardBtn d-flex align-items-center justify-content-center position-relative" data-bs-toggle="offcanvas" href="#cartoffcanvas" role="button" aria-controls="cartoffcanvas">
-                        <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
-                        <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
-                    </a>
-                    <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
-                        <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
-                    </a>
-                    <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
-                        <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+            <div class="d-flex align-items-center headerIcons">
+                <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
+                    <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                </a>
+                <a class="cardBtn d-flex align-items-center justify-content-center position-relative" data-bs-toggle="offcanvas" href="#cartoffcanvas" role="button" aria-controls="cartoffcanvas">
+                    <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
+                </a>
+                <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
+                    <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
+                </a>
+                <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
+                    <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
                         <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
-                        </span>
-                        <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
-                        <span class="d-lg-inline-flex d-none"> /</span>
-                        <span class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
-                    </a>
-                    <!-- <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
-                        <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
-                        <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
-                        </span>
-                        <span class="login loginsign d-lg-inline-flex d-none">Log Out</span> 
-                    </a> -->
-                </div>
+                    </span>
+                    <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
+                    <span class="d-lg-inline-flex d-none"> /</span>
+                    <span class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+                </a>
+            </div>
             </div>
         </div>
         </div>
@@ -219,10 +213,10 @@
     </nav>
     <!-- navbar start  -->
 
-    <main class="main bg-light">
+    <main class="main">
 
         <!-- lab test hero section start  -->
-        <div class="container-fluid labtestherosection">
+        <div class="container-fluid labtestherosection testaboutpage">
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <div class="labads overflow-hidden rounded-2 h-100">
@@ -372,301 +366,82 @@
         </div>
         <!-- lab test hero section end -->
         
-        <!--lab test detail section start  -->
-        <div class="container-fluid labdetailsection ">
-            <div class="heading">Lab Location</div>
-            <div class="row detailmain row-cols-lg-3 row-cols-sm-2 row-cols-1 g-sm-2 g-3 pt-3">
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
-                            </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
-                            </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
+        <!-- complete blood count section start -->
+        <div class="container-fluid cbaSection testaboutpage">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="bg-light z-1 rounded-2 cbacard shadow-sm border">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <div>
+                                        <div class=" cbaHeading">
+                                            PTT
+                                        </div>
+                                        <div class=" cbadata">
+                                            Partial thromboplastin time (PTT) is a blood test that looks at how long it takes for blood to clot.
+                                        </div>
+                                    </div>
+                                    <div class="labimg bg-white border rounded-2">
+                                        <img src="assets/img/labtest/partner2.png" alt="lab name" class="h-100 w-100 object-fit-contain img-fluid">
                                     </div>
                                 </div>
-                                <div class="price">&#8377; 520</div>
                             </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
+                            <div class="col-12 py-2">
+                                <div class="getreport d-flex align-items-center gap-2 py-1 text-secondary">
+                                    <span class="time text-black">Category: </span>:  Thyroid
+                                </div>
+                            </div>
+                            <div class="col-12 border-top cardfooter text-center">
+                                <button class="btn applyBtn">Add To Cart</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
+                <div class="col-lg-8">
+                    <div class="cbarightcard bg-light shadow-sm rounded-2 border">
+                        <div class="row">
+                            <div class="col-12 heading">About </div>
+                            <div class="aboutheading pt-sm-2 pt-1">
+                                Partial thromboplastin time (PTT)
                             </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
+                            <div class="aboutdata">
+                                Email this page to a friend print Facebook Twitter Pinterest Partial thromboplastin time (PTT) is a blood test that looks at how long it takes for blood to clot. It can help tell if your have a bleeding problem or if your blood does not clot properly. This test measures the function of a part of the coagulation (clotting) system.
                             </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
-                                    </div>
-                                </div>
-                                <div class="price">&#8377; 520</div>
+                            <div class="aboutdata">
+                                A related blood test is prothrombin time (PT). which measures the funcation of a different part of the clottig system.
                             </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
+                            <div class="aboutheading">
+                                How the test is Performed 
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
+                            <div class="aboutdata">
+                                A blood sample is needed. If you are taking any blood-thinning medicines. you will be watched for signs of bleeding.
                             </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
+                            <div class="aboutheading">
+                                How to Prepare for the test
                             </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
-                                    </div>
-                                </div>
-                                <div class="price">&#8377; 520</div>
+                            <div class="aboutdata">
+                                Your health care provider may tell you to temporarily stop taking medicines that may affect the test result. Be sure to tell your provier about all the Medicines you take. Also, tell your provider about any herbal remedines you take.
                             </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
+                            <div class="aboutheading">
+                                How to Prepare for the test
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
+                            <div class="aboutdata">
+                                Your health care provider may tell you to temporarily stop taking medicines that may affect the test result. Be sure to tell your provier about all the Medicines you take. Also, tell your provider about any herbal remedines you take.
                             </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
+                            <div class="aboutheading">
+                                How the test will feel
                             </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
-                                    </div>
-                                </div>
-                                <div class="price">&#8377; 520</div>
-                            </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
-                            </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
-                            </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
-                                    </div>
-                                </div>
-                                <div class="price">&#8377; 520</div>
-                            </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
-                            </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
-                            </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
-                                    </div>
-                                </div>
-                                <div class="price">&#8377; 520</div>
-                            </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
-                            </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
-                            </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
-                                    </div>
-                                </div>
-                                <div class="price">&#8377; 520</div>
-                            </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="detailcard position-relative rounded-2 bg-white shadow-sm">
-                        <div class="labName">
-                            Lab Name:- Apollo Women health-Basic
-                        </div>
-                        <div class="mt-3 d-flex align-items-center justify-content-between">
-                            <div class="totaltests mt-0">
-                                Total Tests:30
-                            </div>
-                            <div class="totaltests mt-0">
-                                Timing: 10:00AM - 7:00 PM
-                            </div>
-                        </div>
-                        <div class="totaltests">
-                            Glucose Random
-                        </div>
-                        <div class="totaltests totalteststwo ">
-                            Tyyroiv Stimulatig Hormon Tish  <a href="javascript:;" class="text-decoration-none more">+28 More</a>
-                        </div>
-                        <div class="border-top cardfooter d-flex align-items-center justify-content-between">
-                            <div>
-                                <div class="mrp d-flex align-items-center gap-1">
-                                    <div class="fw-semibold">MRP</div>
-                                    <del>&#8377; 556</del>
-                                    <div class="offertitle rounded-pill ">
-                                        25% off
-                                    </div>
-                                </div>
-                                <div class="price">&#8377; 520</div>
-                            </div>
-                            <div class="d-inline-flex align-items-center ">
-                                <a href="cbc.html" class="applyBtn rounded-2 border-0 text-decoration-none stretched-link ">Add To Cart</a>
+                            <div class="aboutdata">
+                                When the needle is inserted to draw blood, some people feel moderate pain. Others feel only a prick or stinging. Afterward, there may be some throbbing or slight bruising. This soon goes away.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--lab test detail section end  -->
+        <!-- complete blood count section start -->
+
     </main>
 
 
@@ -1474,6 +1249,9 @@
             <li class="nav-item">
             <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Beauty Product</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Supplementary Product</a>
+            </li>
             <!-- <li class="nav-item border-top pt-2 d-none">
                 <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;" data-bs-toggle="modal" data-bs-target="#signup">
                   <span class="userimg d-flex align-items-center justify-content-center">
@@ -1481,15 +1259,15 @@
                   </span>
                   Login <span class="mx-1">/</span> Sign Up
                 </a>
-            </li>
-            <li class="nav-item border-top pt-2 ">
-            <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;">
-                <span class="userimg d-flex align-items-center justify-content-center">
-                <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
-                </span>
-                Log Out
-            </a>
-            </li> -->
+              </li>
+              <li class="nav-item border-top pt-2 ">
+                <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;">
+                  <span class="userimg d-flex align-items-center justify-content-center">
+                    <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+                  </span>
+                  Log Out
+                </a>
+              </li> -->
         </ul>
         </div>
     </div>

@@ -171,7 +171,7 @@
             <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
               <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
             </a>
-            <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
+            <a href="javascript:;" class="loginsign d-none text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
               <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
                 <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
               </span>
@@ -179,6 +179,36 @@
               <span class="d-lg-inline-flex d-none"> /</span>
               <span class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
             </a>
+            <!-- <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
+              <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+              </span>
+              <span class="login loginsign d-lg-inline-flex d-none">Log Out</span> 
+            </a> -->
+            <div class="dropdown-center userdropdown ms-2">
+              <button class="btn userName p-0 fw-semibold dropdown-toggle d-flex align-items-center border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="userimg d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/img/profile/profileImg.jpg" alt="user image" class="h-100 w-100 img-fluid"></span>
+                <span class="d-sm-inline d-none"> John saha</span>
+              </button>
+              <ul class="dropdown-menu usermenu d-flex flex-column">
+                <li>
+                    <a class="dropdown-item userdetail d-flex align-items-center" href="signup.html">
+                      <span class="usericon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+                      </span>
+                      Profile
+                    </a>
+                </li>
+                <li>
+                  <a class="dropdown-item userdetail d-flex align-items-center" href="javascript:;">
+                    <span class="usericon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/labtest/logout.svg" alt="log out" class="h-100 w-100 img-fluid">
+                    </span>
+                    Log Out
+                  </a>
+              </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -546,6 +576,69 @@
     </div>
     <!-- hero card section end  -->
 
+    <!-- file upload section start  -->
+    <div class="container-fluid uploadfileSection">
+      <div class="row g-3 justify-content-center">
+          <div class="col-lg-4 col-sm-6">
+              <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                  <div class="row align-items-center">
+                      <div class="col-auto">
+                          <div class="fileimg d-flex align-items-center bg-light justify-content-center rounded-circle">
+                              <img src="assets/img/labtest/file.png" alt="upload file" class="h-100 w-100 img-fluid">
+                          </div>
+                      </div>
+                      <div class="col ps-0">
+                          <div class="uploadheading">Have a Prescription?</div>
+                          <a href="prescription.html" class="uploadTitle stretched-link text-decoration-none">Greate! upload it & place an order</a>
+                      </div>
+                      <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                          <a href="javascript:;" class="d-flex align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                              <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                              Upload
+                          </a>
+                      </div> -->
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="col-lg-4 col-sm-6">
+              <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                  <div class="row align-items-center">
+                      <div class="col-auto">
+                          <div class="fileimg d-flex align-items-center bg-light justify-content-center rounded-circle">
+                              <img src="assets/img/labtest/reportLogo.png" alt="upload file" class="h-100 w-100 img-fluid">
+                          </div>
+                      </div>
+                      <div class="col ps-0">
+                          <a href="javascript:;" class="uploadheading stretched-link text-decoration-none">View Online Report & Medical History</a>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+          <div class="col-lg-4 col-sm-6">
+              <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                  <div class="row align-items-center">
+                      <div class="col-auto">
+                          <div class="fileimg d-flex whatsappbtn align-items-center bg-light justify-content-center rounded-circle">
+                              <img src="assets/img/labtest/whatspp.png" alt="upload file" class="h-100 w-100 img-fluid">
+                          </div>
+                      </div>
+                      <div class="col ps-0">
+                          <div class="uploadheading">Order Medicines</div>
+                          <a href="javascript:;" class="uploadTitle text-decoration-none stretched-link">Via Whatsapp</a>
+                      </div>
+                      <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                          <a href="javascript:;" class="d-flex  align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                              <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                              Click Here
+                          </a>
+                      </div> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- file upload section end -->
+
     <!-- Deal off the day section  start  -->
     <div class="container-fluid dealSection">
       <div class="row gap-xl-0 gap-4">
@@ -766,6 +859,51 @@
       </div>
     </div>
     <!-- Deal off the day section   end  -->
+
+    <!-- order from store near you section start  -->
+    <div class="container-fluid nearstoreSection">
+      <div class="row">
+        <!-- <div class="col-12 heading">
+          Order From Store Near You
+        </div> -->
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="heading">Order From Store Near You</div>
+              <!-- <a href="category.html" class="seeall text-decoration-none position-relative">See all</a> -->
+            </div>
+            <div class="d-flex align-items-center gap-2 d-none">
+              <div class=" sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/prev.svg" alt="next" class="h-100 w-100 img-fluid ">
+              </div>
+              <div class="storenext sliderbtn rounded-circle d-flex align-items-center justify-content-center">
+                <img src="assets/img/futerebrand/next.svg" alt="prev" class="h-100 w-100 img-fluid ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-sm-4 mt-3">
+        <div class="col-12">
+          <div class="swiper storeslider ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="storecard position-relative rounded-2 overflow-hidden h-100">
+                  <div class="storeimg overflow-hidden rounded-2 position-relative">
+                    <img src="assets/img/labtest/warehouse.jpg" alt="medical store" class="h-100 w-100 img-fluid">
+                    <a href="category.html" class="storedetail stretched-link">
+                      <span class="storename  position-absolute">Test</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- order from store near you section end  -->
 
     <!-- future brand section start  -->
     <div class="container-fluid futerbrand commonSection pt0">
@@ -2748,6 +2886,22 @@
         <li class="nav-item">
           <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Supplementary Product</a>
         </li>
+        <!-- <li class="nav-item border-top pt-2 d-none">
+          <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;" data-bs-toggle="modal" data-bs-target="#signup">
+            <span class="userimg d-flex align-items-center justify-content-center">
+              <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+            </span>
+            Login <span class="mx-1">/</span> Sign Up
+          </a>
+        </li>
+        <li class="nav-item border-top pt-2 ">
+          <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;">
+            <span class="userimg d-flex align-items-center justify-content-center">
+              <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+            </span>
+            Log Out
+          </a>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -2934,6 +3088,39 @@
     breakpoints: {
       0: {
         slidesPerView: 2,
+        spaceBetween: 5,
+      },
+      400: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      1100: {
+        slidesPerView: 5,
+        spaceBetween: 15,
+      },
+    },
+    navigation: {
+      nextEl: ".nextBtnequipment",
+      prevEl: ".prevBtnequipment",
+    },
+  });
+  </script>
+
+<script>
+  var swiper = new Swiper(".storeslider", {
+    // slidesPerView: 1,
+    // spaceBetween: 10,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
         spaceBetween: 5,
       },
       400: {

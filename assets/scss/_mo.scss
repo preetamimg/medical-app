@@ -431,7 +431,7 @@
 // deal of the day section start 
 .dealSection {
     // padding-bottom: 45px;
-    padding-top: 25px;
+    padding-top:45px;
 }
 // deal of the day section end 
 
@@ -476,6 +476,12 @@
         width: 25px;
         padding: 4px;
     }
+    // deal of the day section start 
+    .dealSection {
+        // padding-bottom: 45px;
+        padding-top:40px;
+    }
+    // deal of the day section end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -518,6 +524,13 @@
         }
     }
     // offer section end
+
+    // deal of the day section start 
+    .dealSection {
+        // padding-bottom: 45px;
+        padding-top:30px;
+    }
+    // deal of the day section end 
 
 }
 // future brand section end 
@@ -1596,7 +1609,7 @@
 // cta section start 
 .ctaSection {
     padding-bottom:50px;
-    
+    padding-top:50px;
     & .bookappoitment {
         background: rgba($theme1, 0.3);
         padding: 22px 6px;
@@ -2516,6 +2529,7 @@
     // cta section start 
     .ctaSection {
         padding-bottom: 45px;
+        padding-top: 45px;
         & .bookappoitment {
             padding: 16px 6px;
             & .ctaheading {
@@ -3592,6 +3606,90 @@
             }
         }
     }
+    &.labdetailpage {
+        & .detailmain {
+            & .labName {
+                font-size: 16px;
+            }
+            & .totaltests {
+                font-size: 14px;
+                line-height: 19px;
+                margin: 12px 0;
+            }
+        }
+    }
+    & .labdetailcard {
+        padding: 18px;
+        top: 134px;
+        position: sticky;
+        & .labheading {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            line-height: normal;
+        }
+        & .labimage {
+            height: 60px;
+            min-width: 90px; 
+            max-width: 90px; 
+            padding: 7px;
+        }
+        & .labpara {
+            font-size: 14px;
+            font-weight: 400;
+            color: #3e3e3e;
+            margin-top: 15px;
+            padding-top: 15px;
+            line-height: 19px;
+        }
+        & .timing {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 12px;
+            color: #3e3e3e;
+            & span {
+                margin-right: 2px;
+            }
+        }
+    }
+    & .testdetailcard {
+        padding: 18px;
+    }
+    &.testdetailpage {
+        & .detailmain {
+            & .detailcard {
+                & .labName {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $black;
+                    line-height: normal;
+                }
+                & .totaltests {
+                    font-size: 14px;
+                    & span {
+                        margin-right: 3px;
+                    }
+                }
+                & .totalteststwo {
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+    &.choosetest {
+        & .detailmain {
+            & .detailcard {
+                border: 2px solid #dadada;
+                cursor: pointer;
+                &:hover {
+                    border-color: $theme1;
+                }
+            }
+        }
+        & .testinput:checked ~ .detailcard {
+            border: 2px solid $theme1;
+        }
+    }
 }
 @include media-breakpoint(basic) {}
 
@@ -3620,10 +3718,10 @@
                 padding: 10px;
 
                 & .labName {
-                    font-size: 13px;
+                    font-size: 14px;
                 }
                 & .totaltests {
-                    font-size: 12px;
+                    font-size: 13px;
                 }
                 & .more {
                 }
@@ -3651,6 +3749,83 @@
                 }
             }
         }
+        &.labdetailpage {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            & .detailmain {
+                & .labName {
+                }
+                & .totaltests {
+                    line-height: 17px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        & .labdetailcard {
+            padding: 16px;
+            & .labheading {
+                font-size: 15px;
+            }
+            & .labimage {
+                height: 55px;
+                min-width: 85px; 
+                max-width: 85px; 
+                padding: 7px;
+            }
+            & .labpara {
+                font-size: 13px;
+                margin-top: 12px;
+                padding-top: 12px;
+            }
+            & .timing {
+                font-size: 13px;
+                line-height: 18px;
+                margin-top:12px;
+                & span {
+                }
+            }
+        }
+        & .testdetailcard {
+            padding: 16px;
+        }
+        &.testdetailpage {
+            & .detailmain {
+                & .detailcard {
+                    &.inputcard {
+                        font-size: 15px;
+                    }
+                    & .labName {
+                        font-size: 15px;
+                    }
+                    & .totaltests {
+                        font-size: 13px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        &.choosetest {
+            & .detailmain {
+                & .detailcard {
+                    & .labName {
+                        font-size: 15px;
+                    }
+                    & .totaltests {
+                        font-size: 13px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 13px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -3662,6 +3837,7 @@
                 & .labName {
                 }
                 & .totaltests {
+                    font-size: 12px;
                 }
                 & .more {
                 }
@@ -3686,6 +3862,82 @@
                 }
             }
         }
+        &.labdetailpage {
+            & .detailmain {
+                & .labName {
+                }
+                & .totaltests {
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        & .labdetailcard {
+            padding: 13px;
+            & .labheading {
+                font-size: 14px;
+            }
+            & .labimage {
+                height: 50px;
+                min-width: 80px; 
+                max-width: 80px; 
+                padding: 5px;
+            }
+            & .labpara {
+                font-size: 12px;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+            & .timing {
+                font-size: 12px;
+                line-height: 17px;
+                margin-top:10px;
+                & span {
+                }
+            }
+        }
+        & .testdetailcard {
+            padding: 13px;
+        }
+        &.testdetailpage {
+            & .detailmain {
+                & .detailcard {
+                    &.inputcard {
+                        font-size: 14px;
+                    }
+                    & .labName {
+                        font-size: 15px;
+                    }
+                    & .totaltests {
+                        font-size: 13px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &.choosetest {
+            & .detailmain {
+                & .detailcard {
+                    & .labName {
+                        font-size: 14px;
+                    }
+                    & .totaltests {
+                        font-size: 12px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
     }
 }
 // lab test detail section end
@@ -3705,7 +3957,7 @@
             line-height: normal;
         }
         & .cbadata {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 500;
             color: #5a5a5a;
             margin-top: 10px;
@@ -3766,6 +4018,31 @@
             margin-top: 13px;
         }
     }
+    &.testaboutpage {
+        & .labimg {
+            height: 60px;
+            min-width: 90px;
+            max-width: 90px;
+            padding: 6px;
+        }
+        & .applyBtn {
+            padding: 11px 0;
+            width: 100%;
+        }
+        & .aboutheading {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 15px;
+            line-height:normal;
+        }
+        & .cbarightcard {
+            & .cardHeading {
+            }
+            & .aboutdata {
+                margin-top: 8px;
+            }
+        }
+    }
 }
 @include media-breakpoint(basic) {}
 
@@ -3817,6 +4094,21 @@
             & .aboutdata {
             }
         }
+        &.testaboutpage {
+            & .labimg {
+            }
+            & .applyBtn {
+                width: 70%;
+            }
+            & .aboutheading {
+            }
+            & .cbarightcard {
+                & .cardHeading {
+                }
+                & .aboutdata {
+                }
+            }
+        }
     }
 }
 
@@ -3858,6 +4150,24 @@
             }
             & .aboutdata {
                 font-size: 13px;
+            }
+        }
+        &.testaboutpage {
+            & .labimg {
+            }
+            & .applyBtn {
+                width: 80%;
+            }
+            & .aboutheading {
+                font-size: 15px;
+                margin-top: 13px;
+            }
+            & .cbarightcard {
+                & .cardHeading {
+                }
+                & .aboutdata {
+                    margin-top: 7px;
+                }
             }
         }
     }
@@ -3909,6 +4219,277 @@
                 margin-top: 10px;
             }
         }
+        &.testaboutpage {
+            & .labimg {
+            }
+            & .applyBtn {
+                width: 100%;
+            }
+            & .aboutheading {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            & .cbarightcard {
+                & .cardHeading {
+                }
+                & .aboutdata {
+                    margin-top: 6px;
+                }
+            }
+        }
     }
 }
 // complete blood count section end
+
+
+// file upload section start 
+.uploadfileSection {
+    padding-top: 45px;
+    & .uploadfilecard {
+        padding: 15px;
+        border: 1px solid lighten($black, 85);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 4px rgba(33,33,33,.2); 
+        & .fileimg {
+            height: 60px;
+            width: 60px;
+            padding: 12px;
+        }
+        & .uploadicon {
+            // height: 30px;
+            // width: 30px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        & .uploadheading {
+            font-size: 16px;
+            font-weight: 600;
+            color: $theme1;
+            line-height: normal;
+        }
+        & .uploadTitle {
+            font-size: 14px;
+            color: lighten($black, 20);
+            line-height: normal;
+            margin-top: 3px;
+        }
+        & .whatsappbtn {
+            padding: 12px;
+        }
+        &:hover {
+            border-color:  $theme1;
+            box-shadow: 0 0 11px rgba(33,33,33,.2); 
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .uploadfileSection {
+        padding-top: 40px;
+        & .uploadfilecard {
+            & .fileimg {
+            }
+            & .uploadheading {
+                font-size: 15px;
+            }
+            & .uploadTitle {
+                font-size: 13px;
+            }
+            & .whatsappbtn {
+            }
+            &:hover {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .uploadfileSection {
+        padding-top:30px;
+        & .uploadfilecard {
+            padding: 12px;
+            & .fileimg {
+                height: 55px;
+                width: 55px;
+                padding: 11px;
+            }
+            & .uploadheading {
+                font-size: 14px;
+                font-weight: 600;
+                color: $theme1;
+                line-height: normal;
+            }
+            & .uploadTitle {
+                font-size: 12px;
+                margin-top: 3px;
+            }
+            & .whatsappbtn {
+                padding: 11px;
+            }
+            &:hover {
+                border: 1px solid lighten($black, 85);
+                box-shadow: 0 0 4px rgba(33,33,33,.2); 
+            }
+        }
+    }
+}
+// file upload section end
+
+
+// order from store near you section start
+.nearstoreSection {
+    padding-top: 45px;
+    & .storecard {
+        & .storeimg {
+            aspect-ratio: 3/2;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 0%;
+                width: 100%;
+                background-color: rgba($black, 0.4);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .storedetail {
+            font-size: 18px;
+            font-weight:600;
+            color: $white;
+            & .storename {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -20px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        &:hover {
+            & .storeimg {
+                &::before {
+                    height: 100%;
+                }
+            }
+            & .storedetail {
+                & .storename {
+                    bottom: 15px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .nearstoreSection {
+        padding-top: 40px;
+        & .storecard {
+            & .storeimg {
+                &::before {
+                }
+            }
+            & .storedetail {
+                & .storename {
+                }
+            }
+            &:hover {
+                & .storeimg {
+                    &::before {
+                    }
+                }
+                & .storedetail {
+                    & .storename {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .nearstoreSection {
+        & .storecard {
+            & .storeimg {
+                &::before {
+                }
+            }
+            & .storedetail {
+                font-size: 17px;
+                & .storename {
+                }
+            }
+            &:hover {
+                & .storeimg {
+                    &::before {
+                    }
+                }
+                & .storedetail {
+                    & .storename {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .nearstoreSection {
+        padding-top: 35px;
+        & .storecard {
+            & .storeimg {
+                &::before {
+                    height: 100%;
+                }
+            }
+            & .storedetail {
+                font-size: 16px;
+                & .storename {
+                    left: 50%;
+                    bottom: 15px;
+                }
+            }
+            &:hover {
+                & .storeimg {
+                    &::before {
+                    }
+                }
+                & .storedetail {
+                    & .storename {
+                    }
+                }
+            }
+        }
+    }
+}
+// order from store near you section end

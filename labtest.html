@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
+    <!-- <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
         <img src="assets/img/labtest/whatspp.png" alt="whatspp" class="h-100 w-100 img-fluid">
-    </a>
+    </a> -->
     <!-- navbar start  -->
     <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
         <div class="headermain w-100 position-relative bg-white">
@@ -182,8 +182,14 @@
                     </span>
                     <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
                     <span class="d-lg-inline-flex d-none"> /</span>
-                    <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+                    <span class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
                 </a>
+                <!-- <a href="javascript:;" class="loginsign d-none text-decoration-none d-flex align-items-center justify-content-center position-relative">
+                    <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                        <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    </span>
+                    <span class="login loginsign d-lg-inline-flex d-none">Log Out</span> 
+                </a> -->
             </div>
             </div>
         </div>
@@ -365,8 +371,77 @@
             <!-- search offcanvas end  -->
         </div>
         <!-- lab test hero section end -->
-        
 
+        <!-- file upload section start  -->
+        <div class="container-fluid uploadfileSection">
+            <div class="row g-3">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="fileimg d-flex align-items-center bg-light justify-content-center rounded-circle">
+                                    <img src="assets/img/labtest/file.png" alt="upload file" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="col ps-0">
+                                <div class="uploadheading">Upload Precription</div>
+                                <a href="prescription.html" class="uploadTitle stretched-link text-decoration-none">Place order with Precription</a>
+                            </div>
+                            <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                                <a href="javascript:;" class="d-flex align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                                    <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                                    Upload
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="fileimg d-flex align-items-center bg-light justify-content-center rounded-circle">
+                                    <img src="assets/img/labtest/reportLogo.png" alt="upload file" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="col ps-0">
+                                <a href="javascript:;" class="uploadheading stretched-link text-decoration-none">View Online Report & Medical History</a>
+                                <!-- <div class="uploadTitle">Place order with Precription</div> -->
+                            </div>
+                            <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                                <a href="javascript:;" class="d-flex align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                                    <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                                    Upload
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="fileimg d-flex whatsappbtn align-items-center bg-light justify-content-center rounded-circle">
+                                    <img src="assets/img/labtest/whatspp.png" alt="upload file" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="col ps-0">
+                                <div class="uploadheading">Order Medicines</div>
+                                <a href="javascript:;" class="uploadTitle text-decoration-none stretched-link">Via Whatsapp</a>
+                            </div>
+                            <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                                <a href="javascript:;" class="d-flex  align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                                    <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                                    Click Here
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- file upload section end -->
+        
         <!-- laboratory near you section start  -->
         <div class="container-fluid locationSection">
             <div class="heading">Laboratory near you</div>
@@ -378,20 +453,80 @@
                                 <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
                             </div>
                             <div>
-                                <div class="labname">
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
                                     Metro Pathlab & Imaging Centre
-                                </div>
-                                <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
                                     <span class="locationicon d-flex align-items-center justify-content-center">
                                         <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
                                     </span>
                                     Vaishali nagar, Jaipur
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
+                                    Metro Pathlab & Imaging Centre
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Vaishali nagar, Jaipur
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
+                                    Metro Pathlab & Imaging Centre
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Vaishali nagar, Jaipur
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
+                                    Metro Pathlab & Imaging Centre
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Vaishali nagar, Jaipur
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 col-sm-4 col-6">
                     <div class="locationCard border h-100 rounded-2 position-relative">
                         <div class="d-flex justify-content-between flex-column h-100">
                             <div class="cardimg rounded-2 border">
@@ -450,12 +585,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-12 text-center pt-2">
-                    <a href="javascript:;" class="applyBtn rounded-2 text-decoration-none py-2">View More</a>
+                    <a href="location.html" class="applyBtn rounded-2 text-decoration-none py-2">View More</a>
                 </div>
             </div>
-
         </div>
         <!-- laboratory near you section end  -->
 
@@ -468,7 +602,7 @@
                         <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
                             <img src="assets/img/testimg/Hemogram.svg" alt="Hemogram" class="w-100 ">
                         </div>
-                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Hemogram (TBC)</a>
+                        <a href="choosetest.html" class="testtitle text-decoration-none stretched-link">Hemogram (TBC)</a>
                     </div>
                 </div>
                 <div class="col">
@@ -661,7 +795,7 @@
 
 
         <!-- Our Highlights section start  -->
-        <div class="container-fluid ourHighlights">
+        <div class="container-fluid ourHighlights pt-0">
             <div class="heading col-12">Our Highlights</div>
             <div class="sectionTitle col-12">Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our service.</div>
             <div class="row pt-sm-4 pt-3 g-sm-3 g-2">
@@ -1660,9 +1794,22 @@
             <li class="nav-item">
             <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Beauty Product</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Supplementary Product</a>
+            <!-- <li class="nav-item border-top pt-2">
+                <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;" data-bs-toggle="modal" data-bs-target="#signup">
+                    <span class="userimg d-flex align-items-center justify-content-center">
+                        <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+                    </span>
+                    Login <span class="mx-1">/</span> Sign Up
+                </a>
             </li>
+            <li class="nav-item border-top pt-2 d-none ">
+                <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;">
+                    <span class="userimg d-flex align-items-center justify-content-center">
+                        <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+                    </span>
+                    Log Out
+                </a>
+            </li> -->
         </ul>
         </div>
     </div>
