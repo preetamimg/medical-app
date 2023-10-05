@@ -171,7 +171,7 @@
             <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
               <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
             </a>
-            <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
+            <a href="javascript:;" class="loginsign d-none text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
               <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
                 <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
               </span>
@@ -179,6 +179,30 @@
               <span class="d-lg-inline-flex d-none"> /</span>
               <span class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
             </a>
+            <div class="dropdown-center userdropdown ms-2">
+              <button class="btn userName p-0 fw-semibold dropdown-toggle d-flex align-items-center border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="userimg d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/img/profile/profileImg.jpg" alt="user image" class="h-100 w-100 img-fluid"></span>
+                <span class="d-sm-inline d-none"> John saha</span>
+              </button>
+              <ul class="dropdown-menu usermenu d-flex flex-column">
+                <li>
+                    <a class="dropdown-item userdetail d-flex align-items-center" href="signup.html">
+                      <span class="usericon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+                      </span>
+                      Profile
+                    </a>
+                </li>
+                <li>
+                  <a class="dropdown-item userdetail d-flex align-items-center" href="javascript:;">
+                    <span class="usericon d-flex align-items-center justify-content-center">
+                      <img src="assets/img/labtest/logout.svg" alt="log out" class="h-100 w-100 img-fluid">
+                    </span>
+                    Log Out
+                  </a>
+              </li>
+              </ul>
+            </div>
             <!-- <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
               <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
                 <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
@@ -946,8 +970,6 @@
         </div>
       </div>
     </div>
-    </div>
-
     <!-- search offcanvas start  -->
     <div class="offcanvas offcanvas-top searchOffcanvas" tabindex="-1" id="searchoffcanvas" aria-labelledby="offcanvasTopLabel">
       <div class="offcanvas-body p-sm-3 p-2 d-flex align-items-center overflow-visible">
@@ -1053,6 +1075,8 @@
       </div>
     </div>
     <!-- search offcanvas end  -->
+  </div>
+
     
   </div>
   <!-- Account section start  -->
