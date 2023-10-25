@@ -125,11 +125,11 @@
         input:focus ~ label{
             background-color: transparent;
         }
-        & .applypinBtn {
-            font-size: 14px;
-            font-weight: 500;
-            color: $theme1;
-        }
+    }
+    & .applypinBtn {
+        font-size: 14px;
+        font-weight: 500;
+        color: $theme1;
     }
     & .pincodeLabel {
         font-size: 13px;
@@ -254,12 +254,12 @@
         }
         & .enterpin {
         }
-        & .applypinBtn {
-            font-size: 13px;
-        }
         & .detectlocation {
             & .detecticon {
             }
+        }
+        & .applypinBtn {
+            font-size: 13px;
         }
     }
 }
@@ -324,9 +324,9 @@
             }
             input:focus ~ label{
             }
-            & .applypinBtn {
-                font-size: 12px;
-            }
+        }
+        & .applypinBtn {
+            font-size: 12px;
         }
         input:focus ~ label{
             font-size: 11px;
@@ -431,7 +431,7 @@
 // deal of the day section start 
 .dealSection {
     // padding-bottom: 45px;
-    padding-top: 25px;
+    padding-top:45px;
 }
 // deal of the day section end 
 
@@ -476,6 +476,12 @@
         width: 25px;
         padding: 4px;
     }
+    // deal of the day section start 
+    .dealSection {
+        // padding-bottom: 45px;
+        padding-top:40px;
+    }
+    // deal of the day section end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -518,6 +524,13 @@
         }
     }
     // offer section end
+
+    // deal of the day section start 
+    .dealSection {
+        // padding-bottom: 45px;
+        padding-top:30px;
+    }
+    // deal of the day section end 
 
 }
 // future brand section end 
@@ -742,97 +755,99 @@
         }
         
     }
-    & .summaryCard {
-        padding: 14px;
+    
+}
+// .summaryCard {
+//     padding: 14px;
+//     background: #f2f2f2;
+//     top: 140px;
+//     & .cartHeading {
+//         font-size: 16px;
+//         font-weight: 600;
+//         color: $black;
+//         padding-bottom: 14px;
+//     }
+//     & .cartSubheading {
+//         font-size: 15px;
+//         font-weight: 600;
+//         color: $black;
+//         padding-top: 14px;
+//     }
+//     & .cartdata {
+//         padding-top: 14px;
+//         & .cardTitle {
+//             font-size: 13px;
+//             font-weight: 500;
+//             color: lighten($black, 40);
+//         }
+//         &.deliverycharge {
+//             padding-bottom: 14px;
+//         }
+//     }
+//     & .totalpayment {
+//         padding-bottom: 14px;
+//     }
+//     & .totalpay {
+//         font-size: 14px;
+//         font-weight: 600;
+//         color: $black;
+//     }
+//     & .continueBtn {
+//         padding: 8px 26px;
+//     }
+// }
+
+.accountPage {
+    .tablebody {
         background: #f2f2f2;
-        top: 140px;
-        & .cartHeading {
-            font-size: 16px;
-            font-weight: 600;
-            color: $black;
-            padding-bottom: 14px;
+        padding: 14px 16px;
+        margin-top: 10px;
+        & .tabledata {
         }
-        & .cartSubheading {
-            font-size: 15px;
-            font-weight: 600;
-            color: $black;
-            padding-top: 14px;
-        }
-        & .cartdata {
-            padding-top: 14px;
-            & .cardTitle {
-                font-size: 13px;
-                font-weight: 500;
-                color: lighten($black, 40);
-            }
-            &.deliverycharge {
-                padding-bottom: 14px;
+        & .productImgMain {
+            height: 80px;
+            min-width: 80px;
+            max-width: 80px;
+            background-color: $white;
+            & .productImg {
+                height: 60px;
+                width: 60px;
+                transition: all 0.3s ease-in-out;
             }
         }
-        & .totalpayment {
-            padding-bottom: 14px;
+        & .productName {
+            font-size: 12px;
+            color: $black;
+            font-weight: 600;
+            display: inline;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
         }
-        & .totalpay {
+        & .deliverytilte {
+            font-size: 11px;
+            font-weight: 400;
+            color: lighten($black, 50);
+        }
+        & .deleteIcon {
+            height: 22px;
+            width: 18px;
+            & img {
+                filter: brightness(0);
+            }
+        }
+        & .price {
             font-size: 14px;
             font-weight: 600;
             color: $black;
         }
-        & .continueBtn {
-            padding: 8px 26px;
-        }
-        
-    }
-    
-}
-.tablebody {
-    background: #f2f2f2;
-    padding: 14px 16px;
-    margin-top: 10px;
-    & .tabledata {
-    }
-    & .productImgMain {
-        height: 80px;
-        min-width: 80px;
-        max-width: 80px;
-        background-color: $white;
-        & .productImg {
-            height: 60px;
-            width: 60px;
-            transition: all 0.3s ease-in-out;
-        }
-    }
-    & .productName {
-        font-size: 12px;
-        color: $black;
-        font-weight: 600;
-        display: inline;
-        -webkit-line-clamp: 2;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-    }
-    & .deliverytilte {
-        font-size: 11px;
-        font-weight: 400;
-        color: lighten($black, 50);
-    }
-    & .deleteIcon {
-        height: 22px;
-        width: 18px;
-        & img {
-            filter: brightness(0);
-        }
-    }
-    & .price {
-        font-size: 14px;
-        font-weight: 600;
-        color: $black;
-    }
-    &:hover {
-        & .productImgMain {
-            & .productImg {
-                transform: scale(0.9);
+        &:hover {
+            & .productImgMain {
+                & .productImg {
+                    transform: scale(0.9);
+                }
             }
         }
     }
@@ -925,55 +940,55 @@
                 }
             }
         }
+    }
+    .accountPage {
+        .tablebody {
+            padding: 10px;
+            & .tabledata {
+            }
+            & .productImgMain {
+                height: 70px;
+                min-width: 70px;
+                max-width: 70px;
+                & .productImg {
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+            & .productName {
+    
+            }
+            & .deliverytilte {
+            }
+            & .deleteIcon {
+                & img {
+                }
+            }
+            & .price {
+            }
+        }
+    }
+    // & .summaryCard {
+    //     top: 90px;
+    //     & .cartHeading {
+    //     }
+    //     & .cartSubheading {
+    //     }
+    //     & .cartdata {
+    //         & .cardTitle {
+    //         }
+    //         &.deliverycharge {
+    //         }
+    //     }
+    //     & .totalpayment {
+    //     }
+    //     & .totalpay {
+
+    //     }
+    //     & .continueBtn {
+    //     }
         
-        & .summaryCard {
-            top: 90px;
-            & .cartHeading {
-            }
-            & .cartSubheading {
-            }
-            & .cartdata {
-                & .cardTitle {
-                }
-                &.deliverycharge {
-                }
-            }
-            & .totalpayment {
-            }
-            & .totalpay {
-
-            }
-            & .continueBtn {
-            }
-            
-        }
-       
-    }
-    .tablebody {
-        padding: 10px;
-        & .tabledata {
-        }
-        & .productImgMain {
-            height: 70px;
-            min-width: 70px;
-            max-width: 70px;
-            & .productImg {
-                height: 60px;
-                width: 60px;
-            }
-        }
-        & .productName {
-
-        }
-        & .deliverytilte {
-        }
-        & .deleteIcon {
-            & img {
-            }
-        }
-        & .price {
-        }
-    }
+    // }
     .emptyCart {
         & .emptyImg {
         }
@@ -1001,27 +1016,6 @@
                 }
             }
         }
-        & .summaryCard {
-            margin-top:40px;
-            & .cartHeading {
-                font-size: 15px;
-            }
-            & .cartSubheading {
-            }
-            & .cartdata {
-                & .cardTitle {
-                }
-                &.deliverycharge {
-                }
-            }
-            & .totalpayment {
-            }
-            & .totalpay {
-            }
-            & .continueBtn {
-            }
-            
-        }
         & .emptyCart {
             & .emptyImg {
             }
@@ -1030,23 +1024,48 @@
             & .emptyBtn {
             }
         }
+    
     }
-    .tablebody {
-        & .tabledata {
-        }
-        & .productImgMain {
-            & .productImg {
+
+    // .summaryCard {
+    //     margin-top:40px;
+    //     & .cartHeading {
+    //         font-size: 15px;
+    //     }
+    //     & .cartSubheading {
+    //     }
+    //     & .cartdata {
+    //         & .cardTitle {
+    //         }
+    //         &.deliverycharge {
+    //         }
+    //     }
+    //     & .totalpayment {
+    //     }
+    //     & .totalpay {
+    //     }
+    //     & .continueBtn {
+    //     }
+        
+    // }
+    .accountPage {
+        .tablebody {
+            & .tabledata {
             }
-        }
-        & .productName {
-        }
-        & .deliverytilte {
-        }
-        & .deleteIcon {
-            & img {
+            & .productImgMain {
+                & .productImg {
+                }
             }
-        }
-        & .price {
+            & .productName {
+            }
+            & .deliverytilte {
+            }
+            & .deleteIcon {
+                & img {
+                }
+            }
+            & .price {
+            }
         }
     }
 
@@ -1074,74 +1093,76 @@
                 }
             }
         }
-        & .summaryCard {
-            padding: 10px;
-            margin-top:30px;
-            & .cartHeading {
-                font-size: 14px;
-                padding-bottom: 10px;
-            }
-            & .cartSubheading {
-                font-size: 13px;
-                padding-top: 14px;
-            }
-            & .cartdata {
-                padding-top: 10px;
-                & .cardTitle {
-                    font-size: 12px;
-                }
-                &.deliverycharge {
-                    padding-bottom: 12px;
-                }
-            }
-            & .totalpayment {
-                padding-bottom: 12px;
-            }
-            & .totalpay {
-                font-size: 12px;
-            }
-            & .continueBtn {
-                padding: 8px 26px;
-            }
-            
-        }
         
     }
-    .tablebody {
-        padding: 10px;
-        margin-top: 10px;
-        & .tabledata {
-            padding-bottom: 10px;
-        }
-        & .productImgMain {
-            height: 75px;
-            min-width: 75px;
-            max-width: 75px;
-            & .productImg {
+    // .summaryCard {
+    //     padding: 10px;
+    //     margin-top:30px;
+    //     & .cartHeading {
+    //         font-size: 14px;
+    //         padding-bottom: 10px;
+    //     }
+    //     & .cartSubheading {
+    //         font-size: 13px;
+    //         padding-top: 14px;
+    //     }
+    //     & .cartdata {
+    //         padding-top: 10px;
+    //         & .cardTitle {
+    //             font-size: 12px;
+    //         }
+    //         &.deliverycharge {
+    //             padding-bottom: 12px;
+    //         }
+    //     }
+    //     & .totalpayment {
+    //         padding-bottom: 12px;
+    //     }
+    //     & .totalpay {
+    //         font-size: 12px;
+    //     }
+    //     & .continueBtn {
+    //         padding: 8px 26px;
+    //     }
+        
+    // }
+    .accountPage {
+        .tablebody {
+            padding: 10px;
+            margin-top: 10px;
+            & .tabledata {
+                padding-bottom: 10px;
             }
-        }
-        & .productName {
-            font-size: 11px;
-            -webkit-line-clamp: 1;
-        }
-        & .deliverytilte {
-            font-size: 10px;
-        }
-        & .deleteIcon {
-            height: 19px;
-            width: 15px;
-            & img {
-            }
-        }
-        & .price {
-            font-size: 12px;
-            font-weight: 600;
-            color: $black;
-        }
-        &:hover {
             & .productImgMain {
+                height: 75px;
+                min-width: 75px;
+                max-width: 75px;
                 & .productImg {
-                    transform: scale(1);
+                }
+            }
+            & .productName {
+                font-size: 11px;
+                -webkit-line-clamp: 1;
+            }
+            & .deliverytilte {
+                font-size: 10px;
+            }
+            & .deleteIcon {
+                height: 19px;
+                width: 15px;
+                & img {
+                }
+            }
+            & .price {
+                font-size: 12px;
+                font-weight: 600;
+                color: $black;
+            }
+            &:hover {
+                & .productImgMain {
+                    & .productImg {
+                        transform: scale(1);
+                    }
                 }
             }
         }
@@ -1201,11 +1222,13 @@
 .labtestherosection {
     padding-top: 45px;
     transform: translate(0 , 0);
+    height: 70vh;
     & .labads {
         & .labtestbanner {
-            aspect-ratio:7/3;
+            // aspect-ratio:7/3;
             & img {
-                object-fit: contain;
+                // object-fit: contain;
+                object-fit: cover;
             }
         }
     }
@@ -1586,6 +1609,7 @@
 // cta section start 
 .ctaSection {
     padding-bottom:50px;
+    padding-top:50px;
     & .bookappoitment {
         background: rgba($theme1, 0.3);
         padding: 22px 6px;
@@ -1834,6 +1858,7 @@
     // lab test section start 
     .labtestherosection {
         padding-top: 35px;
+        height: 60vh;
         & .labads {
             & .labtestbanner {
                 & img {
@@ -2020,6 +2045,7 @@
 @include media-breakpoint-down(md) {
     // lab test section start 
     .labtestherosection {
+        height: 50vh;
         & .labads {
             & .labtestbanner {
                 & img {
@@ -2264,6 +2290,7 @@
     // popular test Section start 
     .labtestherosection {
         padding-top: 10px;
+        height: 35vh;
         & .labads {
             & .labtestbanner {
                 & img {
@@ -2502,6 +2529,7 @@
     // cta section start 
     .ctaSection {
         padding-bottom: 45px;
+        padding-top: 45px;
         & .bookappoitment {
             padding: 16px 6px;
             & .ctaheading {
@@ -2783,3 +2811,1685 @@
     // order review page end 
 }
 // offer page end
+
+
+// cart offcanvas start 
+.cartoffcanvas {
+    width: 350px !important;
+    & .tablebody {
+        padding: 10px 5px;
+        margin-top: 10px;
+        background: #f2f2f2;
+        & .tabledata {
+            padding-bottom: 7px;
+        }
+        & .productImgMain {
+            height: 75px;
+            min-width: 75px;
+            max-width: 75px;
+            background-color: $white;
+            & .productImg {
+                height: 50px;
+                width: 50px;
+                transition: all 0.3s ease-in-out;
+            }
+            & .pack {
+                font-size: 11px;
+                color: $black;
+                font-weight: 500;
+            }
+        }
+        & .productName {
+            color: $black;
+            font-weight: 600;
+            display: inline;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            font-size: 11px;
+            -webkit-line-clamp: 2;
+        }
+        & .deliverytilte {
+            font-size: 10px;
+            font-weight: 400;
+            color: lighten($black, 50);
+        }
+        & .deleteIcon {
+            height: 23px;
+            min-width: 16px;
+            max-width: 16px;
+            & img {
+                filter: brightness(0);
+            }
+        }
+        & .price {
+            font-size: 12px;
+            font-weight: 600;
+            color: $black;
+        }
+        &:hover {
+            & .productImgMain {
+                & .productImg {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+    & .btn-close {
+        background-size: 12px;
+    }
+    & .cartTitle {
+        font-size: 17px;
+        color: $black;
+    }
+    & .selectCard {
+        padding: 13px 5px;
+        border: 1px solid #e1e1e1;
+        transition: all 0.3s ease-in-out;
+        margin-top: 17px;
+        & .medicineimg {
+            height: 60px;
+        }
+        & .selectTitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: $black;
+            line-height: normal;
+        }
+        & .selectTitletwo {
+            font-size: 13px;
+            font-weight: 500;
+            color: #999999;
+            line-height: normal;
+            margin-top: 6px;
+        }
+        &:hover {
+            border-color: $theme1;
+        }
+    }
+    & .offcanvas-footer {
+        padding: 16px;
+        & .billed {
+            font-size: 14px;
+            font-weight: 500;
+            color:#525252b3;
+            line-height: normal;
+        }
+        & .pincode {
+            font-size: 14px;
+            line-height: normal;
+            margin-top: 1px;
+        }
+        & .changeadd {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(87, 87, 207);
+        }
+        & .amoutpay {
+            font-size: 14px;
+            font-weight: 500;
+            color: $black;
+        }
+        & .totalpay {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(24, 194, 24);
+        }
+        & .applyBtn {
+            padding: 7px 17px;
+        }
+        & .locationicon {
+            height: 14px;
+            margin-bottom: 2px;
+            & img {
+                filter: brightness(0);
+            }
+        }
+    }
+    .qualiltymain {
+        height: 27px;
+        & .qualityicon {
+            width: 27px;
+            font-size: 18px;
+            font-weight: 600;
+            color: $black;
+            cursor: pointer;
+        }
+        & .quantityinput {
+            width: 32px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $black;
+        }
+    }
+}
+
+.summaryCard {
+    padding: 10px;
+    background: #f2f2f2;
+    margin-top:18px;
+    & .cartHeading {
+        font-size: 14px;
+        font-weight: 600;
+        color: $black;
+        padding-bottom: 10px;
+    }
+    & .cartSubheading {
+        font-size: 14px;
+        font-weight: 600;
+        color: $black;
+        padding-top: 14px;
+    }
+    & .cartdata {
+        padding-top: 10px;
+        & .cardTitle {
+            font-size: 13px;
+            font-weight: 500;
+            color: lighten($black, 40);
+            &.discount {
+                color: rgb(32, 219, 32);
+            }
+        }
+        &.deliverycharge {
+            padding-bottom: 12px;
+        }
+    }
+    & .totalpayment {
+        padding-bottom: 7px;
+    }
+    & .totalpay {
+        font-size: 13px;
+        font-weight: 600;
+        color: $black;
+    }
+    & .continueBtn {
+        padding: 8px 26px;
+    }
+    
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .cartoffcanvas {
+        & .tablebody {
+            padding: 8px 3px;
+            & .tabledata {
+            }
+            & .productImgMain {
+                & .productImg {
+                }
+                & .pack {
+                }
+            }
+            & .productName {
+            }
+            & .deliverytilte {
+            }
+            & .deleteIcon {
+                height: 22px;
+                min-width: 15px;
+                max-width: 15px;
+                & img {
+                }
+            }
+            & .price {
+            }
+            &:hover {
+                & .productImgMain {
+                    & .productImg {
+                    }
+                }
+            }
+        }
+        & .btn-close {
+        }
+        & .cartTitle {
+            font-size: 16px;
+        }
+        & .selectCard {
+            & .medicineimg {
+                height: 55px;
+            }
+            & .selectTitle {
+            }
+            & .selectTitletwo {
+            }
+            &:hover {
+            }
+        }
+        & .offcanvas-footer {
+            padding: 12px 16px;
+            & .billed {
+                font-size: 13px;
+            }
+            & .pincode {
+                font-size: 13px;
+            }
+            & .changeadd {
+                font-size: 13px;
+            }
+            & .amoutpay {
+            }
+            & .totalpay {
+                font-size: 13px;
+            }
+            & .applyBtn {
+            }
+            & .locationicon {
+                height: 14px;
+                & img {
+                }
+            }
+        }
+        .qualiltymain {
+            & .qualityicon {
+            }
+            & .quantityinput {
+            }
+        }
+    }
+    .summaryCard {
+        & .cartHeading {
+        }
+        & .cartSubheading {
+        }
+        & .cartdata {
+            & .cardTitle {
+            }
+            &.deliverycharge {
+            }
+        }
+        & .totalpayment {
+        }
+        & .totalpay {
+        }
+        & .continueBtn {
+        }
+        
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .cartoffcanvas {
+        width:100% !important;
+        & .tablebody {
+            padding: 7px 2px;
+            margin-top: 10px;
+            & .tabledata {
+                padding-bottom: 7px;
+            }
+            & .productImgMain {
+                & .productImg {
+                }
+                & .pack {
+                    font-size: 10px;
+                }
+            }
+            & .productName {
+            }
+            & .deliverytilte {
+            }
+            & .deleteIcon {
+                height: 21px;
+                min-width: 14px;
+                max-width: 14px;
+                & img {
+                }
+            }
+            & .price {
+                font-size: 12px;
+            }
+            &:hover {
+                & .productImgMain {
+                    & .productImg {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        & .btn-close {
+        }
+        & .cartTitle {
+            font-size: 15px;
+        }
+        & .selectCard {
+            padding: 8px 5px;
+            & .medicineimg {
+                height: 50px;
+            }
+            & .selectTitle {
+                font-size: 14px;
+            }
+            & .selectTitletwo {
+                font-size: 12px;
+                margin-top: 4px;
+            }
+            &:hover {
+                border-color: $theme1;
+            }
+        }
+        & .offcanvas-footer {
+            padding: 12px 16px;
+            & .billed {
+                font-size: 12px;
+            }
+            & .pincode {
+                font-size: 12px;
+                margin-top: 2px;
+            }
+            & .changeadd {
+                font-size: 12px;
+            }
+            & .amoutpay {
+                font-size: 13px;
+            }
+            & .totalpay {
+                font-size: 12px;
+            }
+            & .applyBtn {
+                padding: 6px 13px;
+            }
+            & .locationicon {
+                height: 13px;
+                & img {
+                }
+            }
+        }
+        .qualiltymain {
+            height: 25px;
+            & .qualityicon {
+                width: 25px;
+                font-size: 16px;
+            }
+            & .quantityinput {
+                width: 30px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .summaryCard {
+        padding: 12px 4px;
+        margin-top:15px;
+        & .cartHeading {
+            font-size: 13px;
+        }
+        & .cartSubheading {
+            font-size: 13px;
+        }
+        & .cartdata {
+            padding-top: 10px;
+            & .cardTitle {
+                font-size: 12px;
+                font-weight: 500;
+                color: lighten($black, 40);
+            }
+            &.deliverycharge {
+                padding-bottom: 12px;
+            }
+        }
+        & .totalpayment {
+            padding-bottom: 4px;
+        }
+        & .totalpay {
+            font-size: 12px;
+            font-weight: 600;
+            color: $black;
+        }
+        & .continueBtn {
+            padding: 8px 26px;
+        }
+        
+    }
+}
+// cart offcanvas end
+
+// laboratory near you section start
+.locationSection {
+    padding-top: 45px;
+    transform: translate(0 , 0);
+    & .locationCard {
+        transition: all 0.3s ease-in-out;
+        padding: 17px;
+        & .cardimg {
+            height: 55px;
+            width: 80px;
+            padding: 10px;
+        }
+        & .labname {
+            font-size: 15px;
+            font-weight: 600;
+            color: #000;
+            margin-top: 13px;
+            margin-bottom: 9px;
+            line-height: normal;
+            transition: all 0.3s ease-in-out;
+            display: inline;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;/* Important for long words! */
+        }
+        & .locationtitle {
+            font-size: 12px;
+            color: #8897a2;
+            line-height: normal;
+            & .locationicon {
+                height: 14px;
+                & img {
+                    filter: grayscale(1);
+                }
+            }
+        }
+        &:hover {
+            border-color: $theme1 !important;
+            & .labname {
+                color: $theme1;
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .locationSection {
+        padding-top: 35px;
+        & .locationCard {
+            padding: 11px;
+            & .cardimg {
+            }
+            & .labname {
+            }
+            & .locationtitle {
+                & .locationicon {
+                    & img {
+                    }
+                }
+            }
+            &:hover {
+                & .labname {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .locationSection {
+        padding-top: 25px;
+        & .locationCard {
+            padding: 10px;
+            & .cardimg {
+                height: 45px;
+                width: 70px;
+                padding: 7px;
+            }
+            & .labname {
+                font-size: 14px;
+                margin-top: 9px;
+            }
+            & .locationtitle {
+                font-size: 11px;
+                & .locationicon {
+                    height: 12px;
+                    & img {
+                    }
+                }
+            }
+            &:hover {
+                & .labname {
+                    color:#000;
+                }
+            }
+        }
+    }
+}
+// laboratory near you section end
+
+
+
+// regular test section start
+.regulartestSection {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    & .cardmain {
+        & >* {
+            flex: 0 0 20%;
+            width: 20%;
+        }
+    }
+    & .testcard {
+        padding: 10px;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+        & .testicon {
+            min-width: 60px;
+            max-width: 60px;
+            height: 60px;
+            padding: 10px;
+        }
+        & .testtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000;
+        }
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .regulartestSection {
+        & .cardmain {
+            & >* {
+                flex: 0 0 25%;
+                width: 25%;
+            }
+        }
+        & .testcard {
+            & .testicon {
+            }
+            & .testtitle {
+            }
+            &:hover {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .regulartestSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        & .cardmain {
+            & >* {
+                flex: 0 0 33.33%;
+                width: 33.33%;
+            }
+        }
+        & .testcard {
+            & .testicon {
+                min-width: 55px;
+                max-width: 55px;
+                height: 55px;
+                padding: 8px;
+            }
+            & .testtitle {
+                font-size: 13px;
+            }
+            &:hover {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .regulartestSection {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        & .cardmain {
+            & >* {
+                flex: 0 0 50%;
+                width: 50%;
+            }
+        }
+        & .testcard {
+            padding: 10px;
+            gap: 12px;
+            min-height: 110px;
+            flex-direction: column;
+            & .testicon {
+                min-width: 50px;
+                max-width: 50px;
+                height: 50px;
+                padding: 6px;
+            }
+            & .testtitle {
+                font-size: 12px;
+                text-align: center;
+    
+            }
+            &:hover {
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+// regular test section end
+
+
+
+// all test section start 
+// .testSection {
+//     padding-top: 45px;
+//     & .testmain {
+        
+//         & .labtestcard {
+//             border: 1px solid #dadada;
+//             padding: 15px;
+//             transition: all 0.3s ease-in-out;
+//             & .testName {
+//                 font-size: 14px;
+//                 font-weight: 600;
+//                 color: $black;
+//                 line-height: normal;
+//             }
+//             & .totaltests {
+//                 font-size: 13px;
+//                 font-weight: 500;
+//                 color: $black;
+//                 line-height: normal;
+//                 margin-top: 10px;
+//                 &.totalteststwo {
+//                 }
+//             }
+//             & .more {
+//                 color: #ffc107;
+//                 margin-left: 4px;
+//             }
+//             &:hover {
+//                 border-color: $theme1;
+//             }
+//         }
+//     }
+// }
+// all test section end 
+
+
+
+// lab test detail section start
+.labdetailsection {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    & .detailmain {
+        & .detailcard {
+            border: 1px solid #dadada;
+            padding: 15px;
+            transition: all 0.3s ease-in-out;
+            & .labName {
+                font-size: 14px;
+                font-weight: 600;
+                color: $black;
+                line-height: normal;
+            }
+            & .totaltests {
+                font-size: 13px;
+                line-height: normal;
+                margin-top: 9px;
+                // font-weight: 500;
+                color: #3e3e3e;
+            }
+            & .more {
+                color: #ffa007;
+                font-weight: 500;
+            }
+            & .totalteststwo {
+                padding-bottom: 13px;
+            }
+            & .cardfooter {
+                padding-top: 13px;
+                & .mrp {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #000000a8;
+                }
+                & .offertitle {
+                    padding: 2px 7px;
+                    background-color:#17b57bf7;
+                    color: $white;
+                    margin-left: 14px;
+                    & del {
+                        margin-left:3px;
+                    }
+                }
+                & .price {
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: $black;
+                    line-height: normal;
+                    margin-top: 1px;
+                }
+            }
+            &:hover {
+                border-color: $theme1;
+            }
+        }
+    }
+    &.labdetailpage {
+        & .detailmain {
+            & .labName {
+                font-size: 16px;
+            }
+            & .totaltests {
+                font-size: 14px;
+                line-height: 19px;
+                margin: 12px 0;
+            }
+        }
+    }
+    & .labdetailcard {
+        padding: 18px;
+        top: 134px;
+        position: sticky;
+        & .labheading {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            line-height: normal;
+        }
+        & .labimage {
+            height: 60px;
+            min-width: 90px; 
+            max-width: 90px; 
+            padding: 7px;
+        }
+        & .labpara {
+            font-size: 14px;
+            font-weight: 400;
+            color: #3e3e3e;
+            margin-top: 15px;
+            padding-top: 15px;
+            line-height: 19px;
+        }
+        & .timing {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 12px;
+            color: #3e3e3e;
+            & span {
+                margin-right: 2px;
+            }
+        }
+    }
+    & .testdetailcard {
+        padding: 18px;
+    }
+    &.testdetailpage {
+        & .detailmain {
+            & .detailcard {
+                & .labName {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $black;
+                    line-height: normal;
+                }
+                & .totaltests {
+                    font-size: 14px;
+                    & span {
+                        margin-right: 3px;
+                    }
+                }
+                & .totalteststwo {
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+    &.choosetest {
+        & .detailmain {
+            & .detailcard {
+                border: 2px solid #dadada;
+                cursor: pointer;
+                &:hover {
+                    border-color: $theme1;
+                }
+            }
+        }
+        & .testinput:checked ~ .detailcard {
+            border: 2px solid $theme1;
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .labdetailsection {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        & .detailmain {
+            & .detailcard {
+                padding: 10px;
+
+                & .labName {
+                    font-size: 14px;
+                }
+                & .totaltests {
+                    font-size: 13px;
+                }
+                & .more {
+                }
+                & .totalteststwo {
+                    padding-bottom: 10px;
+                }
+                & .cardfooter {
+                    padding-top: 10px;
+                    & .mrp {
+                        font-size: 12px;
+                    }
+                    & .offertitle {
+                        padding: 1px 6px;
+                        margin-left: 8px;
+                        & del {
+                        }
+                    }
+                    & .price {
+                    }
+                }
+                & .applyBtn {
+                    padding: 5px 11px;
+                }
+                &:hover {
+                }
+            }
+        }
+        &.labdetailpage {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            & .detailmain {
+                & .labName {
+                }
+                & .totaltests {
+                    line-height: 17px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        & .labdetailcard {
+            padding: 16px;
+            & .labheading {
+                font-size: 15px;
+            }
+            & .labimage {
+                height: 55px;
+                min-width: 85px; 
+                max-width: 85px; 
+                padding: 7px;
+            }
+            & .labpara {
+                font-size: 13px;
+                margin-top: 12px;
+                padding-top: 12px;
+            }
+            & .timing {
+                font-size: 13px;
+                line-height: 18px;
+                margin-top:12px;
+                & span {
+                }
+            }
+        }
+        & .testdetailcard {
+            padding: 16px;
+        }
+        &.testdetailpage {
+            & .detailmain {
+                & .detailcard {
+                    &.inputcard {
+                        font-size: 15px;
+                    }
+                    & .labName {
+                        font-size: 15px;
+                    }
+                    & .totaltests {
+                        font-size: 13px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        &.choosetest {
+            & .detailmain {
+                & .detailcard {
+                    & .labName {
+                        font-size: 15px;
+                    }
+                    & .totaltests {
+                        font-size: 13px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 13px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .labdetailsection {
+        & .detailmain {
+            & .detailcard {
+                padding: 15px;
+                & .labName {
+                }
+                & .totaltests {
+                    font-size: 12px;
+                }
+                & .more {
+                }
+                & .totalteststwo {
+                }
+                & .cardfooter {
+                    & .mrp {
+                    }
+                    & .offertitle {
+                        margin-left: 12px;
+                        & del {
+                        }
+                    }
+                    & .price {
+                    }
+                }
+                & .applyBtn {
+                    padding: 6px 14px;
+                }
+                &:hover {
+                    border-color:#dadada;
+                }
+            }
+        }
+        &.labdetailpage {
+            & .detailmain {
+                & .labName {
+                }
+                & .totaltests {
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        & .labdetailcard {
+            padding: 13px;
+            & .labheading {
+                font-size: 14px;
+            }
+            & .labimage {
+                height: 50px;
+                min-width: 80px; 
+                max-width: 80px; 
+                padding: 5px;
+            }
+            & .labpara {
+                font-size: 12px;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+            & .timing {
+                font-size: 12px;
+                line-height: 17px;
+                margin-top:10px;
+                & span {
+                }
+            }
+        }
+        & .testdetailcard {
+            padding: 13px;
+        }
+        &.testdetailpage {
+            & .detailmain {
+                & .detailcard {
+                    &.inputcard {
+                        font-size: 14px;
+                    }
+                    & .labName {
+                        font-size: 15px;
+                    }
+                    & .totaltests {
+                        font-size: 13px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &.choosetest {
+            & .detailmain {
+                & .detailcard {
+                    & .labName {
+                        font-size: 14px;
+                    }
+                    & .totaltests {
+                        font-size: 12px;
+                        & span {
+                        }
+                    }
+                    & .totalteststwo {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+// lab test detail section end
+
+
+// complete blood count section start
+.cbaSection {
+    padding-top: 45px;
+    & .cbacard {
+        padding: 15px;
+        top: 134px;
+        position: sticky;
+        & .cbaHeading {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+            line-height: normal;
+        }
+        & .cbadata {
+            font-size: 14px;
+            font-weight: 500;
+            color: #5a5a5a;
+            margin-top: 10px;
+        }
+        & .getreport {
+            font-size: 14px;
+            font-weight: 500;
+            & .timeicon {
+                height: 17px;
+                max-width: 17px;
+                min-width: 17px;
+            }
+            & .time {
+                color: $theme1;
+                font-weight: 600;
+            }
+            &.norequire {
+                color: #FF3131;
+                margin-bottom: 13px;
+            }
+        }
+        & .cardfooter {
+            padding-top: 13px;
+            & .mrp {
+                font-size: 12px;
+                font-weight: 500;
+                color: #000000a8;
+            }
+            & .offertitle {
+                padding: 2px 7px;
+                background-color:#17b57bf7;
+                color: $white;
+                margin-left: 14px;
+                & del {
+                    margin-left:3px;
+                }
+            }
+            & .price {
+                font-size: 13px;
+                font-weight: 700;
+                color: $black;
+                line-height: normal;
+                margin-top: 1px;
+            }
+        }
+    }
+    & .cbarightcard {
+        padding: 20px;
+        & .cardHeading {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+            line-height: normal;
+        }
+        & .aboutdata {
+            font-size: 14px;
+            color: #222222;
+            margin-top: 13px;
+        }
+    }
+    &.testaboutpage {
+        & .labimg {
+            height: 60px;
+            min-width: 90px;
+            max-width: 90px;
+            padding: 6px;
+        }
+        & .applyBtn {
+            padding: 11px 0;
+            width: 100%;
+        }
+        & .aboutheading {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 15px;
+            line-height:normal;
+        }
+        & .cbarightcard {
+            & .cardHeading {
+            }
+            & .aboutdata {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .cbaSection {
+        padding-top: 40px;
+        & .cbacard {
+            & .cbaHeading {
+            }
+            & .cbadata {
+            }
+            & .getreport {
+                & .timeicon {
+                }
+                & .time {
+                }
+                &.norequire {
+                }
+            }
+            & .cardfooter {
+                & .mrp {
+                }
+                & .offertitle {
+                    & del {
+                    }
+                }
+                & .price {
+                }
+            }
+        }
+        & .cbarightcard {
+            margin-top: 35px;
+            & .cardHeading {
+            }
+            & .aboutdata {
+            }
+        }
+        &.testaboutpage {
+            & .labimg {
+            }
+            & .applyBtn {
+                width: 70%;
+            }
+            & .aboutheading {
+            }
+            & .cbarightcard {
+                & .cardHeading {
+                }
+                & .aboutdata {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .cbaSection {
+        padding-top: 40px;
+        & .cbacard {
+            padding: 15px;
+            position: unset;
+            & .cbaHeading {
+                font-size: 17px;
+            }
+            & .cbadata {
+            }
+            & .getreport {
+                & .timeicon {
+                }
+                & .time {
+                }
+                &.norequire {
+                }
+            }
+            & .cardfooter {
+                & .mrp {
+                }
+                & .offertitle {
+                    & del {
+                    }
+                }
+                & .price {
+                }
+            }
+        }
+        & .cbarightcard {
+            padding: 15px;
+            margin-top: 30px;
+            & .cardHeading {
+                font-size: 17px;
+            }
+            & .aboutdata {
+                font-size: 13px;
+            }
+        }
+        &.testaboutpage {
+            & .labimg {
+            }
+            & .applyBtn {
+                width: 80%;
+            }
+            & .aboutheading {
+                font-size: 15px;
+                margin-top: 13px;
+            }
+            & .cbarightcard {
+                & .cardHeading {
+                }
+                & .aboutdata {
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .cbaSection {
+        padding-top: 30px;
+        & .cbacard {
+            padding: 12px;
+            & .cbaHeading {
+                font-size: 16px;
+            }
+            & .cbadata {
+                font-size: 12px;
+                margin-top: 7px;
+            }
+            & .getreport {
+                font-size: 13px;
+                & .timeicon {
+                    height: 15px;
+                    max-width: 15px;
+                    min-width: 15px;
+                }
+                & .time {
+                }
+                &.norequire {
+                }
+            }
+            & .cardfooter {
+                & .mrp {
+                }
+                & .offertitle {
+                    & del {
+                    }
+                }
+                & .price {
+                }
+            }
+        }
+        & .cbarightcard {
+            padding: 12px;
+            margin-top: 30px;
+            & .cardHeading {
+                font-size: 16px;
+            }
+            & .aboutdata {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+        &.testaboutpage {
+            & .labimg {
+            }
+            & .applyBtn {
+                width: 100%;
+            }
+            & .aboutheading {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            & .cbarightcard {
+                & .cardHeading {
+                }
+                & .aboutdata {
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
+// complete blood count section end
+
+
+// file upload section start 
+.uploadfileSection {
+    padding-top: 45px;
+    & .uploadfilecard {
+        padding: 15px;
+        border: 1px solid lighten($black, 85);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 4px rgba(33,33,33,.2); 
+        & .fileimg {
+            height: 60px;
+            width: 60px;
+            padding: 12px;
+        }
+        & .uploadicon {
+            // height: 30px;
+            // width: 30px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        & .uploadheading {
+            font-size: 16px;
+            font-weight: 600;
+            color: $theme1;
+            line-height: normal;
+        }
+        & .uploadTitle {
+            font-size: 14px;
+            color: lighten($black, 20);
+            line-height: normal;
+            margin-top: 3px;
+        }
+        & .whatsappbtn {
+            padding: 12px;
+        }
+        &:hover {
+            border-color:  $theme1;
+            box-shadow: 0 0 11px rgba(33,33,33,.2); 
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .uploadfileSection {
+        padding-top: 40px;
+        & .uploadfilecard {
+            & .fileimg {
+            }
+            & .uploadheading {
+                font-size: 15px;
+            }
+            & .uploadTitle {
+                font-size: 13px;
+            }
+            & .whatsappbtn {
+            }
+            &:hover {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .uploadfileSection {
+        padding-top:30px;
+        & .uploadfilecard {
+            padding: 12px;
+            & .fileimg {
+                height: 55px;
+                width: 55px;
+                padding: 11px;
+            }
+            & .uploadheading {
+                font-size: 14px;
+                font-weight: 600;
+                color: $theme1;
+                line-height: normal;
+            }
+            & .uploadTitle {
+                font-size: 12px;
+                margin-top: 3px;
+            }
+            & .whatsappbtn {
+                padding: 11px;
+            }
+            &:hover {
+                border: 1px solid lighten($black, 85);
+                box-shadow: 0 0 4px rgba(33,33,33,.2); 
+            }
+        }
+    }
+}
+// file upload section end
+
+
+// order from store near you section start
+.nearstoreSection {
+    padding-top: 45px;
+    & .storecard {
+        & .storeimg {
+            aspect-ratio: 3/2;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 0%;
+                width: 100%;
+                background-color: rgba($black, 0.4);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & .storedetail {
+            font-size: 18px;
+            font-weight:600;
+            color: $white;
+            & .storename {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -20px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        &:hover {
+            & .storeimg {
+                &::before {
+                    height: 100%;
+                }
+            }
+            & .storedetail {
+                & .storename {
+                    bottom: 15px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .nearstoreSection {
+        padding-top: 40px;
+        & .storecard {
+            & .storeimg {
+                &::before {
+                }
+            }
+            & .storedetail {
+                & .storename {
+                }
+            }
+            &:hover {
+                & .storeimg {
+                    &::before {
+                    }
+                }
+                & .storedetail {
+                    & .storename {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .nearstoreSection {
+        & .storecard {
+            & .storeimg {
+                &::before {
+                }
+            }
+            & .storedetail {
+                font-size: 17px;
+                & .storename {
+                }
+            }
+            &:hover {
+                & .storeimg {
+                    &::before {
+                    }
+                }
+                & .storedetail {
+                    & .storename {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .nearstoreSection {
+        padding-top: 35px;
+        & .storecard {
+            & .storeimg {
+                &::before {
+                    height: 100%;
+                }
+            }
+            & .storedetail {
+                font-size: 16px;
+                & .storename {
+                    left: 50%;
+                    bottom: 15px;
+                }
+            }
+            &:hover {
+                & .storeimg {
+                    &::before {
+                    }
+                }
+                & .storedetail {
+                    & .storename {
+                    }
+                }
+            }
+        }
+    }
+}
+// order from store near you section end

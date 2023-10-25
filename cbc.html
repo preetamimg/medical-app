@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical App</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- SWIPER CSS-->
+    <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
+        <img src="assets/img/labtest/whatspp.png" alt="whatspp" class="h-100 w-100 img-fluid">
+    </a>
+    <!-- navbar start  -->
+    <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
+        <div class="headermain w-100 position-relative bg-white">
+        <div class="row m0 align-items-center justify-content-between">
+            <div class="col-auto">
+            <div class="d-flex align-items-center gap-md-3 gap-2">
+                <button class="navbar-toggler p-0 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navoffcanvas" aria-controls="navoffcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><img src="assets/img/menu.svg" alt="menu" class="h-100 w-100 img-fluid"></span>
+                </button>
+                <a class="navbar-brand navLogo m-0" href="index.html">
+                <img src="assets/img/mainlogo.png" alt="logo" class="h-100">
+                </a>
+                <button class="btn pincodeBtn pe-0 dflex align-items-center gap-2 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+                <div class="d-flex align-items-center gap-1">
+                    <div class="d-flex align-items-center justify-content-center locationicon">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                    </div>
+                    <div class="deliveryAdd text-start">Delivery Address</div>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                    <div class="selectAddress text-start">Select Adderss</div>
+                    <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                    </span>
+                </div>
+                </button>
+            </div>
+            </div>
+            <div class="col d-md-block d-none ">
+            <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
+                <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+                </button> -->
+                <!-- <button class="btn px-3 text-nowrap border-end rounded-0 pincodeBtn d-flex align-items-center gap1 shadow-none border-0" data-bs-toggle="modal" data-bs-target="#locationmodal">
+                <div class="d-flex align-items-center justify-content-center locationicon">
+                    <img src="assets/img/locationicon.svg" alt="location" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="deliveryAdd text-start">Delivery Address</div>
+                <span class="d-flex align-items-center justify-content-center dropdwonarrow">
+                    <img src="assets/img/dropdown.svg" alt="dropdown" class="h-100 w-100 img-fluid">
+                </span>
+                </button> -->
+                <div class="d-flex w-100 h-100 px2 align-items-center searchData">
+                <!-- <span class="searchicon d-flex align-items-center justify-content-center border-0 p-0">
+                    <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                </span> -->
+                <div class="dropdown searchdrop position-relative border-end">
+                    <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Medicine
+                    </button>
+                    <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center position-relative w-100 h-100">
+                    <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                    <button class="btn searchBtn rounded-5 h-100">Search</button>
+                    <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                    <div class=" h-100 overflow-y-auto ">
+                        <ul class="list-unstyled h-100">
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                            Medical
+                            <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                            </button>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-auto">
+            <div class="d-flex align-items-center headerIcons">
+                <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
+                    <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                </a>
+                <a class="cardBtn d-flex align-items-center justify-content-center position-relative" data-bs-toggle="offcanvas" href="#cartoffcanvas" role="button" aria-controls="cartoffcanvas">
+                    <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
+                </a>
+                <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
+                    <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
+                </a>
+                <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
+                    <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                        <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    </span>
+                    <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
+                    <span class="d-lg-inline-flex d-none"> /</span>
+                    <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="offcanvasNav bg-light h100 align-items-center w-100">
+            <ul class="navbar-items d-flex list-unstyled m-0 justify-content-center flex-grow-1 pe3">
+                <li class="nav-item">
+                <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medicine</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbarLink position-relative p-0" href="labtest.html">Lab Test</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Medical Devices</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Baby Product</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Beauty Product</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbarLink position-relative p-0" href="javascript:;">Supplementary Product</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar start  -->
+
+    <main class="main">
+
+        <!-- lab test hero section start  -->
+        <div class="container-fluid labtestherosection">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="labads overflow-hidden rounded-2 h-100">
+                        <div class="swiper mySwiper h-100 labtestslider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest1.png" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest2" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest2.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest3.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest4.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="labtestbanner h-100 overflow-hidden rounded-2">
+                                        <img src="assets/img/labtest/labtest5.jpg" alt="lab test" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- search offcanvas start  -->
+            <div class="offcanvas offcanvas-top searchOffcanvas" tabindex="-1" id="searchoffcanvas" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-body d-flex align-items-center overflow-visible">
+                    <div class="d-flex align-items-center px2 border border-1 mx-auto searchmain rounded-5 bg-white shadow-sm rounded-2">
+                        <div class="d-flex w-100 h-100 px2 align-items-center searchData">
+                        <div class="dropdown searchdrop position-relative border-end">
+                            <button class="btn border-0 dropdown-toggle dropdownBtn" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Medicine
+                            </button>
+                            <ul class="dropdown-menu searchMenu overflow-y-auto rounded-4 border-0 w-100">
+                            <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                            <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                            <li><a class="dropdown-item searchInnerData" href="javascript:;">Medicine</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center position-relative w-100 h-100">
+                            <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search...">
+                            <!-- <button class="btn searchBtn rounded-5 h-100">Search</button> -->
+                            <button class="searchicon bg-transparent border-0 d-flex align-items-center justify-content-center border-0 p-0">
+                            <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                            </button>
+                            <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-5 w-100">
+                            <div class=" h-100 overflow-y-auto ">
+                                <ul class="list-unstyled h-100">
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="javascript:;" class="searchInnerData d-flex align-items-center justify-content-between text-decoration-none w-100">
+                                    Medical
+                                    <button class="closeBtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                        <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- search offcanvas end  -->
+        </div>
+        <!-- lab test hero section end -->
+        
+        <!-- complete blood count section start -->
+        <div class="container-fluid cbaSection">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="bg-light z-1 rounded-2 cbacard shadow-sm border">
+                        <div class="row">
+                            <div class="col-12 cbaHeading">
+                                Complete Blood Count (CBA)
+                            </div>
+                            <div class="col-12 cbadata">
+                                Also Known as Complete Blood Picture. Complete Blood Profile. CBP
+                            </div>
+                            <div class="col-12 pt-3">
+                                <div class="getreport d-flex align-items-center gap-2">
+                                    <span class="d-flex align-items-center justify-content-center timeicon">
+                                        <img src="assets/img/time.svg" alt="time" class="h-100 w-100">
+                                    </span>
+                                    <span class="time">Get Report </span>:  Within 6 Hours
+                                </div>
+                            </div>
+                            <div class="col-12 pt-2">
+                                <div class="getreport norequire d-flex align-items-center gap-2">
+                                    <span class="d-flex align-items-center justify-content-center timeicon">
+                                        <img src="assets/img/info.svg" alt="time" class="h-100 w-100">
+                                    </span>
+                                    No Preparation require
+                                </div>
+                            </div>
+                            <div class="col-12 border-top cardfooter">
+                                <div class="mrp d-flex align-items-center gap-1">
+                                    <div class="fw-semibold">MRP</div>
+                                    <del>&#8377; 556</del>
+                                    <div class="offertitle rounded-pill ">
+                                        25% off
+                                    </div>
+                                </div>
+                                <div class="price">&#8377; 520</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="cbarightcard bg-light shadow-sm rounded-2 border">
+                        <div class="row">
+                            <div class="col-12 cardHeading">About Us</div>
+                            <div class="aboutdata">
+                                The HBA1c blood test measures your average level of blood sugar over the past 90 days. It is also called glycated Haemoglobin becouse most monosaccharides bond with the haemoglobin to 'glycated'. The higher the glucose levels in the blood. the more it sticks to or binds with the haemoglobin. and the higher is glycated haemoglobin or HBA1c level in the blood.
+                            </div>
+                            <div class="aboutdata">
+                                One of the reasons why the HBA1c test is done is to know whether a person is prediabetic or prone to diabetes. Accordingly. the person can take approprite action to prevent diabets to a cetain extent. this includes measures like reducing fat and sugar intake. exercising regularlyl. and losing weight.
+                            </div>
+                            <div class="aboutdata">
+                                The HBA1c blood test measures your average level of blood sugar over the past 90 days. It is also called glycated Haemoglobin becouse most monosaccharides bond with the haemoglobin to 'glycated'. The higher the glucose levels in the blood. the more it sticks to or binds with the haemoglobin. and the higher is glycated haemoglobin or HBA1c level in the blood.
+                            </div>
+                            <div class="aboutdata">
+                                One of the reasons why the HBA1c test is done is to know whether a person is prediabetic or prone to diabetes. Accordingly. the person can take approprite action to prevent diabets to a cetain extent. this includes measures like reducing fat and sugar intake. exercising regularlyl. and losing weight.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- complete blood count section start -->
+
+    </main>
+
+
+    <!-- footer start  -->
+    <div class="container-fluid footer ">
+        <div class="row align-items-lg-center gap-sm-0 gap-3 findusSection commonSection">
+            <div class="col-sm-4 ">
+                <div class="d-flex align-items-center findcard">
+                <div class="findicon d-flex align-items-center justify-content-center">
+                    <img src="assets/img/location.svg" alt="location" class="h-100 w100 img-fluid">
+                </div>
+                <div class="d-flex align-items-center flex-sm-column gap-2">
+                    <div class="cityName">Find Us:-</div>
+                    <div class="cityDetail">Vaishali nagar, jaipur</div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="d-flex align-items-center findcard">
+                <div class="findicon d-flex align-items-center justify-content-center">
+                    <img src="assets/img/call.svg" alt="location" class="h-100 w100 img-fluid">
+                </div>
+                <div class="d-flex align-items-center flex-sm-column gap-2">
+                    <div class="cityName">Call us:-</div>
+                    <div class="cityDetail">9876543210 0</div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex align-items-center findcard">
+                <div class="findicon d-flex align-items-center justify-content-center">
+                    <img src="assets/img/mail.svg" alt="location" class="h-100 w100 img-fluid">
+                </div>
+                <div class="d-flex align-items-center flex-sm-column gap-2">
+                    <div class="cityName">Mail us:-</div>
+                    <div class="cityDetail">mail@info.com</div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footerinner commonSection">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <a href="index2.html" class="footerlogo d-flex align-items-center justify-content-center"><img src="assets/img/mainlogo.png" alt="logo" class="w-100"></a>
+                <div class="footerdata pb-1">The concept of medicine home delivery has been taken to a new level by the Medhunt online medicine delivery app.</div>
+                <div class="footerHeading pt-2 mb-lg-4 mb-3" >Follow us</div>
+                <div class="d-flex align-items-center footericons">
+                <a href="javascript:;" class="socialIcon rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="assets/img/facebook.svg" alt="Facebook" class="h-100 w-100 img-fluid">
+                </a>
+                <a href="javascript:;" class="socialIcon twitter rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="assets/img/twiiter.svg" alt="twitter" class="h-100 w-100 img-fluid">
+                </a>
+                <a href="javascript:;" class="socialIcon googlePlus rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="assets/img/googleplus.svg" alt="google plus" class="h-100 w-100 img-fluid">
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 companysection">
+                <div class="footerHeading footerheadingtwo position-relative d-inline-block">COMPANY</div>
+                <ul class="list-unstyled m-0 footermenu d-flex flex-column">
+                <li><a href="javascript:;" class="text-decoration-none footerLink">About Medhunt</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">Costumer Speak</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">In the News</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">Career</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 shopinsection">
+                <div class="footerHeading footerheadingtwo position-relative d-inline-block">SHOPPING</div>
+                <ul class="list-unstyled m-0 footermenu d-flex flex-column">
+                <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by A-Z</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">Browse by Manufacturers</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">Health Article</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">Offers / Coupons</a></li>
+                <li><a href="javascript:;" class="text-decoration-none footerLink">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 subscribesection">
+                <div class="footerHeading footerheadingtwo position-relative d-inline-block">SUBSCRIBE</div>
+                <div class="footerdata ">
+                Get a free subscription to our health and fitness tip and stay tuned to our latest offers
+                </div>
+                <div class="input-group">
+                <input type="text" class="form-control rounded-0 shadow-none bg-transparent border-0" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="btn h-100 d-flex align-items-center justify-content-center rightarrow rounded-0 p0 border-0">
+                    <img src="assets/img/newssellter.svg" alt="email" class="h00 w-100 img-fluid">
+                </button>
+                </div>
+                <div class="d-flex align-items-center gap-2 downloadbuttonmain">
+                <a href="javascript:;" class="android_btn text-decoration-none textblack shadow-none d-flex align-items-center -content-center">
+                    <div class="icon me-1">
+                    <img src="assets/img/futerebrand/downloadandroid.svg" class="h-100 w-100" alt="download">
+                    </div>
+                    <div class="text-start">
+                        <div class="downloadTitle">Download</div>
+                        <div class="fw-bold downloadapp">Android App</div>
+                    </div>
+                    </a>
+                    <a href="javascript:;" class="android_btn text-decoration-none textblack shadow-none d-flex align-items-center -content-center">
+                    <div class="icon me-1">
+                    <img src="assets/img/ios.svg" class="h-100 w-100" alt="download">
+                    </div>
+                    <div class="text-start">
+                        <div class="downloadTitle">Download</div>
+                        <div class="fw-bold downloadapp">Ios App</div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row paymentMain pt4 border-bottom border-secondary border-opacity-25">
+        <div class="col-12 footerHeading mb-0 text-sm-start text-center">OUR PAYMENT PARTNERS</div>
+        <div class="col-12 pt-sm-3 pt-2">
+            <div class="d-flex flex-wrap align-items-center gap-md-4 gap-2 justify-content-sm-start justify-content-center">
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/googlepay.svg" alt="payment" class="h-100">
+            </div>
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/phonepay.svg" alt="payment" class="h-100">
+            </div>
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/rupay.svg" alt="payment" class="h-100">
+            </div>
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/visa.svg" alt="payment" class="h-100">
+            </div>
+            <!-- <div class="paymentImg">
+                <img src="assets/img/futerebrand/simpl.svg" alt="payment" class="h-100">
+            </div> -->
+            <div class="paymentImg">
+                <img src="assets/img/futerebrand/paytm.svg" alt="payment" class="h-100">
+            </div>
+            <!-- <div class="paymentImg">
+                <img src="assets/img/futerebrand/mastercard.svg" alt="payment" class="h-100">
+            </div> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid copyrightmain">
+        <div class="row align-items-center gap-md-0 gap-2">
+        <div class="copyrightTitle col-md text-md-start text-center">Copyright© 2023. All Rights Reserved.</div>
+        <div class="col-md-auto">
+            <ul class="list-unstyled privacymenu d-flex justify-content-md-start flex-wrap justify-content-center m-0">
+            <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Terms and Conditions</a></li>
+            <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Privacy Policy</a></li>
+            <li><a href="javascript:;" class="text-decoration-none privacyLink text-nowrap">Shipping and Delivery Policy</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <!-- footer end  -->
+
+    <!-- MAIN JS  -->
+    <script src="assets/js/main.min.js"></script>
+    <!-- BOOTSTRAP JS  -->
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- SWIPER JS  -->
+    <script src="assets/libs/swiper/js/swiper-bundle.min.js"></script>
+
+    <!-- toolpits start  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- toolpits end  -->
+
+    <!-- location offcanvas start-->
+    <div class="offcanvas offcanvas-end deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header bg-light border-bottom">
+            <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+            <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row addressmain">
+            <div class="col-12 deliveryData fw-medium">
+                Get access to your Address, Order, and Wishlist
+            </div>
+            <div class="col-12 mx-auto py3">
+            <button type="button" class="btn mxuto w-100 addaddressbtn justify-content-center rounded-1 d-flex flexcolumn align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
+                <span class="d-flex align-items-center justify-content-center plusicon">
+                    <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
+                </span>
+                <span class="addressTile">Add Address</span>
+                </button>
+                </div>
+                <div class="col-12">
+                    <div>
+                    <div class="inputpinmain d-flex align-items-center position-relative w-100">
+                        <input type="text" id="House" class="form-control h-100 border-0 shadow-none pincodeInput w-100 ps-0">
+                        <label for="House" class="pincodeLabel">pincode</label>
+                        <button class="p-0 border-0 bg-transparent applypinBtn">Apply</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12 py4">
+                    <div>
+                        <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress5">
+                        <label for="selectAddress5" class="addressLabel w-100">
+                            <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-baseline justify-content-between">
+                                <div class="d-flex align-items-center cardheader">
+                                    <div class="namePerson2">Delivery Address</div>
+                                    <button class="deletebtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                    <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    <button class="editbtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                    <img src="assets/img/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                    </button> 
+                                </div>
+                                <span class="checkBox d-flex align-items-center">
+                                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                                </span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="namePerson mt-2">Rakesh Sharma</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                                <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 py4">
+                    <div>
+                    <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress6">
+                    <label for="selectAddress6" class="addressLabel w-100">
+                        <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-baseline justify-content-between">
+                            <div class="d-flex align-items-center cardheader">
+                                <div class="namePerson2">Delivery Address</div>
+                                <button class="deletebtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                                <button class="editbtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                </button> 
+                            </div>
+                            <span class="checkBox d-flex align-items-center">
+                                <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="namePerson mt-2">Rakesh Sharma</div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                            <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                        </div>
+                        </div>
+                    </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcnavas-footer bglight border-top">
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn applyBtn w-100">Save and Continue</button>
+            </div>
+        </div>
+    </div>
+    <!-- location offcanvas end-->
+
+    <!-- cart offcanvas start  -->
+    <div class="offcanvas offcanvas-end cartoffcanvas" tabindex="-1" id="cartoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom">
+            <div class="offcanvas-title cartTitle fw-semibold" id="offcanvasExampleLabel">Select a cart to Checkout </div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- select card section start  -->
+            <div class="d-none">
+                <a href="javascript:;" class="selectCard text-decoration-none mt-0 d-flex rounded-2 bg-light">
+                <div class="row align-items-center">
+                    <div class="col-auto border-end">
+                    <div class="medicineimg">
+                        <img src="assets/img/cart/medicine.png" alt="medicine" class="h-100 w-100 img-fluid">
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="selectTitle">Medicine & Essentials</div>
+                    <div class="selectTitletwo">7 items</div>
+                    </div>
+                </div>
+                </a>
+        
+                <a href="javascript:;" class="selectCard text-decoration-none d-flex rounded-2 bg-light">
+                <div class="row align-items-center">
+                    <div class="col-auto border-end">
+                    <div class="medicineimg">
+                        <img src="assets/img/cart/tests.png" alt="medicine" class="h-100 w-100 img-fluid">
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="selectTitle">Tests</div>
+                    <div class="selectTitletwo">7 items</div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <!-- select card section end  -->
+
+            <!-- cart section start -->
+            <div class="row gap-sm-3 gap-2">
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pt-1">
+                <div class="summaryCard sticky-top z-1 rounded-2 bg-light">
+                    <div class="row mx-0">
+                        <div class="cartHeading col-12 ">
+                        Cart Breakdown
+                        </div>
+                        <!-- <div class="col-12 pb-sm-4 pb-3">
+                            <div class="inputpinmain coupanCode rounded5 d-flex align-items-center position-relative w-100">
+                                <input type="text" id="Pincode" autocomplete="url" class="form-control  ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                                <label for="Pincode" class="pincodeLabel">Apply coupon</label>
+                                <button class="btn ps-1 applypinBtn bg-transparent border-0">Apply</button>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-12 cartSubheading border-top">Bill Summary</div> -->
+                        <div class="col-12 cartdata border-top ">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Cart Total</div>
+                                <div class="cardTitle text-dark fw-medium">Rs.1797</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartdata">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Discount on MRP</div>
+                                <div class="cardTitle discount fw-medium">-Rs.24</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartdata">
+                        <div class="d-flex  align-items-center justify-content-between">
+                            <div class="cardTitle">Coupan discount</div>
+                            <div class="cardTitle discount fw-medium">-Rs.24</div>
+                        </div>
+                    </div>
+                        <div class="col-12 cartdata deliverycharge">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Delivery Charge</div>
+                                <div class="cardTitle text-dark fw-medium">Rs.197</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartSubheading totalpayment border-top">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>To Pay</div>
+                                <div class="totalpay">Rs.2534.00</div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 cartdata border-top text-center ">
+                            <div class="d-flex align-items-center justify-content-center py-2">
+                                <a href="deliveryaddress.html" class="continueBtn rounded-2 applyBtn text-decoration-none">Continue</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- cart cart section end -->
+        </div>
+        <div class="offcanvas-footer border-top">
+            <div class="row">
+                <div class="col-12 pb-2 mb-1">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-end gap-1">
+                    <div class="locationicon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid" >
+                    </div>
+                    <div>
+                        <div class="billed">
+                        Bilied to--
+                        </div>
+                        <div class="fw-semibold pincode">302020</div>
+                    </div>
+                    </div>
+                    <button class="btn border-0 changeadd" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">Change</button>
+                </div>
+                
+                </div>
+                <div class="col-12 border-top pt-2">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                    <div class="amoutpay">
+                        Amout to pay
+                    </div>
+                    <div class="totalpay">
+                        &#8377; 542.54
+                    </div>
+                    </div>
+                    <div>
+                    <button type="button" class="btn applyBtn w-100">Add Address</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart offcanvas end  -->
+
+    <!-- address offcanvas start  -->
+    <div class="offcanvas offcanvas-end deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom bg-light">
+            <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Add Address</div>
+            <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row locationcontent">
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="House" class="form-control shadow-none pincodeInput w-100 ps-0">
+                    <label for="House" class="pincodeLabel">House No.</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="streetno1" class="form-control shadow-none pincodeInput w-100 ps-0">
+                    <label for="streetno1" class="pincodeLabel">Street No.1</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="streetno2" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="streetno2" class="pincodeLabel">Street No.2</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="city" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="city" class="pincodeLabel">City</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="state" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="state" class="pincodeLabel">State</label>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="inputpinmain position-relative w-100">
+                    <input type="text" id="Pincode" class="form-control shadow-none  pincodeInput w-100 ps-0">
+                    <label for="Pincode" class="pincodeLabel">Pincode</label>
+                </div>
+                </div>
+                <div class="col-12 pt-2">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="form-check p-0">
+                        <input class="form-check-input checkbox" name="check" hidden type="radio" checked value="" id="Home">
+                        <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Home">
+                        Home
+                        </label>
+                    </div>
+                    <div class="form-check p-0">
+                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Work">
+                    <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Work">
+                        Work
+                    </label>
+                    </div>
+                    <div class="form-check p-0">
+                    <input class="form-check-input checkbox" name="check" hidden type="radio" value="" id="Other">
+                    <label class="form-check-label checkLabel checkLabel2 rounded-2" for="Other">
+                        Other
+                    </label>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcnavas-footer bglight border-top">
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn applyBtn w-100">Save and Continue</button>
+            </div>
+        </div>
+    </div>
+    <!-- address offcanvas end  -->
+
+    <!-- edite profile offcanvas  -->
+    <div class="offcanvas offcanvas-end editeProfileOffcanvas " tabindex="-1" id="offcanvasExampleedit" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header offcanvasHeader">
+        <div class="offcanvas-title offcanvasTitle d-flex align-items-center" id="offcanvasExampleLabel"> Edit Profile</div>
+        <button type="button " class="offcanvasTitle border-0 shadow-none bg-transparent d-flex align-items-center" data-bs-dismiss="offcanvas" aria-label="Close"> <span class="d-inline-flex rightIcon"><img src="assets/img/signup/Close.svg" alt="close" class="img-fluid w-100 h-100"></span></button>
+        </div>
+        <div class="offcanvas-body offcanvasBody border-top ">
+        <div class="row">
+            <div class="col-12 ">
+            <form class="formSection">
+                <div class="mb-3">
+                <label for="firstName" class="labelUserin">First Name</label>
+                <!-- <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number"> -->
+                <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="Medh" id="firstName">
+                </div>
+                <div class="mb-3">
+                <label for="LastName" class="labelUserin">Last Name</label>
+                <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="unt" id="LastName">
+                </div>
+                <div class="mb-3">
+                <label for="GENDER" class="labelUserin">GENDER</label>
+                <select class="form-select border-0 shadow-none formInputinformation ps-0 border border-bottom rounded-0 pt-0" aria-label="Default select example">
+                    <option selected="">No-data</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+                </div>
+                <div class="mb-3">
+                <label for="mobileNumber" class="labelUserin">Age</label>
+                <div class="input-group ">
+                    <!-- <span class=" border-bottom border-end rounded-0 shadow-none formInputinformation border-end"> +91</span> -->
+                    <input type="date" class="form-control border-bottom ps-0 border-0 rounded-0  pt-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="mobileNumber" class="labelUserin">Email</label>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 ps-0 shadow-none formInputinformation" value="img.@gmail.com" id="mobileNumber">
+                    <button class="btn border-0 shadow-none border-bottom rounded-0 formInputinformation text-danger" type="button" id="button-addon2">Verify</button>
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="mobileNumber" class="labelUserin">MOBILE NUMBER</label>
+                <div class="input-group ">
+                    <span class=" border-bottom rounded-0 shadow-none formInputinformations"> +91</span>
+                    <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 pb-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+                </div>
+                </div>
+                <div class="mt-4">
+                <button class="text-decoration-none border-0 w-100 d-flex align-items-center justify-content-center shadow-none rounded-3 editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleedit" type="button" aria-controls="offcanvasExample">Save Change</button>
+                
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- edite profile offcanvas  end -->
+    
+    <!-- how to use modal  -->
+    <div class="modal fade contentModal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalDialog modal-dialog-centered">
+        <div class="modal-content contentSection">
+            <div class="modal-header">
+            <div class="modal-title useTitle fs-5" id="exampleModalLabel">HOW TO USE NMS CASH?</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+                <div class="col-12">
+                <ul class="d-flex flex-column gap-2">
+                    <li class="usePera">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                    <li class="usePera">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, eveniet.</li>
+                    <li class="usePera">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maiores maxime amet!  </li>
+                    <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit qui unde eligendi, veniam laudantium dolorum.</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <!-- how to use modal end   -->
+
+    <!-- navbar offcanvas start -->
+    <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header bg-light border-bottom align-items-start">
+        <div class="offcanvas-title offcanvasLogo d-flex align-items-center justify-content-center" id="offcanvasExampleLabel">
+            <img src="assets/img/mainlogo.png" alt="logo" class="h-100 w-100 img-fluid">
+        </div>
+        <button type="button" class="btn-close closebtn mt-1 shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+        </button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-items d-flex list-unstyled flex-column m-0 justify-content-center flex-grow-1 pe3">
+            <li class="nav-item">
+            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Medicine</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Lab Test</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Medical Devices</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Baby Product</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Beauty Product</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Supplementary Product</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <!-- navbar offcanvas end -->
+
+    <!-- signup modal start -->
+    <div class="modal fade signupModal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalDialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modalContent">
+            <!-- <div class="modal-header modalHeader">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            </div> -->
+            <div class="modal-body modalBody">
+            <div class="row align-items-center">
+                <div class="col-12">
+                <button type="button" class="btn-close d-flex justify-content-end border-0 shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col-lg-6 ">
+                <div class="signupImg"><img src="assets/img/signup/signin.png" alt="signup" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-6 ">
+                <div class="row">
+                    <div class="col-xl-10  mx-auto">
+                    <div class="row">
+                        <div class="col-12">
+                        <div class="signupHeading text-center">Welcome in <span class="signupName">Medhunt</span></div>
+                        <div class="text-center signpera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto rerum earum soluta repellendus iure.</div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <form class="signUpForm">
+                                <div class="row">
+                                <div class="mb-sm-3 mb-2 col-12">
+                                    <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
+                                    <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
+                                </div>
+                            </div>
+                            
+                                <div class="mb-sm-3 mb-2 col-12">
+                                <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">Sign In</button>
+                                </div>
+                                <div class="mb-sm-3 mb-2 col-12">
+                                <div class="row gap-sm-0 gap-2">
+                                    <div class="col-sm-6">
+                                    <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/Google2.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                    <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class=" googleImg facebook me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Facebook</button>
+                                    </div>
+                                </div>
+                                </div>
+                            
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- <div class="modal-footer justify-content-md-end justify-content-center modalBody ">
+        <div class="row signUpForm">
+            <div class=" col-12">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto ">
+                <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn"> Term of Service</a>
+                </div>
+
+            </div>
+            </div>
+            </div>
+        </div>
+        </div> -->
+        </div>
+        </div>
+    </div>
+    <!-- signup modal end -->
+
+    <!-- future brand slider  -->
+    <script>
+        var swiper = new Swiper(".futurebrand", {
+        // slidesPerView: 1,
+        // spaceBetween: 10,
+        breakpoints: {
+            0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            },
+            500: {
+            slidesPerView: 3,
+            // spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 4,
+            // spaceBetween: 20,
+            },
+            991: {
+            slidesPerView: 5,
+            // spaceBetween: 20,
+            },
+            1100: {
+            slidesPerView: 6,
+            // spaceBetween: 20,
+            },
+        },
+        navigation: {
+            nextEl: ".nextBtn",
+            prevEl: ".prevBtn",
+        },
+        });
+    </script>
+    <!-- future brand slider  -->
+
+    <!-- offer slider  -->
+    <script>
+        var swiper = new Swiper(".offerslider", {
+        // slidesPerView: 1,
+        // spaceBetween: 10,
+        breakpoints: {
+            0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            },
+            500: {
+            slidesPerView: 1,
+            // spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            991: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            },
+            1100: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            },
+        },
+        navigation: {
+            nextEl: ".nextBtnoffer",
+            prevEl: ".prevBtnoffer",
+        },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".healthslider", {
+        // slidesPerView: 1,
+        // spaceBetween: 10,
+        breakpoints: {
+            0: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+            },
+            400: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            },
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            },
+            991: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            },
+            1100: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+            },
+        },
+        navigation: {
+            nextEl: ".nextBtnhealth",
+            prevEl: ".prevBtnhealth",
+        },
+        });
+    </script>
+
+    <script>
+    var swiper = new Swiper(".equipmentslider", {
+        // slidesPerView: 1,
+        // spaceBetween: 10,
+        breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        1100: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        },
+        },
+        navigation: {
+        nextEl: ".nextBtnequipment",
+        prevEl: ".prevBtnequipment",
+        },
+    });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".newarrivalslider", {
+        // slidesPerView: 1,
+        // spaceBetween: 10,
+        breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        1100: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        },
+        },
+        navigation: {
+        nextEl: ".nextBtnnew",
+        prevEl: ".prevBtnnew",
+        },
+    });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".heroswiper", {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        navigation: {
+        nextEl: ".navNext",
+        prevEl: ".navPrev",
+        },
+        breakpoints: {
+        0: {
+            slidesPerView: 1,
+            // spaceBetween: 20,
+        },
+        540: {
+            slidesPerView: 2,
+            // spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            // spaceBetween: 40,
+        },
+
+        1191: {
+            slidesPerView: 3,
+            // spaceBetween: 50,
+        },
+        1321: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        },
+    });
+    </script>
+
+    <!-- hero slider start  -->
+    <script>
+        var swiper = new Swiper(".heroslider", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        freeMode: true,
+        watchSlidesProgress: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+
+
+        
+    </script>
+    <!-- hero slider end -->
+
+    <!-- lab test banner slider start  -->
+    <script>
+        var swiper = new Swiper(".labtestslider", {
+            spaceBetween:10,
+            autoplay: {
+                delay: 2000,
+                // disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+            breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            540: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            1191: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            1321: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+        },
+        });
+    </script>
+    <!-- lab test banner slider end  -->
+
+    <!-- partner slider start -->
+    <script>
+        var swiper = new Swiper(".partnerSlider", {
+            spaceBetween: 20,
+            // centeredSlides: true,
+            loop: true,
+            speed:2000,
+            autoplay: {
+                delay:0,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                slidesPerView: 2.5,
+                spaceBetween: 15,
+                },
+                640: {
+                slidesPerView: 4,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                },
+                1024: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- partner slider  end-->
+
+    <!-- testimonal slider  start -->
+    <script>
+        var swiper = new Swiper(".testimonalslider", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                991: {
+                slidesPerView:3,
+                spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- testimonal slider  end -->
+</body>
+
+</html>

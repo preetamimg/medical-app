@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,11 @@
     <!-- SWIPER CSS-->
     <link rel="stylesheet" href="assets/libs/swiper/css/swiper-bundle.min.css">
 </head>
+
 <body>
-    <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
+    <!-- <a href="javascript:;" class="whatsappbutton position-fixed d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Book Appointment">
         <img src="assets/img/labtest/whatspp.png" alt="whatspp" class="h-100 w-100 img-fluid">
-    </a>
+    </a> -->
     <!-- navbar start  -->
     <nav class="navbar bg-white container-fluid sticky-top py-0 flex-column navbar-expand-lg" aria-label="Offcanvas navbar large" id="navbar">
         <div class="headermain w-100 position-relative bg-white">
@@ -165,23 +167,29 @@
             <div class="col-auto">
             <div class="d-flex align-items-center headerIcons">
                 <a href="javascript:;" class="cardBtn d-md-none d-flex align-items-center justify-content-center position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#searchoffcanvas" aria-controls="searchoffcanvas">
-                <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
+                    <img src="assets/img/search2.svg" alt="search" class="h-100 w-100 img-fluid">
                 </a>
-                <a href="cart.html" class="cardBtn d-flex align-items-center justify-content-center position-relative">
-                <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
-                <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
+                <a class="cardBtn d-flex align-items-center justify-content-center position-relative" data-bs-toggle="offcanvas" href="#cartoffcanvas" role="button" aria-controls="cartoffcanvas">
+                    <img src="assets/img/cart3.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    <span class="cartitem position-absolute d-flex align-items-center justify-content-center shadowsm rounded-circle">12</span>
                 </a>
                 <a href="javascript:;" class="cardBtn d-none align-items-center justify-content-center  position-relative">
-                <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
+                    <img src="assets/img/offer2.svg" alt="offer" class="h-100 w-100 img-fluid">
                 </a>
-                <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative">
-                <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
-                    <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
-                </span>
-                <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
-                <span class="d-lg-inline-flex d-none"> /</span>
-                <span href="javascript:;" class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
+                <a href="javascript:;" class="loginsign text-decoration-none d-flex align-items-center justify-content-center position-relative" data-bs-toggle="modal" data-bs-target="#signup">
+                    <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                        <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    </span>
+                    <span class="login loginsign d-lg-inline-flex d-none">Login</span> 
+                    <span class="d-lg-inline-flex d-none"> /</span>
+                    <span class="sign loginsign d-lg-inline-flex d-none">Sign Up</span> 
                 </a>
+                <!-- <a href="javascript:;" class="loginsign d-none text-decoration-none d-flex align-items-center justify-content-center position-relative">
+                    <span class="cardBtn me-lg-1 d-flex align-items-center justify-content-center"> 
+                        <img src="assets/img/user2.svg" alt="cart" class="h-100 w-100 img-fluid">
+                    </span>
+                    <span class="login loginsign d-lg-inline-flex d-none">Log Out</span> 
+                </a> -->
             </div>
             </div>
         </div>
@@ -212,10 +220,11 @@
     <!-- navbar start  -->
 
     <main class="main">
+
         <!-- lab test hero section start  -->
         <div class="container-fluid labtestherosection">
-            <div class="row">
-                <div class="col-lg-8">
+            <div class="row h-100">
+                <div class="col-12 h-100">
                     <div class="labads overflow-hidden rounded-2 h-100">
                         <div class="swiper mySwiper h-100 labtestslider">
                             <div class="swiper-wrapper">
@@ -252,87 +261,6 @@
                             </div>
                             <!-- <div class="swiper-pagination"></div> -->
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-lg-0 mt-4">
-                    <div class="formCard bg-light rounded-2 h-100">
-                        <div class="d-flex align-items-center pb-3 justify-content-between">
-                            <div class="formtitle text-center">
-                                Please fill in your details
-                            </div>
-                            <a href="pathology.html" class="applyBtn pathologybtn text-decoration-none r d-inline-flex align-items-center ">
-                                Pathology
-                                <span class="rightarrow d-flex align-items-center justify-content-center">
-                                    <img src="assets/img/rightarrow.svg" alt="Pathology" class="h-100 w-100 img-fluid">
-                                </span>
-                            </a>
-                        </div>
-                        <form class="">
-                            <div class="row labform border-top align-items-center ">
-                                <!-- <div class="formtitle col-12 pt-2 text-center">
-                                    Please fill in your details
-                                </div> -->
-                                <div class="col-lg-12 col-sm-6 pt-lg-2">
-                                    <div class="inputpinmain position-relative w-100">
-                                        <input type="text" id="name" class="form-control bg-transparent shadow-none pincodeInput w-100 ps-1" required>
-                                        <label for="name" class="pincodeLabel">Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-6">
-                                    <div class="inputpinmain position-relative w-100">
-                                        <input type="tel" id="mobilenumber" class="form-control bg-transparent shadow-none pincodeInput w-100 ps-1" required>
-                                        <label for="mobilenumber" class="pincodeLabel">Mobile Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-6">
-                                    <div class="inputpinmain position-relative w-100">
-                                        <input type="tel" id="pincode2" class="form-control bg-transparent shadow-none  pincodeInput w-100 ps-1" required>
-                                        <label for="pincode2" class="pincodeLabel">Pincode</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-sm-6 py-lg-2 pb-lg-2 pb-sm-0 pb-2">
-                                    <div class="d-flex gap-3 align-items-center">
-                                        <select class="form-select selectbox rounded-0 shadow-none bg-transparent border-0 border-bottom ps-1 border-1 border-dark" aria-label="Default select example">
-                                            <option value="" class="selectInner" selected disabled>Choose Package</option>
-                                            <option value="1" class="selectInner">Thyroid Profile</option>
-                                            <option value="2" class="selectInner">Thyroid Profile</option>
-                                            <option value="3" class="selectInner">Thyroid Profile</option>
-                                            <option value="4" class="selectInner">Thyroid Profile</option>
-                                            <option value="5" class="selectInner">Thyroid Profile</option>
-                                            <option value="6" class="selectInner">Thyroid Profile</option>
-                                            <option value="7" class="selectInner">Thyroid Profile</option>
-                                            <option value="8" class="selectInner">Thyroid Profile</option>
-                                            <option value="9" class="selectInner">Thyroid Profile</option>
-                                            <option value="10" class="selectInner">Thyroid Profile</option>
-                                        </select>
-                                        <select class="form-select selectbox rounded-0 shadow-none bg-transparent border-0 border-bottom ps-1 border-1 border-dark" aria-label="Default select example">
-                                            <option value="" class="selectInner" selected disabled>Choose test</option>
-                                            <option value="1" class="selectInner">Swasthya</option>
-                                            <option value="2" class="selectInner">Aarogyam A</option>
-                                            <option value="3" class="selectInner">Aarogyam B</option>
-                                            <option value="4" class="selectInner">Aarogyam C</option>
-                                            <option value="5" class="selectInner">Vital Health Pack</option>
-                                            <option value="6" class="selectInner">Immunity care</option>
-                                            <option value="7" class="selectInner">Diabetic check</option>
-                                            <option value="8" class="selectInner">Healthy Plus</option>
-                                            <option value="9" class="selectInner">Healthy</option>
-                                            <option value="10" class="selectInner">Shield Pack</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex align-items-center formtitle gap-1">
-                                        <input type="checkbox" id="agree">
-                                        <label for="agree">  I agree to Medhunt <a href="javascript:;" class="formtitle"> Terms and Conditions.</a></label>
-                                    </div>
-                                </div>
-                                <div class="col-12 border-top">
-                                    <div class="d-flex pt-lg-3 w100 pt-sm-4 pt-3 align-items-center justify-content-center">
-                                        <button class="btn applyBtn bookBtn w-100">Book Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -444,261 +372,430 @@
         </div>
         <!-- lab test hero section end -->
 
-        <!-- popular lab test section start  -->
-        <div class="container-fluid populartestSection">
-            <div class="heading">Popular Tests</div>
-            <div class="sectionTitle">many more tests and packages @ THE BEST PRICES </div>
-            <div class="row pt-sm-4 pt-3 g-sm-4 g-3 cardMain">
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test1.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Complete Hemogram</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test2.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Liver Profile</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test3.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Diabetes</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test4.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Lipid Profile</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test5.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Thyroid Profile</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test6.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Iron Deficiency</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test7.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Vitamin</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test8.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Testosterone</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test9.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Kidney Function Test</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testCard bg-light dlex align-items-center h-100 shadow-sm overflow-hidden rounded-3 position-relative">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="testImg d-flex align-items-center positionabsolute justify-content-center">
-                                <img src="assets/img/labtest/test10.png" alt="lab test" class="h-100 w-100 img-fluid">
-                            </div>
-                        </div>
-                        <div class="testTitle position-relative z-1">Thyroid Profile</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- popular lab test section end -->
-
-        <!-- top selling package section start  -->
-        <div class="container-fluid">
-            <div class="sellingPackages bg-light rounded-2 px-2">
-                <div class="heading">Top Selling Packages</div>
-                <div class="sectionTitle">Choose from the list of top-selling packages tailored for you. We care for your health!</div>
-                <div class="row pt-4 g-3">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 overflow-hidden">
-                            <div>
-                                <div class="cardimg overflow-hidden rounded-2">
-                                    <img src="assets/img/labtest/packages1.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                </div>
-                                <div class="carrdData">
-                                    <div class="cardHeading">Swasthya</div>
-                                    <div class="carddetail">Book Regular Health Check-up Package Swasthya, a Basic Screening Preventive Health Check-up Profile having 64 tests includes Diabetic, Lipid, LFT, KFT, Thyroid with Vitamins, & more.</div>
+        <!-- file upload section start  -->
+        <div class="container-fluid uploadfileSection">
+            <div class="row g-3">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="fileimg d-flex align-items-center bg-light justify-content-center rounded-circle">
+                                    <img src="assets/img/labtest/file.png" alt="upload file" class="h-100 w-100 img-fluid">
                                 </div>
                             </div>
-                            <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            <div class="col ps-0">
+                                <div class="uploadheading">Upload Precription</div>
+                                <a href="prescription.html" class="uploadTitle stretched-link text-decoration-none">Place order with Precription</a>
                             </div>
+                            <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                                <a href="javascript:;" class="d-flex align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                                    <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                                    Upload
+                                </a>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-opacity-10 bg-info overflow-hidden">
-                            <div>
-                                <div class="cardimg rounded-2 overflow-hidden">
-                                    <img src="assets/img/labtest/packages2.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                </div>
-                                <div class="d-flex align-itemscenter flex-column  carrdData">
-                                    <div class="cardHeading">Shield Pack</div>
-                                    <div class="carddetail">Shield Pack helps to protect against a particular danger or risk. It screens the most common diseases like CBC, Urine Routine, Creatinine, Uric Acid, FBS, HbA1c, Lipid profile, Total Bilirubin, SGPT, TSH and Calcium.</div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="fileimg d-flex align-items-center bg-light justify-content-center rounded-circle">
+                                    <img src="assets/img/labtest/reportLogo.png" alt="upload file" class="h-100 w-100 img-fluid">
                                 </div>
                             </div>
-                            <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            <div class="col ps-0">
+                                <a href="javascript:;" class="uploadheading stretched-link text-decoration-none">View Online Report & Medical History</a>
+                                <!-- <div class="uploadTitle">Place order with Precription</div> -->
                             </div>
+                            <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                                <a href="javascript:;" class="d-flex align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                                    <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                                    Upload
+                                </a>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
-                            <div>
-                                <div class="cardimg rounded-2 overflow-hidden">
-                                    <img src="assets/img/labtest/packages3.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                </div>
-                                <div class="d-flex align-itemscenter flex-column  carrdData">
-                                    <div class="cardHeading">Health Pack</div>
-                                    <div class="carddetail">Health check-ups are very useful in the early detection of all types of illnesses and risk factors. Simple to understand and less time consuming, our Health Pack comprises 35 parameters of regular blood tests that have been specially designed keeping your health in mind.</div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="uploadfilecard bg-white position-relative h-100 rounded-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="fileimg d-flex whatsappbtn align-items-center bg-light justify-content-center rounded-circle">
+                                    <img src="assets/img/labtest/whatspp.png" alt="upload file" class="h-100 w-100 img-fluid">
                                 </div>
                             </div>
-                            <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
+                            <div class="col ps-0">
+                                <div class="uploadheading">Order Medicines</div>
+                                <a href="javascript:;" class="uploadTitle text-decoration-none stretched-link">Via Whatsapp</a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard d-flex justify-content-between flex-column h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                            <div>
-                                <div class="cardimg overflow-hidden rounded-2">
-                                    <img src="assets/img/labtest/packages4.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                </div>
-                                <div class="d-flex align-itemscenter flex-column  carrdData">
-                                    <div class="cardHeading">Diabetic Checkup</div>
-                                    <div class="carddetail">Meant for people who want to get regular reports to prevent/check their diabetes levels. It includes 49 tests.</div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard d-flex flex-column justify-content-between h-100 rounded-2 bg-warning bg-opacity-10 overflow-hidden">
-                            <div>
-                                <div class="cardimg rounded-2 overflow-hidden">
-                                    <img src="assets/img/labtest/packages5.webp" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                                </div>
-                                <div class="carrdData">
-                                    <div class="cardHeading">Aarogyam B</div>
-                                    <div class="carddetail">Preventive Basic Health Check-up Package Aarogyam B Consists of 67 blood tests for screening of the health status.</div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                <div class="cardprice">Rs.542  <del class="text-danger">Rs.634</del></div>
-                                <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard h-100 rounded-2 bg-primary bg-opacity-10 overflow-hidden">
-                            <div class="cardimg overflow-hidden rounded-2">
-                                <img src="assets/img/labtest/packages6.jfif" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                            </div>
-                            <div class="d-flex align-itemscenter flex-column h100 justify-content-between carrdData">
-                                    <div class="h-100">
-                                        <div class="cardHeading">Healthy</div>
-                                        <div class="carddetail">This package is specially designed for an elderly male and includes major blood tests which are required for diagnosis, evaluation and monitoring of common chronic illnesses and also includes one of the important tumour markers which is responsible for a cancerous growth common in elderly male age group.</div>
-                                    </div>
-                                    <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                        <div class="cardprice">Rs.234  <del class="text-danger">Rs.324</del></div>
-                                        <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard h-100 bg-success bg-opacity-10 rounded-2 overflow-hidden">
-                            <div class="cardimg overflow-hidden rounded-2">
-                                <img src="assets/img/labtest/packages7.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                            </div>
-                            <div class="d-flex align-itemscenter flex-column  carrdData">
-                                    <div class="cardHeading">Pre-Screening</div>
-                                    <div class="carddetail">Pre-Screening helps to evaluate against common illness /infection of blood / urine / stool and also determines blood group of a person which is an important parameter required in cases of anaemia (due to chronic blood loss) and for identity.</div>
-                                    <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                        <div class="cardprice">Rs.342  <del class="text-danger">Rs.452</del></div>
-                                        <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="packagesCard h-100 h-100 rounded-2 overflow-hidden">
-                            <div class="cardimg rounded-2 overflow-hidden">
-                                <img src="assets/img/labtest/packages8.jpg" alt="family" class="h-100 object-fit-cover w-100 img-fluid">
-                            </div>
-                            <div class="d-flex align-itemscenter flex-column  carrdData">
-                                    <div class="cardHeading">Immunity Care</div>
-                                    <div class="carddetail">Health test to test for issues related to hormones, fertility and pregnancy along with tests for diabetes, cardiovascular illnesses etc. This health includes seven major parameters.</div>
-                                    <div class="d-flex align-itemscenter justify-content-between cardContent">
-                                        <div class="cardprice">Rs.4342  <del class="text-danger">Rs.4934</del></div>
-                                        <a href="javascript:;" class="text-decoration-none applyBtn rounded-1">Book</a>
-                                    </div>
-                            </div>
+                            <!-- <div class="col-xxl-auto mt-xxl-0 mt-3">
+                                <a href="javascript:;" class="d-flex  align-items-center text-decoration-none stretched-link applyBtn rounded-2 justify-content-center uploadicon">
+                                    <img src="assets/img/labtest/uploadfile.svg" alt="upload" class="h-100 w-100 img-fluid">
+                                    Click Here
+                                </a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- top selling package section end -->
+        <!-- file upload section end -->
+        
+        <!-- laboratory near you section start  -->
+        <div class="container-fluid locationSection">
+            <div class="heading">Laboratory near you</div>
+            <div class="row mt-1 g-3">
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
+                                    Metro Pathlab & Imaging Centre
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Vaishali nagar, Jaipur
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
+                                    Metro Pathlab & Imaging Centre
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Vaishali nagar, Jaipur
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
+                                    Metro Pathlab & Imaging Centre
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Vaishali nagar, Jaipur
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <a href="labdetail.html" class="labname stretched-link text-decoration-none mb-0">
+                                    Metro Pathlab & Imaging Centre
+                                </a>
+                                <!-- <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Vaishali nagar, Jaipur
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <div class="labname">
+                                    Metro Pathlab 
+                                </div>
+                                <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Ghandhi path, Jaipur
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <div class="labname">
+                                    Metro Pathlab 
+                                </div>
+                                <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Chittrakoot, Jaipur
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="locationCard border h-100 rounded-2 position-relative">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="cardimg rounded-2 border">
+                                <img src="assets/img/labtest/locationimg.png" alt="cardlocation" class="h-100 w-100 object-fit-contain img-fluid">
+                            </div>
+                            <div>
+                                <div class="labname">
+                                    Metro Pathlab
+                                </div>
+                                <a href="lab-test-detail.html" class="d-flex stretched-link align-items-center gap-1 locationtitle text-decoration-none">
+                                    <span class="locationicon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Mansarovar, Jaipur
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-12 text-center pt-2">
+                    <a href="location.html" class="applyBtn rounded-2 text-decoration-none py-2">View More</a>
+                </div>
+            </div>
+        </div>
+        <!-- laboratory near you section end  -->
+
+        <!-- regular test section start  -->
+        <div class="container-fluid regulartestSection">
+            <div class="heading">Regular Tests</div>
+            <div class="row mt-1 g-3 cardmain ">
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2" data-bs-toggle="offcanvas" href="#testname" role="button" aria-controls="testname">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/Hemogram.svg" alt="Hemogram" class="w-100 ">
+                        </div>
+                        <a href="choosetest.html" class="testtitle text-decoration-none stretched-link">Hemogram (TBC)</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2 position-relative">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/Bloodsugar.svg" alt="Bloodsugar" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Blood Sugar</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm position-relative d-flex align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/Lipidprofile.svg" alt="Lipidprofile" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Lipid Profile (Cholesterol)</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/Liverfunctiontest.svg" alt="Liver function test" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Liver Function Test</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2 position-relative">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/ThyroidTest.svg" alt="Thyroid Test" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Thyroid Test</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm position-relative d-flex align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/Uricacid.svg" alt="Uric acid" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Uric Acid</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/Urineandstoolroutine.svg" alt="Urine and stool routine" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Urine and Stool Routine</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2 position-relative">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/xray.svg" alt="Xray" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Xray</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border position-relative rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/ECG.svg" alt="ECG" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">ECG</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2 position-relative">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/USG.svg" alt="Ultra Sound (USG)" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Ultra Sound (USG)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- regular test section end  -->
+
+        <!-- Women Care section start  -->
+        <div class="container-fluid regulartestSection pt-0">
+            <div class="heading">Women Care</div>
+            <div class="row mt-1 g-3 cardmain ">
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/bloodstudy.svg" alt="Blood Study" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Blood Study</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2 position-relative">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/pregnancy.svg" alt="Pregnancy" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Pregnancy</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border position-relative rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/ironstudy.svg" alt="Iron Study" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Iron Study</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/vitamin-1.svg" alt="vitamin" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">vitamin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Women Care section end  -->
+
+        <!-- Condition Based Test section start  -->
+        <div class="container-fluid regulartestSection pt-0">
+            <div class="heading">Condition Based Test</div>
+            <div class="row mt-1 g-3 row-cols-md-4 row-cols-sm-3 row-cols-2">
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/heart.svg" alt="heart" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Heart</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2 position-relative">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/thyroid.svg" alt="Thyroid" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Thyroid</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border position-relative rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/joint.svg" alt="joint Pain" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Joint Pain</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/liver.svg" alt="Liver" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Liver</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/lungs.svg" alt="Lungs" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Lungs</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2 position-relative">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/kedney.svg" alt="kidney" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">kidney</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/fullbody.svg" alt="Full Body" class="w-100 ">
+                        </div>
+                        <a href="javascript:;" class="testtitle text-decoration-none">Full Body</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testcard shadow-sm d-flex position-relative align-items-center border rounded-2">
+                        <div class=" d-flex rounded-circle bg-light align-items-center justify-content-center testicon">
+                            <img src="assets/img/testimg/bone.svg" alt="Bone" class="w-100 ">
+                        </div>
+                        <a href="test.html" class="testtitle text-decoration-none stretched-link">Bone</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Condition Based Test section end  -->
+
 
         <!-- Our Highlights section start  -->
-        <div class="container-fluid ourHighlights">
+        <div class="container-fluid ourHighlights pt-0">
             <div class="heading col-12">Our Highlights</div>
             <div class="sectionTitle col-12">Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our service.</div>
             <div class="row pt-sm-4 pt-3 g-sm-3 g-2">
@@ -740,7 +837,7 @@
         <!-- Our Highlights section end  -->
 
         <!-- lab partner section start  -->
-        <div class="container-fluid labpartner ">
+        <!-- <div class="container-fluid labpartner ">
             <div class="heading col-12">Lab Partner</div>
             <div class="sectionTitle col-12">We provide lab tests and health packages from well-reputed, certified diagnostic labs across the country.</div>
             <div class="row pt-sm-4 pt-3 g-sm-3 g-2"> 
@@ -833,168 +930,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- lab partner section end  -->
-
-        <!-- testimonal section start  -->
-        <div class="container-fluid testimonal ">
-            <div class="heading col-12">Testimonal</div>
-            <div class="sectionTitle col-12">Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our service.</div>
-            <div class="row pt-sm-3 pt-2 pb-4 position-relative">
-                <!-- <div class="col-md-4">
-                    <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                        <div class="userimg rounded-circle overflow-hidden">
-                            <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                        </div>
-                        <div>
-                            <div class="userreview">
-                                This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                            </div>
-                            <div class="userName d-flex align-items-center gap-1">
-                                Rajiv Singh 
-                                <div class="userlocation fw-medium"> - Mumbai</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-12">
-                    <div class="swiper mySwiper py-2 testimonalslider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonalcard bglight shadow-sm position-relative overflow-hidden rounded2 d-flex align-items-center">
-                                    <div class="userimg rounded-circle overflow-hidden">
-                                        <img src="assets/img/testimonal/user1.jpg" alt="user" class="h-100 object-fit-cover w-100 img-fluid">
-                                    </div>
-                                    <div>
-                                        <div class="userreview">
-                                            This is the best lab test experience ever! The process seemed so off-putting. But with Medhunt it has been so easy and professional!
-                                        </div>
-                                        <div class="userName d-flex align-items-center gap-1">
-                                            Rajiv Singh 
-                                            <div class="userlocation fw-medium"> - Mumbai</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-        <!-- testimonal section end -->
 
         <!-- book appointment cta section start  -->
         <div class="container-fluid ctaSection">
@@ -1218,94 +1155,452 @@
     <!-- toolpits end  -->
 
     <!-- location offcanvas start-->
-    <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header bg-light border-bottom">
-        <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
-        <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
-            <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
-        </button>
-    </div>
-    <div class="offcanvas-body">
-        <div class="row addressmain">
-        <div class="col-12 deliveryData fw-medium">
-            Get access to your Address, Order, and Wishlist
+    <div class="offcanvas offcanvas-end deliveryaddress" tabindex="-1" id="location" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header bg-light border-bottom">
+            <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Where Do You Want The Delivery?</div>
+            <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/img/closeIcon.svg" alt="close" class="h-100 w-100 img-fluid">
+            </button>
         </div>
-        <div class="col-12 mx-auto py3">
-        <button type="button" class="btn mxuto w-100 addaddressbtn justify-content-center rounded-1 d-flex flexcolumn align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
-            <span class="d-flex align-items-center justify-content-center plusicon">
-            <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
-            </span>
-            <span class="addressTile">Add Address</span>
-        </button>
-        </div>
-        <div class="col-12 pt2 text-center">
-            <a href="javascript:;" class="detectlocation bg-light justify-content-center d-flex rounded-2 align-items-center gap-2 text-decoration-none">
-            <span class="d-flex align-items-center justify-content-center detecticon">
-                <img src="assets/img/detectlocation.svg" alt="location" class="h-100 w-100 img-fluid">
-            </span>
-            Detect my location
-            </a>
-        </div>
-        <div class="col-12 py4">
-            <div>
-            <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress5">
-            <label for="selectAddress5" class="addressLabel w-100">
-                <div class="row align-items-center">
-                <div class="col">
-                    <div class="namePerson2">Delivery Address</div>
-                    <div class="namePerson mt-2">Rakesh Sharma</div>
-                </div>
-                <div class="col-auto">
-                    <span class="checkBox d-flex align-items-center">
-                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
-                    </span>
-                    
+        <div class="offcanvas-body">
+            <div class="row addressmain">
+            <div class="col-12 deliveryData fw-medium">
+                Get access to your Address, Order, and Wishlist
+            </div>
+            <div class="col-12 mx-auto py3">
+            <button type="button" class="btn mxuto w-100 addaddressbtn justify-content-center rounded-1 d-flex flexcolumn align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#addressoffcanvas" aria-controls="addressoffcanvas">
+                <span class="d-flex align-items-center justify-content-center plusicon">
+                    <img src="assets/img/plus.svg" alt="add Address" class="h-100 w-100 img-fluid">
+                </span>
+                <span class="addressTile">Add Address</span>
+                </button>
                 </div>
                 <div class="col-12">
-                    <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
-                    <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                    <div>
+                    <div class="inputpinmain d-flex align-items-center position-relative w-100">
+                        <input type="text" id="House" class="form-control h-100 border-0 shadow-none pincodeInput w-100 ps-0">
+                        <label for="House" class="pincodeLabel">pincode</label>
+                        <button class="p-0 border-0 bg-transparent applypinBtn">Apply</button>
+                    </div>
+                    </div>
                 </div>
-                
+                <div class="col-12 py4">
+                    <div>
+                        <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress5">
+                        <label for="selectAddress5" class="addressLabel w-100">
+                            <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-baseline justify-content-between">
+                                <div class="d-flex align-items-center cardheader">
+                                    <div class="namePerson2">Delivery Address</div>
+                                    <button class="deletebtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                    <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                    </button>
+                                    <button class="editbtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                    <img src="assets/img/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                    </button> 
+                                </div>
+                                <span class="checkBox d-flex align-items-center">
+                                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                                </span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="namePerson mt-2">Rakesh Sharma</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                                <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
-            </label>
+                <div class="col-12 py4">
+                    <div>
+                    <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress6">
+                    <label for="selectAddress6" class="addressLabel w-100">
+                        <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-baseline justify-content-between">
+                            <div class="d-flex align-items-center cardheader">
+                                <div class="namePerson2">Delivery Address</div>
+                                <button class="deletebtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                                <button class="editbtn p-0 d-flex align-items-center justify-content-center border-0 bg-transparent">
+                                <img src="assets/img/edit.svg" alt="edit" class="h-100 w-100 img-fluid">
+                                </button> 
+                            </div>
+                            <span class="checkBox d-flex align-items-center">
+                                <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="namePerson mt-2">Rakesh Sharma</div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
+                            <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
+                        </div>
+                        </div>
+                    </label>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-12">
-            <div>
-            <input type="radio" name="selectAddress" checked="" class=" selectAddressInput" hidden="" id="selectAddress4">
-            <label for="selectAddress4" class="addressLabel w-100">
-                <div class="row align-items-center">
-                <div class="col">
-                    <div class="namePerson2">Delivery Address</div>
-                    <div class="namePerson mt-2">Rakesh Sharma</div>
-                </div>
-                <div class="col-auto">
-                    <span class="checkBox d-flex align-items-center">
-                    <img src="assets/img/signup/Checkaddress.svg" alt="check" class="img-fluid w-100 h-100">
-                    </span>
-                    
-                </div>
-                <div class="col-12">
-                    <div class="pera">66, Sanskar Bharti Society, Naranpura, Surat - 125102, Gujarat</div>
-                    <div class="namePerson mt-2">Phone Number: <span class="pera fw-normal">9997585541</span> </div>
-                </div>
-                
-                </div>
-            </label>
+        <div class="offcnavas-footer bglight border-top">
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn applyBtn w-100">Save and Continue</button>
             </div>
         </div>
-        </div>
-    </div>
-    <div class="offcnavas-footer bglight border-top">
-        <div class="d-flex align-items-center justify-content-center">
-            <button type="button" class="btn applyBtn w-100">Save and Continue</button>
-        </div>
-    </div>
     </div>
     <!-- location offcanvas end-->
 
+    <!-- cart offcanvas start  -->
+    <div class="offcanvas offcanvas-end cartoffcanvas" tabindex="-1" id="cartoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom">
+            <div class="offcanvas-title cartTitle fw-semibold" id="offcanvasExampleLabel">Select a cart to Checkout </div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- select card section start  -->
+            <div class="d-none">
+                <a href="javascript:;" class="selectCard text-decoration-none mt-0 d-flex rounded-2 bg-light">
+                <div class="row align-items-center">
+                    <div class="col-auto border-end">
+                    <div class="medicineimg">
+                        <img src="assets/img/cart/medicine.png" alt="medicine" class="h-100 w-100 img-fluid">
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="selectTitle">Medicine & Essentials</div>
+                    <div class="selectTitletwo">7 items</div>
+                    </div>
+                </div>
+                </a>
+        
+                <a href="javascript:;" class="selectCard text-decoration-none d-flex rounded-2 bg-light">
+                <div class="row align-items-center">
+                    <div class="col-auto border-end">
+                    <div class="medicineimg">
+                        <img src="assets/img/cart/tests.png" alt="medicine" class="h-100 w-100 img-fluid">
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="selectTitle">Tests</div>
+                    <div class="selectTitletwo">7 items</div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <!-- select card section end  -->
+
+            <!-- cart section start -->
+            <div class="row gap-sm-3 gap-2">
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="row align-items-center tablebody position-relative rounded-2 mx-0 mt-0">
+                    <div class="col-auto px-2">
+                        <div class="productImgMain d-flex flex-column align-items-center justify-content-between pt-1 rounded-1">
+                            <div class="productImg">
+                                <img src="assets/img/cart/cart1.png" alt="product" class="h-100 w-100 img-fluid object-fit-contain">
+                            </div>
+                            <div class="pack">
+                            (Pack of 5)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="tabledata col-12 ps-0">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a href="productDetails.html" class="productName text-decoration-none stretched-link">Upakarma Ayurveda Shilajit Veg Capsules 90's</a>
+                                <button class="d-flex position-relative z-1 align-items-center border-0 p-0 mx-auto justify-content-center deleteIcon">
+                                <img src="assets/img/delete.svg" alt="delete" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                                <!-- <div class="deliverytilte pt-1">Delivery by <span class="text-dark fw-medium">Tomorrow, before 10:00 pm</span></div> -->
+                            </div>
+                            <div class="col-auto px-0">
+                            <div class="d-flex flex-column">
+                                <del class="price pricetwo text-danger">MRP Rs.450</del>
+                                <div class="price">Rs.450</div>
+                            </div>
+                            </div>
+                                
+                            <div class="col text-end">
+                                <div class="d-inline-flex position-relative z-1 align-items-center qualiltymain border border-1">
+                                    <div class="qualityicon bg-wte border-end h-100 d-flex align-items-center justify-content-center">-</div>
+                                    <div class="quantityinput d-flex align-items-center justify-content-center">12</div>
+                                    <div class="qualityicon bg- border-start h-100 d-flex align-items-center justify-content-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pt-1">
+                <div class="summaryCard sticky-top z-1 rounded-2 bg-light">
+                    <div class="row mx-0">
+                        <div class="cartHeading col-12 ">
+                        Cart Breakdown
+                        </div>
+                        <!-- <div class="col-12 pb-sm-4 pb-3">
+                            <div class="inputpinmain coupanCode rounded5 d-flex align-items-center position-relative w-100">
+                                <input type="text" id="Pincode" autocomplete="url" class="form-control  ps-0 bg-transparent border-0  shadow-none  pincodeInput w-100 ps-0">
+                                <label for="Pincode" class="pincodeLabel">Apply coupon</label>
+                                <button class="btn ps-1 applypinBtn bg-transparent border-0">Apply</button>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-12 cartSubheading border-top">Bill Summary</div> -->
+                        <div class="col-12 cartdata border-top ">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Cart Total</div>
+                                <div class="cardTitle text-dark fw-medium">Rs.1797</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartdata">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Discount on MRP</div>
+                                <div class="cardTitle discount fw-medium">-Rs.24</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartdata">
+                        <div class="d-flex  align-items-center justify-content-between">
+                            <div class="cardTitle">Coupan discount</div>
+                            <div class="cardTitle discount fw-medium">-Rs.24</div>
+                        </div>
+                    </div>
+                        <div class="col-12 cartdata deliverycharge">
+                            <div class="d-flex  align-items-center justify-content-between">
+                                <div class="cardTitle">Delivery Charge</div>
+                                <div class="cardTitle text-dark fw-medium">Rs.197</div>
+                            </div>
+                        </div>
+                        <div class="col-12 cartSubheading totalpayment border-top">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>To Pay</div>
+                                <div class="totalpay">Rs.2534.00</div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 cartdata border-top text-center ">
+                            <div class="d-flex align-items-center justify-content-center py-2">
+                                <a href="deliveryaddress.html" class="continueBtn rounded-2 applyBtn text-decoration-none">Continue</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- cart cart section end -->
+        </div>
+        <div class="offcanvas-footer border-top">
+            <div class="row">
+                <div class="col-12 pb-2 mb-1">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-end gap-1">
+                    <div class="locationicon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/location.svg" alt="location" class="h-100 w-100 img-fluid" >
+                    </div>
+                    <div>
+                        <div class="billed">
+                        Bilied to--
+                        </div>
+                        <div class="fw-semibold pincode">302020</div>
+                    </div>
+                    </div>
+                    <button class="btn border-0 changeadd" type="button" data-bs-toggle="offcanvas" data-bs-target="#location" aria-controls="location">Change</button>
+                </div>
+                
+                </div>
+                <div class="col-12 border-top pt-2">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                    <div class="amoutpay">
+                        Amout to pay
+                    </div>
+                    <div class="totalpay">
+                        &#8377; 542.54
+                    </div>
+                    </div>
+                    <div>
+                    <button type="button" class="btn applyBtn w-100">Add Address</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart offcanvas end  -->
+
     <!-- address offcanvas start  -->
-    <div class="offcanvas offcanvas-start deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-end deliveryaddress" tabindex="-1" id="addressoffcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header border-bottom bg-light">
         <div class="offcanvas-title deliverytilte fw-semibold" id="offcanvasExampleLabel">Add Address</div>
         <button type="button" class="btn-close p closebtn shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -1382,7 +1677,97 @@
     </div>
     <!-- address offcanvas end  -->
 
-    <!-- navbar offcanvas  -->
+    <!-- edite profile offcanvas  -->
+    <div class="offcanvas offcanvas-end editeProfileOffcanvas " tabindex="-1" id="offcanvasExampleedit" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header offcanvasHeader">
+        <div class="offcanvas-title offcanvasTitle d-flex align-items-center" id="offcanvasExampleLabel"> Edit Profile</div>
+        <button type="button " class="offcanvasTitle border-0 shadow-none bg-transparent d-flex align-items-center" data-bs-dismiss="offcanvas" aria-label="Close"> <span class="d-inline-flex rightIcon"><img src="assets/img/signup/Close.svg" alt="close" class="img-fluid w-100 h-100"></span></button>
+        </div>
+        <div class="offcanvas-body offcanvasBody border-top ">
+        <div class="row">
+            <div class="col-12 ">
+            <form class="formSection">
+                <div class="mb-3">
+                <label for="firstName" class="labelUserin">First Name</label>
+                <!-- <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number"> -->
+                <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="Medh" id="firstName">
+                </div>
+                <div class="mb-3">
+                <label for="LastName" class="labelUserin">Last Name</label>
+                <input type="text" class="form-control border-bottom border-0 rounded-0 ps-0 pt-0 shadow-none formInputinformation" value="unt" id="LastName">
+                </div>
+                <div class="mb-3">
+                <label for="GENDER" class="labelUserin">GENDER</label>
+                <select class="form-select border-0 shadow-none formInputinformation ps-0 border border-bottom rounded-0 pt-0" aria-label="Default select example">
+                    <option selected="">No-data</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+                </div>
+                <div class="mb-3">
+                <label for="mobileNumber" class="labelUserin">Age</label>
+                <div class="input-group ">
+                    <!-- <span class=" border-bottom border-end rounded-0 shadow-none formInputinformation border-end"> +91</span> -->
+                    <input type="date" class="form-control border-bottom ps-0 border-0 rounded-0  pt-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="mobileNumber" class="labelUserin">Email</label>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 ps-0 shadow-none formInputinformation" value="img.@gmail.com" id="mobileNumber">
+                    <button class="btn border-0 shadow-none border-bottom rounded-0 formInputinformation text-danger" type="button" id="button-addon2">Verify</button>
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="mobileNumber" class="labelUserin">MOBILE NUMBER</label>
+                <div class="input-group ">
+                    <span class=" border-bottom rounded-0 shadow-none formInputinformations"> +91</span>
+                    <input type="email" class="form-control border-bottom border-0 rounded-0  pt-0 pb-0 shadow-none formInputinformation" value="9116875275" id="mobileNumber">
+                </div>
+                </div>
+                <div class="mt-4">
+                <button class="text-decoration-none border-0 w-100 d-flex align-items-center justify-content-center shadow-none rounded-3 editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleedit" type="button" aria-controls="offcanvasExample">Save Change</button>
+                
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- edite profile offcanvas  end -->
+    
+    <!-- how to use modal  -->
+    <div class="modal fade contentModal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalDialog modal-dialog-centered">
+        <div class="modal-content contentSection">
+            <div class="modal-header">
+            <div class="modal-title useTitle fs-5" id="exampleModalLabel">HOW TO USE NMS CASH?</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+                <div class="col-12">
+                <ul class="d-flex flex-column gap-2">
+                    <li class="usePera">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                    <li class="usePera">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, eveniet.</li>
+                    <li class="usePera">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maiores maxime amet!  </li>
+                    <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li class="usePera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit qui unde eligendi, veniam laudantium dolorum.</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <!-- how to use modal end   -->
+
+    <!-- navbar offcanvas start -->
     <div class="offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="navoffcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header bg-light border-bottom align-items-start">
         <div class="offcanvas-title offcanvasLogo d-flex align-items-center justify-content-center" id="offcanvasExampleLabel">
@@ -1409,12 +1794,98 @@
             <li class="nav-item">
             <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Beauty Product</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link navbarLink position-relative p-0 d-inline-flex " href="javascript:;">Supplementary Product</a>
+            <!-- <li class="nav-item border-top pt-2">
+                <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;" data-bs-toggle="modal" data-bs-target="#signup">
+                    <span class="userimg d-flex align-items-center justify-content-center">
+                        <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+                    </span>
+                    Login <span class="mx-1">/</span> Sign Up
+                </a>
             </li>
+            <li class="nav-item border-top pt-2 d-none ">
+                <a class="nav-link navbarLink d-flex align-items-center position-relative p-0 d-inline-flex loginlogout " href="javascript:;">
+                    <span class="userimg d-flex align-items-center justify-content-center">
+                        <img src="assets/img/labtest/user.svg" alt="user" class="h-100 w-100 img-fluid">
+                    </span>
+                    Log Out
+                </a>
+            </li> -->
         </ul>
         </div>
     </div>
+    <!-- navbar offcanvas end -->
+
+    <!-- signup modal start -->
+    <div class="modal fade signupModal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalDialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modalContent">
+            <!-- <div class="modal-header modalHeader">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            </div> -->
+            <div class="modal-body modalBody">
+            <div class="row align-items-center">
+                <div class="col-12">
+                <button type="button" class="btn-close d-flex justify-content-end border-0 shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col-lg-6 ">
+                <div class="signupImg"><img src="assets/img/signup/signin.png" alt="signup" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-6 ">
+                <div class="row">
+                    <div class="col-xl-10  mx-auto">
+                    <div class="row">
+                        <div class="col-12">
+                        <div class="signupHeading text-center">Welcome in <span class="signupName">Medhunt</span></div>
+                        <div class="text-center signpera">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto rerum earum soluta repellendus iure.</div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <form class="signUpForm">
+                                <div class="row">
+                                <div class="mb-sm-3 mb-2 col-12">
+                                    <label for="nameSignup" class="labelYour mb-2">Phone Number </label>
+                                    <input type="text" class="form-control border-0 shadow-none rounded-3 formInput" id="nameSignup" placeholder="Enter your Number">
+                                </div>
+                            </div>
+                            
+                                <div class="mb-sm-3 mb-2 col-12">
+                                <button  class="text-decoration-none d-flex align-items-center justify-content-center border-0 shadow-none w-100  rounded-3 signupbtn" type="button">Sign In</button>
+                                </div>
+                                <div class="mb-sm-3 mb-2 col-12">
+                                <div class="row gap-sm-0 gap-2">
+                                    <div class="col-sm-6">
+                                    <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class="googleImg me-2 d-inline-flex align-items-center"><img src="assets/img/signup/Google2.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Google</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                    <button  class="text-decoration-none d-flex align-items-center justify-content-center text-center rounded-3 border-0 shadow-none w-100  loignGoogle" type="button"><span class=" googleImg facebook me-2 d-inline-flex align-items-center"><img src="assets/img/signup/face.svg" alt="google" class="img-fluid w-100 h-100">  </span> Sign in with Facebook</button>
+                                    </div>
+                                </div>
+                                </div>
+                            
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- <div class="modal-footer justify-content-md-end justify-content-center modalBody ">
+        <div class="row signUpForm">
+            <div class=" col-12">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto ">
+                <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center  rounded-3 forgetBtn"> Term of Service</a>
+                </div>
+
+            </div>
+            </div>
+            </div>
+        </div>
+        </div> -->
+        </div>
+        </div>
+    </div>
+    <!-- signup modal end -->
 
     <!-- future brand slider  -->
     <script>
@@ -1742,4 +2213,5 @@
     </script>
     <!-- testimonal slider  end -->
 </body>
+
 </html>

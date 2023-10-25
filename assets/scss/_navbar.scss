@@ -142,6 +142,49 @@
             transform: translateY(80px);
         }
     }
+    & .userdropdown {
+        & .userName {
+            font-size: 15px;
+            gap: 5px;
+            & .userimg {
+                height: 40px;
+                width: 40px;
+            }
+        }
+        & .usermenu {
+            top: 0;
+            width: 100%;
+            min-width: auto;
+            visibility: hidden;
+            transition: all .4s cubic-bezier(.3,.02,0,.6);
+            opacity: 0;
+            margin-top: 10px;
+            & .userdetail {
+                font-size: 14px;
+                font-weight: 500;
+                color: lighten($black,0);
+                gap:8px;
+                padding: 8px 20px 8px 10px;
+                & .usericon {
+                    height:18px;
+                    width: 18px;
+                    & img {
+                        filter: brightness(0);
+                    }
+                }
+                &:active {
+                    background-color: lighten($black, 90);
+                }
+            }
+            &.show {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+                transition: all .31s ease;
+                transform: scaleY(1);
+            }
+        }
+    }
 }
 .searchmain {
     height:45px;
@@ -244,6 +287,14 @@
             &::before {
                 transform-origin: left;
                 transform: scaleX(1);
+            }
+        }
+        &.loginlogout {
+            color: $theme1;
+            & .userimg {
+                height: 15px;
+                width: 15px;
+                margin-right:6px;
             }
         }
     }
@@ -444,6 +495,28 @@
 
             }
         }
+        & .userdropdown {
+            & .userName {
+                font-size: 14px;
+                & .userimg {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            & .usermenu {
+                & .userdetail {
+                    font-size: 13px;
+                    & .usericon {
+                        height:16px;
+                        width: 16px;
+                        & img {
+                        }
+                    }
+                }
+                &.show {
+                }
+            }
+        }
     }
     .searchmain {
         & .searchData {
@@ -552,6 +625,33 @@
         &.fixedNavbar {
             & .offcanvasNav {
 
+            }
+        }
+        & .userdropdown {
+            & .userName {
+                & .userimg {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            & .usermenu {
+                margin-top: 10px;
+                padding: 3px 0;
+                width: auto;
+                left: -50px;
+                & .userdetail {
+                    font-size: 12px;
+                    gap:8px;
+                    padding: 6px 10px;
+                    & .usericon {
+                        height:15px;
+                        width: 15px;
+                        & img {
+                        }
+                    }
+                }
+                &.show {
+                }
             }
         }
     }
